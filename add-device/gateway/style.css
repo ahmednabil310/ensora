@@ -3,69 +3,75 @@
   --darken-blue: #062b45;
 }
 body {
-  height: 100vh;
   width: 100%;
-  border: 1px solid #dfe4eb; /* Remove later */
-  border-radius: 5px;
+  height: 100vh;
+  font-family: Inter;
+  font-size: 14px;
 }
-.add-device {
-  margin: 0 auto;
+.add-device-model {
   max-width: 560px;
   height: 547px;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-  color: var(--darken-blue) !important;
-}
-.add-device > * {
-  width: 480px;
-  margin: auto 40px 0 40px;
-  font-weight: 600 !important;
-}
-.add-device__close-button {
-  width: 1em;
-  position: absolute;
-  margin: 28px 30px 0 0 !important;
-}
-.add-device__title {
-  height: 36px;
+  border-radius: 5px;
   position: relative;
+  line-height: 22px;
+  color: var(--darken-blue);
+  /* Remove Later */
+  margin: 50px auto;
+}
+.add-device-model * {
+  /* box-sizing: border-box; */
+  margin: 0;
+  /* border: 1px solid; */
+}
+.add-device-model__close-button {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+}
+.add-device-model__content {
+  width: 100%;
+  padding: 0 40px;
+}
+.add-device-model__title {
   margin-top: 42px;
   font-weight: 600;
   font-size: 26px;
+  letter-spacing: -1px;
+  line-height: 36px;
 }
-.add-device__subtitle {
+.add-device-model__subtitle {
   height: 22px;
   margin-top: 12px;
-  font-weight: 400 !important;
+  font-weight: 400;
   font-size: 14px;
 }
-.add-device__qrcode_button {
+.add-device-model__qrcode_button {
+  width: 100%;
   height: 36px;
+  padding: 8px 12px;
+  font-weight: 600;
   margin-top: 60px;
   border-radius: 5px;
-  background-color: #dfe4eb !important;
-  border: 2px solid #dfe4eb;
+  background-color: #dfe4eb;
 }
-.add-device__or {
+.add-device-model__or {
   margin-top: 19px;
-  text-align: center;
-  color: var(--darken-blue);
   font-size: 14px;
+  color: var(--darken-blue);
 }
-.add-device__form {
+.add-device-model__form {
   margin-top: 7px;
-  margin-bottom: auto !important;
 }
-.add-device__form div label {
-  width: 480px !important;
-  color: #687d8f !important;
-  margin-bottom: 2px !important;
+.add-device-model__form div label {
+  margin-bottom: 2px;
+  font-weight: 600;
+  color: #687d8f;
 }
-.add-device__options {
-  margin-right: 42px !important;
+.add-device-model__options {
+  padding: 0 40px;
+  margin: auto 2px 0 0;
 }
-.add-device__options .option {
+.add-device-model__options .option {
   width: 75px;
   height: 62px;
   border-radius: 8px;
@@ -77,30 +83,27 @@ body {
   background-color: #9da9b5;
   color: white;
 }
-.add-device__footer {
-  width: 100% !important;
-  height: 82px;
-  margin: 0 !important;
+.add-device-model__footer {
+  height: 81px;
+  margin: 0;
   border-width: 1px;
   border-color: #dfe4eb;
 }
-.add-device__footer > * {
+.add-device-model__footer > * {
   margin-top: 23px;
   margin-bottom: 23px;
   font-size: 14px;
   font-weight: 600;
 }
-.add-device__footer .continue-button {
+.add-device-model__footer .continue-button {
   background-color: var(--light-blue);
   color: white;
   margin-right: 40px;
 }
-.add-device__footer .cancel-button {
+.add-device-model__footer .cancel-button {
   width: 48px;
   height: 20px;
-  position: relative;
-  top: 8px;
-  left: 2px;
+  margin: 8px auto 2px auto;
   color: var(--light-blue);
   margin-right: 24px;
   text-decoration: none;
