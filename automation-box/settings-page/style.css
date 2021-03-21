@@ -1,0 +1,96 @@
+:root {
+  --light-blue: #0e76bc;
+  --darken-blue: #062b45;
+  --light-grey: #687d8f;
+}
+
+body {
+  height: 100vh;
+}
+
+.side-bar {
+  background-color: #031623;
+  color: var(--light-grey);
+  font-size: 14px;
+}
+
+.side-bar__items {
+  list-style-type: none;
+}
+
+.main-page {
+  background-color: #f9fafc;
+}
+
+.navbar {
+  height: 60px;
+  box-shadow: 1px 1px #dfe4eb;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar__right {
+  color: var(--light-blue);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-content {
+  padding: 20px 40px 40px 100px;
+}
+
+.main-content__header {
+  color: var(--darken-blue);
+  font-size: 26px;
+}
+
+.form-gutter {
+  padding-top: 30px !important;
+  padding-left: 40px !important;
+}
+
+label {
+  font-weight: 600;
+}
+
+.form__switch {
+  color: var(--darken-blue);
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.form__switch label {
+  font-weight: 400;
+}
+
+.dropdown {
+  padding: 0 20px;
+}
+
+.form-select {
+  background-image: url("../assets/arrow.svg") !important;
+  background-size: unset !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  padding-right: 70px !important;
+}
+
+.form__switch__p {
+  margin-bottom: 5px;
+}
+
+.form-switch .form-check-input {
+  height: 1.6em;
+  width: 2.9em !important;
+}
+
+.form__switch__text input {
+  max-height: 36px;
+}
+
+.form-switch-container {
+  min-height: 93px;
+}

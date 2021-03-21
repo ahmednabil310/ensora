@@ -6,7 +6,7 @@ body {
   height: 100vh;
 }
 .form-container__onboard {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 80px;
   min-width: 450px;
 }
@@ -15,6 +15,7 @@ body {
   color: var(--darken-blue);
   font-weight: 600;
   font-size: 28px;
+  margin-bottom: 0px;
 }
 .form-container__onboard__subtitle {
   color: var(--darken-blue);
