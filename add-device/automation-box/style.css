@@ -8,7 +8,7 @@ body {
   font-family: Inter;
   font-size: 14px;
 }
-.gateway-model {
+.automation-box-model {
   max-width: 560px;
   height: 547px;
   border-radius: 5px;
@@ -18,38 +18,38 @@ body {
   /* Remove Later */
   margin: 50px auto;
 }
-.gateway-model * {
+.automation-box-model * {
   margin: 0;
 }
-.gateway-model__close-button {
+.automation-box-model__close-button {
   position: absolute;
   top: 28px;
   right: 30px;
 }
-.gateway-model__content {
+.automation-box-model__content {
   width: 100%;
   padding: 0 40px;
 }
-.gateway-model__title {
+.automation-box-model__title {
   margin-top: 42px;
   font-weight: 600;
   font-size: 26px;
   letter-spacing: -1px;
   line-height: 36px;
 }
-.gateway-model__subtitle {
+.automation-box-model__subtitle {
   height: 22px;
   margin-top: 12px;
   font-weight: 400;
   font-size: 14px;
 }
-.gateway-model__form {
+.automation-box-model__form {
   margin-top: 59px;
 }
-.gateway-model__form div {
+.automation-box-model__form div {
   margin-top: 20px;
 }
-.gateway-model form input {
+.automation-box-model form input {
   border-width: 2px;
 }
 .sensor-model form ::placeholder {
@@ -58,29 +58,29 @@ body {
 #device-id, #install-data {
   background: #F9FAFC;
 }
-.gateway-model__form div label {
+.automation-box-model__form div label {
   margin-bottom: 2px;
   font-weight: 600;
   color: #687d8f;
 }
-.gateway-model__footer {
+.automation-box-model__footer {
   height: 81px;
   margin: 0;
   border-width: 1px;
   border-color: #dfe4eb;
 }
-.gateway-model__footer > * {
+.automation-box-model__footer > * {
   margin-top: 23px;
   margin-bottom: 23px;
   font-size: 14px;
   font-weight: 600;
 }
-.gateway-model__footer .continue-button {
+.automation-box-model__footer .continue-button {
   background-color: var(--light-blue);
   color: white;
   margin-right: 40px;
 }
-.gateway-model__footer .back-button {
+.automation-box-model__footer .back-button {
   margin: 8px 2px;
   color: var(--light-blue);
   margin-right: 24px;

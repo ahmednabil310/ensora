@@ -16,7 +16,7 @@
 
 <body>
   <!-- Add device Model -->
-  <div class="add-device-model d-flex flex-column shadow-sm">
+  <div class="add-device-model d-flex flex-column  shadow-sm">
     <!-- Exit Button -->
     <button class="add-device-model__close-button btn-close" type="button" aria-label="Close"></button>
     <!-- End Exit button -->
@@ -56,13 +56,28 @@
             <label for="device-id" class="form-label">Enter device ID</label>
             <input type="email" class="form-control" id="device-id" />
           </div>
-        </form>  
+        </form>
       </div>
       <!-- End Model Form -->
     </div>
     <!-- End Model Content -->
     <!-- Model Footer -->
     <div class="row g-0" style="position: absolute; bottom: 0; left: 0; right: 0;">
+      <!-- Model Options -->
+      <div class="col-12 add-device-model__options">
+        <div class="d-flex justify-content-end">
+          <div class="option d-flex align-items-center justify-content-center">
+            Automation Box
+          </div>
+          <div class="option d-flex align-items-center justify-content-center">
+            Gateway
+          </div>
+          <div class="option d-flex align-items-center justify-content-center">
+            Sensor
+          </div>
+        </div>
+      </div>
+      <!-- End Model Options -->
       <div class="col-12 add-device-model__footer border-top">
         <div class="d-flex justify-content-end">
           <a href="#" class="cancel-button">Cancel</a>
