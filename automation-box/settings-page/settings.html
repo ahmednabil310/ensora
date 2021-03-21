@@ -99,9 +99,9 @@
             <img src="../assets/Secondary Icon Only.svg" alt="" />
           </div>
           <!-- form -->
-          <form class="bg-white rounded mt-4 row border form-gutter">
+          <form class="bg-white rounded mt-4 row border">
             <!-- text -->
-            <div class="col-5 form-text">
+            <div class="form-text col-6">
               <div>
                 <label for="firstName">Name</label>
                 <input
@@ -131,19 +131,21 @@
               </div>
             </div>
             <!-- switches -->
-            <div class="col-11 form__switch">
-              <div class="d-flex align-items-center pb-3 border-bottom">
+            <div class="col-12 form__switch">
+              <div class="d-flex align-items-center pb-3 border-bottom row">
+                <div class="col-2 d-flex form__switch__right">
                 <p class="pe-4 form__switch__p">R1</p>
                 <div class="form-switch form-check row">
                   <label class="form-check-label col-6" for="r1">Enabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r1" checked />
                 </div>
+              </div>
                 <img
-                  class="ps-5"
+                  class="col-1 p-0"
                   src="../assets/Photo Thumbnail.svg"
                   alt="photo thumbnail"
                 />
-                <div class="dropdown">
+                <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option selected value="Fans">
                     Fans
@@ -152,7 +154,7 @@
                   <option value="Cooling">Cooling</option>
                 </select>
               </div>
-              <div class="form__switch__text">
+              <div class="form__switch__text col-4">
                 <input
                   type="text"
                   class="form-control border border-2 p-2"
@@ -161,18 +163,20 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
+              <div class="d-flex align-items-center pb-3 border-bottom row">
+                <div class="col-2 d-flex form__switch__right">
                 <p class="pe-4 form__switch__p">R2</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" checked/>
+                  <label class="form-check-label col-6" for="r2">Enabled</label>
+                  <input class="form-check-input mt-0" type="checkbox" id="r2" checked />
                 </div>
+              </div>
                 <img
-                  class="ps-5"
+                  class="col-1 p-0"
                   src="../assets/photo-humi.svg"
                   alt="Humidifiers"
                 />
-                <div class="dropdown">
+                <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
                     Fans
@@ -181,7 +185,7 @@
                   <option value="Cooling">Cooling</option>
                 </select>
               </div>
-              <div class="form__switch__text">
+              <div class="form__switch__text col-4">
                 <input
                   type="text"
                   class="form-control border border-2 p-2"
@@ -190,18 +194,20 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
+              <div class="d-flex align-items-center pb-3 border-bottom row">
+                <div class="col-2 d-flex form__switch__right">
                 <p class="pe-4 form__switch__p">R3</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" checked />
+                  <label class="form-check-label col-6" for="r3">Enabled</label>
+                  <input class="form-check-input mt-0" type="checkbox" id="r3" checked />
                 </div>
+              </div>
                 <img
-                  class="ps-5"
+                  class="col-1 p-0"
                   src="../assets/photo-cooling.svg"
-                  alt="Cooling"
+                  alt="cooling"
                 />
-                <div class="dropdown">
+                <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
                     Fans
@@ -210,7 +216,7 @@
                   <option selected value="Cooling">Cooling</option>
                 </select>
               </div>
-              <div class="form__switch__text">
+              <div class="form__switch__text col-4">
                 <input
                   type="text"
                   class="form-control border border-2 p-2"
@@ -219,283 +225,97 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
+              <div class="d-flex align-items-center pb-3 border-bottom row">
+                <div class="col-2 d-flex form__switch__right">
                 <p class="pe-4 form__switch__p">R4</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
+                  <label class="form-check-label col-6" for="r3">Enabled</label>
+                  <input class="form-check-input mt-0" type="checkbox" id="r3" checked />
                 </div>
               </div>
-            </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R5</p>
-                <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
-                </div>
+                <img
+                  class="col-1 p-0 invisible"
+                  src="../assets/photo-cooling.svg"
+                  alt="cooling"
+                />
+                <div class="dropdown col-3 invisible">
+                <select class="form-select border border-2" aria-label="Select" id='options'>
+                  <option value="Fans">
+                    Fans
+                  </option>
+                  <option value="Humidifiers">Humidifiers</option>
+                  <option selected value="Cooling">Cooling</option>
+                </select>
+              </div>
+              <div class="form__switch__text col-4 invisible">
+                <input
+                  type="text"
+                  class="form-control border border-2 p-2"
+                  id="InstallDate"
+                  aria-describedby="InstallDate"
+                />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R6</p>
+              <div class="d-flex align-items-center pb-3 border-bottom row">
+                <div class="col-2 d-flex form__switch__right">
+                <p class="pe-4 form__switch__p">R4</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
+                  <label class="form-check-label col-6" for="r3">Enabled</label>
+                  <input class="form-check-input mt-0" type="checkbox" id="r3" checked />
                 </div>
               </div>
-            </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R7</p>
-                <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
-                </div>
+                <img
+                  class="col-1 p-0 invisible"
+                  src="../assets/photo-cooling.svg"
+                  alt="cooling"
+                />
+                <div class="dropdown col-3 invisible">
+                <select class="form-select border border-2" aria-label="Select" id='options'>
+                  <option value="Fans">
+                    Fans
+                  </option>
+                  <option value="Humidifiers">Humidifiers</option>
+                  <option selected value="Cooling">Cooling</option>
+                </select>
+              </div>
+              <div class="form__switch__text col-4 invisible">
+                <input
+                  type="text"
+                  class="form-control border border-2 p-2"
+                  id="InstallDate"
+                  aria-describedby="InstallDate"
+                />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R8</p>
+              <div class="d-flex align-items-center pb-3 border-bottom row">
+                <div class="col-2 d-flex form__switch__right">
+                <p class="pe-4 form__switch__p">R4</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
+                  <label class="form-check-label col-6" for="r3">Enabled</label>
+                  <input class="form-check-input mt-0" type="checkbox" id="r3" checked />
                 </div>
               </div>
-            </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R9</p>
-                <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
-                </div>
+                <img
+                  class="col-1 p-0 invisible"
+                  src="../assets/photo-cooling.svg"
+                  alt="cooling"
+                />
+                <div class="dropdown col-3 invisible">
+                <select class="form-select border border-2" aria-label="Select" id='options'>
+                  <option value="Fans">
+                    Fans
+                  </option>
+                  <option value="Humidifiers">Humidifiers</option>
+                  <option selected value="Cooling">Cooling</option>
+                </select>
               </div>
-            </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R10</p>
-                <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
-                </div>
-              </div>
-            </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R11</p>
-                <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
-                </div>
-              </div>
-            </div>
-              <div class="d-flex align-items-center pb-3 border-bottom">
-                <p class="pe-4 form__switch__p">R12</p>
-                <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r1">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r1" />
-                </div>
-                <div class="d-flex align-items-center invisible">
-                  <img
-                    class="ps-5"
-                    src="../assets/photo-cooling.svg"
-                    alt="Cooling"
-                  />
-                  <div class="dropdown">
-                  <select class="form-select border border-2" aria-label="Select" id='options'>
-                    <option value="Fans">
-                      Fans
-                    </option>
-                    <option value="Humidifiers">Humidifiers</option>
-                    <option selected value="Cooling">Cooling</option>
-                  </select>
-                </div>
-                <div class="form__switch__text">
-                  <input
-                    type="text"
-                    class="form-control border border-2 p-2"
-                    id="InstallDate"
-                    aria-describedby="InstallDate"
-                  />
-                </div>
+              <div class="form__switch__text col-4 invisible">
+                <input
+                  type="text"
+                  class="form-control border border-2 p-2"
+                  id="InstallDate"
+                  aria-describedby="InstallDate"
+                />
               </div>
             </div>
           </form>

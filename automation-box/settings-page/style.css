@@ -46,7 +46,7 @@ body {
   font-size: 26px;
 }
 
-.form-gutter {
+.form-text {
   padding-top: 30px !important;
   padding-left: 40px !important;
 }
@@ -60,6 +60,8 @@ label {
   font-size: 14px;
   font-weight: 600;
   padding-top: 20px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
 }
 
 .form__switch label {
@@ -68,6 +70,7 @@ label {
 
 .dropdown {
   padding: 0 20px;
+  margin-right: -10px;
 }
 
 .form-select {
