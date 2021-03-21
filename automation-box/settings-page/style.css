@@ -97,3 +97,7 @@ label {
 .form-switch-container {
   min-height: 93px;
 }
+
+.form__switch__input--mr {
+  margin-right: 10px;
+}
