@@ -5,7 +5,7 @@
 body {
   height: 100vh;
   width: 100%;
-  border: 1px solid #DFE4EB; /* Remove later */
+  border: 1px solid #dfe4eb; /* Remove later */
   border-radius: 5px;
 }
 .add-device {
@@ -44,13 +44,14 @@ body {
   height: 36px;
   margin-top: 60px;
   border-radius: 5px;
-  background-color: #DFE4EB !important;
-  border: 2px solid #DFE4EB;
+  background-color: #dfe4eb !important;
+  border: 2px solid #dfe4eb;
 }
 .add-device__or {
   margin-top: 19px;
   text-align: center;
   color: var(--darken-blue);
+  font-size: 14px;
 }
 .add-device__form {
   margin-top: 7px;
@@ -58,7 +59,7 @@ body {
 }
 .add-device__form div label {
   width: 480px !important;
-  color: #687D8F !important;
+  color: #687d8f !important;
   margin-bottom: 2px !important;
 }
 .add-device__options {
@@ -73,7 +74,7 @@ body {
   font-size: 11px;
   line-height: 14px;
   text-align: center;
-  background-color: #9DA9B5;
+  background-color: #9da9b5;
   color: white;
 }
 .add-device__footer {
@@ -81,7 +82,7 @@ body {
   height: 82px;
   margin: 0 !important;
   border-width: 1px;
-  border-color: #DFE4EB;
+  border-color: #dfe4eb;
 }
 .add-device__footer > * {
   margin-top: 23px;
