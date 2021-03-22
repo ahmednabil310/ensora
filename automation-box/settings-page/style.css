@@ -6,6 +6,7 @@
 
 body {
   height: 100vh;
+  font-family: "Inter", sans-serif !important;
 }
 
 .side-bar {
@@ -44,6 +45,7 @@ body {
 .main-content__header {
   color: var(--darken-blue);
   font-size: 26px;
+  font-weight: 600;
 }
 
 .form-text {
