@@ -10,21 +10,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Gateway</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+  <title>Gateway | Confirmation</title>
 </head>
 
 <body>
-  <!-- Confirmation Gateway Model -->
-  <div class="confirmation-sensor-model d-flex flex-column shadow-sm">
+  <!-- Box Model -->
+  <div class="model-box d-flex flex-column shadow-sm">
     <!-- Exit Button -->
-    <button class="confirmation-sensor-model__close-button btn-close" type="button" aria-label="Close"></button>
+    <div class="col-12">
+      <button class="model-box__close-button btn-close" type="button" aria-label="Close"></button>
+    </div>
     <!-- End Exit button -->
     <!-- Model Content -->
-    <div class="confirmation-sensor-model__content d-flex flex-column align-items-center justify-content-center">
+    <div class="model-box__content d-flex flex-column align-items-center justify-content-center">
       <!-- Model Success Icon -->
       <div class="col-12 text-center">
-        <div class="confirmation-sensor__success_icon">
+        <div class="model-box__success_icon">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M32 0C14.3545 0 0 14.3545 0 32C0 49.6455 14.3545 64 32 64C49.6455 64 64 49.6455 64 32C64 14.3545 49.6455 0 32 0Z"
@@ -38,32 +40,32 @@
       <!-- End Model Success Icon -->
       <!-- Model Title -->
       <div class="col-12">
-        <h1 class="confirmation-sensor-model__title text-center d-flex align-items-center justify-content-center">
-          Sensor installed!
+        <h1 class="model-box__confirmation-title text-center d-flex align-items-center justify-content-center">
+          Gateway installed!
         </h1>
       </div>
       <!-- End Model Title -->
       <!-- Model Subtitle -->
       <div class="col-12">
-        <p class="confirmation-sensor-model__subtitle text-center d-flex align-items-center justify-content-center">
-          Data from your sensor will now appear on your Home page.
+        <p class="model-box__confirmation-subtitle text-center d-flex align-items-center justify-content-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis vel sapien in consectetur.
         </p>
       </div>
       <!-- End Model Subtitle -->
     </div>
     <!-- End Model Content -->
     <!-- Model Footer -->
-    <div class="row g-0" style="position: absolute; bottom: 0; left: 0; right: 0;">
-      <div class="col-12 confirmation-sensor-model__footer border-top">
+    <div style="position: absolute; bottom: 0; left: 0; right: 0;">
+      <div class="col-12 model-box__footer border-top">
         <div class="d-flex justify-content-end">
-          <a href="#" class="view-devices-button">View devices</a>
-          <button class="btn continue-button">Finished</button>
+          <a href="#">View gateways</a>
+          <button class="btn">Finished</button>
         </div>
       </div>
     </div>
     <!-- End Model Footer -->
   </div>
-  <!-- End Confirmation Gateway Model -->
+  <!-- End Box Model -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
     integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"

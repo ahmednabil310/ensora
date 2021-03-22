@@ -1,0 +1,52 @@
+.bootstrap-tagsinput {
+  margin-top: 0 !important;
+  border: 2px solid #ced4da;
+  font-size: 1rem;
+  color: #9DA9B5;
+  vertical-align: middle;
+  border-radius: .25rem;
+  max-width: 100%;
+  line-height: 22px;
+  cursor: text;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 4.9px 6px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  box-sizing: border-box;
+}
+.bootstrap-tagsinput input {
+  border: 0 !important;
+  box-shadow: none;
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  width: auto;
+  max-width: inherit;
+  line-height: 1.5;
+}
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+  color: #9DA9B5;
+  opacity: 1;
+}
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+  color: #9DA9B5;
+}
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+  color: #9DA9B5;
+}
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+.bootstrap-tagsinput .tag {
+  margin-right: 2px;
+  color: #062B45;
+  background: #DFE4EB;
+  border-radius: 3px;
+  padding: 6px 4px;
+  height: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
