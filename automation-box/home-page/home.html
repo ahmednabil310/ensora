@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings</title>
+  </head>
+  <body>
+    <div class="row h-100 m-0">
+      <!-- side bar -->
+      <div class="side-bar col-2 p-0">
+        <ul class="side-bar__items px-4">
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <img src="../assets/icon-home.svg" alt="home" />
+              <p class="m-0 d-inline sid-bar__text">Home</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <img src="../assets/icon-alarms.svg" alt="alarms" />
+              <p class="m-0 d-inline sid-bar__text">Alarms</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-equipment.svg" alt="equipment" /></i>
+              <p class="m-0 d-inline sid-bar__text">Equipment</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-scenes.svg" alt="scenes" /></i>
+              <p class="m-0 d-inline sid-bar__text">Scenes</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-routines.svg" alt="routines" /></i>
+              <p class="m-0 d-inline sid-bar__text">Routines</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-devices.svg" alt="devices" /></i>
+              <p class="m-0 d-inline sid-bar__text">Devices</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-settings.svg" alt="settings" /></i>
+              <p class="m-0 d-inline sid-bar__text">Settings</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-help.svg" alt="help" /></i>
+              <p class="m-0 d-inline sid-bar__text">Help</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- main page -->
+      <div class="col-10 main-page p-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-light bg-white">
+          <!-- left side -->
+          <div class="navbar__left">
+            <button class="humberger">
+              <img src="../assets/Burger.svg" alt="burger" />
+            </button>
+            <a href="/" class="navbar-brand">
+              <img src="../../forms/assests/logo.png" alt="logo"
+            /></a>
+          </div>
+          <!-- right side -->
+          <div class="pe-4">
+            <div class="navbar__right d-flex align-items-center">
+              <div class="d-flex justify-content-between navbar__device">
+                <img
+                  class="pe-1"
+                  src="../assets/icon-wireless.svg"
+                  alt="wireless"
+                />
+                <a href="#" class="m-0 ps-1 link_no_decoration">Add Device</a>
+              </div>
+              <button class="navbar__device">
+                <img src="../assets/Notifications.png" alt="notification" />
+              </button>
+              <img
+                class="user-image"
+                src="../assets/User Button.png"
+                alt="user"
+              />
+            </div>
+          </div>
+        </nav>
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- header -->
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <h2 class="main-content__header">Home</h2>
+            </div>
+          </div>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center"
+          >
+            <h3 class="col-2 mid-section__header">No groups yet.</h3>
+            <p class="col-6 mid-section__paragraph">
+              Group your sensors and equipment as you wish and control them from
+              one place. You don’t have any groups yet.
+            </p>
+            <button class="mid-section__button col-2">New Group</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
