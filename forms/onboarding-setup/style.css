@@ -1,0 +1,89 @@
+:root {
+  --light-blue: #0e76bc;
+  --darken-blue: #062b45;
+}
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+.onboardplan-container {
+  padding: 78px 166px 81px 149px;
+}
+.onboardplan-container__image {
+  padding-bottom: 63px;
+}
+
+.onboardsetup-container {
+  width: 31.25%;
+  min-width: 450px;
+  max-width: 700px;
+}
+
+.onboardsetup-title {
+  width: 100%;
+
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: var(--darken-blue);
+  display: flex;
+  flex-direction: column;
+}
+.onboardsetup-title h1 {
+  text-align: left;
+  font-size: 28px;
+}
+.onboardsetup-title p {
+  text-align: left;
+  font-size: 14px;
+}
+.onboardsetup-container form {
+  color: #687d8f;
+}
+.onboardsetup-cards {
+  margin-bottom: 1em;
+}
+.onboardsetup-cards img {
+  margin-right: 0.5em;
+}
+.onboardsetup-selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 2em;
+  background-color: #e1f4ff;
+  border-radius: 10px;
+  margin: 1em 0em;
+}
+.onboardsetup-changeplan:hover {
+  cursor: pointer;
+}
+.onboardsetup-selected #selected-plan {
+  color: var(--darken-blue);
+  font-size: 16px;
+}
+.onboardsetup-selected #selected-price {
+  color: #5b6d83;
+  font-size: 14px;
+}
+.onboardsetup-submit {
+  margin: 3em 0em;
+}
+.onboardsetup-submit button {
+  width: 100%;
+  background-color: #0e76bc;
+  color: #fff;
+}
+
+.onboardsetup-submit button:disabled {
+  background-color: #f2f4f8;
+  color: #bbc2cd;
+}
+
+.onboardsetup-back {
+  margin-top: -2em;
+  text-align: center;
+}
+
+.onboardsetup-back:hover {
+  cursor: pointer;
+}
