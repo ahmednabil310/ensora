@@ -69,7 +69,8 @@ label {
 }
 
 .dropdown {
-  padding: 0 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
   margin-right: -10px;
 }
 
@@ -83,6 +84,8 @@ label {
 
 .form__switch__p {
   margin-bottom: 5px;
+  padding-right: 0px !important;
+  width: 48px;
 }
 
 .form-switch .form-check-input {
@@ -100,4 +103,74 @@ label {
 
 .form__switch__input--mr {
   margin-right: 10px;
+}
+
+.sid-bar__links,
+.sid-bar__links:hover {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 2px;
+}
+
+.sid-bar__text {
+  padding-left: 18px;
+}
+
+.form-text__padding {
+  padding-top: 20px;
+}
+
+.back_button {
+  padding-right: 14px;
+}
+
+.user-image {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.navbar__device {
+  padding: 0px;
+  margin-right: 18px;
+  border: none;
+  background: none;
+}
+
+.switch_image {
+  width: 60px !important;
+  height: 60px !important;
+}
+
+.swithc_image__add {
+  position: relative;
+  bottom: 68px;
+  left: 40px;
+}
+
+.swithc_image__add--border {
+  border: solid 1px #dfe4eb !important;
+  border-radius: 25%;
+  width: 28px;
+  height: 28px;
+}
+
+.switch_container {
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+
+.humberger {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.link_no_decoration,
+.link_no_decoration:hover {
+  text-decoration: none;
+  color: inherit;
 }

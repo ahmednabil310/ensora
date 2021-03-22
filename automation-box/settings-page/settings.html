@@ -24,36 +24,52 @@
       <div class="side-bar col-2 p-0">
         <ul class="side-bar__items px-4">
           <li class="d-flex align-items-center">
-            <i><img src="../assets/icon-home.svg" alt="home" /></i>
-            <p class="m-0 p-3">Home</p>
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <img src="../assets/icon-home.svg" alt="home" />
+            <p class="m-0 d-inline sid-bar__text">Home</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
-            <i><img src="../assets/icon-alarms.svg" alt="alarms" /></i>
-            <p class="m-0 p-3">Alarms</p>
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center ">
+            <img src="../assets/icon-alarms.svg" alt="alarms" />
+            <p class="m-0 d-inline sid-bar__text">Alarms</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
             <i><img src="../assets/icon-equipment.svg" alt="equipment" /></i>
-            <p class="m-0 p-3">Equipment</p>
+            <p class="m-0 d-inline sid-bar__text">Equipment</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
             <i><img src="../assets/icon-scenes.svg" alt="scenes" /></i>
-            <p class="m-0 p-3">Scenes</p>
+            <p class="m-0 d-inline sid-bar__text">Scenes</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
             <i><img src="../assets/icon-routines.svg" alt="routines" /></i>
-            <p class="m-0 p-3">Routines</p>
+            <p class="m-0 d-inline sid-bar__text">Routines</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
             <i><img src="../assets/icon-devices.svg" alt="devices" /></i>
-            <p class="m-0 p-3">Devices</p>
+            <p class="m-0 d-inline sid-bar__text">Devices</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
             <i><img src="../assets/icon-settings.svg" alt="settings" /></i>
-            <p class="m-0 p-3">Settings</p>
+            <p class="m-0 d-inline sid-bar__text">Settings</p>
+            </a>
           </li>
           <li class="d-flex align-items-center">
+            <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
             <i><img src="../assets/icon-help.svg" alt="help" /></i>
-            <p class="m-0 p-3">Help</p>
+            <p class="m-0 d-inline sid-bar__text">Help</p>
+            </a>
           </li>
         </ul>
       </div>
@@ -63,7 +79,7 @@
         <nav class="navbar navbar-light bg-white">
           <!-- left side -->
           <div class="ps-2">
-            <i><img src="../assets/Burger.svg" alt="burger" /></i>
+            <button class="humberger"><img src="../assets/Burger.svg" alt="burger" /></button>
             <a href="/" class="navbar-brand">
               <img src="../../forms/assests/logo.png" alt="logo"
             /></a>
@@ -71,16 +87,15 @@
           <!-- right side -->
           <div class="pe-4">
             <div class="navbar__right d-flex align-items-center">
-              <div class="d-flex justify-content-between pe-3">
-                <i class="pe-1"
-                  ><img src="../assets/icon-wireless.svg" alt="wireless"
-                /></i>
-                <p class="m-0 ps-1">Add Device</p>
+              <div class="d-flex justify-content-between navbar__device">
+<img class="pe-1" src="../assets/icon-wireless.svg" alt="wireless"
+                />
+                <a href="#" class="m-0 ps-1 link_no_decoration">Add Device</a>
               </div>
-              <i class="pe-3">
+              <button class="navbar__device">
                 <img src="../assets/Notifications.png" alt="notification"
-              /></i>
-              <img src="../assets/User Button.png" alt="user" />
+              /></button>
+              <img class="user-image" src="../assets/User Button.png" alt="user" />
             </div>
           </div>
         </nav>
@@ -89,14 +104,18 @@
           <!-- header -->
           <div class="d-flex justify-content-between">
             <div class="d-flex">
+              <button class="humberger">
               <img
-                class="mb-1 pe-3"
+                class="mb-1 back_button"
                 src="../assets/icon-button.svg"
                 alt="back"
               />
+            </button>
               <h2 class="main-content__header">Automation Box A</h2>
             </div>
+            <button class="humberger">
             <img src="../assets/Secondary Icon Only.svg" alt="" />
+          </button>
           </div>
           <!-- form -->
           <form class="bg-white rounded mt-4 row border">
@@ -111,7 +130,7 @@
                   aria-describedby="firstName"
                 />
               </div>
-              <div class="pt-3">
+              <div class="form-text__padding">
                 <label for="DeviceID">Device ID</label>
                 <input
                   type="text"
@@ -120,7 +139,7 @@
                   aria-describedby="DeviceID"
                 />
               </div>
-              <div class="pt-3">
+              <div class="form-text__padding">
                 <label for="InstallDate">Install date</label>
                 <input
                   type="text"
@@ -132,19 +151,24 @@
             </div>
             <!-- switches -->
             <div class="col-12 form__switch">
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R1</p>
+                <p class=" form__switch__p">R1</p>
                 <div class="form-switch form-check row">
                   <label class="form-check-label col-6" for="r1">Enabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r1" checked />
                 </div>
               </div>
+              <div class="switch_image p-0">
                 <img
-                  class="col-1 p-0"
+                  class="col-1 p-0 w-100 swithc_image__main"
                   src="../assets/Photo Thumbnail.svg"
                   alt="photo thumbnail"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option selected value="Fans">
@@ -163,19 +187,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R2</p>
+                <p class=" form__switch__p">R2</p>
                 <div class="form-switch form-check row">
                   <label class="form-check-label col-6" for="r2">Enabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r2" checked />
                 </div>
               </div>
+              <div class="switch_image p-0">
                 <img
-                  class="col-1 p-0"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-humi.svg"
                   alt="Humidifiers"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -194,19 +223,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R3</p>
+                <p class=" form__switch__p">R3</p>
                 <div class="form-switch form-check row">
                   <label class="form-check-label col-6" for="r3">Enabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r3" checked />
                 </div>
               </div>
+              <div class="switch_image p-0">
                 <img
-                  class="col-1 p-0"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -225,19 +259,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R4</p>
+                <p class=" form__switch__p">R4</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r3">Enabled</label>
-                  <input class="form-check-input mt-0" type="checkbox" id="r3" />
+                  <label class="form-check-label col-6" for="r4">Disabled</label>
+                  <input class="form-check-input mt-0" type="checkbox" id="r4" />
                 </div>
               </div>
+              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -256,19 +295,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R5</p>
+                <p class=" form__switch__p">R5</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r5">Enabled</label>
+                  <label class="form-check-label col-6" for="r5">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r5" />
                 </div>
               </div>
+              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -287,19 +331,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R6</p>
+                <p class=" form__switch__p">R6</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r6">Enabled</label>
+                  <label class="form-check-label col-6" for="r6">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r6" />
                 </div>
               </div>
+              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -318,19 +367,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R7</p>
+                <p class=" form__switch__p">R7</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r7">Enabled</label>
+                  <label class="form-check-label col-6" for="r7">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r7" />
                 </div>
               </div>
+                              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -349,19 +403,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R8</p>
+                <p class=" form__switch__p">R8</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r8">Enabled</label>
+                  <label class="form-check-label col-6" for="r8">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r8" />
                 </div>
               </div>
+                              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -380,19 +439,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R9</p>
+                <p class=" form__switch__p">R9</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r9">Enabled</label>
+                  <label class="form-check-label col-6" for="r9">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r9" />
                 </div>
               </div>
+                              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -411,19 +475,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R10</p>
+                <p class=" form__switch__p">R10</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r10">Enabled</label>
+                  <label class="form-check-label col-6" for="r10">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r10" />
                 </div>
               </div>
+                              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -442,19 +511,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R11</p>
+                <p class=" form__switch__p">R11</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r11">Enabled</label>
+                  <label class="form-check-label col-6" for="r11">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r11" />
                 </div>
               </div>
+                              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -473,19 +547,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">R12</p>
+                <p class=" form__switch__p">R12</p>
                 <div class="form-switch form-check row">
-                  <label class="form-check-label col-6" for="r12">Enabled</label>
+                  <label class="form-check-label col-6" for="r12">Disabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="r12" />
                 </div>
               </div>
+              <div class="switch_image p-0 invisible">
                 <img
-                  class="col-1 p-0 invisible"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-cooling.svg"
                   alt="cooling"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3 invisible">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option value="Fans">
@@ -504,19 +583,24 @@
                 />
               </div>
             </div>
-              <div class="d-flex align-items-center pb-3 border-bottom row">
+              <div class="d-flex align-items-center border-bottom row switch_container">
                 <div class="col-2 d-flex form__switch__right">
-                <p class="pe-4 form__switch__p">V1</p>
+                <p class=" form__switch__p">V1</p>
                 <div class="form-switch form-check row">
                   <label class="form-check-label col-6" for="v1">Enabled</label>
                   <input class="form-check-input mt-0" type="checkbox" id="v1" />
                 </div>
               </div>
+              <div class="switch_image p-0">
                 <img
-                  class="col-1 p-0"
+                  class="col-1 p-0 w-100"
                   src="../assets/photo-lights.svg"
-                  alt="cooling"
+                  alt="lights"
                 />
+                <button class="humberger swithc_image__add">
+                <img class="swithc_image__add--border" src="../assets/Add photo btn.svg" alt="add photo">
+                </button>
+              </div>
                 <div class="dropdown col-3">
                 <select class="form-select border border-2" aria-label="Select" id='options'>
                   <option selected value="lights">
