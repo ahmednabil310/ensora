@@ -38,7 +38,7 @@ body {
 }
 
 .main-content {
-  padding: 20px 40px 40px 100px;
+  padding: 20px 40px 98px 40px;
 }
 
 .main-content__header {
@@ -59,9 +59,8 @@ label {
   color: var(--darken-blue);
   font-size: 14px;
   font-weight: 600;
-  padding-top: 20px;
-  padding-left: 40px !important;
-  padding-right: 40px !important;
+  padding: 0 !important;
+  padding-top: 20px !important;
 }
 
 .form__switch label {
@@ -160,6 +159,8 @@ label {
 .switch_container {
   padding-top: 16px;
   padding-bottom: 15px;
+  margin-left: 40px !important;
+  margin-right: 40px !important;
 }
 
 .humberger {
@@ -173,4 +174,19 @@ label {
 .link_no_decoration:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.save-button {
+  border: none;
+  background-color: var(--light-blue);
+  width: 148px;
+  height: 36px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  padding: 0px;
 }
