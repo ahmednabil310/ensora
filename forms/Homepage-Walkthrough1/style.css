@@ -1,0 +1,136 @@
+:root {
+  --light-blue: #0e76bc;
+  --darken-blue: #062b45;
+  --light-grey: #687d8f;
+}
+
+body {
+  height: 100vh;
+}
+.main-logo {
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.side-bar {
+  background-color: #031623;
+  color: var(--light-grey);
+  font-size: 14px;
+}
+
+.side-bar__items {
+  list-style-type: none;
+}
+
+.main-page {
+  background-color: #f9fafc;
+}
+
+.navbar {
+  height: 60px;
+  box-shadow: 1px 1px #dfe4eb;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar__right {
+  color: var(--light-blue);
+  font-size: 14px;
+  font-weight: 600;
+}
+.right-side__container {
+  padding-right: 32px;
+}
+.main-content {
+  padding: 20px 40px 40px 40px;
+}
+.add-device-container {
+  padding-right: 18px;
+}
+.ring-container {
+  padding-right: 18px;
+}
+.add-device {
+  padding-left: 8px;
+}
+.main-content__header {
+  color: var(--darken-blue);
+  font-size: 26px;
+}
+/* MODAL */
+.modal {
+  display: block !important;
+  font-family: 'Inter', sans-serif;
+}
+.fade:not(.show) {
+  opacity: 1 !important;
+}
+.modal-content {
+  padding: 28px 36px 38px 28px;
+  max-width: 560px;
+}
+.modal-header {
+  border-bottom: 0px !important;
+  padding: 0px !important;
+}
+.modal-body {
+  padding: 0px !important;
+}
+.modal-header__icon {
+  color: var(--light-grey);
+  font-size: 22px;
+  font-weight: 600;
+}
+.modal-text {
+  color: var(--darken-blue);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  padding-top: 20px;
+}
+.popup-image {
+  border: 17px solid #e1f4ff;
+  border-radius: 200px;
+  margin: 28px 0px 40px 0px;
+}
+.modal-footer {
+  border: 0px !important;
+  padding: 0px !important;
+}
+.modal-footer button {
+  background-color: var(--light-blue);
+  padding: 14px 74px;
+}
+.modal.modal-vcenter {
+  padding: 0px !important;
+}
+.modal.modal-vcenter .modal-dialog {
+  /* overwrites bootstrap4 properties */
+  position: relative;
+  margin: auto;
+  max-width: 100%;
+  /* added properties */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 576px) {
+  .modal.modal-vcenter .modal-dialog {
+    min-width: 546px; /* or whatever min-width you want */
+    max-width: 50%; /* width for most tablets and desktops */
+  }
+}
+
+.modal .modal-body {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+@media screen and (min-height: 460px) {
+  .modal .modal-body {
+    max-height: 65vh;
+  }
+}
+/* MODAL */
