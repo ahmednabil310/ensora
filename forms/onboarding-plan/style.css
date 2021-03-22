@@ -4,7 +4,7 @@
 }
 body {
   height: 100vh;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .onboardplan-container {
   padding: 78px 166px 81px 149px;
@@ -25,6 +25,7 @@ body {
   color: var(--darken-blue);
   font-size: 14px;
   font-weight: 400;
+  margin-bottom: 51px;
 }
 
 .onboardplan-container__price__card {
