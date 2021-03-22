@@ -13,6 +13,7 @@ body {
   background-color: #031623;
   color: var(--light-grey);
   font-size: 14px;
+  max-width: 250px !important;
 }
 
 .side-bar__items {
@@ -166,10 +167,18 @@ label {
 }
 
 .humberger {
+  margin-right: 16px !important;
+}
+
+.button-no-style {
   margin: 0;
   padding: 0;
   border: none;
   background: none;
+}
+
+.navbar__left {
+  padding-left: 20px;
 }
 
 .link_no_decoration,

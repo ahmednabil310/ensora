@@ -12,6 +12,7 @@ body {
   background-color: #031623;
   color: var(--light-grey);
   font-size: 14px;
+  max-width: 250px !important;
 }
 
 .side-bar__items {
@@ -85,10 +86,11 @@ body {
   padding-left: 20px;
 }
 
-.main-content__header {
+.main-content__header__paragraph {
   color: var(--darken-blue);
   font-size: 26px;
   font-weight: 600;
+  margin: 0;
 }
 
 .mid-section {
@@ -104,6 +106,7 @@ body {
 
 .mid-section__paragraph {
   font-size: 14px;
+  margin-bottom: 12px;
 }
 
 .mid-section__button {
@@ -115,4 +118,10 @@ body {
   font-weight: 600;
   width: fit-content !important;
   padding: 8px 12px 8px 12px;
+}
+
+.main-content__header__icon {
+  margin-left: 10px;
+  height: 16px;
+  width: 16px;
 }
