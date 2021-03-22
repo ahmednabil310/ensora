@@ -99,6 +99,7 @@ body {
 .mid-section__header {
   font-size: 20px;
   font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .mid-section__paragraph {
