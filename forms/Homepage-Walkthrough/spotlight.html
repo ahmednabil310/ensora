@@ -21,9 +21,12 @@
       src="https://kit.fontawesome.com/860b688cc8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Homepage-Walkthrough1</title>
+    <title>Homepage-Walkthrough4</title>
   </head>
   <body>
+    <div class="walkthrough-overlay">
+      
+    </div>
     <div class="row h-100 m-0">
       <!-- side bar -->
       <div class="side-bar col-2 p-0">
@@ -79,10 +82,14 @@
           <div class="right-side__container">
             <div class="navbar__right d-flex align-items-center">
               <div
-                class="d-flex justify-content-between add-device-container mb-1"
+                class="d-flex justify-content-between add-device-container mb-1 spotlight-add"
               >
+              <div class="add-device-button">
+
                 <i><img src="../assests/icon-wireless.svg" alt="wireless" /></i>
                 <p class="m-0 add-device">Add Device</p>
+              </div>
+
               </div>
               <i class="ring-container">
                 <img src="../assests/Notifications.png" alt="notification"
@@ -105,30 +112,17 @@
     </div>
 
     <!-- Modal -->
-    <div
-      class="modal modal-vcenter fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <i class="fas fa-times ms-auto modal-header__icon"></i>
-          </div>
-          <div class="modal-body d-flex flex-column align-items-center">
-            <p class="text-center modal-text">
-              Easily install, monitor and interact with your Ensora Sensor
-              Ecosystem.
-            </p>
-            <img src="../assests/popup-image.png" class="popup-image" />
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Next
-            </button>
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog spotlight-modal" role="document">
+        <div class="modal-content walkthrough-spotlight-modal">
+          <div class="">
+
+            <div class="modal-body">
+              <p>Use this button anytime you need to add a sensor, gateway or automation box to your account.</p>
+            </div>
+            <div class="spotlight-button">
+              Got it!
+            </div>
           </div>
         </div>
       </div>
