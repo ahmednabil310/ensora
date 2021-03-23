@@ -87,6 +87,33 @@ body {
   color: var(--darken-blue);
   font-size: 26px;
 }
+.main-content__body {
+  color: #687d8f;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.main-content__body #title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.main-content__body #body {
+  font-size: 14px;
+  font-weight: 400;
+}
+.main-content__body #btn {
+  font-weight: 600;
+  font-size: 14px;
+  width: 98px;
+  height: 36px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #0e76bc;
+  color: #fff;
+}
 /* MODAL */
 .modal {
   display: block !important;
