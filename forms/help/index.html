@@ -21,7 +21,7 @@
       src="https://kit.fontawesome.com/860b688cc8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Homepage-Walkthrough4</title>
+    <title>Scenes Empty State</title>
   </head>
   <body>
     <div class="walkthrough-overlay"></div>
@@ -31,6 +31,7 @@
         <ul class="side-bar__items px-4">
           <li class="d-flex align-items-center">
             <i><img src="../assests/icon-home.svg" alt="home" /></i>
+            <span class="icon" id="home"></span>
             <p class="m-0 p-3">Home</p>
           </li>
           <li class="d-flex align-items-center">
@@ -57,7 +58,7 @@
             <i><img src="../assests/icon-settings.svg" alt="settings" /></i>
             <p class="m-0 p-3">Settings</p>
           </li>
-          <li class="d-flex align-items-center">
+          <li class="d-flex align-items-center page-selected">
             <i><img src="../assests/icon-help.svg" alt="help" /></i>
             <p class="m-0 p-3">Help</p>
           </li>
@@ -72,9 +73,7 @@
             <i
               ><img src="../assests/Burger.svg" alt="burger" class="main-logo"
             /></i>
-            <a href="/">
-              <img src="../../forms/assests/logo.png" alt="logo"
-            /></a>
+            <a href="/"> <img src="../assests/logo.png" alt="logo" /></a>
           </div>
           <!-- right side -->
           <div class="right-side__container">
@@ -101,82 +100,15 @@
           <!-- header -->
           <div class="d-flex justify-content-between">
             <div class="d-flex">
-              <h2 class="main-content__header">Home</h2>
-            </div>
-
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn active">Min & max</button>
-              <button type="button" class="btn disabled">Low & high</button>
-              <div class="d-flex align-items-center ps-3">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.5 8C15.5 12.142 12.142 15.5 8 15.5C3.85796 15.5 0.5 12.142 0.5 8C0.5 3.85796 3.85796 0.5 8 0.5C12.142 0.5 15.5 3.85796 15.5 8Z"
-                    fill="#9DA9B5"
-                    stroke="#9DA9B5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.875 12.0625C6.875 12.5795 7.29552 13 7.81249 13C8.32947 13 8.74999 12.5795 8.74999 12.0625C8.74999 11.5455 8.32947 11.125 7.81249 11.125C7.29552 11.125 6.875 11.5455 6.875 12.0625Z"
-                    fill="white"
-                  />
-                  <path
-                    d="M8.74999 10.1875V9.18775C10.1935 8.8954 11.25 7.62465 11.25 6.125C11.25 4.402 9.84804 3 8.125 3C6.40197 3 5 4.40197 5 6.125V6.43751C5 6.61025 5.13978 6.75002 5.31251 6.75002H6.56249C6.73522 6.75002 6.875 6.61025 6.875 6.43751V6.125C6.875 5.43591 7.43591 4.875 8.125 4.875C8.81409 4.875 9.37501 5.43591 9.37501 6.125C9.37501 6.81409 8.81409 7.37501 8.125 7.37501C7.43591 7.37501 6.875 7.93593 6.875 8.62502V10.1875C6.875 10.3602 7.01477 10.5 7.18751 10.5H8.43748C8.61022 10.5 8.74999 10.3602 8.74999 10.1875Z"
-                    fill="white"
-                  />
-                </svg>
+              <div class="main-content__header">
+                <h2 id="title">Help Topics</h2>
               </div>
             </div>
           </div>
-          <div class="main-content__body">
-            <h3 id="title">No sensors or groups added yet</h3>
-            <p id="body">
-              Group your sensors and equipment as you wish and control them from
-              one place.<br />
-              You don’t have any groups yet.
-            </p>
-            <div>
-              <button id="btn">New group</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div
-      class="modal modal-vcenter fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <i class="fas fa-times ms-auto modal-header__icon"></i>
-          </div>
-          <div class="modal-body d-flex flex-column align-items-center">
-            <p class="text-center modal-text">
-              Finally, simply place your sensors to complete your installation.
-            </p>
-            <img src="../assests/popup-image4.png" class="popup-image" />
-          </div>
-          <div class="modal-footer d-flex justify-content-center">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">
-              Next
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
