@@ -84,9 +84,13 @@ body {
   padding-left: 8px;
 }
 .main-content__header {
+  display: flex;
+}
+.main-content__header #title {
   color: var(--darken-blue);
   font-weight: 600;
   font-size: 26px;
+  margin-right: 0.5em;
 }
 .main-content__body {
   margin-top: 2em;
