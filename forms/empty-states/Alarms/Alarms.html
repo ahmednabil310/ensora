@@ -21,7 +21,7 @@
       src="https://kit.fontawesome.com/860b688cc8.js"
       crossorigin="anonymous"
     ></script>
-    <title>Alarm-Empty State</title>
+    <title>Alarms Empty State</title>
   </head>
   <body>
     <div class="walkthrough-overlay">
@@ -31,16 +31,16 @@
       <!-- side bar -->
       <div class="side-bar col-2 p-0">
         <ul class="side-bar__items px-4">
-          <li class="d-flex align-items-center page-selected">
+          <li class="d-flex align-items-center">
             <i><img src="../../assests/icon-home.svg" alt="home" /></i>
             <span class="icon" id="home"></span>
             <p class="m-0 p-3">Home</p>
           </li>
-          <li class="d-flex align-items-center">
+          <li class="d-flex align-items-center page-selected">
             <i><img src="../../assests/icon-alarms.svg" alt="alarms" /></i>
             <p class="m-0 p-3">Alarms</p>
           </li>
-          <li class="d-flex align-items-center">
+          <li class="d-flex align-items-center ">
             <i><img src="../../assests/icon-equipment.svg" alt="equipment" /></i>
             <p class="m-0 p-3">Equipment</p>
           </li>
@@ -48,7 +48,7 @@
             <i><img src="../../assests/icon-scenes.svg" alt="scenes" /></i>
             <p class="m-0 p-3">Scenes</p>
           </li>
-          <li class="d-flex align-items-center">
+          <li class="d-flex align-items-center ">
             <i><img src="../../assests/icon-routines.svg" alt="routines" /></i>
             <p class="m-0 p-3">Routines</p>
           </li>
@@ -103,9 +103,15 @@
           <!-- header -->
           <div class="d-flex justify-content-between">
             <div class="d-flex">
-              <h2 class="main-content__header">Home</h2>
+              <div class="main-content__header">
+                <h2 id="title" >Alarms Log</h2>
+              </div>
             </div>
-            <img src="../../assests/Secondary Icon Only.svg" alt="" />
+        
+          </div>
+          <div class="main-content__body">
+            <h3 id="title">No current alarms.</h3>
+            <p id="body">When a sensor or routine creates an alarm, you will see it here.</p>
           </div>
         </div>
       </div>
