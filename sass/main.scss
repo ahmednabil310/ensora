@@ -4,6 +4,10 @@
 @import "layouts/sidebar";
 @import "layouts/navbar";
 
+@import "components/group-card";
+@import "components/g_sensors";
 @import "components/add-device-btn";
+@import "components/primary_btn";
+@import "components/mm-lw-btn";
 
 @import "pages/home";

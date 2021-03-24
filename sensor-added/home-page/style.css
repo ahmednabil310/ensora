@@ -81,14 +81,13 @@ body {
   margin-right: 16px;
 }
 
-.main-content {
-  padding: 20px 40px 0 40px;
-}
-
 .navbar__left {
   padding-left: 20px;
 }
 
+.main-content {
+  padding: 20px 40px 0 40px;
+}
 .main-content__header__paragraph {
   color: var(--darken-blue);
   font-size: 26px;
@@ -112,7 +111,8 @@ body {
   margin-bottom: 12px;
 }
 
-.mid-section__button, .btn-main {
+.mid-section__button,
+.btn-main {
   border: none;
   background-color: var(--light-blue);
   border-radius: 5px;
@@ -138,24 +138,26 @@ body {
 .mm-lh-switch {
   border-radius: 5px;
   /* border: 1px solid rgba(223, 228, 235, 1) */
-  border: 1px solid #DFE4EB;
+  border: 1px solid #dfe4eb;
   margin-right: 15px;
 }
 .mm-lh-switch button {
   font-weight: 600;
   font-size: 14px;
-  color: #9DA9B5;
+  color: #9da9b5;
   padding: 8px 15px;
 }
-.mm-lh-switch button:hover, .mm-lh-switch button:focus{
-  color: #9DA9B5;
+.mm-lh-switch button:hover,
+.mm-lh-switch button:focus {
+  color: #9da9b5;
   box-shadow: none;
 }
-.mm-lh-switch button:active, .switch-active {
+.mm-lh-switch button:active,
+.switch-active {
   outline: 0 !important;
-  color: #062B45 !important;
-  border-right: 1px solid #DFE4EB !important;
-  border-left: 1px solid #DFE4EB !important;
+  color: #062b45 !important;
+  border-right: 1px solid #dfe4eb !important;
+  border-left: 1px solid #dfe4eb !important;
   border-top: 0;
   border-bottom: 0;
   border-radius: 5px !important;
@@ -165,7 +167,7 @@ body {
 
 /* Group Card */
 .group-card {
-  background-color: #F2F4F8;
+  background-color: #f2f4f8;
   border-radius: 8px;
 }
 .group-card-header {
@@ -184,7 +186,7 @@ body {
 .group-name p {
   font-size: 16px;
   font-weight: 600;
-  color: #062B45;
+  color: #062b45;
 }
 .data-graphs-btn {
   box-sizing: border-box;
@@ -195,7 +197,7 @@ body {
   font-weight: 500;
   padding: 4px 8px;
   background: white;
-  border: 2px solid #DFE4EB;
+  border: 2px solid #dfe4eb;
   border-radius: 4px;
 }
 .settings-icon {
@@ -216,11 +218,11 @@ body {
   height: 60px;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid #DFE4EB;
+  border: 1px solid #dfe4eb;
   position: relative;
 }
 .sensor-name {
-  color: #062B45;
+  color: #062b45;
   font-weight: 600;
 }
 .sensor-alarm-label {
@@ -228,7 +230,7 @@ body {
 }
 .sensor-status-text {
   min-width: 250px;
-  color: #687D8F;
+  color: #687d8f;
   margin-top: 2px;
   font-size: 11px;
   line-height: 16px;
@@ -240,7 +242,7 @@ body {
 }
 .sensor-current-value {
   margin-bottom: 6px;
-  color: #062B45;
+  color: #062b45;
   text-align: start;
 }
 .sense-icon svg {
@@ -258,7 +260,7 @@ body {
 }
 .sensor-mm-lh div span {
   font-weight: 500;
-  color: #062B45;
+  color: #062b45;
 }
 .value-measurement {
   gap: 2px;

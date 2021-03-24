@@ -1,0 +1,51 @@
+.group-card {
+  background-color: #f2f4f8;
+  border-radius: 8px;
+
+  .group-card-header {
+    position: relative;
+    height: 48px;
+    padding: 8px;
+  }
+  .grap-icon {
+    cursor: pointer;
+  }
+  .group-name {
+    height: 32px;
+    margin-left: 6px;
+    padding: 4px 0;
+  }
+  .group-name p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #062b45;
+  }
+  .data-graphs-btn {
+    box-sizing: border-box;
+    margin-left: 10px;
+    height: 28px;
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: white;
+    border: 2px solid #dfe4eb;
+    border-radius: 4px;
+  }
+  .settings-icon {
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  .data-graphs-btn svg {
+    margin-bottom: 5px;
+  }
+  .group-card__empty {
+    background-color: $N000;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+  }
+}

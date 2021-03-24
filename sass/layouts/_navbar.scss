@@ -1,23 +1,37 @@
-.main-logo {
-  padding-left: 20px;
-  padding-right: 16px;
-}
-
 .navbar {
   height: 60px;
-  box-shadow: 1px 1px $N300;
-}
+  box-shadow: 1px 1px #dfe4eb;
 
-.navbar-brand img {
-  max-height: 40px;
-}
+  .navbar-brand img {
+    max-height: 40px;
+  }
 
-.navbar__right {
-  color: $B300;
-  font-size: 14px;
-  font-weight: 600;
-}
+  .navbar__right {
+    color: var(--light-blue);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .navbar__left {
+    padding-left: 20px;
+  }
 
-.right-side__container {
-  padding-right: 32px;
+  .navbar__device {
+    padding: 0px;
+    margin-right: 18px;
+    border: none;
+    background: none;
+  }
+
+  .user-image {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+  }
+  .humberger {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    margin-right: 16px;
+  }
 }

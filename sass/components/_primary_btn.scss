@@ -1,0 +1,9 @@
+.primary-button {
+  @include button($B300, $N000, 12px, 8px);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  &:hover {
+    color: white;
+  }
+}
