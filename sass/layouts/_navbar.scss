@@ -1,0 +1,23 @@
+.main-logo {
+  padding-left: 20px;
+  padding-right: 16px;
+}
+
+.navbar {
+  height: 60px;
+  box-shadow: 1px 1px $N300;
+}
+
+.navbar-brand img {
+  max-height: 40px;
+}
+
+.navbar__right {
+  color: $B300;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.right-side__container {
+  padding-right: 32px;
+}

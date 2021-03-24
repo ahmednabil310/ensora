@@ -1,0 +1,28 @@
+.add-device-container {
+  margin-right: 18px;
+  width: 132px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.add-device-button {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-device-button:hover {
+  cursor: pointer;
+}
+
+.add-device {
+  padding-left: 8px;
+}
