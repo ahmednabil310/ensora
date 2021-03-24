@@ -1,0 +1,25 @@
+.side-bar {
+  background-color: $B800;
+  color: $N600;
+  position: relative;
+  font-size: 14px;
+  height: 100vh;
+
+  .side-bar__items {
+    list-style-type: none;
+  }
+  .page-selected {
+    color: $N200;
+    width: 100%;
+    img {
+      filter: grayscale(100%) brightness(200%);
+    }
+    .page-selected__bar {
+      position: absolute;
+      left: 0px;
+      background-color: $B300;
+      width: 3px;
+      height: 46px;
+    }
+  }
+}
