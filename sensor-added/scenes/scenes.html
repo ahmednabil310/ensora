@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>device Add</title>
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class="side-bar col-2 p-0">
+      <ul class="side-bar__items px-4">
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <img src="../assets/icon-home.svg" alt="home" />
+            <p class="m-0 d-inline sid-bar__text">Home</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <img src="../assets/icon-alarms.svg" alt="alarms" />
+            <p class="m-0 d-inline sid-bar__text">Alarms</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <i><img src="../assets/icon-equipment.svg" alt="equipment" /></i>
+            <p class="m-0 d-inline sid-bar__text">Equipment</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <i><img src="../assets/icon-scenes.svg" alt="scenes" /></i>
+            <p class="m-0 d-inline sid-bar__text">Scenes</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <i><img src="../assets/icon-routines.svg" alt="routines" /></i>
+            <p class="m-0 d-inline sid-bar__text">Routines</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <i><img src="../assets/icon-devices.svg" alt="devices" /></i>
+            <p class="m-0 d-inline sid-bar__text">Devices</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <i><img src="../assets/icon-settings.svg" alt="settings" /></i>
+            <p class="m-0 d-inline sid-bar__text">Settings</p>
+          </a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
+            <i><img src="../assets/icon-help.svg" alt="help" /></i>
+            <p class="m-0 d-inline sid-bar__text">Help</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- main page -->
+    <div class="col-10 main-page p-0">
+      <!-- navbar -->
+      <nav class="navbar navbar-light bg-white">
+        <!-- left side -->
+        <div class="navbar__left">
+          <button class="humberger">
+            <img src="../assets/Burger.svg" alt="burger" />
+          </button>
+          <a href="/" class="navbar-brand">
+            <img src="../../forms/assests/logo.png" alt="logo" /></a>
+        </div>
+        <!-- right side -->
+        <div class="pe-4">
+          <div class="navbar__right d-flex align-items-center">
+            <div class="d-flex justify-content-between navbar__device">
+              <img class="pe-1" src="../assets/icon-wireless.svg" alt="wireless" />
+              <a href="#" class="m-0 ps-1 link_no_decoration">Add Device</a>
+            </div>
+            <button class="navbar__device">
+              <img src="../assets/Notifications.png" alt="notification" />
+            </button>
+            <img class="user-image" src="../assets/User Button.png" alt="user" />
+          </div>
+        </div>
+      </nav>
+      <!-- Main Content -->
+      <div class="main-content">
+      <!-- header -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <div class="main-content__header">
+            <h2 id="title" >Scenes</h2>
+          </div>
+        </div>
+      </div>
+        <!-- middle section -->
+        <div class="row mid-section align-items-center flex-column text-center">
+          <div class="col-12">
+            <!-- Stage Group -->
+            <div class="device-group">
+              <!-- Device Group Card Header -->
+              <div class="device-group-header d-flex justify-content-between">
+                <!-- Device Name -->
+                <div class="d-flex">
+                  <a class="collapse-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
+                        fill="#9DA9B5" />
+                    </svg>
+                  </a>
+                  <div class="device-group-name d-flex">
+                    <p>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M18.0775 1.19922H1.92285C0.972979 1.19922 0.200195 1.97159 0.200195 2.92096V9.80792C0.200195 10.7573 0.972979 11.5297 1.92285 11.5297H18.0775C19.0274 11.5297 19.8002 10.7573 19.8002 9.80792V2.92096C19.8002 1.97159 19.0274 1.19922 18.0775 1.19922ZM18.6518 9.80792C18.6518 10.1244 18.3942 10.3818 18.0775 10.3818H1.92285C1.60623 10.3818 1.34863 10.1244 1.34863 9.80792V9.61661H18.6518V9.80792ZM18.6518 8.46879H1.34863V2.92096C1.34863 2.6045 1.60623 2.34705 1.92285 2.34705H18.0775C18.3942 2.34705 18.6518 2.6045 18.6518 2.92096V8.46879ZM17.1205 4.4516C17.4376 4.4516 17.6947 4.19465 17.6947 3.87768C17.6947 3.56072 17.4376 3.30377 17.1205 3.30377C16.8034 3.30377 16.5463 3.56072 16.5463 3.87768C16.5463 4.19465 16.8034 4.4516 17.1205 4.4516ZM10.6127 12.2947C10.9298 12.2947 11.1869 12.5516 11.1869 12.8686C11.1869 13.738 10.8081 14.1605 10.4718 14.5357C10.2033 14.8352 9.96191 15.1045 9.96191 15.5468C9.96191 15.9897 10.2034 16.2589 10.4719 16.5583C10.8082 16.9332 11.1869 17.3554 11.1869 18.2251C11.1869 18.5421 10.9298 18.799 10.6127 18.799C10.2956 18.799 10.0385 18.5421 10.0385 18.2251C10.0385 17.7822 9.79699 17.513 9.52845 17.2136C9.19217 16.8387 8.81348 16.4166 8.81348 15.5468C8.81348 14.6774 9.19227 14.2549 9.52859 13.8797C9.79707 13.5802 10.0385 13.3109 10.0385 12.8686C10.0385 12.5516 10.2956 12.2947 10.6127 12.2947ZM15.015 12.8686C15.015 12.5516 14.7579 12.2947 14.4408 12.2947C14.1237 12.2947 13.8666 12.5516 13.8666 12.8686C13.8666 13.3109 13.6252 13.5802 13.3567 13.8797C13.0204 14.2549 12.6416 14.6774 12.6416 15.5468C12.6416 16.4166 13.0203 16.8387 13.3566 17.2136C13.6251 17.513 13.8666 17.7822 13.8666 18.2251C13.8666 18.5421 14.1237 18.799 14.4408 18.799C14.7579 18.799 15.015 18.5421 15.015 18.2251C15.015 17.3554 14.6363 16.9332 14.3001 16.5583C14.0315 16.2589 13.79 15.9897 13.79 15.5468C13.79 15.1045 14.0314 14.8352 14.2999 14.5357C14.6362 14.1605 15.015 13.738 15.015 12.8686ZM6.78457 12.2947C7.10169 12.2947 7.35879 12.5516 7.35879 12.8686C7.35879 13.738 6.97999 14.1605 6.64368 14.5357C6.3752 14.8352 6.13379 15.1045 6.13379 15.5468C6.13379 15.9897 6.37528 16.2589 6.64381 16.5583C6.98009 16.9332 7.35879 17.3554 7.35879 18.2251C7.35879 18.5421 7.10169 18.799 6.78457 18.799C6.46745 18.799 6.21035 18.5421 6.21035 18.2251C6.21035 17.7822 5.96886 17.513 5.70033 17.2136C5.36405 16.8387 4.98535 16.4166 4.98535 15.5468C4.98535 14.6774 5.36415 14.2549 5.70046 13.8797C5.96894 13.5802 6.21035 13.3109 6.21035 12.8686C6.21035 12.5516 6.46745 12.2947 6.78457 12.2947Z"
+                          fill="#062B45" />
+                      </svg>
+                      Cooling scenes
+                    </p>
+                  </div>
+                </div>
+                <!-- End Device Name -->
+              </div>
+              <!-- End Device Group Card Header -->
+              <!-- Scene Cards -->
+              <div class="stages-cards d-flex flex-wrap">
+                <!-- Scene card -->
+                <div class="stage-card col-4">
+                  <div class="d-flex flex-row align-items-start">
+                    <div class="stage-status">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="5" fill="#71C76A" />
+                      </svg>
+                    </div>
+                    <div class="scene-details d-flex flex-column">
+                      <span class="scene-name">Scene name</span>
+                      <div class="scene-subtitle">
+                        <span>Groups</span>
+                        <div class="scene-groups-tags d-flex">
+                          <span class="group-tag">Group</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-159,0">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                          fill="#9DA9B5" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">Edit scene</a></li>
+                      <li><a class="dropdown-item" href="#">Delete scene</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Scene card -->
+                <!-- Scene card -->
+                <div class="stage-card col-4">
+                  <div class="d-flex flex-row align-items-start">
+                    <div class="stage-status">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="5" fill="#DFE4EB" />
+                      </svg>
+                    </div>
+                    <div class="scene-details d-flex flex-column">
+                      <span class="scene-name">ON</span>
+                      <div class="scene-subtitle">
+                        <span>Groups</span>
+                        <div class="scene-groups-tags d-flex">
+                          --
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-159,0">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                          fill="#9DA9B5" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">Edit scene</a></li>
+                      <li><a class="dropdown-item" href="#">Delete scene</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Scene card -->
+              </div>
+              <!-- End Scene cards -->
+            </div>
+            <!-- End Stage Group -->
+            <!-- Stage Group -->
+            <div class="device-group">
+              <!-- Device Group Card Header -->
+              <div class="device-group-header d-flex justify-content-between">
+                <!-- Device Name -->
+                <div class="d-flex">
+                  <a class="collapse-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
+                        fill="#9DA9B5" />
+                    </svg>
+                  </a>
+                  <div class="device-group-name d-flex">
+                    <p>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M8.96115 4.79922C8.85003 4.99174 8.64835 5.09934 8.44099 5.09934C8.33919 5.09934 8.23603 5.07342 8.14155 5.01882L7.79515 4.81882C7.50819 4.65314 7.40987 4.28618 7.57555 3.99922C7.74123 3.71222 8.10811 3.61382 8.39515 3.77962L8.74155 3.97962C9.02851 4.14526 9.12683 4.51226 8.96115 4.79922ZM8.14155 5.77962L7.79515 5.97962C7.50819 6.1453 7.40987 6.51226 7.57555 6.79922C7.68667 6.99174 7.88835 7.09934 8.09571 7.09934C8.19747 7.09934 8.30067 7.07342 8.39515 7.01882L8.74155 6.81882C9.02851 6.65314 9.12683 6.28618 8.96115 5.99922C8.79547 5.71226 8.42847 5.61386 8.14155 5.77962ZM11.6056 3.77962L11.2592 3.97962C10.9723 4.1453 10.874 4.51226 11.0396 4.79922C11.1508 4.99174 11.3524 5.09934 11.5598 5.09934C11.6616 5.09934 11.7648 5.07342 11.8592 5.01882L12.2056 4.81882C12.4926 4.65314 12.5909 4.28618 12.4252 3.99922C12.2596 3.71222 11.8926 3.61382 11.6056 3.77962ZM12.2056 5.97962L11.8592 5.77962C11.5722 5.61382 11.2053 5.71222 11.0396 5.99922C10.874 6.28618 10.9723 6.65318 11.2592 6.81882L11.6056 7.01882C11.7001 7.07338 11.8033 7.09934 11.9051 7.09934C12.1124 7.09934 12.3141 6.99174 12.4252 6.79922C12.591 6.51226 12.4926 6.14526 12.2056 5.97962ZM18.5954 10.0768L17.3954 19.2768C17.3564 19.5757 17.1018 19.7992 16.8004 19.7992H3.20039C2.89903 19.7992 2.64443 19.5757 2.60543 19.2768L1.40543 10.0768C1.39919 10.0291 1.39875 9.98078 1.40407 9.93294L2.20063 2.76382C2.21963 1.34646 3.37855 0.199219 4.80039 0.199219H15.2004C16.6222 0.199219 17.7812 1.34646 17.8002 2.76382L18.5967 9.93298C18.602 9.98078 18.6016 10.0291 18.5954 10.0768ZM16.5344 16.5992H11.6316C11.5925 16.6459 11.4389 16.8034 11.4389 16.8034C11.0546 17.1876 10.5438 17.3992 10.0004 17.3992C9.45699 17.3992 8.94615 17.1876 8.56191 16.8034C8.56191 16.8034 8.40835 16.6459 8.36927 16.5992H3.46635L3.72719 18.5992H16.2736L16.5344 16.5992ZM9.34179 15.8862L9.41043 15.9549C9.56803 16.1124 9.77755 16.1992 10.0004 16.1992C10.2232 16.1992 10.4328 16.1124 10.5904 15.9549L10.659 15.8862C10.9843 15.5609 10.9843 15.0317 10.659 14.7063L10.0004 14.0477L9.34179 14.7063C9.01651 15.0317 9.01651 15.5609 9.34179 15.8862ZM17.3171 10.5992H15.4004V10.7992C15.4004 11.1306 15.1318 11.3992 14.8004 11.3992C14.469 11.3992 14.2004 11.1306 14.2004 10.7992V10.5992H13.0004V10.7992C13.0004 11.1306 12.7318 11.3992 12.4004 11.3992C12.069 11.3992 11.8004 11.1306 11.8004 10.7992V10.5992H10.6004V10.7992C10.6004 11.1306 10.3318 11.3992 10.0004 11.3992C9.66903 11.3992 9.40039 11.1306 9.40039 10.7992V10.5992H8.20039V10.7992C8.20039 11.1306 7.93175 11.3992 7.60039 11.3992C7.26903 11.3992 7.00039 11.1306 7.00039 10.7992V10.5992H5.80039V10.7992C5.80039 11.1306 5.53175 11.3992 5.20039 11.3992C4.86903 11.3992 4.60039 11.1306 4.60039 10.7992V10.5992H2.68371L3.30979 15.3992H7.89999C7.89831 15.3651 7.89743 15.3307 7.89743 15.2963C7.89743 14.7529 8.10903 14.2421 8.49327 13.8578L9.57611 12.775C9.81039 12.5407 10.1903 12.5407 10.4246 12.775L11.5075 13.8578C11.8917 14.242 12.1033 14.7529 12.1033 15.2963C12.1033 15.3307 12.1025 15.3651 12.1008 15.3992H16.6909L17.3171 10.5992ZM17.33 9.39922L16.6041 2.86546C16.6016 2.84346 16.6004 2.82138 16.6004 2.79922C16.6004 2.02726 15.9724 1.39922 15.2004 1.39922H4.80039C4.02843 1.39922 3.40039 2.02726 3.40039 2.79922C3.40039 2.82138 3.39915 2.84346 3.39671 2.86546L2.67075 9.39922H14.8004H17.33ZM10.0004 2.59922C9.66903 2.59922 9.40039 2.86786 9.40039 3.19922V3.59922C9.40039 3.93058 9.66903 4.19922 10.0004 4.19922C10.3318 4.19922 10.6004 3.93058 10.6004 3.59922V3.19922C10.6004 2.86786 10.3318 2.59922 10.0004 2.59922ZM10.0004 6.59922C9.66903 6.59922 9.40039 6.86786 9.40039 7.19922V7.59922C9.40039 7.93058 9.66903 8.19922 10.0004 8.19922C10.3318 8.19922 10.6004 7.93058 10.6004 7.59922V7.19922C10.6004 6.86786 10.3318 6.59922 10.0004 6.59922Z"
+                          fill="#062B45" />
+                      </svg>
+                      Humidifier scenes
+                    </p>
+                  </div>
+                </div>
+                <!-- End Device Name -->
+              </div>
+              <!-- End Device Group Card Header -->
+              <!-- Scene Cards -->
+              <div class="stages-cards d-flex flex-wrap">
+                <!-- Scene card -->
+                <div class="stage-card col-4">
+                  <div class="d-flex flex-row align-items-start">
+                    <div class="stage-status">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="5" fill="#DFE4EB" />
+                      </svg>
+                    </div>
+                    <div class="scene-details d-flex flex-column">
+                      <span class="scene-name">ON</span>
+                      <div class="scene-subtitle">
+                        <span>Groups</span>
+                        <div class="scene-groups-tags d-flex">
+                          --
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-159,0">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                          fill="#9DA9B5" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">Edit scene</a></li>
+                      <li><a class="dropdown-item" href="#">Delete scene</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Scene card -->
+                <!-- Scene card -->
+                <div class="stage-card col-4">
+                  <div class="d-flex flex-row align-items-start">
+                    <div class="stage-status">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="5" fill="#DFE4EB" />
+                      </svg>
+                    </div>
+                    <div class="scene-details d-flex flex-column">
+                      <span class="scene-name">OFF</span>
+                      <div class="scene-subtitle">
+                        <span>Groups</span>
+                        <div class="scene-groups-tags d-flex">
+                          --
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-159,0">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                          fill="#9DA9B5" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">Edit scene</a></li>
+                      <li><a class="dropdown-item" href="#">Delete scene</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Scene card -->
+              </div>
+              <!-- End Scene cards -->
+            </div>
+            <!-- End Stage Group -->
+            <!-- Stage Group -->
+            <div class="device-group">
+              <!-- Device Group Card Header -->
+              <div class="device-group-header d-flex justify-content-between">
+                <!-- Device Name -->
+                <div class="d-flex">
+                  <a class="collapse-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
+                        fill="#9DA9B5" />
+                    </svg>
+                  </a>
+                  <div class="device-group-name d-flex">
+                    <p>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.32664 0.873293C9.32664 0.51033 9.63776 0.199219 10.0007 0.199219C10.3637 0.199219 10.6748 0.51033 10.6748 0.873293V2.86959C10.6748 3.23256 10.3637 3.54367 10.0007 3.54367C9.63776 3.54367 9.32664 3.23256 9.32664 2.86959V0.873293ZM13.4736 6.5252C12.5921 5.64372 11.3476 5.07335 9.99947 5.07335C8.65132 5.07335 7.40688 5.61779 6.5254 6.5252C5.64391 7.40668 5.07354 8.65113 5.07354 9.99928C5.07354 11.3474 5.64391 12.5919 6.5254 13.4734C7.40688 14.3548 8.65132 14.9252 9.99947 14.9252C11.3476 14.9252 12.5921 14.3808 13.4736 13.4734C14.355 12.5919 14.9254 11.3474 14.9254 9.99928C14.9254 8.65113 14.381 7.40668 13.4736 6.5252ZM12.5402 12.54C11.8921 13.1882 10.9847 13.5771 9.99947 13.5771C9.01429 13.5771 8.10688 13.1882 7.45873 12.54C6.81058 11.8919 6.42169 10.9845 6.42169 9.99928C6.42169 9.01409 6.81058 8.10668 7.45873 7.45853C8.10688 6.81039 9.01429 6.4215 9.99947 6.4215C10.9847 6.4215 11.8921 6.81039 12.5402 7.45853C13.1884 8.10668 13.5773 9.01409 13.5773 9.99928C13.5773 10.9845 13.1884 11.8919 12.5402 12.54ZM19.1262 9.32489H17.1299C16.7669 9.32489 16.4558 9.636 16.4558 9.99896C16.4558 10.3619 16.7669 10.673 17.1299 10.673H19.1262C19.4892 10.673 19.8003 10.3619 19.8003 9.99896C19.8003 9.636 19.4892 9.32489 19.1262 9.32489ZM9.32664 17.1289C9.32664 16.766 9.63776 16.4548 10.0007 16.4548C10.3637 16.4548 10.6748 16.766 10.6748 17.1289V19.1252C10.6748 19.4882 10.3637 19.7993 10.0007 19.7993C9.63776 19.7993 9.32664 19.4882 9.32664 19.1252V17.1289ZM16.9217 15.9882L15.4958 14.5622C15.2624 14.303 14.8217 14.303 14.5624 14.5622C14.3032 14.8215 14.3032 15.2363 14.5624 15.4956L15.9884 16.9215C16.2476 17.1808 16.6624 17.1808 16.9217 16.9215C17.181 16.6622 17.181 16.2474 16.9217 15.9882ZM16.9479 3.07712C16.6886 2.81786 16.2738 2.81786 16.0145 3.07712L14.5886 4.50305C14.3294 4.76231 14.3294 5.17712 14.5886 5.43638C14.8219 5.69564 15.2627 5.69564 15.5219 5.43638L16.9479 4.01046C17.2071 3.7512 17.2071 3.33638 16.9479 3.07712ZM0.87427 9.32489H2.87057C3.23353 9.32489 3.54464 9.636 3.54464 9.99896C3.54464 10.3619 3.23353 10.673 2.87057 10.673H0.87427C0.485381 10.673 0.200195 10.3619 0.200195 9.99896C0.200195 9.636 0.511307 9.32489 0.87427 9.32489ZM5.41119 14.5622C5.17785 14.303 4.73711 14.303 4.47785 14.5622L3.05192 15.9882C2.79266 16.2474 2.79266 16.6622 3.05192 16.9215C3.31118 17.1808 3.726 17.1808 3.98526 16.9215L5.41119 15.4956C5.67045 15.2363 5.67045 14.8215 5.41119 14.5622ZM3.98526 3.07712L5.41119 4.50305C5.67045 4.76231 5.67045 5.17712 5.41119 5.43638C5.15193 5.69564 4.73711 5.69564 4.47785 5.43638L3.05192 4.01046C2.79266 3.7512 2.79266 3.33638 3.05192 3.07712C3.31118 2.81786 3.726 2.81786 3.98526 3.07712Z" fill="#062B45"/>
+                      </svg>
+                      Light scenes
+                    </p>
+                  </div>
+                </div>
+                <!-- End Device Name -->
+              </div>
+              <!-- End Device Group Card Header -->
+              <!-- Scene Cards -->
+              <div class="stages-cards d-flex flex-wrap">
+                <!-- Scene card -->
+                <div class="stage-card col-4">
+                  <div class="d-flex flex-row align-items-start">
+                    <div class="stage-status">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="5" fill="#DFE4EB" />
+                      </svg>
+                    </div>
+                    <div class="scene-details d-flex flex-column">
+                      <span class="scene-name">ON</span>
+                      <div class="scene-subtitle">
+                        <span>Groups</span>
+                        <div class="scene-groups-tags d-flex">
+                          --
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-159,0">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                          fill="#9DA9B5" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">Edit scene</a></li>
+                      <li><a class="dropdown-item" href="#">Delete scene</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Scene card -->
+                <!-- Scene card -->
+                <div class="stage-card col-4">
+                  <div class="d-flex flex-row align-items-start">
+                    <div class="stage-status">
+                      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="5" cy="5" r="5" fill="#DFE4EB" />
+                      </svg>
+                    </div>
+                    <div class="scene-details d-flex flex-column">
+                      <span class="scene-name">OFF</span>
+                      <div class="scene-subtitle">
+                        <span>Groups</span>
+                        <div class="scene-groups-tags d-flex">
+                          --
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="-159,0">
+                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                          fill="#9DA9B5" />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">Edit scene</a></li>
+                      <li><a class="dropdown-item" href="#">Delete scene</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Scene card -->
+              </div>
+              <!-- End Scene cards -->
+            </div>
+            <!-- End Stage Group -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
