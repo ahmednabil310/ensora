@@ -1,6 +1,9 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
+@import "base/fonts";
+@import "base/typography";
+
 @import "layouts/sidebar";
 @import "layouts/navbar";
 
@@ -11,3 +14,6 @@
 @import "components/mm-lw-btn";
 
 @import "pages/home";
+@import "pages/devices";
+@import "pages/alarms";
+@import "pages/h";

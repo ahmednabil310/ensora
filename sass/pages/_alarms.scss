@@ -1,0 +1,36 @@
+.main-content {
+  padding: 20px 40px;
+}
+
+.main-content__header {
+  display: flex;
+  align-items: center;
+  h2 {
+    @extend .display-medium;
+    color: $B700;
+    margin-right: 10px;
+  }
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.main-content__body {
+  margin-top: 36px;
+  color: $N600;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  h3 {
+    @extend .display-small;
+    margin-bottom: 12px;
+  }
+  p {
+    @extend .body;
+    margin-bottom: 12px;
+  }
+}

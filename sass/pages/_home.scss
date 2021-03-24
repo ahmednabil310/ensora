@@ -17,8 +17,7 @@
 .main-content__header {
   h2 {
     color: $B700;
-    font-weight: 600;
-    font-size: 26px;
+    @extend .display-medium;
   }
 }
 

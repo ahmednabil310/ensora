@@ -5,9 +5,6 @@
   --bg-grey: #f2f4f8;
 }
 
-.mid-section {
-}
-
 .mid-section__content {
   background-color: var(--bg-grey);
   border-radius: 8px;
@@ -33,11 +30,6 @@
 }
 
 .mid-section__content__main {
-  margin: 12px;
-  margin-top: 0;
-  padding: 26px 0;
-  color: var(--light-grey);
-  border-radius: 5px;
 }
 
 .mid-section__content__main__paragraph {

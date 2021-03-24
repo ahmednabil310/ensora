@@ -1,0 +1,79 @@
+.button-nostyle {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.sensor-rows {
+  .sensor-row {
+    height: unset;
+    p {
+      @extend .body;
+      margin: 0;
+      padding: 26px 0;
+    }
+  }
+}
+
+.group-card {
+  margin-bottom: 20px;
+}
+
+// automation boxes card --> could be a component if needed
+
+.automation-boxes-card {
+  margin: 12px;
+  border-radius: 8px;
+  padding-left: 16px !important;
+  padding-bottom: 12px;
+  padding-right: 8px !important;
+  padding-top: 6px;
+}
+
+.automation-boxes-card-name {
+  @extend .label;
+  color: black;
+  margin: 0;
+}
+
+.automation-boxes-card-gearicon {
+  height: 32px;
+  width: 32px;
+  border: none;
+  background: none;
+  align-self: flex-start;
+}
+
+.automation-boxes-card-subheader {
+  @extend .small;
+  margin: 0;
+  color: $N600;
+  text-align: left;
+}
+
+.automation-boxes-card-label {
+  width: 39px;
+  height: 26px;
+  background-color: #dfe4eb;
+  border-radius: 3px;
+  margin-right: 8px;
+  img {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  p {
+    @extend .body;
+    margin: 0;
+    color: $N600;
+  }
+}
+
+.automation-boxes-card-labels-container {
+  margin-top: 5px;
+}

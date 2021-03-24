@@ -1,0 +1,76 @@
+$font-stack: "Inter", sans-serif;
+
+.body {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.caption {
+  font-size: 11px;
+}
+
+.display-xlarge {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.display-large {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.display-medium {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.display-small,
+.display-small--link {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subheading,
+.label--allcaps,
+.small--uppercase {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.label,
+.button-label,
+.body--bold,
+.input--bold {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag-label {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.small {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.body--bigger {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.body--link,
+.input,
+.small--regular {
+  font-size: 14px;
+  font-weight: 400;
+}

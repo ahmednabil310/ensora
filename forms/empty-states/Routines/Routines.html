@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,12 +20,11 @@
       src="https://kit.fontawesome.com/860b688cc8.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../../../sass/main.css" />
     <title>Routines Empty State</title>
   </head>
   <body>
-    <div class="walkthrough-overlay">
-      
-    </div>
+    <div class="walkthrough-overlay"></div>
     <div class="row h-100 m-0">
       <!-- side bar -->
       <div class="side-bar col-2 p-0">
@@ -41,7 +39,9 @@
             <p class="m-0 p-3">Alarms</p>
           </li>
           <li class="d-flex align-items-center">
-            <i><img src="../../assests/icon-equipment.svg" alt="equipment" /></i>
+            <i
+              ><img src="../../assests/icon-equipment.svg" alt="equipment"
+            /></i>
             <p class="m-0 p-3">Equipment</p>
           </li>
           <li class="d-flex align-items-center">
@@ -73,11 +73,12 @@
           <!-- left side -->
           <div>
             <i
-              ><img src="../../assests/Burger.svg" alt="burger" class="main-logo"
+              ><img
+                src="../../assests/Burger.svg"
+                alt="burger"
+                class="main-logo"
             /></i>
-            <a href="/">
-              <img src="../../assests/logo.png" alt="logo"
-            /></a>
+            <a href="/"> <img src="../../assests/logo.png" alt="logo" /></a>
           </div>
           <!-- right side -->
           <div class="right-side__container">
@@ -85,11 +86,12 @@
               <div
                 class="d-flex justify-content-between add-device-container mb-1"
               >
-              <div class="add-device-button">
-
-                <i><img src="../../assests/icon-wireless.svg" alt="wireless" /></i>
-                <p class="m-0 add-device">Add Device</p>
-              </div>
+                <div class="add-device-button">
+                  <i
+                    ><img src="../../assests/icon-wireless.svg" alt="wireless"
+                  /></i>
+                  <p class="m-0 add-device">Add Device</p>
+                </div>
               </div>
               <i class="ring-container">
                 <img src="../../assests/Notifications.png" alt="notification"
@@ -104,19 +106,21 @@
           <div class="d-flex justify-content-between">
             <div class="d-flex">
               <div class="main-content__header">
-                <h2 id="title" >Routines</h2>
-                <img src="../../assests/icon-helpspot.svg" alt="help">
+                <h2>Routines</h2>
+                <img src="../../assests/icon-helpspot.svg" alt="help" />
               </div>
             </div>
-        
           </div>
           <div class="main-content__body">
-            <h3 id="title">No routines yet </h3>
-            <p id="body">A routine allows you to set equipment automation, configure notifications, and define routine alarms.<br>
-              You don’t have any routines yet.</p>
-              <div>
-                <button id="btn">New routine</button>
-              </div>
+            <h3>No routines yet</h3>
+            <p>
+              A routine allows you to set equipment automation, configure
+              notifications, and define routine alarms.<br />
+              You don’t have any routines yet.
+            </p>
+            <div>
+              <button class="primary-button">New routine</button>
+            </div>
           </div>
         </div>
       </div>

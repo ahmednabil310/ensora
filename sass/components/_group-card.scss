@@ -16,8 +16,7 @@
     padding: 4px 0;
   }
   .group-name p {
-    font-size: 16px;
-    font-weight: 600;
+    @extend .heading;
     color: #062b45;
   }
   .data-graphs-btn {
@@ -41,11 +40,16 @@
   }
   .group-card__empty {
     background-color: $N000;
-    height: 76px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     border-radius: 5px;
+
+    p {
+      @extend .body;
+      margin: 0;
+      padding: 26px 0;
+    }
   }
 }
