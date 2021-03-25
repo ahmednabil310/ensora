@@ -6,7 +6,7 @@
   padding: 20px 40px 40px 40px;
   .main-content__empty {
     #title {
-      font-size: 20px;
+      @extend .display-small;
     }
     #body {
       font-size: 14px;
