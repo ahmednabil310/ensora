@@ -1,6 +1,5 @@
-@import "../base/reset";
-
 .model-box {
+  @import "../base/reset";
   @extend .small--regular;
   font-family: $font-stack;
   max-width: 560px;

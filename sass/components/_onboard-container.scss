@@ -1,0 +1,201 @@
+.onboardplan-container {
+  font-family: $font-stack;
+  // padding: 78px 166px 81px 149px;
+  padding: 0 166px;
+  // margin: 0 auto;
+
+  .onboardplan-container__image {
+    margin: 78px 0 103px;
+    // padding-bottom: 63px;
+  }
+  .onboardplan-container__price__title {
+    color: $B700;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: -1px;
+  }
+  .onboardplan-container__price__subtitle {
+    color: $B700;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 51px;
+  }
+
+  .onboardplan-card {
+    background-color: rgba(223, 228, 235, 1);
+    border-radius: 16px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    max-width: 168px;
+    margin-right: 20px;
+
+    .onboardplan-card__title {
+      font-weight: 600;
+      color: $B700;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .onboardplan-card__pricing {
+      color: $B700;
+      font-weight: bold;
+      font-size: 42px;
+      letter-spacing: -1px;
+      margin-bottom: 0px;
+    }
+    .onboardplan-card__pricing sub {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .onboardplan-card__pricing .small {
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0px;
+    }
+    .onboardplan-card--blue {
+      background-color: $B300;
+      border-radius: 16px 16px 0px 0px;
+      color: white;
+    }
+  
+    .onboardplan-card--blue .onboardplan-card__title {
+      color: white;
+    }
+    .onboardplan-card--blue .onboardplan-card__pricing {
+      color: white;
+    }
+    .card-special h1 {
+      color: white;
+    }
+    .card-special h3 {
+      color: white;
+    }
+  }
+
+  // Setup Specifics
+  .onboardsetup-container {
+    width: 31.25%;
+    min-width: 450px;
+    max-width: 700px;
+    .onboardsetup-title {
+      width: 100%;    
+      margin-bottom: 1em;
+      color: $B700;
+      display: flex;
+      flex-direction: column;
+    }
+    .onboardsetup-title h1 {
+      @extend .display-large;
+      text-align: left;
+    }
+    .onboardsetup-title p {
+      text-align: left;
+      font-size: 14px;
+    }
+    .onboardsetup-container form {
+      color: #687d8f;
+    }
+    .onboardsetup-cards {
+      margin-bottom: 1em;
+    }
+    .onboardsetup-cards img {
+      margin-right: 0.5em;
+    }
+    .onboardsetup-selected {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5em 2em;
+      background-color: #e1f4ff;
+      border-radius: 10px;
+      margin: 1em 0em;
+    }
+    .onboardsetup-changeplan {
+      color: $B300;
+    }
+    .onboardsetup-changeplan:hover {
+      cursor: pointer;
+    }
+    .onboardsetup-selected #selected-plan {
+      font-weight: 600;
+      color: $B700;
+      font-size: 16px;
+    }
+    .onboardsetup-selected #selected-price {
+      color: #5b6d83;
+      font-size: 14px;
+    }
+    .onboardsetup-submit {
+      margin: 3em 0em;
+    }
+    .onboardsetup-submit button {
+      width: 100%;
+      background-color: #0e76bc;
+      color: #fff;
+    }
+    
+    .onboardsetup-submit button:disabled {
+      background-color: #f2f4f8;
+      color: #bbc2cd;
+    }
+    
+    .onboardsetup-back {
+      margin-top: -2em;
+      text-align: center;
+    }
+    
+    .onboardsetup-back:hover {
+      cursor: pointer;
+    }
+  }
+  
+  // Confirm Container
+  .onboardconfirm-container {
+    width: 31.25%;
+    min-width: 450px;
+    max-width: 700px;
+
+    .onboardconfirm-title {
+      width: 100%;
+      // margin: 2em 0em;
+      color: $B700;
+    }
+    .onboardconfirm-title h1 {
+      margin-bottom: 10px;
+      text-align: left;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .onboardconfirm-title p {
+      margin-bottom: 36px;
+      text-align: left;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .onboardconfirm-selected {
+      padding: 1.5em 2em;
+      background-color: $B100;
+      border-radius: 10px;
+    }
+    
+    .onboardconfirm-selected #selected-plan {
+      color: $B700;
+      font-size: 16px;
+    }
+    .onboardconfirm-selected #selected-price {
+      color: #5b6d83;
+      font-size: 14px;
+    }
+    .onboardconfirm-continue {
+      margin: 2em 0em;
+    }
+    .onboardconfirm-continue button {
+      width: 100%;
+      background-color: $B300;
+      color: #fff;
+      font-weight: 600;
+    }
+  }
+}
+
+
+
