@@ -5,41 +5,39 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/style.css" />
-  <title>Gateway</title>
+  <link rel="stylesheet" href="../../sass/main.css">
+  <title>Gateway Box Model</title>
 </head>
 
 <body>
   <!-- Box Model -->
-  <div class="model-box d-flex flex-column shadow-sm">
+  <div class="gateway-model-box model-box d-flex flex-column shadow-sm">
     <!-- Exit Button -->
-    <div class="col-12">
-      <button class="model-box__close-button btn-close" type="button" aria-label="Close"></button>
+    <div class="model-box__close-button">
+      <button class="btn-close" type="button" aria-label="Close"></button>
     </div>
     <!-- End Exit button -->
     <!-- Model Content -->
     <div class="model-box__content">
       <!-- Model Title -->
-      <div class="col-12">
-        <h1 class="model-box__title text-center d-flex align-items-center justify-content-center">
+      <div class="model-box__title">
+        <h1 class="text-center d-flex align-items-center justify-content-center">
           Gateway
         </h1>
       </div>
       <!-- End Model Title -->
       <!-- Model Subtitle -->
-      <div class="col-12">
-        <p class="model-box__subtitle text-center d-flex align-items-center justify-content-center">
+      <div class="model-box__subtitle">
+        <p class="text-center d-flex align-items-center justify-content-center">
           Please enter a custom name to identify your new device.
         </p>
       </div>
       <!-- End Model Subtitle -->
       <!-- Model Form -->
-      <div class="col-12 model-box__form">
+      <div class="model-box__form">
         <form>
           <div>
             <label for="gateway-name" class="form-label">Name</label>
@@ -59,12 +57,11 @@
     </div>
     <!-- End Model Content -->
     <!-- Model Footer -->
-    <div style="position: absolute; bottom: 0; left: 0; right: 0;">
-      <div class="col-12 model-box__footer border-top">
-        <div class="d-flex justify-content-end">
-          <a href="#">Back</a>
-          <button class="btn">Continue</button>
-        </div>
+    <div class="model-box__footer">
+      <div class="d-flex justify-content-end">
+        <!-- <a href="#">Back</a> -->
+        <button class="btn btn-link">Back</button>
+        <button class="btn">Continue</button>
       </div>
     </div>
     <!-- End Model Footer -->

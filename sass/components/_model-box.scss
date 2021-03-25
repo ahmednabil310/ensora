@@ -1,5 +1,8 @@
+@import "../base/reset";
+
 .model-box {
   @extend .small--regular;
+  font-family: $font-stack;
   max-width: 560px;
   min-height: 547px;
   position: relative;
@@ -8,20 +11,23 @@
   line-height: 22px;
   /* Remove Later */
   margin: 50px auto;
-  // border: 1px solid;
 
   .model-box__close-button {
+    padding: 0;
     position: absolute;
-    top: 21px;
+    top: 26px;
     right: 22px;
   }
   .model-box__content {
     padding: 0 40px;
   }
   .model-box__title {
-    @extend .display-medium; 
     margin-top: 42px;
-    line-height: 36px;
+    
+    h1 {
+      @extend .display-medium; 
+      line-height: 36px;
+    }
   }
   .model-box__subtitle {
     @extend .small--regular;
@@ -37,11 +43,10 @@
       line-height: 20px;
       border: 2px solid $N300;
       color: $B700;
-    }
-    
-    /* Common */
-    #device-id, #install-data {
-      background: $N100;
+
+      &:focus {
+        border-color: #86b7fe !important;
+      }
     }
   }
   .sensor-model form input ::placeholder {
@@ -56,7 +61,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 81px;
+    height: 82px;
     width: 100%;
     border-top: 1px solid $N300;
     padding: 23px 40px;
@@ -80,10 +85,8 @@
     margin-top: 118px;
   }
   .model-box__confirmation-title {
+    @extend .display-medium;
     margin-top: 32px;
-    font-weight: 600;
-    font-size: 26px;
-    letter-spacing: -1px;
     line-height: 36px;
   }
   .model-box__confirmation-subtitle {
@@ -128,15 +131,13 @@
 }
 
 /* Sensor */
-.sensor-model-box,  
+.sensor-model-box,
 .sensor-min-max-model-box {
   min-height: 744px;
 
   .model-box__form {
-    margin-top: 59px;
-
     & div {
-      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
     .model-box__sensor-details {
@@ -208,12 +209,33 @@
     }  
   }
 }
+
 /* Automation Box Model Specifics */
 .automation-box-model {
   .model-box__form {
-    margin-top: 59px;
     form div {
-      margin-top: 26px;
+      margin-bottom: 28px;
     }
+  }
+}
+
+/* Gateway Box Model Specifics */
+.gateway-model-box {
+  .model-box__form {
+    form div {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+/* Common */
+.automation-box-model,
+.gateway-model-box,
+.sensor-model-box {
+  .model-box__form {
+    margin-top: 59px;
+  }
+  #device-id, #install-data {
+    background: $N100;
   }
 }
