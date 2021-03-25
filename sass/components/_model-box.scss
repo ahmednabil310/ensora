@@ -167,6 +167,9 @@
         margin-left: 51px;
       }
     }
+    .model-box__show-min-max {
+      margin-bottom: 0;
+    }
     .model-box__show-min-max span{
       margin-right: 8px;
       color: #0E76BC;
@@ -196,6 +199,7 @@
       .min-max-option {
         height: 57px;
         width: 100%;
+        color: $N600;
 
         .min-max-form {
           gap: 20px;
@@ -207,6 +211,20 @@
 
       }
     }  
+  }
+}
+
+/* Sensor Min Max Model Specifics */
+.sensor-min-max-model-box {
+  .model-box__form {
+    margin-top: 59px;
+    form div {
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+    .model-box__min-max-options div {
+      margin-bottom: 0 !important;
+    }
   }
 }
 
