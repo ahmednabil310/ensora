@@ -1,0 +1,21 @@
+/* Device Gateways Cards */
+.device-gateway-card {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #DFE4EB;
+  position: relative;
+  padding: 12px;
+
+  div:nth-child(1) {
+    padding: 3px;
+  }
+  .gateway-name {
+    color: #062B45;
+    font-weight: 600;
+  }
+  .settings-icon {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+  }
+}

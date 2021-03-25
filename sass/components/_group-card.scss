@@ -1,5 +1,5 @@
 .group-card {
-  background-color: #f2f4f8;
+  background-color: $N200;
   border-radius: 8px;
 
   .group-card-header {
@@ -14,11 +14,19 @@
     height: 32px;
     margin-left: 6px;
     padding: 4px 0;
+
+    p {
+      @extend .heading;
+      color: $B700;
+      
+      svg {
+        margin: 2px 8px 0 2px;
+        margin-top: 2px;
+        margin-right: 8px;
+      }
+    }
   }
-  .group-name p {
-    @extend .heading;
-    color: #062b45;
-  }
+  
   .data-graphs-btn {
     box-sizing: border-box;
     margin-left: 10px;
@@ -31,6 +39,10 @@
     border: 2px solid #dfe4eb;
     border-radius: 4px;
   }
+  .cards-container {
+    padding: 0px 12px 12px;
+    gap: 12px;
+  }
   .settings-icon {
     margin-right: 2px;
     cursor: pointer;
@@ -38,16 +50,13 @@
   .data-graphs-btn svg {
     margin-bottom: 5px;
   }
-  .group-card__empty {
+  
+  .empty-card {
     background-color: $N000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     border-radius: 5px;
 
     p {
-      @extend .body;
+      @extend .small--regular;
       margin: 0;
       padding: 26px 0;
     }

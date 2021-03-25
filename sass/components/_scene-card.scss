@@ -1,0 +1,25 @@
+.scene-card {
+  min-height: 98px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #DFE4EB;
+  position: relative;
+  padding: 12px;
+
+  .scene-details {
+    margin-left: 15px;
+  }
+  .scene-name {
+    color: #062B45;
+    font-weight: 600;
+  }
+  .card-titled-tags {
+    margin-top: 8px;
+  }
+  .settings-icon {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    margin: 0;
+  }
+}

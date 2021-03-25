@@ -1,0 +1,25 @@
+.dropdown-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  
+  &::after {
+    content: none;
+  }
+}
+.dropdown-menu {
+  padding: 5px 0;
+  width: 192px;
+
+  .dropdown-item {
+    @extend .small--regular;
+    font-family: $font-stack;
+    line-height: 20px;
+    color: $B700;
+    padding: 9px 15px;
+
+    &:active {
+      background-color: $N400;
+    }
+  }
+}

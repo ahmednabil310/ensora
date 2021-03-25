@@ -1,0 +1,75 @@
+.equipment-card {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #DFE4EB;
+  position: relative;
+  padding: 14px 18px 16px 18px;
+  text-align: start;
+
+  .device-details {
+    margin-left: 15px;
+  }
+  .device-name {
+    color: #062B45;
+    font-weight: 600;
+    margin-top: 11px;
+  }
+  .device-subtitle {
+    color: #687D8F;
+    font-size: 11px;
+    line-height: 14px;
+    margin-top: 6px;
+    padding: 2px 6px;
+    background: #DFE4EB;
+    border-radius: 100px;
+  }
+  .change-mode {
+    margin-top: 10px;
+  }
+  .group-power-mode {
+    gap: 10px;
+  }
+  .group-override p {
+    line-height: 14px;
+    font-size: 11px;
+    font-weight: 400;
+    color: #687D8F;
+    margin-left: 31px;
+    margin-bottom: 4px;
+  }
+  .group-override div {
+    gap: 5px;
+  }
+  .group-power-mode div span:first-child {
+    font-size: 11px;
+    color: #687D8F;
+  }
+  .group-power-mode div span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .group-power-mode div .active {
+    color: #5AAFE8;
+  }
+  .group-override div button {
+    background: #0E76BC;
+    width: 50px;
+    height: 26px;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .group-override div button:last-child {
+    background: #F2F4F8;
+    color: #BBC2CD;
+  }
+  .card-titled-tags {
+    margin-top: 8px;    
+  }
+  .settings-icon {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    margin: 0;
+  }  
+}

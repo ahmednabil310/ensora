@@ -5,54 +5,46 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sensor Show Min&Max</title>
-  <link rel="stylesheet" href="../assets/bootstrap-tagsinput.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="../assets/style.css">
-  <style>
-    .model-box {
-      height: 744px;
-    }
-  </style>
+  <link rel="stylesheet" href="../../sass/main.css">
+  <title>Sensor Min & Max Box Model</title>
 </head>
 
 <body>
   <!-- Sensor Model -->
-  <div class="model-box d-flex flex-column shadow-sm">
+  <div class="sensor-min-max-model-box model-box d-flex flex-column shadow-sm">
     <!-- Exit Button -->
-    <div class="col-12">
-      <button class="model-box__close-button btn-close" type="button" aria-label="Close"></button>
+    <div class="model-box__close-button">
+      <button class="btn-close" type="button" aria-label="Close"></button>
     </div>
     <!-- End Exit button -->
     <!-- Model Content -->
     <div class="model-box__content">
       <!-- Model Title -->
-      <div class="col-12">
+      <div>
         <h1 class="model-box__title text-center d-flex align-items-center justify-content-center">
           Sensor
         </h1>
       </div>
       <!-- End Model Title -->
       <!-- Model Subtitle -->
-      <div class="col-12">
+      <div>
         <p class="model-box__subtitle text-center d-flex align-items-center justify-content-center">
           Please enter a custom name to identify your new device.
         </p>
       </div>
       <!-- End Model Subtitle -->
       <!-- Model Form -->
-      <div class="col-12 model-box__form">
+      <div class="model-box__form">
         <form>
           <div>
             <label for="sensor-name" class="form-label">Name</label>
             <input type="text" placeholder="Enter sensor name" class="form-control" id="sensor-name" />
           </div>
           <!-- Sensing -->
-          <div class="col-12 d-flex model-box__sensor-details">
+          <div class="d-flex model-box__sensor-details">
             <div class="col-6">
               <p>Sensing</p>
               <p class="sensing-imgs">
@@ -130,29 +122,31 @@
             <!-- End Signal Strength -->
           </div>
           <!-- Show Min&Max -->
-          <div class="model-box__show-min-max">
-            <span class="show-min-max-btn min-max-btn-active">Set min and max values</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M15.5 8C15.5 12.142 12.142 15.5 8 15.5C3.85796 15.5 0.5 12.142 0.5 8C0.5 3.85796 3.85796 0.5 8 0.5C12.142 0.5 15.5 3.85796 15.5 8Z"
-                fill="#9DA9B5" stroke="#9DA9B5" stroke-linecap="round" stroke-linejoin="round" />
-              <path
-                d="M6.875 12.0625C6.875 12.5795 7.29552 13 7.81249 13C8.32947 13 8.74999 12.5795 8.74999 12.0625C8.74999 11.5455 8.32947 11.125 7.81249 11.125C7.29552 11.125 6.875 11.5455 6.875 12.0625Z"
-                fill="white" />
-              <path
-                d="M8.74999 10.1875V9.18775C10.1935 8.8954 11.25 7.62465 11.25 6.125C11.25 4.402 9.84804 3 8.125 3C6.40197 3 5 4.40197 5 6.125V6.43751C5 6.61025 5.13978 6.75002 5.31251 6.75002H6.56249C6.73522 6.75002 6.875 6.61025 6.875 6.43751V6.125C6.875 5.43591 7.43591 4.875 8.125 4.875C8.81409 4.875 9.37501 5.43591 9.37501 6.125C9.37501 6.81409 8.81409 7.37501 8.125 7.37501C7.43591 7.37501 6.875 7.93593 6.875 8.62502V10.1875C6.875 10.3602 7.01477 10.5 7.18751 10.5H8.43748C8.61022 10.5 8.74999 10.3602 8.74999 10.1875Z"
-                fill="white" />
-            </svg>
-            <span class="float-end">
+          <div class="model-box__show-min-max d-flex justify-content-between">
+            <div class="m-0">
+              <span class="show-min-max-btn min-max-btn-active">Set min and max values</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.5 8C15.5 12.142 12.142 15.5 8 15.5C3.85796 15.5 0.5 12.142 0.5 8C0.5 3.85796 3.85796 0.5 8 0.5C12.142 0.5 15.5 3.85796 15.5 8Z"
+                  fill="#9DA9B5" stroke="#9DA9B5" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M6.875 12.0625C6.875 12.5795 7.29552 13 7.81249 13C8.32947 13 8.74999 12.5795 8.74999 12.0625C8.74999 11.5455 8.32947 11.125 7.81249 11.125C7.29552 11.125 6.875 11.5455 6.875 12.0625Z"
+                  fill="white" />
+                <path
+                  d="M8.74999 10.1875V9.18775C10.1935 8.8954 11.25 7.62465 11.25 6.125C11.25 4.402 9.84804 3 8.125 3C6.40197 3 5 4.40197 5 6.125V6.43751C5 6.61025 5.13978 6.75002 5.31251 6.75002H6.56249C6.73522 6.75002 6.875 6.61025 6.875 6.43751V6.125C6.875 5.43591 7.43591 4.875 8.125 4.875C8.81409 4.875 9.37501 5.43591 9.37501 6.125C9.37501 6.81409 8.81409 7.37501 8.125 7.37501C7.43591 7.37501 6.875 7.93593 6.875 8.62502V10.1875C6.875 10.3602 7.01477 10.5 7.18751 10.5H8.43748C8.61022 10.5 8.74999 10.3602 8.74999 10.1875Z"
+                  fill="white" />
+              </svg>
+            </div>
+            <span>
               Cancel
             </span>
           </div>
           <!-- End Show Min&Max -->
           <!-- Min&Max Options -->
           <div class="model-box__min-max-options">
-            <div class="min-max-option d-flex align-items-center">
-              <span>Temperature</span>
-              <span class="d-flex justify-content-end">
+            <div class="min-max-option d-flex align-items-center justify-content-between">
+              <p>Temperature</p>
+              <div class="min-max-form d-flex justify-content-end">
                 <div class="col-4">
                   <div>
                     <input type="text" placeholder="Min" class="form-control" />
@@ -163,11 +157,11 @@
                     <input type="text" placeholder="Max" class="form-control" />
                   </div>
                 </div>
-              </span>
+              </div>
             </div>
-            <div class="min-max-option d-flex align-items-center">
-              <span>Temperature</span>
-              <span class="d-flex justify-content-end">
+            <div class="min-max-option d-flex align-items-center justify-content-between">
+              <p>Temperature</p>
+              <div class="min-max-form d-flex justify-content-end">
                 <div class="col-4">
                   <div>
                     <input type="text" placeholder="Min" class="form-control" />
@@ -178,11 +172,11 @@
                     <input type="text" placeholder="Max" class="form-control" />
                   </div>
                 </div>
-              </span>
+              </div>
             </div>
-            <div class="min-max-option d-flex align-items-center">
-              <span>Temperature</span>
-              <span class="d-flex justify-content-end">
+            <div class="min-max-option d-flex align-items-center justify-content-between">
+              <p>Temperature</p>
+              <div class="min-max-form d-flex justify-content-end">
                 <div class="col-4">
                   <div>
                     <input type="text" placeholder="Min" class="form-control" />
@@ -193,11 +187,11 @@
                     <input type="text" placeholder="Max" class="form-control" />
                   </div>
                 </div>
-              </span>
+              </div>
             </div>
-            <div class="min-max-option d-flex align-items-center">
-              <span>Temperature</span>
-              <span class="d-flex justify-content-end">
+            <div class="min-max-option d-flex align-items-center justify-content-between">
+              <p>Temperature</p>
+              <div class="min-max-form d-flex justify-content-end">
                 <div class="col-4">
                   <div>
                     <input type="text" placeholder="Min" class="form-control" />
@@ -208,7 +202,7 @@
                     <input type="text" placeholder="Max" class="form-control" />
                   </div>
                 </div>
-              </span>
+              </div>
             </div>
           </div>
           <!-- End Min&Max Options -->
@@ -223,26 +217,23 @@
     </div>
     <!-- End Model Content -->
     <!-- Model Footer -->
-    <div style="position: absolute; bottom: 0; left: 0; right: 0;">
-      <div class="model-box__footer border-top">
-        <div class="d-flex justify-content-end">
-          <a href="#">Back</a>
-          <button class="btn">Continue</button>
-        </div>
+    <div class="model-box__footer">
+      <div class="d-flex justify-content-end">
+        <!-- <a href="#">Back</a> -->
+        <button class="btn btn-link">Back</button>
+        <button class="btn">Continue</button>
       </div>
     </div>
     <!-- End Model Footer -->
   </div>
   <!-- End Sensor Model -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="../assets/bootstrap-tagsinput.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

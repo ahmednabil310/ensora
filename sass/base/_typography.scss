@@ -1,8 +1,12 @@
 $font-stack: "Inter", sans-serif;
 
-.body {
-  font-size: 14px;
-  font-weight: 400;
+.body {  
+  font: {
+    family: $font-stack;
+    size: 14px;
+    weight: 400;
+  }
+  line-height: 22px;
 }
 
 .caption {

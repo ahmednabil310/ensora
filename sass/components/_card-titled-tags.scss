@@ -1,0 +1,25 @@
+.card-titled-tags {
+  .tags-title {
+    @extend .small;
+    color: $N600;
+    line-height: 16px;
+    text-align: start;
+  }
+  .tags {
+    margin-top: 2px;
+    gap: 8px;
+    color: $B300;
+
+    .tag {
+      @extend .small--regular;
+      background-color: $B100;
+      padding: 2px 6px;
+      border-radius: 3px;
+      line-height: 22px;
+    }
+    .tags-overflow {
+      border: 1px solid $B100;
+      background-color: $N000;
+    }
+  }
+} 

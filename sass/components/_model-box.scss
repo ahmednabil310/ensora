@@ -1,0 +1,219 @@
+.model-box {
+  @extend .small--regular;
+  max-width: 560px;
+  min-height: 547px;
+  position: relative;
+  color: $B700;
+  border-radius: 5px;
+  line-height: 22px;
+  /* Remove Later */
+  margin: 50px auto;
+  // border: 1px solid;
+
+  .model-box__close-button {
+    position: absolute;
+    top: 21px;
+    right: 22px;
+  }
+  .model-box__content {
+    padding: 0 40px;
+  }
+  .model-box__title {
+    @extend .display-medium; 
+    margin-top: 42px;
+    line-height: 36px;
+  }
+  .model-box__subtitle {
+    @extend .small--regular;
+    margin-top: 12px;
+  }
+  .model-box__form {
+    margin-top: 7px;
+  
+    input {
+      font-size: 14px;
+      height: 36px;
+      padding: 8px 14px;
+      line-height: 20px;
+      border: 2px solid $N300;
+      color: $B700;
+    }
+    
+    /* Common */
+    #device-id, #install-data {
+      background: $N100;
+    }
+  }
+  .sensor-model form input ::placeholder {
+    color: $N500;
+  }
+  .model-box__form div label {
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: $N600;
+  }
+  .model-box__footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 81px;
+    width: 100%;
+    border-top: 1px solid $N300;
+    padding: 23px 40px;
+    
+    button {
+      font-size: 14px;
+      font-weight: 600;
+      background-color: $B300;
+      color: $N000;
+    }
+    .btn-link {
+      background-color: $N000;
+      color: $B300;
+      margin-right: 24px;
+      text-decoration: none;
+    }
+  }
+
+  /* Confirmation */
+  .model-box__success_icon {
+    margin-top: 118px;
+  }
+  .model-box__confirmation-title {
+    margin-top: 32px;
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 36px;
+  }
+  .model-box__confirmation-subtitle {
+    margin-top: 12px;
+  }
+
+
+
+  /* Add Device index */
+  .model-box__qrcode_button {
+    height: 36px;
+    padding: 8px 12px;
+    font-weight: 600;
+    margin-top: 60px;
+    border-radius: 5px;
+    background-color: $N300;
+  }
+  .model-box__or {
+    @extend .small--regular;
+    margin-top: 19px;
+    color: $B700;
+  }
+  .model-box__options {
+    position: absolute;
+    bottom: 82px;
+    right: 0;
+    padding: 0 42px;
+    gap: 25px;
+
+    .option {
+      width: 75px;
+      height: 62px;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 14px;
+      text-align: center;
+      background-color: $N500;
+      color: $N000;
+    }
+  }
+}
+
+/* Sensor */
+.sensor-model-box,  
+.sensor-min-max-model-box {
+  min-height: 744px;
+
+  .model-box__form {
+    margin-top: 59px;
+
+    & div {
+      margin-top: 20px;
+    }
+
+    .model-box__sensor-details {
+      div {
+        height: 48px;
+        padding: 0;
+        margin: 0;
+      }
+      p {
+        font-weight: 600;
+        color: $N600;
+          
+        :nth-child(2) {
+          margin-top: 6px;
+        }
+      }
+      .model-box__sensor-details .sensing-imgs svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+      }
+      .signal-strength {
+        color: $B700;
+        margin-left: 8px;
+      }
+      .model-box__sensor-details div:nth-child(2) {
+        margin-left: 51px;
+      }
+    }
+    .model-box__show-min-max span{
+      margin-right: 8px;
+      color: #0E76BC;
+      text-decoration: underline;
+    }
+    /* Sensor Min*Max */
+    .model-box__show-min-max span{
+      margin-right: 8px;
+      color: #0E76BC;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .min-max-btn-active{
+      color: $N600 !important;
+      font-weight: 600;
+      text-decoration: none !important;
+      cursor: text;
+    }
+    .model-box__min-max-options {
+      margin-top: 0;
+      & div {
+        margin-top: 0;
+      }
+      .col-4 {
+        padding: 0;
+      }
+      .min-max-option {
+        height: 57px;
+        width: 100%;
+
+        .min-max-form {
+          gap: 20px;
+        }
+      }
+      .min-max-option:nth-child(n+2) {
+        border-top: 1.5px solid $N300;
+
+
+      }
+    }  
+  }
+}
+/* Automation Box Model Specifics */
+.automation-box-model {
+  .model-box__form {
+    margin-top: 59px;
+    form div {
+      margin-top: 26px;
+    }
+  }
+}

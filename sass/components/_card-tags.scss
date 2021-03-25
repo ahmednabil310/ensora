@@ -1,0 +1,16 @@
+.card-tags {
+  margin-top: 12px;
+  gap: 8px;
+  color: #0E76BC;
+
+  .tag {
+    @extend .small--regular;
+    background-color: $B100;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+  .tags-overflow {
+    border: 1px solid $B100;
+    background: $N000;
+  }
+}

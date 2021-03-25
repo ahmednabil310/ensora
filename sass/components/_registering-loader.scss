@@ -1,0 +1,28 @@
+ .registering {
+  max-width: 560px;
+  height: 547px;
+  border-radius: 5px;
+  margin: 50px auto;
+
+  .loaders {
+    gap: 18px;
+  }
+  .spinner-grow {
+    background: $N300;
+  }
+  .spinner-grow:nth-child(1) {
+    width: 30px;
+    height: 30px;
+  }
+  .spinner-grow:nth-child(2) {
+    width: 22px;
+    height: 22px;
+  }
+  .spinner-grow:nth-child(3) {
+    width: 14px;
+    height: 14px;
+  }
+  .loading-text {
+    margin-top: 22px;
+  }
+}
