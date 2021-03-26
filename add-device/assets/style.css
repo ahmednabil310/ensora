@@ -13,7 +13,7 @@ body {
   font-family: Inter;
   font-size: 14px;
 }
-.model-box {
+.setup-wizard-modal {
   max-width: 560px;
   height: 547px;
   border-radius: 5px;
@@ -23,65 +23,65 @@ body {
   /* Remove Later */
   margin: 50px auto;
 }
-.model-box * {
+.setup-wizard-modal * {
   margin: 0;
 }
-.model-box__close-button {
+.setup-wizard-modal__close-button {
   position: absolute;
   top: 28px;
   right: 30px;
 }
-.model-box__content {
+.setup-wizard-modal__content {
   width: 100%;
   padding: 0 40px;
 }
-.model-box__title {
+.setup-wizard-modal__title {
   margin-top: 42px;
   font-weight: 600;
   font-size: 26px;
   letter-spacing: -1px;
   line-height: 36px;
 }
-.model-box__subtitle {
+.setup-wizard-modal__subtitle {
   height: 22px;
   margin-top: 12px;
   font-weight: 400;
   font-size: 14px;
 }
-.model-box__form {
+.setup-wizard-modal__form {
   margin-top: 59px;
 }
-.model-box__form div {
+.setup-wizard-modal__form div {
   margin-top: 20px;
 }
-.model-box form input {
+.setup-wizard-modal form input {
   border: 2px solid #DFE4EB;
 }
 .sensor-model form ::placeholder {
   color: var(--dark-gray);
 }
-.model-box__form div label {
+.setup-wizard-modal__form div label {
   margin-bottom: 2px;
   font-weight: 600;
   color: #687d8f;
 }
-.model-box__footer {
+.setup-wizard-modal__footer {
   height: 81px;
   margin: 0;
   border-width: 1px solid #dfe4eb;
 }
-.model-box__footer > * {
+.setup-wizard-modal__footer > * {
   margin-top: 23px;
   margin-bottom: 23px;
   font-size: 14px;
   font-weight: 600;
 }
-.model-box__footer button {
+.setup-wizard-modal__footer button {
   background-color: var(--light-blue);
   color: white !important;
   margin-right: 40px;
 }
-.model-box__footer a {
+.setup-wizard-modal__footer a {
   margin: 8px 2px;
   color: var(--light-blue);
   margin-right: 24px;
@@ -89,17 +89,17 @@ body {
 }
 
 /* Confirmation */
-.model-box__success_icon {
+.setup-wizard-modal__success_icon {
   margin-top: 118px;
 }
-.model-box__confirmation-title {
+.setup-wizard-modal__confirmation-title {
   margin-top: 32px;
   font-weight: 600;
   font-size: 26px;
   letter-spacing: -1px;
   line-height: 36px;
 }
-.model-box__confirmation-subtitle {
+.setup-wizard-modal__confirmation-subtitle {
   margin-top: 12px;
 }
 
@@ -138,7 +138,7 @@ body {
 }
 
 /* Add Device index */
-.model-box__qrcode_button {
+.setup-wizard-modal__qrcode_button {
   width: 100%;
   height: 36px;
   padding: 8px 12px;
@@ -147,19 +147,19 @@ body {
   border-radius: 5px;
   background-color: #dfe4eb;
 }
-.model-box__or {
+.setup-wizard-modal__or {
   margin-top: 19px;
   font-size: 14px;
   color: var(--darken-blue);
 }
-.model-box__options {
+.setup-wizard-modal__options {
   position: absolute;
   bottom: 82px;
   right: 0;
   padding: 0 40px;
   margin: auto 2px 0 0;
 }
-.model-box__options .option {
+.setup-wizard-modal__options .option {
   width: 75px;
   height: 62px;
   border-radius: 8px;
@@ -173,18 +173,18 @@ body {
 }
 
 /* Sensor */
-.model-box__sensor-details div {
+.setup-wizard-modal__sensor-details div {
   height: 48px;
   margin: 0;
 }
-.model-box__sensor-details p {
+.setup-wizard-modal__sensor-details p {
   font-weight: 600;
   color: #687D8F;
 }
-.model-box__sensor-details div p:nth-child(2) {
+.setup-wizard-modal__sensor-details div p:nth-child(2) {
   margin-top: 6px;
 }
-.model-box__sensor-details .sensing-imgs svg {
+.setup-wizard-modal__sensor-details .sensing-imgs svg {
   width: 20px;
   height: 20px;
   margin-right: 12px;
@@ -193,16 +193,16 @@ body {
   color: #062B45;
   margin-left: 8px;
 }
-.model-box__sensor-details div:nth-child(2) {
+.setup-wizard-modal__sensor-details div:nth-child(2) {
   margin-left: 51px;
 }
-.model-box__show-min-max span{
+.setup-wizard-modal__show-min-max span{
   margin-right: 8px;
   color: #0E76BC;
   text-decoration: underline;
 }
 /* Sensor Min*Max */
-.model-box__show-min-max span{
+.setup-wizard-modal__show-min-max span{
   margin-right: 8px;
   color: #0E76BC;
   text-decoration: underline;
@@ -214,7 +214,7 @@ body {
   text-decoration: none !important;
   cursor: text;
 }
-.model-box__min-max-options {
+.setup-wizard-modal__min-max-options {
   margin-top: 0 !important;
 }
 .min-max-option {

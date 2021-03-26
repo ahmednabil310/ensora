@@ -1,15 +1,19 @@
+/* Abstract */
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
-// @import "base/reset";
+/* Base */
 @import "base/fonts";
 @import "base/typography";
+@import "base/global";
 
+/* Layout */
 @import "layouts/sidebar";
 @import "layouts/navbar";
 
-
-@import "components/model-box";
+/* Components */
+// Modals
+@import "components/setup-wizard-modal";
 @import "components/spotlight_model";
 @import "components/form-container";
 @import "components/onboard-container";
@@ -21,6 +25,7 @@
 @import "components/dropdown-btn";
 @import "components/close-btn";
 @import "components/mm-lw-btn";
+// Cards
 @import "components/automation-box-card";
 @import "components/device-sensors-card";
 @import "components/equipment_card";
@@ -28,8 +33,8 @@
 @import "components/scene-card";
 @import "components/card-tags";
 @import "components/card-titled-tags";
-@import "components/bootstrap-tagsinput";
 
+/* Pages */
 @import "pages/home";
 @import "pages/devices";
 @import "pages/alarms";

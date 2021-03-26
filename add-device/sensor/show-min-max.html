@@ -8,43 +8,44 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="../assets/bootstrap-tagsinput.css">
   <link rel="stylesheet" href="../../sass/main.css">
   <title>Sensor Min & Max Box Model</title>
 </head>
 
 <body>
   <!-- Sensor Model -->
-  <div class="sensor-min-max-model-box model-box d-flex flex-column shadow-sm">
+  <div class="sensor-min-max-setup-wizard-modal setup-wizard-modal d-flex flex-column shadow-sm">
     <!-- Exit Button -->
-    <div class="model-box__close-button">
+    <div class="setup-wizard-modal__close-button">
       <button class="btn-close" type="button" aria-label="Close"></button>
     </div>
     <!-- End Exit button -->
-    <!-- Model Content -->
-    <div class="model-box__content">
+    <!-- Modal Content -->
+    <div class="setup-wizard-modal__content">
       <!-- Model Title -->
-      <div class="model-box__title">
+      <div class="setup-wizard-modal__title">
         <h1 class="text-center d-flex align-items-center justify-content-center">
           Sensor
         </h1>
       </div>
-      <!-- End Model Title -->
+      <!-- End Modal Title -->
       <!-- Model Subtitle -->
-      <div class="model-box__subtitle">
+      <div class="setup-wizard-modal__subtitle">
         <p class="text-center d-flex align-items-center justify-content-center">
           Please enter a custom name to identify your new device.
         </p>
       </div>
       <!-- End Model Subtitle -->
-      <!-- Model Form -->
-      <div class="model-box__form">
+      <!-- Modal Form -->
+      <div class="setup-wizard-modal__form">
         <form>
           <div>
             <label for="sensor-name" class="form-label">Name</label>
             <input type="text" placeholder="Enter sensor name" class="form-control" id="sensor-name" />
           </div>
           <!-- Sensing -->
-          <div class="d-flex model-box__sensor-details">
+          <div class="d-flex setup-wizard-modal__sensor-details">
             <div class="col-6">
               <p>Sensing</p>
               <p class="sensing-imgs">
@@ -122,7 +123,7 @@
             <!-- End Signal Strength -->
           </div>
           <!-- Show Min&Max -->
-          <div class="model-box__show-min-max d-flex justify-content-between">
+          <div class="setup-wizard-modal__show-min-max d-flex justify-content-between">
             <div class="m-0">
               <span class="show-min-max-btn min-max-btn-active">Set min and max values</span>
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +144,7 @@
           </div>
           <!-- End Show Min&Max -->
           <!-- Min&Max Options -->
-          <div class="model-box__min-max-options">
+          <div class="setup-wizard-modal__min-max-options">
             <div class="min-max-option d-flex align-items-center justify-content-between">
               <p>Temperature</p>
               <div class="min-max-form d-flex justify-content-end">
@@ -213,18 +214,17 @@
           </div>
         </form>
       </div>
-      <!-- End Model Form -->
+      <!-- End Modal Form -->
     </div>
     <!-- End Model Content -->
-    <!-- Model Footer -->
-    <div class="model-box__footer">
+    <!-- Modal Footer -->
+    <div class="setup-wizard-modal__footer">
       <div class="d-flex justify-content-end">
-        <!-- <a href="#">Back</a> -->
         <button class="btn btn-link">Back</button>
         <button class="btn">Continue</button>
       </div>
     </div>
-    <!-- End Model Footer -->
+    <!-- End Modal Footer -->
   </div>
   <!-- End Sensor Model -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -233,7 +233,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../assets/bootstrap-tagsinput.js"></script>
+  <script type="text/javascript" src="../../js/vendor/bootstrap-tagsinput.js"></script>
 </body>
 
 </html>

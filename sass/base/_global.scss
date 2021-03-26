@@ -1,0 +1,8 @@
+body {  
+  font-family: $font-stack;
+  @extend .body;
+  line-height: 22px;
+}
+button {
+  @extend .button-label;
+}

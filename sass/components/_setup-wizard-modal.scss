@@ -1,7 +1,6 @@
-.model-box {
+.setup-wizard-modal {
   @import "../base/reset";
-  @extend .small--regular;
-  font-family: $font-stack;
+  
   max-width: 560px;
   min-height: 547px;
   position: relative;
@@ -11,16 +10,16 @@
   /* Remove Later */
   margin: 50px auto;
 
-  .model-box__close-button {
+  .setup-wizard-modal__close-button {
     padding: 0;
     position: absolute;
     top: 26px;
     right: 22px;
   }
-  .model-box__content {
+  .setup-wizard-modal__content {
     padding: 0 40px;
   }
-  .model-box__title {
+  .setup-wizard-modal__title {
     margin-top: 42px;
     
     h1 {
@@ -28,15 +27,13 @@
       line-height: 36px;
     }
   }
-  .model-box__subtitle {
-    @extend .small--regular;
+  .setup-wizard-modal__subtitle {
     margin-top: 12px;
   }
-  .model-box__form {
+  .setup-wizard-modal__form {
     margin-top: 7px;
   
     input {
-      font-size: 14px;
       height: 36px;
       padding: 8px 14px;
       line-height: 20px;
@@ -48,15 +45,15 @@
       }
     }
   }
-  .sensor-model form input ::placeholder {
+  .sensor-moda form input ::placeholder {
     color: $N500;
   }
-  .model-box__form div label {
-    margin-bottom: 2px;
-    font-weight: 600;
+  .setup-wizard-modal__form div label {
+    @extend .label;
     color: $N600;
+    margin-bottom: 2px;
   }
-  .model-box__footer {
+  .setup-wizard-modal__footer {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -66,8 +63,7 @@
     padding: 23px 40px;
     
     button {
-      font-size: 14px;
-      font-weight: 600;
+      @extend .button-label;
       background-color: $B300;
       color: $N000;
     }
@@ -80,38 +76,35 @@
   }
 
   /* Confirmation */
-  .model-box__success_icon {
+  .setup-wizard-modal__success_icon {
     margin-top: 118px;
   }
-  .model-box__confirmation-title {
+  .setup-wizard-modal__confirmation-title {
     @extend .display-medium;
     margin-top: 32px;
     line-height: 36px;
   }
-  .model-box__confirmation-subtitle {
+  .setup-wizard-modal__confirmation-subtitle {
     margin-top: 12px;
   }
 
 
 
   /* Add Device index */
-  .model-box__qrcode_button {
+  .setup-wizard-modal__qrcode_button {
+    @extend .button-label;
     height: 36px;
     padding: 8px 12px;
-    font-weight: 600;
     margin-top: 60px;
     border-radius: 5px;
     background-color: $N300;
   }
-  .model-box__or {
-    @extend .small--regular;
+  .setup-wizard-modal__or {
     margin-top: 19px;
     color: $B700;
   }
-  .model-box__options {
-    position: absolute;
-    bottom: 82px;
-    right: 0;
+  .setup-wizard-modal__options {
+    margin-top: 86px;
     padding: 0 42px;
     gap: 25px;
 
@@ -130,16 +123,16 @@
 }
 
 /* Sensor */
-.sensor-model-box,
-.sensor-min-max-model-box {
+.sensor-modal,
+.sensor-min-max-setup-wizard-modal {
   min-height: 744px;
 
-  .model-box__form {
+  .setup-wizard-modal__form {
     & div {
       margin-bottom: 20px;
     }
 
-    .model-box__sensor-details {
+    .setup-wizard-modal__sensor-details {
       div {
         height: 48px;
         padding: 0;
@@ -153,7 +146,7 @@
           margin-top: 6px;
         }
       }
-      .model-box__sensor-details .sensing-imgs svg {
+      .setup-wizard-modal__sensor-details .sensing-imgs svg {
         width: 20px;
         height: 20px;
         margin-right: 12px;
@@ -162,20 +155,20 @@
         color: $B700;
         margin-left: 8px;
       }
-      .model-box__sensor-details div:nth-child(2) {
+      .setup-wizard-modal__sensor-details div:nth-child(2) {
         margin-left: 51px;
       }
     }
-    .model-box__show-min-max {
+    .setup-wizard-modal__show-min-max {
       margin-bottom: 0;
     }
-    .model-box__show-min-max span{
+    .setup-wizard-modal__show-min-max span{
       margin-right: 8px;
       color: #0E76BC;
       text-decoration: underline;
     }
     /* Sensor Min*Max */
-    .model-box__show-min-max span{
+    .setup-wizard-modal__show-min-max span{
       margin-right: 8px;
       color: #0E76BC;
       text-decoration: underline;
@@ -187,7 +180,7 @@
       text-decoration: none !important;
       cursor: text;
     }
-    .model-box__min-max-options {
+    .setup-wizard-modal__min-max-options {
       margin-top: 0;
       & div {
         margin-top: 0;
@@ -213,32 +206,32 @@
   }
 }
 
-/* Sensor Min Max Model Specifics */
-.sensor-min-max-model-box {
-  .model-box__form {
+/* Sensor Min Max Modal Specifics */
+.sensor-min-max-setup-wizard-modal {
+  .setup-wizard-modal__form {
     margin-top: 59px;
     form div {
       margin-top: 0;
       margin-bottom: 20px;
     }
-    .model-box__min-max-options div {
+    .setup-wizard-modal__min-max-options div {
       margin-bottom: 0 !important;
     }
   }
 }
 
-/* Automation Box Model Specifics */
-.automation-box-model {
-  .model-box__form {
+/* Automation Box Modal Specifics */
+.automation-box-modal {
+  .setup-wizard-modal__form {
     form div {
       margin-bottom: 28px;
     }
   }
 }
 
-/* Gateway Box Model Specifics */
-.gateway-model-box {
-  .model-box__form {
+/* Gateway Box Modal Specifics */
+.gateway-modal {
+  .setup-wizard-modal__form {
     form div {
       margin-bottom: 28px;
     }
@@ -246,10 +239,10 @@
 }
 
 /* Common */
-.automation-box-model,
-.gateway-model-box,
-.sensor-model-box {
-  .model-box__form {
+.automation-box-modal,
+.gateway-modal,
+.sensor-modal {
+  .setup-wizard-modal__form {
     margin-top: 59px;
   }
   #device-id, #install-data {

@@ -1,6 +1,6 @@
 .bootstrap-tagsinput {
   margin-top: 0 !important;
-  border: 2px solid #DFE4EB !important;
+  border: 2px solid #DFE4EB;
   font-size: 14px;
   color: #9DA9B5;
   vertical-align: middle;
@@ -11,13 +11,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  padding: 0px 10px !important;
+  padding: 3px 10px;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   box-sizing: border-box;
   min-height: 36px;
 }
 .bootstrap-tagsinput input {
-  padding: 0 !important;
   border: 0 !important;
   box-shadow: none;
   outline: none;
@@ -43,7 +42,6 @@
 }
 .bootstrap-tagsinput .tag {
   margin-right: 2px;
-  margin-top: 4px;
   color: #062B45;
   background: #DFE4EB;
   border-radius: 3px;
