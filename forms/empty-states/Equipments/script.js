@@ -18,3 +18,12 @@ fetch("../../../HTML/components/sidebar.html")
 });
 
 
+fetch("../../../HTML/components/navbar.html")
+.then(response => {
+  return response.text()
+})
+.then(data => {
+  //console.log(data);
+  document.getElementById("nav-bar-container").innerHTML = data;
+});
+
