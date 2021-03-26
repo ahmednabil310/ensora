@@ -10,17 +10,6 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="../../../sass/main.css" />
     <title id="settings">Scenes Empty State</title>
   </head>
@@ -35,15 +24,21 @@
         <!-- Main Content -->
         <div class="main-content">
           <!-- header -->
-          <div class="main-content__header justify-content-between">
-            <div class="d-flex">
-              <button class="button-nostyle">
+          <div
+            class="main-content__header main-content__header--settings justify-content-between"
+          >
+            <div class="d-flex align-items-center">
+              <button
+                class="button-nostyle d-flex justify-content-center align-items-center"
+              >
                 <img src="../../../assets/icon-button.svg" alt="" />
               </button>
-              <span>Automation Box A</span>
+              <span class="">Automation Box A</span>
             </div>
             <div class="d-flex">
-              <button class="button-nostyle gear-button">
+              <button
+                class="button-nostyle d-flex justify-content-center align-items-center gear-button"
+              >
                 <img src="../../../assets/icon-gear-blue.svg" alt="" />
               </button>
             </div>
@@ -90,14 +85,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R1</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch1"
-                        checked
-                      />
-                      <label class="custom-control-label" for="customSwitch1"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR1" checked />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR1"
                         >Enabled</label
                       >
                     </div>
@@ -110,7 +106,9 @@
                         <div>
                           <img src="../../../assets/icon-fans.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -152,14 +150,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R2</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch2"
-                        checked
-                      />
-                      <label class="custom-control-label" for="customSwitch2"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR2" checked />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR2"
                         >Enabled</label
                       >
                     </div>
@@ -175,7 +174,9 @@
                             alt=""
                           />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -219,14 +220,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R3</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch3"
-                        checked
-                      />
-                      <label class="custom-control-label" for="customSwitch3"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR3" checked />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR3"
                         >Enabled</label
                       >
                     </div>
@@ -239,7 +241,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -281,13 +285,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R4</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch4"
-                      />
-                      <label class="custom-control-label" for="customSwitch4"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR4" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR4"
                         >Disabled</label
                       >
                     </div>
@@ -300,7 +306,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -342,13 +350,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R5</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch5"
-                      />
-                      <label class="custom-control-label" for="customSwitch5"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR5" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR5"
                         >Disabled</label
                       >
                     </div>
@@ -361,7 +371,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -403,13 +415,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R6</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch6"
-                      />
-                      <label class="custom-control-label" for="customSwitch6"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR6" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR6"
                         >Disabled</label
                       >
                     </div>
@@ -422,7 +436,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -464,13 +480,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R7</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch7"
-                      />
-                      <label class="custom-control-label" for="customSwitch7"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR7" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR7"
                         >Disabled</label
                       >
                     </div>
@@ -483,7 +501,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -525,13 +545,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R8</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch8"
-                      />
-                      <label class="custom-control-label" for="customSwitch8"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR8" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR8"
                         >Disabled</label
                       >
                     </div>
@@ -544,7 +566,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -586,13 +610,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R9</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch9"
-                      />
-                      <label class="custom-control-label" for="customSwitch9"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR9" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR9"
                         >Disabled</label
                       >
                     </div>
@@ -605,7 +631,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -647,13 +675,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R10</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch10"
-                      />
-                      <label class="custom-control-label" for="customSwitch10"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR10" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR10"
                         >Disabled</label
                       >
                     </div>
@@ -666,7 +696,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -708,13 +740,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R11</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch11"
-                      />
-                      <label class="custom-control-label" for="customSwitch11"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR11" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR11"
                         >Disabled</label
                       >
                     </div>
@@ -727,7 +761,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -769,13 +805,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>R12</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitch12"
-                      />
-                      <label class="custom-control-label" for="customSwitch12"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxR12" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxR12"
                         >Disabled</label
                       >
                     </div>
@@ -788,7 +826,9 @@
                         <div>
                           <img src="../../../assets/icon-cooling.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -830,14 +870,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>V1</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitchv1"
-                        checked
-                      />
-                      <label class="custom-control-label" for="customSwitchv1"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxV1" checked />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxV1"
                         >Enabled</label
                       >
                     </div>
@@ -850,7 +891,9 @@
                         <div>
                           <img src="../../../assets/icon-lighting.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""
@@ -900,13 +943,15 @@
                   <!-- left side -->
                   <div class="d-flex switch__left">
                     <p>V2</p>
-                    <div class="custom-control custom-switch">
-                      <input
-                        type="checkbox"
-                        class="custom-control-input"
-                        id="customSwitchv2"
-                      />
-                      <label class="custom-control-label" for="customSwitchv2"
+                    <!-- switch -->
+                    <div
+                      class="containerr m-0 d-flex justify-content-center align-items-center"
+                    >
+                      <label class="switch m-0">
+                        <input type="checkbox" id="checkboxV2" />
+                        <div class="slider round"></div>
+                      </label>
+                      <label class="switch-label" for="checkboxV2"
                         >Disabled</label
                       >
                     </div>
@@ -919,7 +964,9 @@
                         <div>
                           <img src="../../../assets/icon-lighting.svg" alt="" />
                           <div class="add-photo-btn">
-                            <button class="button-nostyle">
+                            <button
+                              class="button-nostyle d-flex justify-content-center align-items-center"
+                            >
                               <img
                                 src="../../../assets/Add photo btn.svg"
                                 alt=""

@@ -9,6 +9,12 @@
   }
 }
 
+.main-content__header--settings {
+  span {
+    margin-left: 14px;
+  }
+}
+
 .gear-button {
   border-radius: 5px;
   width: 36px;
@@ -46,8 +52,9 @@
   p {
     @extend .body--bold;
     color: $B700;
-    margin-right: 24px;
+    margin-right: 15px;
     margin-bottom: 0;
+    width: 25px;
   }
 
   label {
@@ -85,8 +92,8 @@
     height: 28px;
   }
   img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -103,6 +110,9 @@
 .dropdown {
   margin-left: 20px;
   margin-right: 20px;
+  select {
+    @extend .input;
+  }
 }
 
 .form__switch__text {
@@ -134,3 +144,98 @@
     color: white;
   }
 }
+
+// custom switch
+
+.switch {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  width: 38px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 1.7px;
+  content: "";
+  height: 17px;
+  left: 2px;
+  position: absolute;
+  transition: 0.4s;
+  width: 17px;
+}
+
+input:checked + .slider {
+  background-color: $B300;
+}
+
+input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch-label {
+  margin: 0;
+  margin-left: 8px;
+}
+
+// .form-switch .form-check-input:checked {
+//   background-position: right center;
+//   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+// }
+
+// .form-switch .form-check-input {
+//   margin-left: -2.5em;
+//   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+//   background-position: left center;
+//   border-radius: 2em;
+//   transition: background-position 0.15s ease-in-out;
+// }
+
+// .form-check-input:checked {
+//   background-color: #0d6efd;
+//   border-color: #0d6efd;
+// }
+
+// .form-check .form-check-input {
+//   float: left;
+// }
+
+// .form-check-input {
+//   width: 38px;
+//   height: 20px;
+//   margin-top: 0.25em;
+//   vertical-align: top;
+//   background-color: #fff;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: contain;
+//   border: 1px solid rgba(0, 0, 0, 0.25);
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   -webkit-print-color-adjust: exact;
+//   color-adjust: exact;
+// }
