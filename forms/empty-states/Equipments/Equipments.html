@@ -12,76 +12,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../../../sass/main.css" />
+
   <title>Equipments Empty State</title>
 </head>
 
 <body>
   <div class="row h-100 m-0">
-    <!-- side bar -->
-    <div class="side-bar col-2 p-0">
-      <ul class="side-bar__items px-4">
-        <!-- add page-selected calss to the selected page-->
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <img src="../../../assets/icon-home.svg" alt="home" />
-            <p class="m-0 d-inline sid-bar__text">Home</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <img src="../../../assets/icon-alarms.svg" alt="alarms" />
-            <p class="m-0 d-inline sid-bar__text">Alarms</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center page-selected">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../../../assets/icon-equipment.svg" alt="equipment" /></i>
-            <p class="m-0 d-inline sid-bar__text">Equipment</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../../../assets/icon-scenes.svg" alt="scenes" /></i>
-            <p class="m-0 d-inline sid-bar__text">Scenes</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../../../assets/icon-routines.svg" alt="routines" /></i>
-            <p class="m-0 d-inline sid-bar__text">Routines</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../../../assets/icon-devices.svg" alt="devices" /></i>
-            <p class="m-0 d-inline sid-bar__text">Devices</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../../../assets/icon-settings.svg" alt="settings" /></i>
-            <p class="m-0 d-inline sid-bar__text">Settings</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <div class="page-selected__bar"> </div>
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../../../assets/icon-help.svg" alt="help" /></i>
-            <p class="m-0 d-inline sid-bar__text">Help</p>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <div class=" col-2 p-0" id="side-bar-container">
+
+  </div>
     <!-- main page -->
     <div class="col-10 main-page p-0">
       <!-- navbar -->
+      <div>
       <nav class="navbar navbar-light bg-white">
         <!-- left side -->
         <div class="navbar__left">
@@ -105,6 +48,7 @@
           </div>
         </div>
       </nav>
+    </div>
       <!-- Main Content -->
       <div class="main-content">
         <!-- header -->
@@ -129,6 +73,7 @@
       </div>
     </div>
   </div>
+  <script src='script.js'></script>
 </body>
 
 </html>
