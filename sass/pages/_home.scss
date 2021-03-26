@@ -19,6 +19,20 @@
     color: $B700;
     @extend .display-medium;
   }
+  span {
+    color: $B700;
+    @extend .display-medium;
+  }
+  .header-icon {
+    display: flex;
+    justify-content: center;
+
+    img {
+      margin-left: 10px;
+      height: 16px;
+      width: 16px;
+    }
+  }
 }
 
 .main-content__header__icon {

@@ -7,9 +7,10 @@ fetch("../../../HTML/components/sidebar.html")
   document.getElementById("side-bar-container").innerHTML = data;
 }).then(()=>{
     elms = document.getElementById("side-bar-container").getElementsByTagName("li")
+    title = document.getElementsByTagName("title")[0];
+    console.log(title.id)
     for (var i = 0; i < elms.length; i++) {
-      console.log(elms[i].id)
-      if(elms[i].id == "home")
+      if(elms[i].id == title.id)
       {
           console.log(elms[i])
           elms[i].classList.add("page-selected")
