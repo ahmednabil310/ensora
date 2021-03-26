@@ -6,3 +6,15 @@
     color: white;
   }
 }
+
+.primary-button-icon {
+  @extend .secondary-button;
+  img {
+    vertical-align: middle;
+  }
+  span {
+    @extend .button-label;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
