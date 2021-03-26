@@ -1,0 +1,67 @@
+.sensor-cards-container {
+  padding: 0 12px 12px !important;
+  gap: 8px !important;
+  
+  .sensor-card {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid $N300;
+    position: relative;
+    
+    .grap-icon {
+      margin-right: 5px;
+    }
+    .sensor-name {
+      color: $N700;
+      font-weight: 600;
+    }
+    .sensor-alarm-label {
+      margin-left: 10px;
+    }
+    .sensor-status-text {
+      min-width: 250px;
+      color: $N600;
+      margin-top: 2px;
+      font-size: 11px;
+      line-height: 16px;
+      font-weight: 500;
+      text-align: start;
+    }
+    .sensor-values {
+      gap: 20px;
+    }
+    .sensor-current-value {
+      margin-bottom: 6px;
+      color: $N700;
+      text-align: start;
+    }
+    .sense-icon svg {
+      margin: 2px 0;
+    }
+    .sensor-current-value span:nth-child(2) {
+      font-weight: 600;
+      font-size: 20px;
+    }
+    .sensor-mm-lh {
+      gap: 16px;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 16px;
+    }
+    .sensor-mm-lh div span {
+      font-weight: 500;
+      color: $N700;
+    }
+    .value-measurement {
+      gap: 2px;
+      margin-left: 3px;
+    }
+    .settings-icon {
+      position: absolute;
+      top: 14px;
+      right: 10px
+    }
+  }
+}

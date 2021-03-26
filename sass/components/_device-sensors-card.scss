@@ -1,36 +1,36 @@
-.device-sensor-cards {
-  padding: 0 12px 12px 12px;
-  text-align: start;
-  gap: 12px;
-}
-.device-sensor-card {
-  min-height: 130px;
-  background-color: white;
-  border-radius: 8px;
-  border: 1px solid $N300;
-  position: relative;
-  padding: 12px;
-
-  .device-details {
-    margin-left: 15px;
-  }
- .device-name {
-    color: #062B45;
-    font-weight: 600;
-  }
-  .device-subtitle {
-    margin-top: 1px;
-    color: $N600;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 500;
-  }
-  .device-senses-icons {
-    margin-top: 5px;
-  }
-  .settings-icon {
-    position: absolute;
-    top: 13px;
-    right: 16px;
+.device-sensor-cards-container {
+  padding: 0 12px 16px;
+  
+  .device-sensor-card {
+    text-align: start;
+    min-height: 130px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid $N300;
+    position: relative;
+    padding: 12px;
+  
+    .device-details {
+      margin-left: 15px;
+    }
+   .device-name {
+      color: #062B45;
+      font-weight: 600;
+    }
+    .device-subtitle {
+      margin-top: 1px;
+      color: $N600;
+      font-size: 11px;
+      line-height: 16px;
+      font-weight: 500;
+    }
+    .device-senses-icons {
+      margin-top: 5px;
+    }
+    .settings-icon {
+      position: absolute;
+      top: 6px;
+      right: 8px;
+    }
   }
 }

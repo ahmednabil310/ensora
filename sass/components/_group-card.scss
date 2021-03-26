@@ -18,6 +18,7 @@
     p {
       @extend .heading;
       color: $B700;
+      padding: 4px 0;
       
       svg {
         margin: 2px 8px 0 2px;
@@ -28,15 +29,12 @@
   }
   
   .data-graphs-btn {
-    box-sizing: border-box;
+    @extend .small;
     margin-left: 10px;
     height: 28px;
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 500;
     padding: 4px 8px;
-    background: white;
-    border: 2px solid #dfe4eb;
+    background: $N000;
+    border: 2px solid $N300;
     border-radius: 4px;
   }
   .cards-container {

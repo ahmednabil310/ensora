@@ -14,18 +14,9 @@
 /* Components */
 // Modals
 @import "components/setup-wizard-modal";
-@import "components/spotlight_model";
-@import "components/form-container";
-@import "components/onboard-container";
-@import "components/registering-loader";
-@import "components/group-card";
-@import "components/g_sensors";
-@import "components/add-device-btn";
-@import "components/primary_btn";
-@import "components/dropdown-btn";
-@import "components/close-btn";
-@import "components/mm-lw-btn";
 // Cards
+@import "components/group-card";
+@import "components/sensor_card";
 @import "components/automation-box-card";
 @import "components/device-sensors-card";
 @import "components/equipment_card";
@@ -33,6 +24,16 @@
 @import "components/scene-card";
 @import "components/card-tags";
 @import "components/card-titled-tags";
+// Others
+@import "components/spotlight_model";
+@import "components/form-container";
+@import "components/onboard-container";
+@import "components/registering-loader";
+@import "components/add-device-btn";
+@import "components/primary_btn";
+@import "components/dropdown-btn";
+@import "components/close-btn";
+@import "components/mm-lw-btn";
 
 /* Pages */
 @import "pages/home";

@@ -3,28 +3,26 @@
 
   .mm-lh-switch {
     border-radius: 5px;
-    border: 1px solid #dfe4eb;
-    margin-right: 15px;
+    border: 1px solid $N300;
+    margin-right: 7px;
   }
   .mm-lh-switch button {
     font-weight: 600;
     font-size: 14px;
-    color: #9da9b5;
+    color: $N500;
     padding: 8px 15px;
   }
   .mm-lh-switch button:hover,
   .mm-lh-switch button:focus {
-    color: #9da9b5;
+    color: $N500;
     box-shadow: none;
   }
   .mm-lh-switch button:active,
   .switch-active {
     outline: 0 !important;
-    color: #062b45 !important;
-    border-right: 1px solid #dfe4eb !important;
-    border-left: 1px solid #dfe4eb !important;
-    border-top: 0;
-    border-bottom: 0;
+    color: $B700 !important;
+    border-right: 1px solid $N300 !important;
+    border-left: 1px solid $N300 !important;
     border-radius: 5px !important;
     z-index: 2;
     box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05) !important;

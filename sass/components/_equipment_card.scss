@@ -3,7 +3,7 @@
   border-radius: 8px;
   border: 1px solid #DFE4EB;
   position: relative;
-  padding: 14px 18px 16px 18px;
+  padding: 14px 18px 16px;
   text-align: start;
 
   .device-details {
@@ -27,6 +27,7 @@
     margin-top: 10px;
   }
   .group-power-mode {
+    text-align: start;
     gap: 10px;
   }
   .group-override p {
@@ -64,7 +65,11 @@
     color: #BBC2CD;
   }
   .card-titled-tags {
-    margin-top: 8px;    
+    margin-top: 8px;
+    
+    .tags-title {
+      margin-bottom: 2px;
+    }
   }
   .settings-icon {
     position: absolute;
