@@ -34,6 +34,7 @@
     margin-top: 7px;
   
     input {
+      @extend .input;
       height: 36px;
       padding: 8px 14px;
       line-height: 20px;

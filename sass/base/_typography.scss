@@ -70,8 +70,11 @@ $font-stack: "Inter", sans-serif;
 }
 
 .body--link,
-.input,
 .small--regular {
   font-size: 14px;
   font-weight: 400;
+}
+.input {
+  @extend .small--regular;
+  line-height: 20px;
 }
