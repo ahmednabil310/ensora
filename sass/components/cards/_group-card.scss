@@ -20,10 +20,12 @@
       color: $B700;
       padding: 4px 0;
 
-      svg {
+      img {
         margin: 2px 8px 0 2px;
         margin-top: 2px;
         margin-right: 8px;
+        width: 20px;
+        height: 20px;
       }
     }
   }
@@ -36,6 +38,15 @@
     background: $N000;
     border: 2px solid $N300;
     border-radius: 4px;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 4px;
+    }
+    p {
+      @extend .small;
+      color: $B700;
+    }
   }
   .cards-container {
     padding: 0px 12px 12px;
@@ -44,9 +55,6 @@
   .settings-icon {
     margin-right: 2px;
     cursor: pointer;
-  }
-  .data-graphs-btn svg {
-    margin-bottom: 5px;
   }
   .empty-card-contatiner {
     padding: 12px;
@@ -61,6 +69,31 @@
       button {
         margin-bottom: 26px;
       }
+    }
+  }
+}
+
+.device-thumbnail {
+  width: 68px;
+  height: 68px;
+  background-color: white;
+  border: solid 2px $N300;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 60px;
+    height: 60px;
+    background-color: $N200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 32px;
+      height: 32px;
     }
   }
 }

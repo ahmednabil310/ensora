@@ -1,474 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipments</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../sass/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Equipments</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../sass/main.css" />
-</head>
-
-<body>
-  <div class="row h-100 m-0">
-    <!-- side bar -->
-    <div class="side-bar col-2 p-0">
-      <ul class="side-bar__items px-4">
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <img src="../assets/icon-home.svg" alt="home" />
-            <p class="m-0 d-inline sid-bar__text">Home</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <img src="../assets/icon-alarms.svg" alt="alarms" />
-            <p class="m-0 d-inline sid-bar__text">Alarms</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../assets/icon-equipment.svg" alt="equipment" /></i>
-            <p class="m-0 d-inline sid-bar__text">Equipment</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../assets/icon-scenes.svg" alt="scenes" /></i>
-            <p class="m-0 d-inline sid-bar__text">Scenes</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../assets/icon-routines.svg" alt="routines" /></i>
-            <p class="m-0 d-inline sid-bar__text">Routines</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../assets/icon-devices.svg" alt="devices" /></i>
-            <p class="m-0 d-inline sid-bar__text">Devices</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../assets/icon-settings.svg" alt="settings" /></i>
-            <p class="m-0 d-inline sid-bar__text">Settings</p>
-          </a>
-        </li>
-        <li class="d-flex align-items-center">
-          <a href="#" class="sid-bar__links link_no_decoration d-flex align-items-center">
-            <i><img src="../assets/icon-help.svg" alt="help" /></i>
-            <p class="m-0 d-inline sid-bar__text">Help</p>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- main page -->
-    <div class="col-10 main-page p-0">
-      <!-- navbar -->
-      <nav class="navbar navbar-light bg-white">
-        <!-- left side -->
-        <div class="navbar__left">
-          <button class="humberger">
-            <img src="../assets/Burger.svg" alt="burger" />
-          </button>
-          <a href="/" class="navbar-brand">
-            <img src="../../forms/assests/logo.png" alt="logo" /></a>
-        </div>
-        <!-- right side -->
-        <div class="pe-4">
-          <div class="navbar__right d-flex align-items-center">
-            <div class="d-flex justify-content-between navbar__device">
-              <img class="pe-1" src="../assets/icon-wireless.svg" alt="wireless" />
-              <a href="#" class="m-0 ps-1 link_no_decoration">Add Device</a>
-            </div>
-            <button class="navbar__device">
-              <img src="../assets/Notifications.png" alt="notification" />
+  <body>
+    <div class="row h-100 m-0">
+      <!-- side bar -->
+      <div class="side-bar col-2 p-0">
+        <ul class="side-bar__items px-4">
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <img src="../assets/icon-home.svg" alt="home" />
+              <p class="m-0 d-inline sid-bar__text">Home</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <img src="../assets/icon-alarms.svg" alt="alarms" />
+              <p class="m-0 d-inline sid-bar__text">Alarms</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-equipment.svg" alt="equipment" /></i>
+              <p class="m-0 d-inline sid-bar__text">Equipment</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-scenes.svg" alt="scenes" /></i>
+              <p class="m-0 d-inline sid-bar__text">Scenes</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-routines.svg" alt="routines" /></i>
+              <p class="m-0 d-inline sid-bar__text">Routines</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-devices.svg" alt="devices" /></i>
+              <p class="m-0 d-inline sid-bar__text">Devices</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-settings.svg" alt="settings" /></i>
+              <p class="m-0 d-inline sid-bar__text">Settings</p>
+            </a>
+          </li>
+          <li class="d-flex align-items-center">
+            <a
+              href="#"
+              class="sid-bar__links link_no_decoration d-flex align-items-center"
+            >
+              <i><img src="../assets/icon-help.svg" alt="help" /></i>
+              <p class="m-0 d-inline sid-bar__text">Help</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- main page -->
+      <div class="col-10 main-page p-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-light bg-white">
+          <!-- left side -->
+          <div class="navbar__left">
+            <button class="humberger">
+              <img src="../assets/Burger.svg" alt="burger" />
             </button>
-            <img class="user-image" src="../assets/User Button.png" alt="user" />
+            <a href="/" class="navbar-brand">
+              <img src="../../forms/assests/logo.png" alt="logo"
+            /></a>
           </div>
-        </div>
-      </nav>
-      <!-- Main Content -->
-      <div class="main-content">
-        <!-- header -->
-        <div class="d-flex justify-content-between">
-          <div class="d-flex">
-            <h2 class="main-content__header">Equipments</h2>
+          <!-- right side -->
+          <div class="pe-4">
+            <div class="navbar__right d-flex align-items-center">
+              <div class="d-flex justify-content-between navbar__device">
+                <img
+                  class="pe-1"
+                  src="../assets/icon-wireless.svg"
+                  alt="wireless"
+                />
+                <a href="#" class="m-0 ps-1 link_no_decoration">Add Device</a>
+              </div>
+              <button class="navbar__device">
+                <img src="../assets/Notifications.png" alt="notification" />
+              </button>
+              <img
+                class="user-image"
+                src="../assets/User Button.png"
+                alt="user"
+              />
+            </div>
           </div>
-        </div>
-        <!-- middle section -->
-        <div class="row mid-section align-items-center flex-column text-center">
-          <div class="col-12">
-            <!-- Group Card -->
-            <div class="group-card">
-              <!-- Group Card Header -->
-              <div class="group-card-header d-flex justify-content-between">
-                <!-- Group Name -->
-                <div class="d-flex">
-                  <a class="collapse-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
-                        fill="#9DA9B5" />
-                    </svg>
-                  </a>
-                  <div class="group-name d-flex">
-                    <p>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M19.5735 12.5369L19.4756 12.2359L17.6067 11.7705C17.6182 11.6018 17.6234 11.4326 17.6234 11.2617C17.6234 9.09484 16.6875 7.02742 15.0557 5.58946L14.2943 6.44376C15.6806 7.66521 16.4754 9.42139 16.4754 11.2617C16.4754 11.3374 16.4744 11.4128 16.4712 11.4878L15.2577 11.1856C15.2405 10.001 14.8166 8.85067 14.0586 7.93734L13.1731 8.6642C13.6996 9.29812 14.0199 10.0797 14.0942 10.8959L12.8574 10.5881C12.7239 10.0272 12.4264 9.52831 12.0185 9.14436L13.8989 2.62091L13.6863 2.3861C12.7747 1.37879 11.4323 0.800781 10.0038 0.800781C8.57527 0.800781 7.23334 1.37879 6.32176 2.3861L6.10897 2.62091L6.63908 4.46036C6.22307 4.66468 5.82351 4.90826 5.44474 5.1902C4.16471 6.1419 3.1996 7.49822 2.72707 9.00859L3.82332 9.34764C4.3449 7.67934 5.49019 6.34859 6.96013 5.57415L7.30676 6.77745C6.85516 7.04616 6.44199 7.38282 6.0846 7.7806L6.94055 8.54122C7.15019 8.3079 7.38452 8.10135 7.63738 7.9247L7.98909 9.1448C7.5834 9.52682 7.28687 10.0226 7.15259 10.5801L5.91458 10.8849C5.95705 10.4135 6.08071 9.9591 6.28393 9.52905L5.24451 9.04398C4.92854 9.71359 4.7621 10.429 4.74984 11.1715L0.529783 12.2103L0.43094 12.511C0.00700477 13.7991 0.172392 15.244 0.884483 16.4757C1.59657 17.7071 2.76909 18.5763 4.1016 18.8602L4.41264 18.9263L5.75398 17.5508C7.00335 18.3864 8.48077 18.8385 10.0038 18.8385C10.5296 18.8385 11.0546 18.7852 11.5646 18.6795L11.3305 17.5618C10.8973 17.6517 10.4512 17.6969 10.0038 17.6969C8.75247 17.6969 7.57189 17.3377 6.57089 16.7124L7.43955 15.8216C8.19844 16.2455 9.07323 16.4872 10.0038 16.4872V15.3456C9.38621 15.3456 8.80033 15.2094 8.27456 14.965L9.1616 14.0548C9.42823 14.1347 9.711 14.1777 10.0038 14.1777C10.2939 14.1777 10.574 14.1359 10.8388 14.0571L15.5743 18.9412L15.8853 18.8758C17.2186 18.5958 18.3938 17.7296 19.109 16.5001C19.8246 15.2706 19.9937 13.8261 19.5735 12.5369ZM11.8881 13.4942C12.4035 13.0636 12.7686 12.46 12.8913 11.7734L18.5637 13.1857C18.7706 14.0898 18.613 15.0731 18.1155 15.9285C17.6177 16.7837 16.8394 17.4096 15.9477 17.6817L11.8881 13.4942ZM7.39214 2.93036C8.07552 2.29941 9.01042 1.94237 10.0038 1.94237C10.9976 1.94237 11.9325 2.29941 12.6154 2.93036L11.0045 8.5204C10.6923 8.40694 10.3551 8.34523 10.0038 8.34523C9.65253 8.34523 9.31533 8.40694 9.0031 8.5204L7.39214 2.93036ZM4.04269 17.6656C3.15175 17.3913 2.37491 16.763 1.87979 15.9065C1.38468 15.0499 1.22931 14.0663 1.43896 13.1628L7.1155 11.7655C7.23633 12.4527 7.59955 13.0575 8.11425 13.4893L4.04269 17.6656ZM8.21938 11.2617C8.21938 10.283 9.01999 9.48682 10.0038 9.48682C10.988 9.48682 11.7885 10.283 11.7885 11.2617C11.7885 12.2401 10.988 13.0361 10.0038 13.0361C9.01999 13.0362 8.21938 12.2401 8.21938 11.2617Z"
-                          fill="#062B45" />
-                      </svg>
-                      Fans
-                    </p>
-                    <div>
-                      <button class="btn btn-light btn-sm data-graphs-btn">
-                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M15.625 10H2V0.375C2 0.1875 1.8125 0 1.625 0H0.375C0.15625 0 0 0.1875 0 0.375V11.625C0 11.8438 0.15625 12 0.375 12H15.625C15.8125 12 16 11.8438 16 11.625V10.375C16 10.1875 15.8125 10 15.625 10ZM11.625 3L9 4.75L6.3125 1.21875C6.15625 1 5.84375 1 5.6875 1.25L3 5.75V9H15L12.1875 3.15625C12.0625 2.9375 11.8125 2.875 11.625 3Z"
-                            fill="#062B45" />
-                        </svg>
-                        Data Graphs
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- End Group Name -->
-              </div>
-              <!-- End Group Card Header -->
-              <!-- Equipment Cards -->
-              <div class="cards-container d-flex flex-wrap">
-                <!-- Device Sensor card -->
-                <div class="equipment-card col-4">
-                  <div class="d-flex flex-row align-items-start">
-                    <div class="device-thumbnail">
-                      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="66" height="66" rx="6" stroke="#DFE4EB" stroke-width="2" />
-                        <rect x="4" y="4" width="60" height="60" rx="5" fill="#F2F4F8" />
-                        <path
-                          d="M28.9631 31.4253C30.1513 30.0211 31.5555 28.7249 33.1217 27.5907C39.7647 22.784 46.8937 22.892 49.054 27.8608C51.2143 32.8295 47.5418 40.7146 40.8448 45.5213C34.85 49.8419 28.5311 50.22 25.7227 46.6014C28.423 48.9778 33.5538 48.4377 38.3605 44.9272C44.1933 40.6606 47.4338 33.6936 45.5435 29.319C43.6532 24.9443 37.3883 24.8363 31.5555 29.1029C30.6374 29.859 29.7732 30.6152 28.9631 31.4253Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M31.1774 31.5337C35.552 28.3472 40.2507 28.4552 41.6549 31.6957C43.0591 34.9362 40.6287 40.1749 36.2541 43.3614C32.6356 46.0078 28.801 46.3858 26.8027 44.6035C28.855 47.3039 33.6617 47.0339 38.0903 43.7934C43.0591 40.1749 45.8134 34.2341 44.1932 30.5615C42.573 26.889 37.2802 26.781 32.3115 30.3455C31.1234 31.2096 30.0972 32.1818 29.1791 33.2079C29.8272 32.6138 30.4753 32.0198 31.1774 31.5337Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M39.7101 35.6384C38.5219 37.0426 37.1177 38.3388 35.5515 39.4729C28.9086 44.2796 21.7795 44.1716 19.6192 39.2029C17.4589 34.2342 21.1314 26.349 27.8284 21.5424C33.8233 17.2217 40.1422 16.8437 42.9506 20.4622C40.2502 18.0859 35.1194 18.6259 30.3128 22.1364C24.4259 26.349 21.1855 33.316 23.0757 37.6907C24.966 42.0653 31.2309 42.1733 37.0637 37.9067C38.0359 37.2046 38.9 36.4485 39.7101 35.6384Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M37.4963 35.5302C33.1217 38.7166 28.423 38.6086 27.0188 35.3682C25.6146 32.1277 28.045 26.8889 32.4196 23.7025C36.0381 21.1101 39.8727 20.6781 41.871 22.4603C39.8187 19.7599 35.012 20.03 30.5834 23.2704C25.5606 26.8889 22.8603 32.8298 24.4265 36.5563C25.9927 40.2829 31.3395 40.3369 36.3082 36.7724C37.4963 35.9082 38.5225 34.9361 39.4406 33.9099C38.8465 34.45 38.1984 35.0441 37.4963 35.5302Z"
-                          fill="#BBC2CD" />
-                      </svg>
-                    </div>
-                    <div class="device-details d-flex flex-column">
-                      <span class="device-name">Lettuce fan</span>
-                      <div class="device-subtitle">
-                        <span>Automation box name</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="change-mode d-flex justify-content-between">
-                    <div class="group-power-mode d-flex">
-                      <div class="d-flex flex-column">
-                        <span>Power</span>
-                        <span>Off</span>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <span>Mode</span>
-                        <span class="active">Auto</span>
-                      </div>
-                    </div>
-                    <div class="group-override d-flex flex-column">
-                      <p>Override</p>
-                      <div class="d-flex">
-                        <button class="btn btn-primary">On</button>
-                        <button class="btn btn-primary">Off</button>
-                        <button class="btn" disabled>Auto</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-titled-tags">
-                    <p class="tags-title">Groups</p>
-                    <div class="tags d-flex">
-                      <span class="tag">GreenHouse A</span>
-                    </div>
-                  </div>
-                  <!-- Settings Icon -->
-                  <div class="settings-icon">
-                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
-                      data-toggle="dropdown" aria-expanded="false" data-offset="-159,0">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
-                          fill="#9DA9B5" />
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
-                      <li><a class="dropdown-item" href="#">Equipment data</a></li>
-                      <li><a class="dropdown-item" href="#">Update group</a></li>
-                      <li><a class="dropdown-item" href="#">Daily cycle limits</a></li>
-                      <li><a class="dropdown-item" href="#">View automation box</a></li>
-                    </ul>
-                  </div>
-                  <!-- End Settings Icon -->
-
-                </div>
-                <!-- End Device Sensor card -->
-              </div>
-              <!-- End Equipment cards -->
+        </nav>
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- header -->
+          <div class="d-flex justify-content-between">
+            <div class="d-flex">
+              <h2 class="main-content__header">Equipments</h2>
             </div>
-            <!-- End Group Card -->
-            <!-- Group Card -->
-            <div class="group-card">
-              <!-- Group Card Header -->
-              <div class="group-card-header d-flex justify-content-between">
-                <!-- Group Name -->
-                <div class="d-flex">
-                  <a class="collapse-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
-                        fill="#9DA9B5" />
-                    </svg>
-                  </a>
-                  <div class="group-name d-flex">
-                    <p>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          </div>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center"
+          >
+            <div class="col-12">
+              <!-- Group Card -->
+              <div class="group-card">
+                <!-- Group Card Header -->
+                <div class="group-card-header d-flex justify-content-between">
+                  <!-- Group Name -->
+                  <div class="d-flex">
+                    <a class="collapse-icon">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
-                          d="M19.5735 12.5369L19.4756 12.2359L17.6067 11.7705C17.6182 11.6018 17.6234 11.4326 17.6234 11.2617C17.6234 9.09484 16.6875 7.02742 15.0557 5.58946L14.2943 6.44376C15.6806 7.66521 16.4754 9.42139 16.4754 11.2617C16.4754 11.3374 16.4744 11.4128 16.4712 11.4878L15.2577 11.1856C15.2405 10.001 14.8166 8.85067 14.0586 7.93734L13.1731 8.6642C13.6996 9.29812 14.0199 10.0797 14.0942 10.8959L12.8574 10.5881C12.7239 10.0272 12.4264 9.52831 12.0185 9.14436L13.8989 2.62091L13.6863 2.3861C12.7747 1.37879 11.4323 0.800781 10.0038 0.800781C8.57527 0.800781 7.23334 1.37879 6.32176 2.3861L6.10897 2.62091L6.63908 4.46036C6.22307 4.66468 5.82351 4.90826 5.44474 5.1902C4.16471 6.1419 3.1996 7.49822 2.72707 9.00859L3.82332 9.34764C4.3449 7.67934 5.49019 6.34859 6.96013 5.57415L7.30676 6.77745C6.85516 7.04616 6.44199 7.38282 6.0846 7.7806L6.94055 8.54122C7.15019 8.3079 7.38452 8.10135 7.63738 7.9247L7.98909 9.1448C7.5834 9.52682 7.28687 10.0226 7.15259 10.5801L5.91458 10.8849C5.95705 10.4135 6.08071 9.9591 6.28393 9.52905L5.24451 9.04398C4.92854 9.71359 4.7621 10.429 4.74984 11.1715L0.529783 12.2103L0.43094 12.511C0.00700477 13.7991 0.172392 15.244 0.884483 16.4757C1.59657 17.7071 2.76909 18.5763 4.1016 18.8602L4.41264 18.9263L5.75398 17.5508C7.00335 18.3864 8.48077 18.8385 10.0038 18.8385C10.5296 18.8385 11.0546 18.7852 11.5646 18.6795L11.3305 17.5618C10.8973 17.6517 10.4512 17.6969 10.0038 17.6969C8.75247 17.6969 7.57189 17.3377 6.57089 16.7124L7.43955 15.8216C8.19844 16.2455 9.07323 16.4872 10.0038 16.4872V15.3456C9.38621 15.3456 8.80033 15.2094 8.27456 14.965L9.1616 14.0548C9.42823 14.1347 9.711 14.1777 10.0038 14.1777C10.2939 14.1777 10.574 14.1359 10.8388 14.0571L15.5743 18.9412L15.8853 18.8758C17.2186 18.5958 18.3938 17.7296 19.109 16.5001C19.8246 15.2706 19.9937 13.8261 19.5735 12.5369ZM11.8881 13.4942C12.4035 13.0636 12.7686 12.46 12.8913 11.7734L18.5637 13.1857C18.7706 14.0898 18.613 15.0731 18.1155 15.9285C17.6177 16.7837 16.8394 17.4096 15.9477 17.6817L11.8881 13.4942ZM7.39214 2.93036C8.07552 2.29941 9.01042 1.94237 10.0038 1.94237C10.9976 1.94237 11.9325 2.29941 12.6154 2.93036L11.0045 8.5204C10.6923 8.40694 10.3551 8.34523 10.0038 8.34523C9.65253 8.34523 9.31533 8.40694 9.0031 8.5204L7.39214 2.93036ZM4.04269 17.6656C3.15175 17.3913 2.37491 16.763 1.87979 15.9065C1.38468 15.0499 1.22931 14.0663 1.43896 13.1628L7.1155 11.7655C7.23633 12.4527 7.59955 13.0575 8.11425 13.4893L4.04269 17.6656ZM8.21938 11.2617C8.21938 10.283 9.01999 9.48682 10.0038 9.48682C10.988 9.48682 11.7885 10.283 11.7885 11.2617C11.7885 12.2401 10.988 13.0361 10.0038 13.0361C9.01999 13.0362 8.21938 12.2401 8.21938 11.2617Z"
-                          fill="#062B45" />
+                          d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
+                          fill="#9DA9B5"
+                        />
                       </svg>
-                      Fans
-                    </p>
-                    <div>
-                      <button class="btn btn-light btn-sm data-graphs-btn">
-                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </a>
+                    <div class="group-name d-flex">
+                      <p>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
                           <path
-                            d="M15.625 10H2V0.375C2 0.1875 1.8125 0 1.625 0H0.375C0.15625 0 0 0.1875 0 0.375V11.625C0 11.8438 0.15625 12 0.375 12H15.625C15.8125 12 16 11.8438 16 11.625V10.375C16 10.1875 15.8125 10 15.625 10ZM11.625 3L9 4.75L6.3125 1.21875C6.15625 1 5.84375 1 5.6875 1.25L3 5.75V9H15L12.1875 3.15625C12.0625 2.9375 11.8125 2.875 11.625 3Z"
-                            fill="#062B45" />
+                            d="M19.5735 12.5369L19.4756 12.2359L17.6067 11.7705C17.6182 11.6018 17.6234 11.4326 17.6234 11.2617C17.6234 9.09484 16.6875 7.02742 15.0557 5.58946L14.2943 6.44376C15.6806 7.66521 16.4754 9.42139 16.4754 11.2617C16.4754 11.3374 16.4744 11.4128 16.4712 11.4878L15.2577 11.1856C15.2405 10.001 14.8166 8.85067 14.0586 7.93734L13.1731 8.6642C13.6996 9.29812 14.0199 10.0797 14.0942 10.8959L12.8574 10.5881C12.7239 10.0272 12.4264 9.52831 12.0185 9.14436L13.8989 2.62091L13.6863 2.3861C12.7747 1.37879 11.4323 0.800781 10.0038 0.800781C8.57527 0.800781 7.23334 1.37879 6.32176 2.3861L6.10897 2.62091L6.63908 4.46036C6.22307 4.66468 5.82351 4.90826 5.44474 5.1902C4.16471 6.1419 3.1996 7.49822 2.72707 9.00859L3.82332 9.34764C4.3449 7.67934 5.49019 6.34859 6.96013 5.57415L7.30676 6.77745C6.85516 7.04616 6.44199 7.38282 6.0846 7.7806L6.94055 8.54122C7.15019 8.3079 7.38452 8.10135 7.63738 7.9247L7.98909 9.1448C7.5834 9.52682 7.28687 10.0226 7.15259 10.5801L5.91458 10.8849C5.95705 10.4135 6.08071 9.9591 6.28393 9.52905L5.24451 9.04398C4.92854 9.71359 4.7621 10.429 4.74984 11.1715L0.529783 12.2103L0.43094 12.511C0.00700477 13.7991 0.172392 15.244 0.884483 16.4757C1.59657 17.7071 2.76909 18.5763 4.1016 18.8602L4.41264 18.9263L5.75398 17.5508C7.00335 18.3864 8.48077 18.8385 10.0038 18.8385C10.5296 18.8385 11.0546 18.7852 11.5646 18.6795L11.3305 17.5618C10.8973 17.6517 10.4512 17.6969 10.0038 17.6969C8.75247 17.6969 7.57189 17.3377 6.57089 16.7124L7.43955 15.8216C8.19844 16.2455 9.07323 16.4872 10.0038 16.4872V15.3456C9.38621 15.3456 8.80033 15.2094 8.27456 14.965L9.1616 14.0548C9.42823 14.1347 9.711 14.1777 10.0038 14.1777C10.2939 14.1777 10.574 14.1359 10.8388 14.0571L15.5743 18.9412L15.8853 18.8758C17.2186 18.5958 18.3938 17.7296 19.109 16.5001C19.8246 15.2706 19.9937 13.8261 19.5735 12.5369ZM11.8881 13.4942C12.4035 13.0636 12.7686 12.46 12.8913 11.7734L18.5637 13.1857C18.7706 14.0898 18.613 15.0731 18.1155 15.9285C17.6177 16.7837 16.8394 17.4096 15.9477 17.6817L11.8881 13.4942ZM7.39214 2.93036C8.07552 2.29941 9.01042 1.94237 10.0038 1.94237C10.9976 1.94237 11.9325 2.29941 12.6154 2.93036L11.0045 8.5204C10.6923 8.40694 10.3551 8.34523 10.0038 8.34523C9.65253 8.34523 9.31533 8.40694 9.0031 8.5204L7.39214 2.93036ZM4.04269 17.6656C3.15175 17.3913 2.37491 16.763 1.87979 15.9065C1.38468 15.0499 1.22931 14.0663 1.43896 13.1628L7.1155 11.7655C7.23633 12.4527 7.59955 13.0575 8.11425 13.4893L4.04269 17.6656ZM8.21938 11.2617C8.21938 10.283 9.01999 9.48682 10.0038 9.48682C10.988 9.48682 11.7885 10.283 11.7885 11.2617C11.7885 12.2401 10.988 13.0361 10.0038 13.0361C9.01999 13.0362 8.21938 12.2401 8.21938 11.2617Z"
+                            fill="#062B45"
+                          />
                         </svg>
-                        Data Graphs
-                      </button>
+                        Fans
+                      </p>
+                      <div>
+                        <button class="btn btn-light btn-sm data-graphs-btn">
+                          <svg
+                            width="16"
+                            height="12"
+                            viewBox="0 0 16 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.625 10H2V0.375C2 0.1875 1.8125 0 1.625 0H0.375C0.15625 0 0 0.1875 0 0.375V11.625C0 11.8438 0.15625 12 0.375 12H15.625C15.8125 12 16 11.8438 16 11.625V10.375C16 10.1875 15.8125 10 15.625 10ZM11.625 3L9 4.75L6.3125 1.21875C6.15625 1 5.84375 1 5.6875 1.25L3 5.75V9H15L12.1875 3.15625C12.0625 2.9375 11.8125 2.875 11.625 3Z"
+                              fill="#062B45"
+                            />
+                          </svg>
+                          Data Graphs
+                        </button>
+                      </div>
                     </div>
                   </div>
+                  <!-- End Group Name -->
                 </div>
-                <!-- End Group Name -->
-              </div>
-              <!-- End Group Card Header -->
-              <!-- Equipment Cards -->
-              <div class="cards-container d-flex flex-wrap">
-                <!-- Device Sensor card -->
-                <div class="equipment-card col-4">
-                  <div class="d-flex flex-row align-items-start">
-                    <div class="device-thumbnail">
-                      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="66" height="66" rx="6" stroke="#DFE4EB" stroke-width="2" />
-                        <rect x="4" y="4" width="60" height="60" rx="5" fill="#F2F4F8" />
-                        <path
-                          d="M28.9631 31.4253C30.1513 30.0211 31.5555 28.7249 33.1217 27.5907C39.7647 22.784 46.8937 22.892 49.054 27.8608C51.2143 32.8295 47.5418 40.7146 40.8448 45.5213C34.85 49.8419 28.5311 50.22 25.7227 46.6014C28.423 48.9778 33.5538 48.4377 38.3605 44.9272C44.1933 40.6606 47.4338 33.6936 45.5435 29.319C43.6532 24.9443 37.3883 24.8363 31.5555 29.1029C30.6374 29.859 29.7732 30.6152 28.9631 31.4253Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M31.1774 31.5337C35.552 28.3472 40.2507 28.4552 41.6549 31.6957C43.0591 34.9362 40.6287 40.1749 36.2541 43.3614C32.6356 46.0078 28.801 46.3858 26.8027 44.6035C28.855 47.3039 33.6617 47.0339 38.0903 43.7934C43.0591 40.1749 45.8134 34.2341 44.1932 30.5615C42.573 26.889 37.2802 26.781 32.3115 30.3455C31.1234 31.2096 30.0972 32.1818 29.1791 33.2079C29.8272 32.6138 30.4753 32.0198 31.1774 31.5337Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M39.7101 35.6384C38.5219 37.0426 37.1177 38.3388 35.5515 39.4729C28.9086 44.2796 21.7795 44.1716 19.6192 39.2029C17.4589 34.2342 21.1314 26.349 27.8284 21.5424C33.8233 17.2217 40.1422 16.8437 42.9506 20.4622C40.2502 18.0859 35.1194 18.6259 30.3128 22.1364C24.4259 26.349 21.1855 33.316 23.0757 37.6907C24.966 42.0653 31.2309 42.1733 37.0637 37.9067C38.0359 37.2046 38.9 36.4485 39.7101 35.6384Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M37.4963 35.5302C33.1217 38.7166 28.423 38.6086 27.0188 35.3682C25.6146 32.1277 28.045 26.8889 32.4196 23.7025C36.0381 21.1101 39.8727 20.6781 41.871 22.4603C39.8187 19.7599 35.012 20.03 30.5834 23.2704C25.5606 26.8889 22.8603 32.8298 24.4265 36.5563C25.9927 40.2829 31.3395 40.3369 36.3082 36.7724C37.4963 35.9082 38.5225 34.9361 39.4406 33.9099C38.8465 34.45 38.1984 35.0441 37.4963 35.5302Z"
-                          fill="#BBC2CD" />
-                      </svg>
-                    </div>
-                    <div class="device-details d-flex flex-column">
-                      <span class="device-name">Lettuce fan</span>
-                      <div class="device-subtitle">
-                        <span>Automation box name</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="change-mode d-flex justify-content-between">
-                    <div class="group-power-mode d-flex">
-                      <div class="d-flex flex-column">
-                        <span>Power</span>
-                        <span>Off</span>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <span>Mode</span>
-                        <span class="active">Auto</span>
-                      </div>
-                    </div>
-                    <div class="group-override d-flex flex-column">
-                      <p>Override</p>
-                      <div class="d-flex">
-                        <button class="btn btn-primary">On</button>
-                        <button class="btn btn-primary">Off</button>
-                        <button class="btn" disabled>Auto</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-titled-tags">
-                    <p class="tags-title">Groups</p>
-                    <div class="tags d-flex">
-                      <span class="tag">GreenHouse A</span>
-                    </div>
-                  </div>
-                  <!-- Settings Icon -->
-                  <div class="settings-icon">
-                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
-                      data-toggle="dropdown" aria-expanded="false" data-offset="-159,0">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
-                          fill="#9DA9B5" />
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
-                      <li><a class="dropdown-item" href="#">Equipment data</a></li>
-                      <li><a class="dropdown-item" href="#">Update group</a></li>
-                      <li><a class="dropdown-item" href="#">Daily cycle limits</a></li>
-                      <li><a class="dropdown-item" href="#">View automation box</a></li>
-                    </ul>
-                  </div>
-                  <!-- End Settings Icon -->
-
-                </div>
-                <!-- End Device Sensor card -->
-              </div>
-              <!-- End Equipment cards -->
-            </div>
-            <!-- End Group Card -->
-            <!-- Group Card -->
-            <div class="group-card">
-              <!-- Group Card Header -->
-              <div class="group-card-header d-flex justify-content-between">
-                <!-- Group Name -->
-                <div class="d-flex">
-                  <a class="collapse-icon">
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
-                        fill="#9DA9B5" />
-                    </svg>
-                  </a>
-                  <div class="group-name d-flex">
-                    <p>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M19.5735 12.5369L19.4756 12.2359L17.6067 11.7705C17.6182 11.6018 17.6234 11.4326 17.6234 11.2617C17.6234 9.09484 16.6875 7.02742 15.0557 5.58946L14.2943 6.44376C15.6806 7.66521 16.4754 9.42139 16.4754 11.2617C16.4754 11.3374 16.4744 11.4128 16.4712 11.4878L15.2577 11.1856C15.2405 10.001 14.8166 8.85067 14.0586 7.93734L13.1731 8.6642C13.6996 9.29812 14.0199 10.0797 14.0942 10.8959L12.8574 10.5881C12.7239 10.0272 12.4264 9.52831 12.0185 9.14436L13.8989 2.62091L13.6863 2.3861C12.7747 1.37879 11.4323 0.800781 10.0038 0.800781C8.57527 0.800781 7.23334 1.37879 6.32176 2.3861L6.10897 2.62091L6.63908 4.46036C6.22307 4.66468 5.82351 4.90826 5.44474 5.1902C4.16471 6.1419 3.1996 7.49822 2.72707 9.00859L3.82332 9.34764C4.3449 7.67934 5.49019 6.34859 6.96013 5.57415L7.30676 6.77745C6.85516 7.04616 6.44199 7.38282 6.0846 7.7806L6.94055 8.54122C7.15019 8.3079 7.38452 8.10135 7.63738 7.9247L7.98909 9.1448C7.5834 9.52682 7.28687 10.0226 7.15259 10.5801L5.91458 10.8849C5.95705 10.4135 6.08071 9.9591 6.28393 9.52905L5.24451 9.04398C4.92854 9.71359 4.7621 10.429 4.74984 11.1715L0.529783 12.2103L0.43094 12.511C0.00700477 13.7991 0.172392 15.244 0.884483 16.4757C1.59657 17.7071 2.76909 18.5763 4.1016 18.8602L4.41264 18.9263L5.75398 17.5508C7.00335 18.3864 8.48077 18.8385 10.0038 18.8385C10.5296 18.8385 11.0546 18.7852 11.5646 18.6795L11.3305 17.5618C10.8973 17.6517 10.4512 17.6969 10.0038 17.6969C8.75247 17.6969 7.57189 17.3377 6.57089 16.7124L7.43955 15.8216C8.19844 16.2455 9.07323 16.4872 10.0038 16.4872V15.3456C9.38621 15.3456 8.80033 15.2094 8.27456 14.965L9.1616 14.0548C9.42823 14.1347 9.711 14.1777 10.0038 14.1777C10.2939 14.1777 10.574 14.1359 10.8388 14.0571L15.5743 18.9412L15.8853 18.8758C17.2186 18.5958 18.3938 17.7296 19.109 16.5001C19.8246 15.2706 19.9937 13.8261 19.5735 12.5369ZM11.8881 13.4942C12.4035 13.0636 12.7686 12.46 12.8913 11.7734L18.5637 13.1857C18.7706 14.0898 18.613 15.0731 18.1155 15.9285C17.6177 16.7837 16.8394 17.4096 15.9477 17.6817L11.8881 13.4942ZM7.39214 2.93036C8.07552 2.29941 9.01042 1.94237 10.0038 1.94237C10.9976 1.94237 11.9325 2.29941 12.6154 2.93036L11.0045 8.5204C10.6923 8.40694 10.3551 8.34523 10.0038 8.34523C9.65253 8.34523 9.31533 8.40694 9.0031 8.5204L7.39214 2.93036ZM4.04269 17.6656C3.15175 17.3913 2.37491 16.763 1.87979 15.9065C1.38468 15.0499 1.22931 14.0663 1.43896 13.1628L7.1155 11.7655C7.23633 12.4527 7.59955 13.0575 8.11425 13.4893L4.04269 17.6656ZM8.21938 11.2617C8.21938 10.283 9.01999 9.48682 10.0038 9.48682C10.988 9.48682 11.7885 10.283 11.7885 11.2617C11.7885 12.2401 10.988 13.0361 10.0038 13.0361C9.01999 13.0362 8.21938 12.2401 8.21938 11.2617Z"
-                          fill="#062B45" />
-                      </svg>
-                      Fans
-                    </p>
-                    <div>
-                      <button class="btn btn-light btn-sm data-graphs-btn">
-                        <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- End Group Card Header -->
+                <!-- Equipment Cards -->
+                <div class="cards-container d-flex flex-wrap">
+                  <!-- Device Sensor card -->
+                  <div class="equipment-card col-4">
+                    <div class="d-flex flex-row align-items-start">
+                      <div class="device-thumbnail">
+                        <svg
+                          width="68"
+                          height="68"
+                          viewBox="0 0 68 68"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            x="1"
+                            y="1"
+                            width="66"
+                            height="66"
+                            rx="6"
+                            stroke="#DFE4EB"
+                            stroke-width="2"
+                          />
+                          <rect
+                            x="4"
+                            y="4"
+                            width="60"
+                            height="60"
+                            rx="5"
+                            fill="#F2F4F8"
+                          />
                           <path
-                            d="M15.625 10H2V0.375C2 0.1875 1.8125 0 1.625 0H0.375C0.15625 0 0 0.1875 0 0.375V11.625C0 11.8438 0.15625 12 0.375 12H15.625C15.8125 12 16 11.8438 16 11.625V10.375C16 10.1875 15.8125 10 15.625 10ZM11.625 3L9 4.75L6.3125 1.21875C6.15625 1 5.84375 1 5.6875 1.25L3 5.75V9H15L12.1875 3.15625C12.0625 2.9375 11.8125 2.875 11.625 3Z"
-                            fill="#062B45" />
+                            d="M28.9631 31.4253C30.1513 30.0211 31.5555 28.7249 33.1217 27.5907C39.7647 22.784 46.8937 22.892 49.054 27.8608C51.2143 32.8295 47.5418 40.7146 40.8448 45.5213C34.85 49.8419 28.5311 50.22 25.7227 46.6014C28.423 48.9778 33.5538 48.4377 38.3605 44.9272C44.1933 40.6606 47.4338 33.6936 45.5435 29.319C43.6532 24.9443 37.3883 24.8363 31.5555 29.1029C30.6374 29.859 29.7732 30.6152 28.9631 31.4253Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M31.1774 31.5337C35.552 28.3472 40.2507 28.4552 41.6549 31.6957C43.0591 34.9362 40.6287 40.1749 36.2541 43.3614C32.6356 46.0078 28.801 46.3858 26.8027 44.6035C28.855 47.3039 33.6617 47.0339 38.0903 43.7934C43.0591 40.1749 45.8134 34.2341 44.1932 30.5615C42.573 26.889 37.2802 26.781 32.3115 30.3455C31.1234 31.2096 30.0972 32.1818 29.1791 33.2079C29.8272 32.6138 30.4753 32.0198 31.1774 31.5337Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M39.7101 35.6384C38.5219 37.0426 37.1177 38.3388 35.5515 39.4729C28.9086 44.2796 21.7795 44.1716 19.6192 39.2029C17.4589 34.2342 21.1314 26.349 27.8284 21.5424C33.8233 17.2217 40.1422 16.8437 42.9506 20.4622C40.2502 18.0859 35.1194 18.6259 30.3128 22.1364C24.4259 26.349 21.1855 33.316 23.0757 37.6907C24.966 42.0653 31.2309 42.1733 37.0637 37.9067C38.0359 37.2046 38.9 36.4485 39.7101 35.6384Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M37.4963 35.5302C33.1217 38.7166 28.423 38.6086 27.0188 35.3682C25.6146 32.1277 28.045 26.8889 32.4196 23.7025C36.0381 21.1101 39.8727 20.6781 41.871 22.4603C39.8187 19.7599 35.012 20.03 30.5834 23.2704C25.5606 26.8889 22.8603 32.8298 24.4265 36.5563C25.9927 40.2829 31.3395 40.3369 36.3082 36.7724C37.4963 35.9082 38.5225 34.9361 39.4406 33.9099C38.8465 34.45 38.1984 35.0441 37.4963 35.5302Z"
+                            fill="#BBC2CD"
+                          />
                         </svg>
-                        Data Graphs
+                      </div>
+                      <div class="device-details d-flex flex-column">
+                        <span class="device-name">Lettuce fan</span>
+                        <div class="device-subtitle">
+                          <span>Automation box name</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="change-mode d-flex justify-content-between">
+                      <div class="group-power-mode d-flex">
+                        <div class="d-flex flex-column">
+                          <span>Power</span>
+                          <span>Off</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span>Mode</span>
+                          <span class="active">Auto</span>
+                        </div>
+                      </div>
+                      <div class="group-override d-flex flex-column">
+                        <p>Override</p>
+                        <div class="d-flex">
+                          <button class="btn btn-primary">On</button>
+                          <button class="btn btn-primary">Off</button>
+                          <button class="btn" disabled>Auto</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-titled-tags">
+                      <p class="tags-title">Groups</p>
+                      <div class="tags d-flex">
+                        <span class="tag">GreenHouse A</span>
+                      </div>
+                    </div>
+                    <!-- Settings Icon -->
+                    <div class="settings-icon">
+                      <button
+                        class="dropdown-btn dropdown-toggle dropdown-toggle-split"
+                        type="button"
+                        id="settings-menu"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                        data-offset="-159,0"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                            fill="#9DA9B5"
+                          />
+                        </svg>
                       </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-start"
+                        aria-labelledby="settings-menu"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Equipment data</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Update group</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Daily cycle limits</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >View automation box</a
+                          >
+                        </li>
+                      </ul>
                     </div>
+                    <!-- End Settings Icon -->
                   </div>
+                  <!-- End Device Sensor card -->
                 </div>
-                <!-- End Group Name -->
+                <!-- End Equipment cards -->
               </div>
-              <!-- End Group Card Header -->
-              <!-- Equipment Cards -->
-              <div class="cards-container d-flex flex-wrap">
-                <!-- Device Sensor card -->
-                <div class="equipment-card col-4">
-                  <div class="d-flex flex-row align-items-start">
-                    <div class="device-thumbnail">
-                      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="66" height="66" rx="6" stroke="#DFE4EB" stroke-width="2" />
-                        <rect x="4" y="4" width="60" height="60" rx="5" fill="#F2F4F8" />
+              <!-- End Group Card -->
+              <!-- Group Card -->
+              <div class="group-card">
+                <!-- Group Card Header -->
+                <div class="group-card-header d-flex justify-content-between">
+                  <!-- Group Name -->
+                  <div class="d-flex">
+                    <a class="collapse-icon">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
                         <path
-                          d="M28.9631 31.4253C30.1513 30.0211 31.5555 28.7249 33.1217 27.5907C39.7647 22.784 46.8937 22.892 49.054 27.8608C51.2143 32.8295 47.5418 40.7146 40.8448 45.5213C34.85 49.8419 28.5311 50.22 25.7227 46.6014C28.423 48.9778 33.5538 48.4377 38.3605 44.9272C44.1933 40.6606 47.4338 33.6936 45.5435 29.319C43.6532 24.9443 37.3883 24.8363 31.5555 29.1029C30.6374 29.859 29.7732 30.6152 28.9631 31.4253Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M31.1774 31.5337C35.552 28.3472 40.2507 28.4552 41.6549 31.6957C43.0591 34.9362 40.6287 40.1749 36.2541 43.3614C32.6356 46.0078 28.801 46.3858 26.8027 44.6035C28.855 47.3039 33.6617 47.0339 38.0903 43.7934C43.0591 40.1749 45.8134 34.2341 44.1932 30.5615C42.573 26.889 37.2802 26.781 32.3115 30.3455C31.1234 31.2096 30.0972 32.1818 29.1791 33.2079C29.8272 32.6138 30.4753 32.0198 31.1774 31.5337Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M39.7101 35.6384C38.5219 37.0426 37.1177 38.3388 35.5515 39.4729C28.9086 44.2796 21.7795 44.1716 19.6192 39.2029C17.4589 34.2342 21.1314 26.349 27.8284 21.5424C33.8233 17.2217 40.1422 16.8437 42.9506 20.4622C40.2502 18.0859 35.1194 18.6259 30.3128 22.1364C24.4259 26.349 21.1855 33.316 23.0757 37.6907C24.966 42.0653 31.2309 42.1733 37.0637 37.9067C38.0359 37.2046 38.9 36.4485 39.7101 35.6384Z"
-                          fill="#BBC2CD" />
-                        <path
-                          d="M37.4963 35.5302C33.1217 38.7166 28.423 38.6086 27.0188 35.3682C25.6146 32.1277 28.045 26.8889 32.4196 23.7025C36.0381 21.1101 39.8727 20.6781 41.871 22.4603C39.8187 19.7599 35.012 20.03 30.5834 23.2704C25.5606 26.8889 22.8603 32.8298 24.4265 36.5563C25.9927 40.2829 31.3395 40.3369 36.3082 36.7724C37.4963 35.9082 38.5225 34.9361 39.4406 33.9099C38.8465 34.45 38.1984 35.0441 37.4963 35.5302Z"
-                          fill="#BBC2CD" />
+                          d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
+                          fill="#9DA9B5"
+                        />
                       </svg>
-                    </div>
-                    <div class="device-details d-flex flex-column">
-                      <span class="device-name">Lettuce fan</span>
-                      <div class="device-subtitle">
-                        <span>Automation box name</span>
+                    </a>
+                    <div class="group-name d-flex">
+                      <p>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.5735 12.5369L19.4756 12.2359L17.6067 11.7705C17.6182 11.6018 17.6234 11.4326 17.6234 11.2617C17.6234 9.09484 16.6875 7.02742 15.0557 5.58946L14.2943 6.44376C15.6806 7.66521 16.4754 9.42139 16.4754 11.2617C16.4754 11.3374 16.4744 11.4128 16.4712 11.4878L15.2577 11.1856C15.2405 10.001 14.8166 8.85067 14.0586 7.93734L13.1731 8.6642C13.6996 9.29812 14.0199 10.0797 14.0942 10.8959L12.8574 10.5881C12.7239 10.0272 12.4264 9.52831 12.0185 9.14436L13.8989 2.62091L13.6863 2.3861C12.7747 1.37879 11.4323 0.800781 10.0038 0.800781C8.57527 0.800781 7.23334 1.37879 6.32176 2.3861L6.10897 2.62091L6.63908 4.46036C6.22307 4.66468 5.82351 4.90826 5.44474 5.1902C4.16471 6.1419 3.1996 7.49822 2.72707 9.00859L3.82332 9.34764C4.3449 7.67934 5.49019 6.34859 6.96013 5.57415L7.30676 6.77745C6.85516 7.04616 6.44199 7.38282 6.0846 7.7806L6.94055 8.54122C7.15019 8.3079 7.38452 8.10135 7.63738 7.9247L7.98909 9.1448C7.5834 9.52682 7.28687 10.0226 7.15259 10.5801L5.91458 10.8849C5.95705 10.4135 6.08071 9.9591 6.28393 9.52905L5.24451 9.04398C4.92854 9.71359 4.7621 10.429 4.74984 11.1715L0.529783 12.2103L0.43094 12.511C0.00700477 13.7991 0.172392 15.244 0.884483 16.4757C1.59657 17.7071 2.76909 18.5763 4.1016 18.8602L4.41264 18.9263L5.75398 17.5508C7.00335 18.3864 8.48077 18.8385 10.0038 18.8385C10.5296 18.8385 11.0546 18.7852 11.5646 18.6795L11.3305 17.5618C10.8973 17.6517 10.4512 17.6969 10.0038 17.6969C8.75247 17.6969 7.57189 17.3377 6.57089 16.7124L7.43955 15.8216C8.19844 16.2455 9.07323 16.4872 10.0038 16.4872V15.3456C9.38621 15.3456 8.80033 15.2094 8.27456 14.965L9.1616 14.0548C9.42823 14.1347 9.711 14.1777 10.0038 14.1777C10.2939 14.1777 10.574 14.1359 10.8388 14.0571L15.5743 18.9412L15.8853 18.8758C17.2186 18.5958 18.3938 17.7296 19.109 16.5001C19.8246 15.2706 19.9937 13.8261 19.5735 12.5369ZM11.8881 13.4942C12.4035 13.0636 12.7686 12.46 12.8913 11.7734L18.5637 13.1857C18.7706 14.0898 18.613 15.0731 18.1155 15.9285C17.6177 16.7837 16.8394 17.4096 15.9477 17.6817L11.8881 13.4942ZM7.39214 2.93036C8.07552 2.29941 9.01042 1.94237 10.0038 1.94237C10.9976 1.94237 11.9325 2.29941 12.6154 2.93036L11.0045 8.5204C10.6923 8.40694 10.3551 8.34523 10.0038 8.34523C9.65253 8.34523 9.31533 8.40694 9.0031 8.5204L7.39214 2.93036ZM4.04269 17.6656C3.15175 17.3913 2.37491 16.763 1.87979 15.9065C1.38468 15.0499 1.22931 14.0663 1.43896 13.1628L7.1155 11.7655C7.23633 12.4527 7.59955 13.0575 8.11425 13.4893L4.04269 17.6656ZM8.21938 11.2617C8.21938 10.283 9.01999 9.48682 10.0038 9.48682C10.988 9.48682 11.7885 10.283 11.7885 11.2617C11.7885 12.2401 10.988 13.0361 10.0038 13.0361C9.01999 13.0362 8.21938 12.2401 8.21938 11.2617Z"
+                            fill="#062B45"
+                          />
+                        </svg>
+                        Fans
+                      </p>
+                      <div>
+                        <button class="btn btn-light btn-sm data-graphs-btn">
+                          <svg
+                            width="16"
+                            height="12"
+                            viewBox="0 0 16 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.625 10H2V0.375C2 0.1875 1.8125 0 1.625 0H0.375C0.15625 0 0 0.1875 0 0.375V11.625C0 11.8438 0.15625 12 0.375 12H15.625C15.8125 12 16 11.8438 16 11.625V10.375C16 10.1875 15.8125 10 15.625 10ZM11.625 3L9 4.75L6.3125 1.21875C6.15625 1 5.84375 1 5.6875 1.25L3 5.75V9H15L12.1875 3.15625C12.0625 2.9375 11.8125 2.875 11.625 3Z"
+                              fill="#062B45"
+                            />
+                          </svg>
+                          Data Graphs
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="change-mode d-flex justify-content-between">
-                    <div class="group-power-mode d-flex">
-                      <div class="d-flex flex-column">
-                        <span>Power</span>
-                        <span>Off</span>
-                      </div>
-                      <div class="d-flex flex-column">
-                        <span>Mode</span>
-                        <span class="active">Auto</span>
-                      </div>
-                    </div>
-                    <div class="group-override d-flex flex-column">
-                      <p>Override</p>
-                      <div class="d-flex">
-                        <button class="btn btn-primary">On</button>
-                        <button class="btn btn-primary">Off</button>
-                        <button class="btn" disabled>Auto</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-titled-tags">
-                    <p class="tags-title">Groups</p>
-                    <div class="tags d-flex">
-                      <span class="tag">GreenHouse A</span>
-                    </div>
-                  </div>
-                  <!-- Settings Icon -->
-                  <div class="settings-icon">
-                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
-                      data-toggle="dropdown" aria-expanded="false" data-offset="-159,0">
-                      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
-                          fill="#9DA9B5" />
-                      </svg>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
-                      <li><a class="dropdown-item" href="#">Equipment data</a></li>
-                      <li><a class="dropdown-item" href="#">Update group</a></li>
-                      <li><a class="dropdown-item" href="#">Daily cycle limits</a></li>
-                      <li><a class="dropdown-item" href="#">View automation box</a></li>
-                    </ul>
-                  </div>
-                  <!-- End Settings Icon -->
-
+                  <!-- End Group Name -->
                 </div>
-                <!-- End Device Sensor card -->
+                <!-- End Group Card Header -->
+                <!-- Equipment Cards -->
+                <div class="cards-container d-flex flex-wrap">
+                  <!-- Device Sensor card -->
+                  <div class="equipment-card col-4">
+                    <div class="d-flex flex-row align-items-start">
+                      <div class="device-thumbnail">
+                        <svg
+                          width="68"
+                          height="68"
+                          viewBox="0 0 68 68"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            x="1"
+                            y="1"
+                            width="66"
+                            height="66"
+                            rx="6"
+                            stroke="#DFE4EB"
+                            stroke-width="2"
+                          />
+                          <rect
+                            x="4"
+                            y="4"
+                            width="60"
+                            height="60"
+                            rx="5"
+                            fill="#F2F4F8"
+                          />
+                          <path
+                            d="M28.9631 31.4253C30.1513 30.0211 31.5555 28.7249 33.1217 27.5907C39.7647 22.784 46.8937 22.892 49.054 27.8608C51.2143 32.8295 47.5418 40.7146 40.8448 45.5213C34.85 49.8419 28.5311 50.22 25.7227 46.6014C28.423 48.9778 33.5538 48.4377 38.3605 44.9272C44.1933 40.6606 47.4338 33.6936 45.5435 29.319C43.6532 24.9443 37.3883 24.8363 31.5555 29.1029C30.6374 29.859 29.7732 30.6152 28.9631 31.4253Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M31.1774 31.5337C35.552 28.3472 40.2507 28.4552 41.6549 31.6957C43.0591 34.9362 40.6287 40.1749 36.2541 43.3614C32.6356 46.0078 28.801 46.3858 26.8027 44.6035C28.855 47.3039 33.6617 47.0339 38.0903 43.7934C43.0591 40.1749 45.8134 34.2341 44.1932 30.5615C42.573 26.889 37.2802 26.781 32.3115 30.3455C31.1234 31.2096 30.0972 32.1818 29.1791 33.2079C29.8272 32.6138 30.4753 32.0198 31.1774 31.5337Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M39.7101 35.6384C38.5219 37.0426 37.1177 38.3388 35.5515 39.4729C28.9086 44.2796 21.7795 44.1716 19.6192 39.2029C17.4589 34.2342 21.1314 26.349 27.8284 21.5424C33.8233 17.2217 40.1422 16.8437 42.9506 20.4622C40.2502 18.0859 35.1194 18.6259 30.3128 22.1364C24.4259 26.349 21.1855 33.316 23.0757 37.6907C24.966 42.0653 31.2309 42.1733 37.0637 37.9067C38.0359 37.2046 38.9 36.4485 39.7101 35.6384Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M37.4963 35.5302C33.1217 38.7166 28.423 38.6086 27.0188 35.3682C25.6146 32.1277 28.045 26.8889 32.4196 23.7025C36.0381 21.1101 39.8727 20.6781 41.871 22.4603C39.8187 19.7599 35.012 20.03 30.5834 23.2704C25.5606 26.8889 22.8603 32.8298 24.4265 36.5563C25.9927 40.2829 31.3395 40.3369 36.3082 36.7724C37.4963 35.9082 38.5225 34.9361 39.4406 33.9099C38.8465 34.45 38.1984 35.0441 37.4963 35.5302Z"
+                            fill="#BBC2CD"
+                          />
+                        </svg>
+                      </div>
+                      <div class="device-details d-flex flex-column">
+                        <span class="device-name">Lettuce fan</span>
+                        <div class="device-subtitle">
+                          <span>Automation box name</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="change-mode d-flex justify-content-between">
+                      <div class="group-power-mode d-flex">
+                        <div class="d-flex flex-column">
+                          <span>Power</span>
+                          <span>Off</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span>Mode</span>
+                          <span class="active">Auto</span>
+                        </div>
+                      </div>
+                      <div class="group-override d-flex flex-column">
+                        <p>Override</p>
+                        <div class="d-flex">
+                          <button class="btn btn-primary">On</button>
+                          <button class="btn btn-primary">Off</button>
+                          <button class="btn" disabled>Auto</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-titled-tags">
+                      <p class="tags-title">Groups</p>
+                      <div class="tags d-flex">
+                        <span class="tag">GreenHouse A</span>
+                      </div>
+                    </div>
+                    <!-- Settings Icon -->
+                    <div class="settings-icon">
+                      <button
+                        class="dropdown-btn dropdown-toggle dropdown-toggle-split"
+                        type="button"
+                        id="settings-menu"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                        data-offset="-159,0"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                            fill="#9DA9B5"
+                          />
+                        </svg>
+                      </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-start"
+                        aria-labelledby="settings-menu"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Equipment data</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Update group</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Daily cycle limits</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >View automation box</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Settings Icon -->
+                  </div>
+                  <!-- End Device Sensor card -->
+                </div>
+                <!-- End Equipment cards -->
               </div>
-              <!-- End Equipment cards -->
+              <!-- End Group Card -->
+              <!-- Group Card -->
+              <div class="group-card">
+                <!-- Group Card Header -->
+                <div class="group-card-header d-flex justify-content-between">
+                  <!-- Group Name -->
+                  <div class="d-flex">
+                    <a class="collapse-icon">
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11.9688 14C11.4062 14 11.125 14.6875 11.5312 15.0938L15.5312 19.0938C15.7812 19.3438 16.1875 19.3438 16.4375 19.0938L20.4375 15.0938C20.8438 14.6875 20.5625 14 20 14H11.9688Z"
+                          fill="#9DA9B5"
+                        />
+                      </svg>
+                    </a>
+                    <div class="group-name d-flex">
+                      <p>
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M19.5735 12.5369L19.4756 12.2359L17.6067 11.7705C17.6182 11.6018 17.6234 11.4326 17.6234 11.2617C17.6234 9.09484 16.6875 7.02742 15.0557 5.58946L14.2943 6.44376C15.6806 7.66521 16.4754 9.42139 16.4754 11.2617C16.4754 11.3374 16.4744 11.4128 16.4712 11.4878L15.2577 11.1856C15.2405 10.001 14.8166 8.85067 14.0586 7.93734L13.1731 8.6642C13.6996 9.29812 14.0199 10.0797 14.0942 10.8959L12.8574 10.5881C12.7239 10.0272 12.4264 9.52831 12.0185 9.14436L13.8989 2.62091L13.6863 2.3861C12.7747 1.37879 11.4323 0.800781 10.0038 0.800781C8.57527 0.800781 7.23334 1.37879 6.32176 2.3861L6.10897 2.62091L6.63908 4.46036C6.22307 4.66468 5.82351 4.90826 5.44474 5.1902C4.16471 6.1419 3.1996 7.49822 2.72707 9.00859L3.82332 9.34764C4.3449 7.67934 5.49019 6.34859 6.96013 5.57415L7.30676 6.77745C6.85516 7.04616 6.44199 7.38282 6.0846 7.7806L6.94055 8.54122C7.15019 8.3079 7.38452 8.10135 7.63738 7.9247L7.98909 9.1448C7.5834 9.52682 7.28687 10.0226 7.15259 10.5801L5.91458 10.8849C5.95705 10.4135 6.08071 9.9591 6.28393 9.52905L5.24451 9.04398C4.92854 9.71359 4.7621 10.429 4.74984 11.1715L0.529783 12.2103L0.43094 12.511C0.00700477 13.7991 0.172392 15.244 0.884483 16.4757C1.59657 17.7071 2.76909 18.5763 4.1016 18.8602L4.41264 18.9263L5.75398 17.5508C7.00335 18.3864 8.48077 18.8385 10.0038 18.8385C10.5296 18.8385 11.0546 18.7852 11.5646 18.6795L11.3305 17.5618C10.8973 17.6517 10.4512 17.6969 10.0038 17.6969C8.75247 17.6969 7.57189 17.3377 6.57089 16.7124L7.43955 15.8216C8.19844 16.2455 9.07323 16.4872 10.0038 16.4872V15.3456C9.38621 15.3456 8.80033 15.2094 8.27456 14.965L9.1616 14.0548C9.42823 14.1347 9.711 14.1777 10.0038 14.1777C10.2939 14.1777 10.574 14.1359 10.8388 14.0571L15.5743 18.9412L15.8853 18.8758C17.2186 18.5958 18.3938 17.7296 19.109 16.5001C19.8246 15.2706 19.9937 13.8261 19.5735 12.5369ZM11.8881 13.4942C12.4035 13.0636 12.7686 12.46 12.8913 11.7734L18.5637 13.1857C18.7706 14.0898 18.613 15.0731 18.1155 15.9285C17.6177 16.7837 16.8394 17.4096 15.9477 17.6817L11.8881 13.4942ZM7.39214 2.93036C8.07552 2.29941 9.01042 1.94237 10.0038 1.94237C10.9976 1.94237 11.9325 2.29941 12.6154 2.93036L11.0045 8.5204C10.6923 8.40694 10.3551 8.34523 10.0038 8.34523C9.65253 8.34523 9.31533 8.40694 9.0031 8.5204L7.39214 2.93036ZM4.04269 17.6656C3.15175 17.3913 2.37491 16.763 1.87979 15.9065C1.38468 15.0499 1.22931 14.0663 1.43896 13.1628L7.1155 11.7655C7.23633 12.4527 7.59955 13.0575 8.11425 13.4893L4.04269 17.6656ZM8.21938 11.2617C8.21938 10.283 9.01999 9.48682 10.0038 9.48682C10.988 9.48682 11.7885 10.283 11.7885 11.2617C11.7885 12.2401 10.988 13.0361 10.0038 13.0361C9.01999 13.0362 8.21938 12.2401 8.21938 11.2617Z"
+                            fill="#062B45"
+                          />
+                        </svg>
+                        Fans
+                      </p>
+                      <div>
+                        <button class="btn btn-light btn-sm data-graphs-btn">
+                          <svg
+                            width="16"
+                            height="12"
+                            viewBox="0 0 16 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M15.625 10H2V0.375C2 0.1875 1.8125 0 1.625 0H0.375C0.15625 0 0 0.1875 0 0.375V11.625C0 11.8438 0.15625 12 0.375 12H15.625C15.8125 12 16 11.8438 16 11.625V10.375C16 10.1875 15.8125 10 15.625 10ZM11.625 3L9 4.75L6.3125 1.21875C6.15625 1 5.84375 1 5.6875 1.25L3 5.75V9H15L12.1875 3.15625C12.0625 2.9375 11.8125 2.875 11.625 3Z"
+                              fill="#062B45"
+                            />
+                          </svg>
+                          Data Graphs
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Group Name -->
+                </div>
+                <!-- End Group Card Header -->
+                <!-- Equipment Cards -->
+                <div class="cards-container d-flex flex-wrap">
+                  <!-- Device Sensor card -->
+                  <div class="equipment-card col-4">
+                    <div class="d-flex flex-row align-items-start">
+                      <div class="device-thumbnail">
+                        <svg
+                          width="68"
+                          height="68"
+                          viewBox="0 0 68 68"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            x="1"
+                            y="1"
+                            width="66"
+                            height="66"
+                            rx="6"
+                            stroke="#DFE4EB"
+                            stroke-width="2"
+                          />
+                          <rect
+                            x="4"
+                            y="4"
+                            width="60"
+                            height="60"
+                            rx="5"
+                            fill="#F2F4F8"
+                          />
+                          <path
+                            d="M28.9631 31.4253C30.1513 30.0211 31.5555 28.7249 33.1217 27.5907C39.7647 22.784 46.8937 22.892 49.054 27.8608C51.2143 32.8295 47.5418 40.7146 40.8448 45.5213C34.85 49.8419 28.5311 50.22 25.7227 46.6014C28.423 48.9778 33.5538 48.4377 38.3605 44.9272C44.1933 40.6606 47.4338 33.6936 45.5435 29.319C43.6532 24.9443 37.3883 24.8363 31.5555 29.1029C30.6374 29.859 29.7732 30.6152 28.9631 31.4253Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M31.1774 31.5337C35.552 28.3472 40.2507 28.4552 41.6549 31.6957C43.0591 34.9362 40.6287 40.1749 36.2541 43.3614C32.6356 46.0078 28.801 46.3858 26.8027 44.6035C28.855 47.3039 33.6617 47.0339 38.0903 43.7934C43.0591 40.1749 45.8134 34.2341 44.1932 30.5615C42.573 26.889 37.2802 26.781 32.3115 30.3455C31.1234 31.2096 30.0972 32.1818 29.1791 33.2079C29.8272 32.6138 30.4753 32.0198 31.1774 31.5337Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M39.7101 35.6384C38.5219 37.0426 37.1177 38.3388 35.5515 39.4729C28.9086 44.2796 21.7795 44.1716 19.6192 39.2029C17.4589 34.2342 21.1314 26.349 27.8284 21.5424C33.8233 17.2217 40.1422 16.8437 42.9506 20.4622C40.2502 18.0859 35.1194 18.6259 30.3128 22.1364C24.4259 26.349 21.1855 33.316 23.0757 37.6907C24.966 42.0653 31.2309 42.1733 37.0637 37.9067C38.0359 37.2046 38.9 36.4485 39.7101 35.6384Z"
+                            fill="#BBC2CD"
+                          />
+                          <path
+                            d="M37.4963 35.5302C33.1217 38.7166 28.423 38.6086 27.0188 35.3682C25.6146 32.1277 28.045 26.8889 32.4196 23.7025C36.0381 21.1101 39.8727 20.6781 41.871 22.4603C39.8187 19.7599 35.012 20.03 30.5834 23.2704C25.5606 26.8889 22.8603 32.8298 24.4265 36.5563C25.9927 40.2829 31.3395 40.3369 36.3082 36.7724C37.4963 35.9082 38.5225 34.9361 39.4406 33.9099C38.8465 34.45 38.1984 35.0441 37.4963 35.5302Z"
+                            fill="#BBC2CD"
+                          />
+                        </svg>
+                      </div>
+                      <div class="device-details d-flex flex-column">
+                        <span class="device-name">Lettuce fan</span>
+                        <div class="device-subtitle">
+                          <span>Automation box name</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="change-mode d-flex justify-content-between">
+                      <div class="group-power-mode d-flex">
+                        <div class="d-flex flex-column">
+                          <span>Power</span>
+                          <span>Off</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                          <span>Mode</span>
+                          <span class="active">Auto</span>
+                        </div>
+                      </div>
+                      <div class="group-override d-flex flex-column">
+                        <p>Override</p>
+                        <div class="d-flex">
+                          <button class="btn btn-primary">On</button>
+                          <button class="btn btn-primary">Off</button>
+                          <button class="btn" disabled>Auto</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-titled-tags">
+                      <p class="tags-title">Groups</p>
+                      <div class="tags d-flex">
+                        <span class="tag">GreenHouse A</span>
+                      </div>
+                    </div>
+                    <!-- Settings Icon -->
+                    <div class="settings-icon">
+                      <button
+                        class="dropdown-btn dropdown-toggle dropdown-toggle-split"
+                        type="button"
+                        id="settings-menu"
+                        data-toggle="dropdown"
+                        aria-expanded="false"
+                        data-offset="-159,0"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M23.2188 17.875L21.875 17.125C22.0312 16.375 22.0312 15.6562 21.875 14.9062L23.2188 14.1562C23.375 14.0625 23.4375 13.875 23.375 13.7188C23.0312 12.5938 22.4375 11.5938 21.6875 10.75C21.5625 10.625 21.375 10.5938 21.2188 10.6875L19.875 11.4375C19.3125 10.9688 18.6875 10.5938 18 10.3438V8.8125C18 8.65625 17.875 8.5 17.6875 8.46875C16.5312 8.1875 15.375 8.21875 14.2812 8.46875C14.0938 8.5 14 8.65625 14 8.8125V10.3438C13.2812 10.5938 12.6562 10.9688 12.0938 11.4688L10.75 10.6875C10.5938 10.5938 10.4062 10.625 10.2812 10.75C9.53125 11.5938 8.9375 12.5938 8.59375 13.7188C8.53125 13.875 8.59375 14.0625 8.75 14.1562L10.0938 14.9062C9.96875 15.6562 9.96875 16.375 10.0938 17.125L8.75 17.875C8.59375 17.9688 8.53125 18.1562 8.59375 18.3125C8.9375 19.4375 9.53125 20.4375 10.2812 21.2812C10.4062 21.4062 10.5938 21.4375 10.75 21.3438L12.0938 20.5938C12.6562 21.0625 13.2812 21.4375 14 21.6875V23.2188C14 23.375 14.125 23.5312 14.2812 23.5938C15.4375 23.8438 16.5938 23.8125 17.6875 23.5938C17.875 23.5312 18 23.375 18 23.2188V21.6875C18.6875 21.4375 19.3125 21.0625 19.875 20.5938L21.2188 21.3438C21.375 21.4375 21.5625 21.4062 21.6875 21.2812C22.4688 20.4375 23.0312 19.4375 23.4062 18.3125C23.4375 18.1562 23.375 17.9688 23.2188 17.875ZM16 18.5C14.5938 18.5 13.5 17.4062 13.5 16C13.5 14.625 14.5938 13.5 16 13.5C17.375 13.5 18.5 14.625 18.5 16C18.5 17.4062 17.375 18.5 16 18.5Z"
+                            fill="#9DA9B5"
+                          />
+                        </svg>
+                      </button>
+                      <ul
+                        class="dropdown-menu dropdown-menu-start"
+                        aria-labelledby="settings-menu"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Equipment data</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Update group</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Daily cycle limits</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >View automation box</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- End Settings Icon -->
+                  </div>
+                  <!-- End Device Sensor card -->
+                </div>
+                <!-- End Equipment cards -->
+              </div>
+              <!-- End Group Card -->
             </div>
-            <!-- End Group Card -->
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
