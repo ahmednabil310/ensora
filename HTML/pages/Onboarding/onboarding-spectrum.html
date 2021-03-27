@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+  crossorigin="anonymous"
+/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/860b688cc8.js" crossorigin="anonymous"></script>
+  <title>onboard spectrum Page</title>
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+  <link rel="stylesheet" href="../../../sass/main.css" />
+</head>
+
+<body>
+  <form class="h-100 d-flex form-container">
+    <div class="row w-100">
+      <!--  onboardSpectruming form  -->
+      <div class="col-12 d-flex flex-column align-items-center">
+        <div class="form-container__onboardSpectrum">
+          <div class="d-flex align-items-center form-container__onboardSpectrum__image justify-content-center">
+            <img src="../../../assets/logo.png" alt="Logo" />
+          </div>
+          <h1 class="form-container__onboardSpectrum__title">Preferences</h1>
+          <p class="form-container__onboardSpectrum__subtitle">
+            Select your preferences below.
+          </p>
+
+          <div class="form-group">
+            <label for="temprature">Temperature</label>
+
+            <div id="selector w-100">
+              <select class="form-control input-lg" id="inputGroupSelect01">
+                <option value="" selected>Fahrenheit (°F)</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="light">Light</label>
+            <div id="selector w-100">
+              <select class="form-control input-lg" id="inputGroupSelect02">
+                <option value="" selected>PAR</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="lightSource">Light source</label>
+            <div id="selector w-100">
+              <select class="form-control input-lg" id="inputGroupSelect03">
+                <option value="" selected>LED 5000K</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="language">Language</label>
+            <div id="selector w-100">
+              <select class="form-control input-lg" id="inputGroupSelect04">
+                <option value="" selected>English</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Date format</label>
+            <div id="selector w-100">
+              <select class="form-control input-lg" id="inputGroupSelect05">
+                <option value="" selected>MM/DD/YYYY</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <i class="fas fa-caret-down"></i>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Use a 24-hour clock
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- Add disabled-button class when you want the button to be unclickable -->
+          <button type="button" class="btn btn-primary w-100 form-container__onboardSpectrum__button">
+            Continue
+          </button>
+          <button type="button" class="btn btn-primary w-100 form-container__onboardSpectrum__backButton my-0">
+            Back
+          </button>
+        </div>
+      </div>
+      <!--  onboardSpectruming form -->
+    </div>
+  </form>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
