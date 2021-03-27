@@ -8,28 +8,24 @@ $font-stack: "Inter", sans-serif;
 
 .caption {
   font-size: 11px;
-  line-height: 18px;
 }
 
 .display-xlarge {
   font-size: 42px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 44px;
 }
 
 .display-large {
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -0.02em;
-  line-height: 32px;
 }
 
 .display-medium {
   font-size: 26px;
   font-weight: 600;
   letter-spacing: -0.02em;
-  line-height: 36px;
 }
 
 .display-small,
@@ -45,31 +41,16 @@ $font-stack: "Inter", sans-serif;
   line-height: 24px;
 }
 
-.subheading {
+.subheading,
+.label--allcaps,
+.small--uppercase {
   font-size: 12px;
   font-weight: 600;
-  line-height: 16px;
-}
-
-.small--uppercase {
-  font-size: 11px;
-  font-weight: 600;
-  line-height: 16px;
-}
-
-.label--allcaps {
-  @extend .subheading;
-  line-height: 22px;
 }
 
 .label,
-.body--bold {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 22px;
-}
-
 .button-label,
+.body--bold,
 .input--bold {
   font-size: 14px;
   font-weight: 600;
@@ -79,7 +60,6 @@ $font-stack: "Inter", sans-serif;
 .tag-label {
   font-size: 12px;
   font-weight: 400;
-  line-height: 20px;
 }
 
 .small {
@@ -91,21 +71,14 @@ $font-stack: "Inter", sans-serif;
 .body--bigger {
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
 }
 
-.body--link {
+.body--link,
+.small--regular {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-
-.small--regular {
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 14px;
-}
-
 .input {
   @extend .small--regular;
   line-height: 20px;

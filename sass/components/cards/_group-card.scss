@@ -18,7 +18,7 @@
     p {
       @extend .heading;
       color: $B700;
-      padding: 4px 0;
+      padding: 0;
 
       img {
         margin: 2px 8px 0 2px;
@@ -58,18 +58,26 @@
   }
   .empty-card-contatiner {
     padding: 12px;
-    .empty-card {
-      background-color: $N000;
-      border-radius: 5px;
-      p {
-        @extend .small--regular;
-        margin: 0;
-        padding: 26px 0;
-      }
-      button {
-        margin-bottom: 26px;
-      }
+  }
+  .empty-card {
+    background-color: $N000;
+    border-radius: 5px;
+    p {
+      @extend .small--regular;
+      margin: 0;
+      padding: 26px 0;
     }
+    button {
+      margin-bottom: 26px;
+    }
+  }
+
+  // for inner cards
+  .cards-container .settings-icon {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    margin: 0;
   }
 }
 

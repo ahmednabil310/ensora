@@ -13,7 +13,9 @@
 
 /* Components */
 // Modals
-@import "components/setup-wizard-modal";
+@import "components/modals/setup-wizard-modal";
+@import "components/modals/walkthrought-modal";
+@import "components/modals/spotlight_modal";
 // Cards
 @import "components/cards/group-card";
 @import "components/cards/sensor_card";
@@ -25,7 +27,6 @@
 @import "components/cards/card-tags";
 @import "components/cards/card-titled-tags";
 // Others
-@import "components/spotlight_model";
 @import "components/form-container";
 @import "components/onboard-container";
 @import "components/registering-loader";
@@ -42,5 +43,6 @@
 @import "pages/home";
 @import "pages/devices";
 @import "pages/alarms";
+@import "pages/onboarding";
 @import "pages/account-settings";
 @import "pages/settings";

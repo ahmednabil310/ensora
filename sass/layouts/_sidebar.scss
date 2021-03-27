@@ -2,17 +2,12 @@
   background-color: $B800;
   color: $N600;
   font-size: 14px;
+  // max-width: 250px !important;
   height: 100%;
-}
-
-.side-bar__container {
-  flex: 0 0 17.36%;
-  max-width: 17.36%;
 }
 
 .side-bar__items {
   list-style-type: none;
-  padding-left: 25px;
 }
 
 .sid-bar__links,

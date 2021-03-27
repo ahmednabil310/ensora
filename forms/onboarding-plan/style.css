@@ -1,0 +1,78 @@
+:root {
+  --light-blue: #0e76bc;
+  --darken-blue: #062b45;
+}
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+.onboardplan-container {
+  padding: 78px 166px 81px 149px;
+}
+.onboardplan-container__image {
+  padding-bottom: 63px;
+}
+/* .onboardplan-container__price__title-container {
+  padding-right: 100px;
+} */
+.onboardplan-container__price__title {
+  color: var(--darken-blue);
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -1px;
+}
+.onboardplan-container__price__subtitle {
+  color: var(--darken-blue);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 51px;
+}
+
+.onboardplan-card {
+  background-color: rgba(223, 228, 235, 1);
+  border-radius: 16px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  max-width: 168px;
+  margin-right: 20px;
+}
+.onboardplan-card__title {
+  font-weight: 600;
+  color: var(--darken-blue);
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.onboardplan-card__pricing {
+  color: var(--darken-blue);
+  font-weight: bold;
+  font-size: 42px;
+  letter-spacing: -1px;
+  margin-bottom: 0px;
+}
+.onboardplan-card__pricing sub {
+  font-weight: 600;
+  font-size: 20px;
+}
+.onboardplan-card__pricing .small {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+.onboardplan-card--blue {
+  background-color: var(--light-blue);
+  border-radius: 16px 16px 0px 0px;
+  color: white;
+}
+
+.onboardplan-card--blue .onboardplan-card__title {
+  color: white;
+}
+.onboardplan-card--blue .onboardplan-card__pricing {
+  color: white;
+}
+.card-special h1 {
+  color: white;
+}
+.card-special h3 {
+  color: white;
+}

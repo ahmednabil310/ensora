@@ -27,10 +27,16 @@
     .device-senses-icons {
       margin-top: 5px;
     }
-    .settings-icon {
-      position: absolute;
-      top: 6px;
-      right: 8px;
+    .empty-card {
+      height: 126px;
+      padding: 25px 12px 27px;
+      p {
+        margin-bottom: 16px;
+      }
+      button {
+        @extend .button-label;
+        color: $B700;
+      }
     }
   }
 }

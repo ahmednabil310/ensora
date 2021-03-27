@@ -1,7 +1,5 @@
 .main-page {
   background-color: #f9fafc;
-  width: 82.64%;
-  flex: 0 0 82.64%;
 }
 
 .main-content {
@@ -9,11 +7,9 @@
   .main-content__empty {
     #title {
       @extend .display-small;
-      margin-bottom: 12px;
     }
     #body {
       font-size: 14px;
-      margin-bottom: 12px;
     }
   }
 }

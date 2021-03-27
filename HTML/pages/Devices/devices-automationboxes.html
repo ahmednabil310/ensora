@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../../sass/main.css" />
-    <title id="devices">Devices - Automation Boxes (1 AB)</title>
-  </head>
-  <body>
-    <div class="row h-100 m-0">
-      <!-- side bar -->
-      <div class="side-bar__container" id="side-bar-container"></div>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../sass/main.css" />
+  <title id="devices">Devices - Automation Boxes (1 AB)</title>
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class="col-2 p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="col-10 main-page p-0">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
       <!-- main page -->
-      <div class="main-page">
-        <!-- navbar -->
-        <div id="nav-bar-container"></div>
+      <div class="col-10 main-page p-0">
         <!-- Main Content -->
         <div class="main-content">
           <!-- header -->
@@ -32,9 +31,7 @@
             </div>
           </div>
           <!-- middle section -->
-          <div
-            class="row mid-section align-items-center flex-column text-center"
-          >
+          <div class="row mid-section align-items-center flex-column text-center">
             <div class="col-12">
               <!-- Sensor Group -->
               <div class="group-card">
@@ -46,17 +43,17 @@
                       <img src="../../../assets/arrow.svg" alt="" />
                     </button>
                     <div class="group-name d-flex">
-                      <p>Sensors</p>
+                      <p>
+                        Sensors
+                      </p>
                     </div>
                   </div>
                   <!-- End Device Name -->
                 </div>
                 <!-- End Device Group Card Header -->
                 <div class="empty-card-contatiner d-flex flex-column">
-                  <div
-                    class="empty-card d-flex justify-content-center align-items-center"
-                  >
-                    <p>You have no sensors added yet.</p>
+                  <div class="empty-card d-flex justify-content-center align-items-center">
+                    <p>You have no gateways added yet.</p>
                   </div>
                 </div>
               </div>
@@ -77,82 +74,42 @@
                 </div>
                 <!-- AP cards -->
                 <div class="cards-container d-flex flex-wrap">
-                  <div
-                    class="automation-boxes-card bg-white d-flex col-4 flex-column"
-                  >
-                    <div
-                      class="d-flex justify-content-between align-items-center w-100"
-                    >
+                  <div class="automation-boxes-card bg-white d-flex col-4 flex-column">
+                    <div class="d-flex justify-content-between align-items-center w-100">
                       <p class="automation-boxes-card-name d-flex flex-column">
                         Automation box A
-                        <span class="automation-boxes-card-subheader"
-                          >Equipment</span
-                        >
+                        <span class="automation-boxes-card-subheader">Equipment</span>
                       </p>
                       <button
                         class="automation-boxes-card-gearicon dropdown-btn d-flex justify-content-center align-items-center dropdown-toggle dropdown-toggle-split"
-                        type="button"
-                        id="settings-menu"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                        data-bs-offset="-159,0"
-                      >
-                        <img
-                          src="../../../assets/Device-Settings.svg"
-                          alt="gear"
-                        />
+                        type="button" id="settings-menu" data-bs-toggle="dropdown" aria-expanded="false"
+                        data-bs-offset="-159,0">
+                        <img src="../../../assets/Device-Settings.svg" alt="gear" />
                       </button>
-                      <ul
-                        class="dropdown-menu dropdown-menu-start"
-                        aria-labelledby="settings-menu"
-                      >
+                      <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
                         <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Unregister device</a
-                          >
-                        </li>
+                        <li><a class="dropdown-item" href="#">Unregister device</a></li>
                       </ul>
                     </div>
                     <div class="automation-boxes-card-labels-container d-flex">
-                      <div
-                        class="automation-boxes-card-label d-flex justify-content-center align-items-center"
-                      >
-                        <img
-                          class="mid-section__content__main__label__img"
-                          src="../../../assets/icon-fans.svg"
-                          alt="fan"
-                        />
+                      <div class="automation-boxes-card-label d-flex justify-content-center align-items-center">
+                        <img class="mid-section__content__main__label__img" src="../../../assets/icon-fans.svg"
+                          alt="fan" />
                         <p class="mid-section__content__main__label__p">1</p>
                       </div>
-                      <div
-                        class="automation-boxes-card-label d-flex justify-content-center align-items-center"
-                      >
-                        <img
-                          class="mid-section__content__main__label__img"
-                          src="../../../assets/icon-cooling.svg"
-                          alt="cooling"
-                        />
+                      <div class="automation-boxes-card-label d-flex justify-content-center align-items-center">
+                        <img class="mid-section__content__main__label__img" src="../../../assets/icon-cooling.svg"
+                          alt="cooling" />
                         <p class="mid-section__content__main__label__p">1</p>
                       </div>
-                      <div
-                        class="automation-boxes-card-label d-flex justify-content-center align-items-center"
-                      >
-                        <img
-                          class="mid-section__content__main__label__img"
-                          src="../../../assets/icon-lighting.svg"
-                          alt="lightning"
-                        />
+                      <div class="automation-boxes-card-label d-flex justify-content-center align-items-center">
+                        <img class="mid-section__content__main__label__img" src="../../../assets/icon-lighting.svg"
+                          alt="lightning" />
                         <p class="mid-section__content__main__label__p">1</p>
                       </div>
-                      <div
-                        class="automation-boxes-card-label d-flex justify-content-center align-items-center"
-                      >
-                        <img
-                          class="mid-section__content__main__label__img"
-                          src="../../../assets/icon-humidifier.svg"
-                          alt="humidifier"
-                        />
+                      <div class="automation-boxes-card-label d-flex justify-content-center align-items-center">
+                        <img class="mid-section__content__main__label__img" src="../../../assets/icon-humidifier.svg"
+                          alt="humidifier" />
                         <p class="mid-section__content__main__label__p">1</p>
                       </div>
                     </div>
@@ -171,7 +128,9 @@
                       <img src="../../../assets/arrow.svg" alt="" />
                     </button>
                     <div class="group-name d-flex">
-                      <p>Gateways</p>
+                      <p>
+                        Gateways
+                      </p>
                     </div>
                   </div>
                   <!-- End Gateway Name -->
@@ -179,20 +138,20 @@
                 <!-- End Gateway Group Card Header -->
                 <!-- Device Gateway Cards -->
                 <div class="empty-card-contatiner d-flex flex-column">
-                  <div
-                    class="empty-card d-flex justify-content-center align-items-center"
-                  >
+                  <div class="empty-card d-flex justify-content-center align-items-center">
                     <p>You have no gateways added yet.</p>
                   </div>
                 </div>
                 <!-- End Device Sensor cards -->
+
               </div>
               <!-- End Gateway Group -->
             </div>
           </div>
         </div>
       </div>
-    </div>
+   </div>
     <script src="../../../js/page-loader.js"></script>
-  </body>
+</body>
+
 </html>

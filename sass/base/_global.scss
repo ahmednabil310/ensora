@@ -1,11 +1,58 @@
 body {  
-  font-family: $font-stack;
   @extend .body;
-  line-height: 22px;
+  font-family: $font-stack;
 }
-button {
+
+// Override Bootstrap Defaults
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    @extend .label;
+    color: $N600;
+    margin-bottom: 2px;
+  }
+  input, select {
+    @extend .input;
+    padding: 8px 14px;
+  }
+  .form-control {
+    border: 2px solid $N300 !important;
+    
+    &:focus {
+      border-color: #86b7fe !important;
+    }
+  }
+}
+.form-check {
+  .form-check-input {
+    margin-right: 8px;
+  }
+}
+.btn {
   @extend .button-label;
 }
-input {
-  @extend .input;
+.btn-primary {
+  background-color: $B300;
+}
+.btn-outline-primary {
+  color: $B300;
+  outline: none;
+  border: none;
+
+  &:focus, &:hover {
+    color: $B300 !important;
+    background: transparent !important;
+    box-shadow: none;
+  }
+  img {
+    margin-top: -1.9px !important;
+    margin-right: 5px !important;
+  }
+}
+.btn-primary[disabled] {
+  pointer-events: none;
+  border: none;
+  background-color: $N200;
+  color: $N400;
 }

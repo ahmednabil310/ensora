@@ -5,10 +5,13 @@
     border-radius: 5px;
     border: 1px solid $N300;
     margin-right: 7px;
+
+    button {
+      width: auto;
+    }
   }
   .mm-lh-switch button {
-    font-weight: 600;
-    font-size: 14px;
+    @extend .button-label;
     color: $N500;
     padding: 8px 15px;
   }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <title>Setup Wizard</title>
+  <link rel="stylesheet" href="../../sass/main.css" />
+</head>
+
+<body>
+  <!-- Box Model -->
+  <div class="setup-wizard-modal d-flex flex-column shadow-sm">
+    <!-- Exit Button -->
+    <div class="setup-wizard-modal__close-button">
+      <button class="btn-close" type="button" aria-label="Close"></button>
+    </div>
+    <!-- End Exit button -->
+    <!-- Modal Content -->
+    <div class="setup-wizard-modal__content d-flex flex-column align-items-center justify-content-center">
+      <!-- Model Success Icon -->
+      <div class="text-center">
+        <div class="setup-wizard-modal__success_icon">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M32 0C14.3545 0 0 14.3545 0 32C0 49.6455 14.3545 64 32 64C49.6455 64 64 49.6455 64 32C64 14.3545 49.6455 0 32 0Z"
+              fill="#71C76A" />
+            <path
+              d="M48.2188 25.2188L30.8853 42.5518C30.3652 43.0718 29.6826 43.3335 29 43.3335C28.3174 43.3335 27.6348 43.0718 27.1147 42.5518L18.4482 33.8853C17.4053 32.8428 17.4053 31.1572 18.4482 30.1147C19.4907 29.0718 21.1758 29.0718 22.2188 30.1147L29 36.896L44.4482 21.4482C45.4907 20.4053 47.1758 20.4053 48.2188 21.4482C49.2612 22.4907 49.2612 24.1758 48.2188 25.2188Z"
+              fill="#FAFAFA" />
+          </svg>
+        </div>
+      </div>
+      <!-- End Model Success Icon -->
+      <!-- Model Title -->
+      <div>
+        <h1 class="setup-wizard-modal__confirmation-title text-center d-flex align-items-center justify-content-center">
+          Gateway installed!
+        </h1>
+      </div>
+      <!-- End Modal Title -->
+      <!-- Model Subtitle -->
+      <div>
+        <p class="setup-wizard-modal__confirmation-subtitle text-center d-flex align-items-center justify-content-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis vel sapien in consectetur.
+        </p>
+      </div>
+      <!-- End Model Subtitle -->
+    </div>
+    <!-- End Model Content -->
+    <!-- Modal Footer -->
+    <div class="setup-wizard-modal__footer">
+      <div class="d-flex justify-content-end">
+        <button class="btn btn-link">View gateways</button>
+        <button class="btn">Finished</button>
+      </div>
+    </div>
+    <!-- End Modal Footer -->
+  </div>
+  <!-- End Box Model -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
