@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  font-family: 'Inter', sans-serif !important;
+  font-family: "Inter", sans-serif !important;
 }
 .page-selected {
   color: #f2f4f8;
@@ -20,34 +20,10 @@ body {
   padding-right: 16px;
 }
 
-.side-bar {
-  background-color: #031623;
-  color: var(--light-grey);
-  font-size: 14px;
-}
-
-.side-bar__items {
-  list-style-type: none;
-}
-
 .main-page {
   background-color: #f9fafc;
 }
 
-.navbar {
-  height: 60px;
-  box-shadow: 1px 1px #dfe4eb;
-}
-
-.navbar-brand img {
-  max-height: 40px;
-}
-
-.navbar__right {
-  color: var(--light-blue);
-  font-size: 14px;
-  font-weight: 600;
-}
 .right-side__container {
   padding-right: 32px;
 }
@@ -135,7 +111,7 @@ body {
   height: 100vh;
 }
 .form-container__onboardLanguage {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   padding-top: 15px;
   min-width: 450px;
 }
@@ -246,7 +222,7 @@ option {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: '';
+  content: "";
   position: absolute;
   display: none;
 }

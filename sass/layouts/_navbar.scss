@@ -11,9 +11,8 @@
   }
 
   .navbar__right {
-    color: var(--light-blue);
-    font-size: 14px;
-    font-weight: 600;
+    @extend .button-label;
+    color: $B300;
     padding-right: 32px;
   }
   .navbar__left {
@@ -22,9 +21,21 @@
 
   .navbar__device {
     padding: 0px;
-    margin-right: 18px;
     border: none;
     background: none;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  .navbar__notification {
+    margin: 0 18px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   .user-image {
