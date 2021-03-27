@@ -9,9 +9,11 @@
   .main-content__empty {
     #title {
       @extend .display-small;
+      margin-bottom: 12px;
     }
     #body {
       font-size: 14px;
+      margin-bottom: 12px;
     }
   }
 }
