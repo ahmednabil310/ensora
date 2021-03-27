@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../sass/main.css" />
+    <!-- to get the light effect on add device button -->
+    <style>
+      div.navbar__device {
+        z-index: 10000;
+        border-radius: 5px;
+        background-color: #fff !important;
+        width: 132px;
+        height: 40px;
+        align-items: center;
+        justify-content: center !important;
+      }
+    </style>
+    <title id="home">Home Empty State</title>
+  </head>
+
+  <body>
+    <div class="walkthrough-overlay"></div>
+    <div class="row h-100 m-0">
+      <!-- side bar -->
+      <div class="col-2 p-0" id="side-bar-container"></div>
+      <!-- main page -->
+      <div class="col-10 main-page p-0">
+        <!-- navbar -->
+        <div id="nav-bar-container"></div>
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- header -->
+          <div class="d-flex justify-content-between main-content__header">
+            <div class="d-flex">
+              <span class="">Home</span>
+            </div>
+            <div class="d-flex">
+              <div>
+                <button class="btn primary-button">New group</button>
+              </div>
+            </div>
+          </div>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center"
+          >
+            <div class="col-12">
+              <div class="main-content__empty">
+                <h3 id="title">No sensors or groups added yet</h3>
+                <p id="body">
+                  Group your sensors and equipment as you wish and control them
+                  from one place.<br />
+                  You don’t have any groups yet.
+                </p>
+                <div>
+                  <button class="primary-button">New Group</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog spotlight-modal" role="document">
+        <div class="modal-content walkthrough-spotlight-modal">
+          <div class="">
+            <div class="modal-body">
+              <p>
+                Use this button anytime you need to add a sensor, gateway or
+                automation box to your account.
+              </p>
+            </div>
+            <div class="spotlight-button">Got it!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../../js/page-loader.js"></script>
+  </body>
+</html>

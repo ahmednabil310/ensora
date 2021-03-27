@@ -2,12 +2,12 @@
   --light-blue: #0e76bc;
   --darken-blue: #062b45;
   --light-grey: #687d8f;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
   height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .spotlight-modal {
   font-size: 14px !important;
@@ -151,7 +151,7 @@ body {
 /* MODAL */
 .modal {
   display: block !important;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .fade:not(.show) {
   opacity: 1 !important;

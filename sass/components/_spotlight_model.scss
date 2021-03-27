@@ -35,7 +35,7 @@
 /* MODAL */
 .modal {
   display: block !important;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .fade:not(.show) {
   opacity: 1 !important;
@@ -47,6 +47,7 @@
 .modal-header {
   border-bottom: 0px !important;
   padding: 0px !important;
+  justify-content: flex-end;
 }
 .modal-body {
   padding: 0px !important;
