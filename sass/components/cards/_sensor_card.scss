@@ -10,6 +10,17 @@
     border: 1px solid $N300;
     position: relative;
     
+    .sensor {
+      width: 140px;
+      margin-right: 21px;
+    }
+    // Nonesense designer sizing 
+    .sensor:nth-child(3) {
+      width: 190px;
+    }
+    .sensor-details {
+      margin-right: 40px;
+    }
     .grap-icon {
       margin-right: 5px;
     }
@@ -33,7 +44,6 @@
       gap: 20px;
     }
     .sensor-current-value {
-      margin-bottom: 6px;
       color: $N700;
       text-align: start;
     }

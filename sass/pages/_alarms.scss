@@ -5,6 +5,7 @@
 .main-content__header {
   display: flex;
   align-items: center;
+  min-height: 36px;
   h2 {
     @extend .display-medium;
     color: $B700;
@@ -32,5 +33,74 @@
   p {
     @extend .body;
     margin-bottom: 12px;
+  }
+}
+
+.activity-checkbox {
+  margin-left: 6px;
+  margin-bottom: 0;
+}
+
+.dropdown-alarms {
+  @extend .dropdown;
+  max-width: 200px;
+  margin: 0 !important;
+  margin-right: 10px !important;
+}
+
+.alarms-table {
+  margin-top: 10px;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  th {
+    background-color: $N200;
+    height: 46px;
+    padding: 12px 0;
+  }
+  th:first-child {
+    padding-left: 20px;
+  }
+  td {
+    height: 54px;
+    padding: 16px 0;
+  }
+  td:first-child {
+    padding-left: 20px;
+  }
+  tr {
+    background-color: white;
+  }
+  .tr--error {
+    background-color: rgba($color: #ec6060, $alpha: 0.1);
+    .tr--error__td {
+      color: $R300;
+      padding-left: 0;
+      i {
+        padding: 10px;
+      }
+    }
+  }
+  td:nth-child(2) {
+    color: $B300;
+  }
+
+  // border and radius styles
+
+  td,
+  th {
+    border: solid 1px $N300;
+    border-style: solid none;
+  }
+  td:first-child,
+  th:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  td:last-child,
+  th:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
   }
 }
