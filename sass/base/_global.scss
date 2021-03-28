@@ -1,4 +1,4 @@
-body {  
+body {
   @extend .body;
   font-family: $font-stack;
 }
@@ -12,13 +12,14 @@ body {
     color: $N600;
     margin-bottom: 2px;
   }
-  input, select {
+  input,
+  select {
     @extend .input;
     padding: 8px 14px;
   }
   .form-control {
     border: 2px solid $N300 !important;
-    
+
     &:focus {
       border-color: #86b7fe !important;
     }
@@ -27,6 +28,8 @@ body {
 .form-check {
   .form-check-input {
     margin-right: 8px;
+    height: 18px;
+    width: 18px;
   }
 }
 .btn {
@@ -40,7 +43,8 @@ body {
   outline: none;
   border: none;
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     color: $B300 !important;
     background: transparent !important;
     box-shadow: none;

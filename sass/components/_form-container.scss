@@ -1,9 +1,20 @@
 .form-container {
   color: $B700;
-
+  .form-container__dropdown__button {
+    color: $N500;
+    background-color: rgba(6, 43, 69, 0.85);
+    box-shadow: 0px 3px 10px rgba(55, 61, 71, 0.2);
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 267px;
+    height: 44px;
+    pointer-events: none;
+    position: absolute;
+    left: 29%;
+    @extend .body;
+  }
   .form-container__content {
     padding: 100px 121px 0;
-
   }
   .form-container__content__title {
     @extend .display-medium;
@@ -23,13 +34,14 @@
   .form-container__content__forgot-password {
     color: $B300;
   }
+
   .form-container__content__button {
     margin-top: 42px;
     margin-bottom: 24px;
   }
   .form-container__content__register {
     color: $B700;
-    
+
     .form-container__content__register__special {
       color: $B300;
       text-decoration: none;

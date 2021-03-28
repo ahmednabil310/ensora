@@ -1,6 +1,5 @@
 .setup-wizard-modal {
-  @import "../../base/reset";
-  
+  @import '../../base/reset';
   max-width: 560px;
   min-height: 547px;
   position: relative;
@@ -21,18 +20,17 @@
   }
   .setup-wizard-modal__title {
     margin-top: 42px;
-    
+
     h1 {
-      @extend .display-medium; 
+      @extend .display-medium;
       line-height: 36px;
     }
   }
   .setup-wizard-modal__subtitle {
     margin-top: 12px;
+    margin-bottom: 60px;
   }
   .setup-wizard-modal__form {
-    margin-top: 7px;
-  
     input {
       @extend .input;
       height: 36px;
@@ -58,11 +56,11 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 82px;
+
     width: 100%;
     border-top: 1px solid $N300;
-    padding: 23px 40px;
-    
+    padding: 24px 40px;
+
     button {
       @extend .button-label;
       background-color: $B300;
@@ -84,25 +82,22 @@
     @extend .display-medium;
     margin-top: 32px;
     line-height: 36px;
+    margin-bottom: 12px;
   }
-  .setup-wizard-modal__confirmation-subtitle {
-    margin-top: 12px;
-  }
-
-
 
   /* Add Device index */
   .setup-wizard-modal__qrcode_button {
     @extend .button-label;
     height: 36px;
     padding: 8px 12px;
-    margin-top: 60px;
+
     border-radius: 5px;
     background-color: $N300;
   }
   .setup-wizard-modal__or {
     margin-top: 19px;
     color: $B700;
+    margin-bottom: 7px;
   }
   .setup-wizard-modal__options {
     margin-top: 86px;
@@ -142,7 +137,7 @@
       p {
         font-weight: 600;
         color: $N600;
-          
+
         :nth-child(2) {
           margin-top: 6px;
         }
@@ -163,19 +158,19 @@
     .setup-wizard-modal__show-min-max {
       margin-bottom: 0;
     }
-    .setup-wizard-modal__show-min-max span{
+    .setup-wizard-modal__show-min-max span {
       margin-right: 8px;
-      color: #0E76BC;
+      color: #0e76bc;
       text-decoration: underline;
     }
     /* Sensor Min*Max */
-    .setup-wizard-modal__show-min-max span{
+    .setup-wizard-modal__show-min-max span {
       margin-right: 8px;
-      color: #0E76BC;
+      color: #0e76bc;
       text-decoration: underline;
       cursor: pointer;
     }
-    .min-max-btn-active{
+    .min-max-btn-active {
       color: $N600 !important;
       font-weight: 600;
       text-decoration: none !important;
@@ -198,12 +193,10 @@
           gap: 20px;
         }
       }
-      .min-max-option:nth-child(n+2) {
+      .min-max-option:nth-child(n + 2) {
         border-top: 1.5px solid $N300;
-
-
       }
-    }  
+    }
   }
 }
 
@@ -246,7 +239,8 @@
   .setup-wizard-modal__form {
     margin-top: 59px;
   }
-  #device-id, #install-data {
+  #device-id,
+  #install-data {
     background: $N100;
   }
 }
