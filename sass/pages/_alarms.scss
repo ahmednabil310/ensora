@@ -35,3 +35,53 @@
     margin-bottom: 12px;
   }
 }
+
+.activity-checkbox {
+  margin-left: 6px;
+  margin-bottom: 0;
+}
+
+.dropdown-alarms {
+  @extend .dropdown;
+  max-width: 200px;
+  margin: 0 !important;
+  margin-right: 10px !important;
+}
+
+.alarms-table {
+  margin-top: 10px;
+  border-spacing: 5px;
+  th {
+    background-color: $N200;
+    height: 46px;
+    padding: 12px 0;
+  }
+  th:first-child {
+    padding-left: 20px;
+  }
+  td {
+    height: 54px;
+    padding: 16px 0;
+  }
+  td:first-child {
+    padding-left: 20px;
+  }
+  tr {
+    background-color: white;
+    border: solid 1px $N300;
+    border-collapse: separate;
+  }
+  .tr--error {
+    background-color: rgba($color: #ec6060, $alpha: 0.1);
+    .tr--error__td {
+      color: $R300;
+      padding-left: 0;
+      i {
+        padding: 10px;
+      }
+    }
+  }
+  td:nth-child(2) {
+    color: $B300;
+  }
+}
