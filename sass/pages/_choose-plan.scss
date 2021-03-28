@@ -1,0 +1,95 @@
+.onboardplan-container__price {
+  @extend .body;
+
+  .plan-cell-container {
+    border-bottom: solid 1px $N300;
+    height: 36px;
+
+    .plan-cell {
+      margin-left: 20px;
+
+      height: 100%;
+      color: $N500;
+      svg {
+        fill: $N500;
+      }
+    }
+  }
+  .selected {
+    .plan-cell,
+    .plan-header-cell {
+      background-color: $B100;
+      color: $B300;
+      svg {
+        fill: $B300;
+      }
+    }
+    .onboardplan-card {
+      background-color: $B300;
+      border-radius: 16px 16px 0px 0px;
+    }
+    .onboardplan-card__title,
+    .onboardplan-card__pricing {
+      color: $N000;
+    }
+  }
+}
+
+.plan-column {
+  width: 188px;
+
+  .plan-header-cell {
+    margin-left: 20px;
+    width: 168px;
+    padding-bottom: 11px;
+    border-radius: 16px 16px 0px 0px;
+
+    .onboardplan-card {
+      height: 131px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .plan-cell {
+    width: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.details-column {
+  width: 373px;
+
+  .details-header-cell {
+    padding-top: 33px;
+    padding-left: 20px;
+    height: 131px;
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.plan-buttons-container {
+  padding: 42px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .price-button {
+    @extend .primary-button;
+    padding-left: 194px;
+    padding-right: 194px;
+    margin-bottom: 24px;
+  }
+  span {
+    @extend .body;
+    color: $N500;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
