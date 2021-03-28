@@ -18,3 +18,11 @@
     margin-left: 8px;
   }
 }
+
+// Override Bootstrap's Default
+.btn-primary {
+  background-color: $B300;
+  &:focus, &:hover {
+    background-color: $B300;
+  }
+}

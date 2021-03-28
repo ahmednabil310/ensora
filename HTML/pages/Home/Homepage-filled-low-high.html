@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="home">Hompage Min & Max</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../../sass/main.css" />
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class="col-2 p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="col-10 main-page p-0">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Page Header -->
+        <!-- Page Head -->
+        <div class="d-flex justify-content-between  main-content__header">
+          <div class="d-flex">
+            <h2 class="page-header__title">Home</h2>
+          </div>
+          <div class="d-flex">
+            <div class="mm-lh">
+              <div class="btn-group mm-lh-switch" role="group">
+                <button type="button" class="btn switch-active">Min & max</button>
+                <button type="button" class="btn">Low & high</button>
+              </div>
+              <img src="../../../assets/icon-helpspot.svg" alt="Help">
+            </div>
+            <div>
+              <button class="btn primary-button">New group</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Page Head -->
+        <!-- Alarms -->
+        <div class="row">
+          <div class="col-12">
+             <div class="alarm alarm-all-good d-flex justify-content-between align-items-center">
+              <div class="alarm-content d-flex">
+                <img class="alarm-active-icon" src="../../../assets/icon-alarm-active.svg" alt="Alarm">
+                <img class="alarm-all-good-icon" src="../../../assets/icon-alarm-all-good.svg" alt="Alarm">
+                  <p>You have 3 active alarms!</p>
+                </div>
+              <button class="btn btn-light view-alarms-btn">View alarms</button>
+            </div>
+          </div>
+        </div>
+        <!-- End Alarms -->
+        <!-- End Page Header -->
+        <!-- middle section -->
+        <div class="row mid-section align-items-center flex-column text-center">
+          <div class="col-12  ">
+            <!-- Group Card -->
+            <div class="group-card">
+              <!-- Group Card Header -->
+              <div class="group-card-header d-flex justify-content-between">
+                <!-- Group Name -->
+                <div class="d-flex">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="group-name d-flex">
+                    <p>
+                      Greenhouse A
+                    </p>
+                    <div>
+                      <button class="btn btn-light data-graphs-btn">
+                        <img src="../../../assets/icon-data-graph.svg" alt="Data Graphs">
+                        Data Graphs
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Group Name -->
+                <!-- Settings Icon -->
+                <div class="settings-icon">
+                  <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                    <img src="../../../assets/icon-gear.svg" alt="Settings">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                    <li><a class="dropdown-item" href="#">One</a></li>
+                    <li><a class="dropdown-item" href="#">Two</a></li>
+                  </ul>
+                </div>
+                <!-- End Settings Icon -->
+              </div>
+              <!-- End Group Card Header -->
+              <!-- Cards Container -->
+              <div class="cards-container sensor-cards-container d-flex flex-column">
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Lettuce</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-co2.svg" alt="Temprature">
+                          <span>5</span>
+                          <span>ppm</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1</span>
+                            <span>ppm</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>50</span>
+                            <span>ppm</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+              </div>
+              <!-- End Cards Rows -->
+            </div>
+            <!-- End Group Card -->
+            <!-- Group Card -->
+            <div class="group-card">
+              <!-- Group Card Header -->
+              <div class="group-card-header d-flex justify-content-between">
+                <!-- Group Name -->
+                <div class="d-flex">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="group-name d-flex">
+                    <p>
+                      Greenhouse B
+                    </p>
+                    <div>
+                      <button class="btn btn-light data-graphs-btn">
+                        <img src="../../../assets/icon-data-graph.svg" alt="Data Graphs">
+                        Data Graphs
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Group Name -->
+                <!-- Settings Icon -->
+                <div class="settings-icon">
+                  <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                    <img src="../../../assets/icon-gear.svg" alt="Settings">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                    <li><a class="dropdown-item" href="#">One</a></li>
+                    <li><a class="dropdown-item" href="#">Two</a></li>
+                  </ul>
+                </div>
+                <!-- End Settings Icon -->
+              </div>
+              <!-- End Group Card Header -->
+              <!-- Cards Container -->
+              <div class="cards-container sensor-cards-container d-flex flex-column">
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Herbs</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Flowers</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Label">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Ceiling</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-co2.svg" alt="Temprature">
+                          <span>5</span>
+                          <span>ppm</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1</span>
+                            <span>ppm</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>50</span>
+                            <span>ppm</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Air outlet</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Outside</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+              </div>
+              <!-- End Cards Rows -->
+            </div>
+            <!-- End Group Card -->
+            <!-- Group Card -->
+            <div class="group-card">
+              <!-- Group Card Header -->
+              <div class="group-card-header d-flex justify-content-between">
+                <!-- Group Name -->
+                <div class="d-flex">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="group-name d-flex">
+                    <p>
+                      Ungrouped
+                    </p>
+                    <div>
+                      <button class="btn btn-light data-graphs-btn">
+                        <img src="../../../assets/icon-data-graph.svg" alt="Data Graphs">
+                        Data Graphs
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Group Name -->
+                <!-- Settings Icon -->
+                <div class="settings-icon">
+                  <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                    <img src="../../../assets/icon-gear.svg" alt="Settings">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                    <li><a class="dropdown-item" href="#">One</a></li>
+                    <li><a class="dropdown-item" href="#">Two</a></li>
+                  </ul>
+                </div>
+                <!-- End Settings Icon -->
+              </div>
+              <!-- End Group Card Header -->
+              <!-- Cards Container -->
+              <div class="cards-container sensor-cards-container d-flex flex-column">
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Onions</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+                <!-- Sensor Card -->
+                <div class="sensor-card d-flex align-items-center">
+                  <div class="grap-icon">
+                    <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  </div>
+                  <div class="sensor-details d-flex flex-column align-items-start">
+                    <div>
+                      <span class="sensor-name">Onions</span>
+                      <span class="sensor-alarm-label">
+                        <img src="../../../assets/icon-label-ok.svg" alt="Grap">
+                      </span>
+                    </div>
+                    <div class="sensor-status-text">
+                      <span>Updated 24 minutes ago</span>
+                    </div>
+                  </div>
+                  <!-- Sensor Values -->
+                  <div class="sensor-values d-flex">
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                          <span>83</span>
+                          <span>°F</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>35</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>75</span>
+                            <span>°F</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-humidity.svg" alt="Temprature">
+                          <span>65</span>
+                          <span>%</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>40</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>90</span>
+                            <span>%</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                          <span>1000</span>
+                          <span>Lux</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1,500</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>10,000</span>
+                            <span>Lux</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                    <!-- Sensor -->
+                    <div class="sensor d-flex flex-column">
+                      <div class="sensor-current-value">
+                        <span class="sense-icon">
+                          <img src="../../../assets/icon-sensor-co2.svg" alt="Temprature">
+                          <span>5</span>
+                          <span>ppm</span>
+                        </span>
+                      </div>
+                      <span class="sensor-mm-lh d-flex">
+                        <div class="d-flex gap-1">
+                          Min
+                          <div class="d-flex value-measurement">
+                            <span>1</span>
+                            <span>ppm</span>
+                          </div>
+                        </div>
+                        <div class="d-flex gap-1">
+                          Max
+                          <div class="d-flex value-measurement">
+                            <span>50</span>
+                            <span>ppm</span>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                    <!-- End Sensor -->
+                  </div>
+                  <!-- End Sensors Values -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
+                      <img src="../../../assets/icon-gear.svg" alt="Settings">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Sensor Card -->
+              </div>
+              <!-- End Cards Rows -->
+            </div>
+            <!-- End Group Card -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="../../../js/page-loader.js"></script>
+</body>
+
+</html>

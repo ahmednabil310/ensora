@@ -1,0 +1,34 @@
+.alarm {
+  margin-top: 15px;
+  padding: 15px;
+  .alarm-content {
+    img {
+      margin-right: 15px;
+    }
+    p {
+      margin: 4px 0 0;
+    }
+  }
+  .view-alarms-btn {
+    border: 2px solid $N300 !important;
+    border-radius: 5px;
+  }
+}
+.alarm-active {
+  background-color: #FDEFEF;
+  border-top: 3px solid $R300;
+  
+  .alarm-all-good-icon {
+    display: none;
+  }
+}
+.alarm-all-good {
+  background-color: #F1F9F0;
+  border-top: 3px solid $G300;
+  .alarm-active-icon {
+    display: none;
+  }
+  .view-alarms-btn {
+    display: none;
+  }
+}

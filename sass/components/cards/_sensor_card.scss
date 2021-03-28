@@ -14,8 +14,8 @@
       margin-right: 5px;
     }
     .sensor-name {
-      color: $N700;
-      font-weight: 600;
+      @extend .label;
+      color: $B700;
     }
     .sensor-alarm-label {
       margin-left: 10px;
@@ -37,12 +37,15 @@
       color: $N700;
       text-align: start;
     }
-    .sense-icon svg {
-      margin: 2px 0;
+    .sense-icon { 
+      color: $B700;
+      img {
+        margin-right: 6px;
+        margin-bottom: 7px;
+      }
     }
     .sensor-current-value span:nth-child(2) {
-      font-weight: 600;
-      font-size: 20px;
+      @extend .display-small;
     }
     .sensor-mm-lh {
       gap: 16px;
@@ -57,6 +60,10 @@
     .value-measurement {
       gap: 2px;
       margin-left: 3px;
+
+      span {
+        color: $B700 !important;
+      }
     }
   }
 }
