@@ -24,6 +24,7 @@
 @import "components/cards/equipment_card";
 @import "components/cards/gateway-card";
 @import "components/cards/scene-card";
+@import "components/cards/routine-card";
 @import "components/cards/card-tags";
 @import "components/cards/card-titled-tags";
 // Buttons
@@ -39,12 +40,14 @@
 @import "components/onboard-container";
 @import "components/registering-loader";
 @import "components/alarm";
+@import "components/routines-filter";
 
 /* Pages */
 @import "pages/index";
 @import "pages/home";
-@import "pages/devices";
 @import "pages/alarms";
+@import "pages/devices";
 @import "pages/onboarding";
 @import "pages/account-settings";
 @import "pages/settings";
+@import "pages/choose-plan";

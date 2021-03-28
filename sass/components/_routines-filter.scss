@@ -1,0 +1,48 @@
+$btn-background: #f5f3f8;
+$btn-color: #bcc6ce;
+
+.routines-filter {
+  margin: 20px 0 10px;
+  padding-left: 32px;
+
+  .form-group {
+    margin: 0 !important;
+    input[type="text"] {
+      min-width: 340px;
+      margin-right: 10px;
+    }
+  }
+  .form-check {
+    margin-right: 15px !important;
+    input {
+      margin-top: 9px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  .filters {
+    margin-left: 10px;
+    width: 100%;
+
+    .filters-buttons {
+      gap: 10px;
+      
+      button {
+        @extend .button-label;
+        background: $btn-background;
+        color: $btn-color;
+        
+        img {
+          width: 16px;
+          height: 18px;
+          margin-top: -2px;
+          margin-right: 8px;
+        }
+      }
+    }
+    .archived-link {
+      color: $B300;
+      padding: 7px 0;
+    }
+  }
+}
