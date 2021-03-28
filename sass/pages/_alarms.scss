@@ -50,7 +50,8 @@
 
 .alarms-table {
   margin-top: 10px;
-  border-spacing: 5px;
+  border-collapse: separate;
+  border-spacing: 0 5px;
   th {
     background-color: $N200;
     height: 46px;
@@ -68,8 +69,6 @@
   }
   tr {
     background-color: white;
-    border: solid 1px $N300;
-    border-collapse: separate;
   }
   .tr--error {
     background-color: rgba($color: #ec6060, $alpha: 0.1);
@@ -83,5 +82,25 @@
   }
   td:nth-child(2) {
     color: $B300;
+  }
+
+  // border and radius styles
+
+  td,
+  th {
+    border: solid 1px $N300;
+    border-style: solid none;
+  }
+  td:first-child,
+  th:first-child {
+    border-left-style: solid;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  td:last-child,
+  th:last-child {
+    border-right-style: solid;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
   }
 }
