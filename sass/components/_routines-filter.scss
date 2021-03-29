@@ -4,7 +4,7 @@
 
   .form-group {
     margin: 0 !important;
-    input[type="text"] {
+    input[type='text'] {
       min-width: 340px;
       margin-right: 10px;
     }
@@ -20,14 +20,14 @@
   .filters {
     margin-left: 10px;
     width: 100%;
-    opacity: .39;
+    opacity: 0.39;
     .filters-buttons {
       gap: 10px;
-      
+
       button {
         @extend .button-label;
         background: $N300;
-        
+
         img {
           width: 16px;
           height: 18px;

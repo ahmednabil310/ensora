@@ -1,4 +1,4 @@
-$font-stack: "Inter", sans-serif;
+$font-stack: 'Inter', sans-serif;
 
 .body {
   font-size: 14px;
@@ -20,6 +20,7 @@ $font-stack: "Inter", sans-serif;
   font-size: 28px;
   font-weight: 600;
   letter-spacing: -0.02em;
+  line-height: 32px;
 }
 
 .display-medium {
