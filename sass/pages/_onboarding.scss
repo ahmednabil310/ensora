@@ -16,11 +16,11 @@
     font-weight: 600;
     padding-bottom: 3px;
   }
-  
+
   .onboard-container__onboard__button {
     margin: 42px 0 24px;
   }
-  
+
   .onboard-container__onboard__back__button {
     @extend .body--bold;
     margin: 0;
@@ -186,11 +186,11 @@ select {
 
 select + i.fas {
   float: right;
-  margin-top: -28px;
+  margin-top: -25px;
   margin-right: 9px;
   color: rgba(157, 169, 181, 1);
   pointer-events: none;
   background-color: #fff;
   padding-right: 5px;
 }
-/* Trying input field */  
+/* Trying input field */
