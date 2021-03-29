@@ -1,14 +1,57 @@
 .settings-header {
   padding: 0;
+
+  .settings-title {
+    padding: 20px 40px 12px;
+    background: white;
+    
+    .back-arrow {
+      width: auto;
+      height: auto;
+      align-self: start;
+      cursor: pointer;
+    }
+    .label img {
+      margin-left: 10px;
+      width: auto;
+      height: auto;
+    }
+    .header-thumbnail {
+      margin: 0 14px;
+      button {
+        width: 28px !important;
+      }
+    }
+    .add-btn {
+      margin-left: 5px;
+    }
+    .card-tags {
+      margin-top: 6px;
+
+      .dark-tag {
+        background-color: $N300;
+        color: $B700;
+      }
+    }
+    .close-icon {
+      width: 16px;
+      height: 16px;
+      padding: 2px;
+      margin-top: -3px;
+      cursor: pointer;
+    }
+    .gear-button {
+      background-color: $N300;
+      &::after {
+        content: none !important;
+      }
+    }
+  }
   .settings-title .title {
     @extend .display-medium;
   }
   .navbar {
     height: auto;
-  }
-  .settings-title {
-    padding: 20px 40px 12px;
-    background: white;
   }
 
   .settings-tabs-nav {
@@ -35,6 +78,14 @@
       color: $B300 !important;
     }
   }
+
+  .setup-wizard-modal {
+    min-height: auto !important;
+    
+    .setup-wizard-modal__form {
+      margin: 0;
+    }
+  }
 }
 .settings-content {
   padding: 20px 40px;
@@ -54,9 +105,18 @@
       border-bottom: 2px solid $N300;
     }
   }
+  .setup-wizard-modal__min-max-options div {
+    margin: 0 !important;
+  }
+  .setup-wizard-modal__show-min-max img {
+    margin-bottom: -4px;
+  }
   .save-btn {
     width: 110px;
   }
+}
+.sensing-imgs {
+  gap: 12px;
 }
 // :root {
 //   --light-blue: #0e76bc;

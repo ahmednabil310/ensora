@@ -7,7 +7,7 @@
   border-radius: 5px;
   line-height: 22px;
   /* Remove Later */
-  margin: 50px auto;
+  // margin: 50px auto;
 
   .setup-wizard-modal__close-button {
     padding: 0;
@@ -36,15 +36,10 @@
       height: 36px;
       padding: 8px 14px;
       line-height: 20px;
-      border: 2px solid $N300;
       color: $B700;
-
-      &:focus {
-        border-color: #86b7fe !important;
-      }
     }
   }
-  .sensor-moda form input ::placeholder {
+  .sensor-modal form input ::placeholder {
     color: $N500;
   }
   .setup-wizard-modal__form div label {
@@ -126,6 +121,9 @@
   .setup-wizard-modal__form {
     & div {
       margin-bottom: 20px;
+    }
+    & div:last-child {
+      margin-bottom: 0px;
     }
 
     .setup-wizard-modal__sensor-details {

@@ -7,23 +7,24 @@ body {
 // Override Bootstrap Defaults
 .form-group {
   margin-bottom: 20px;
+}
+label {
+  @extend .label;
+  color: $N600;
+  margin-bottom: 2px;
+}
+input,
+select {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  padding: 8px 14px;
+}
+.form-control {
+  border: 2px solid $N300 !important;
 
-  label {
-    @extend .label;
-    color: $N600;
-    margin-bottom: 2px;
-  }
-  input,
-  select {
-    @extend .input;
-    padding: 8px 14px;
-  }
-  .form-control {
-    border: 2px solid $N300 !important;
-
-    &:focus {
-      border-color: #86b7fe !important;
-    }
+  &:focus, input:focus {
+    border-color: #86b7fe !important;
   }
 }
 .form-check {
@@ -63,4 +64,8 @@ body {
 }
 .gear-button {
   padding: 8px !important;
+}
+.icon-sm {
+  width: 16px;
+  height: 16px;
 }
