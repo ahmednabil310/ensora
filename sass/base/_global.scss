@@ -1,6 +1,7 @@
 body {
   @extend .body;
   font-family: $font-stack;
+  height: 100vh;
 }
 
 // Override Bootstrap Defaults
@@ -59,4 +60,7 @@ body {
   border: none;
   background-color: $N200;
   color: $N400;
+}
+.gear-button {
+  padding: 8px !important;
 }

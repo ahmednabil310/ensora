@@ -1,9 +1,6 @@
-$btn-background: #f5f3f8;
-$btn-color: #bcc6ce;
-
 .routines-filter {
   margin: 20px 0 10px;
-  padding-left: 32px;
+  padding-left: 34px;
 
   .form-group {
     margin: 0 !important;
@@ -23,14 +20,13 @@ $btn-color: #bcc6ce;
   .filters {
     margin-left: 10px;
     width: 100%;
-
+    opacity: .39;
     .filters-buttons {
       gap: 10px;
       
       button {
         @extend .button-label;
-        background: $btn-background;
-        color: $btn-color;
+        background: $N300;
         
         img {
           width: 16px;
@@ -39,10 +35,16 @@ $btn-color: #bcc6ce;
           margin-right: 8px;
         }
       }
+      .restore-btn {
+        background: $B300 !important;
+      }
     }
     .archived-link {
       color: $B300;
       padding: 7px 0;
     }
+  }
+  .active {
+    opacity: 1;
   }
 }

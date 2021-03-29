@@ -1,6 +1,10 @@
 .device-sensor-cards-container {
   padding: 0 12px 16px;
   
+  .col-4 {
+    max-width: calc(33.333333% - 8px);
+  }
+  
   .device-sensor-card {
     text-align: start;
     min-height: 130px;

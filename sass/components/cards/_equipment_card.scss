@@ -1,7 +1,12 @@
+.equipment-cards-container {
+  .col-4 {
+    max-width: calc(33.333333% - 8px);
+  }
+}
 .equipment-card {
   background-color: white;
   border-radius: 8px;
-  border: 1px solid #DFE4EB;
+  border: 1px solid $N300;
   position: relative;
   padding: 14px 18px 16px;
   text-align: start;
@@ -15,12 +20,12 @@
     margin-top: 11px;
   }
   .device-subtitle {
-    color: #687D8F;
+    color: $N600;
     font-size: 11px;
     line-height: 14px;
     margin-top: 6px;
     padding: 2px 6px;
-    background: #DFE4EB;
+    background: $N300;
     border-radius: 100px;
   }
   .change-mode {
@@ -34,7 +39,7 @@
     line-height: 14px;
     font-size: 11px;
     font-weight: 400;
-    color: #687D8F;
+    color: $N600;
     margin-left: 31px;
     margin-bottom: 4px;
   }
@@ -43,26 +48,26 @@
   }
   .group-power-mode div span:first-child {
     font-size: 11px;
-    color: #687D8F;
+    color: $N600;
   }
   .group-power-mode div span:last-child {
     font-size: 14px;
     font-weight: 600;
   }
   .group-power-mode div .active {
-    color: #5AAFE8;
+    color: $B200;
   }
   .group-override div button {
-    background: #0E76BC;
+    background: $B300;
     width: 50px;
     height: 26px;
     font-size: 11px;
     line-height: 14px;
     font-weight: 500;
   }
-  .group-override div button:last-child {
-    background: #F2F4F8;
-    color: #BBC2CD;
+  .group-override div button[disabled]{
+    background: $N200;
+    color: $N400;
   }
   .card-titled-tags {
     margin-top: 8px;
@@ -71,4 +76,15 @@
       margin-bottom: 2px;
     }
   }
+  .active-dark {
+    color: $B700;
+  }
+  .edit-btn {
+    padding: 0px 4px 4px;
+    border: 1px solid $N300;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 10px;
+  }
 }
+
