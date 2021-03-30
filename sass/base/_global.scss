@@ -72,3 +72,16 @@ select {
   width: 16px;
   height: 16px;
 }
+.switch-input {
+  margin-bottom: 4px !important;
+}
+.invalid-feedback {
+  display: flex !important;
+  align-items: baseline;
+
+  img {
+    margin-right: 5px !important;
+    top: 5px;
+    position: relative;
+  }
+}

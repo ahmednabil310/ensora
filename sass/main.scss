@@ -43,6 +43,7 @@
 @import "components/routines-filter";
 @import "components/toast";
 @import "components/hotspot";
+@import "components/loader";
 
 /* Pages */
 @import "pages/index";
@@ -51,5 +52,6 @@
 @import "pages/devices";
 @import "pages/onboarding";
 @import "pages/account-settings";
+@import "pages/sensor-settings";
 @import "pages/settings";
 @import "pages/choose-plan";
