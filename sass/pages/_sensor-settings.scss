@@ -43,6 +43,11 @@
         margin-top: 8px;
         border: 1px solid $N300;
         border-radius: 5px;
+
+        input {
+          @extend .input;
+          color: $B700;
+        }
       }
     }
     .form-group {
