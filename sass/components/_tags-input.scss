@@ -1,0 +1,41 @@
+.tags-input {
+  width: 260px;
+  border-radius: 5px;
+  border: 1px solid $N300;
+  label {
+    @extend .input;
+    margin-bottom: 0;
+    color: $B700;
+  }
+}
+
+.tags-input__search {
+  padding: 10px 15px;
+  border-bottom: 1px solid $N300;
+  input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 2px solid $N300;
+    border-radius: 5px;
+    width: 100%;
+    height: 36px;
+  }
+}
+
+.tags-input__checkboxes {
+  border-bottom: 1px solid $N300;
+  div {
+    padding: 9px 15px;
+  }
+  input {
+    margin-right: 10px;
+  }
+}
+
+.tags-input__buttons__button {
+  padding: 9px 15px;
+  button {
+    color: $B700;
+  }
+}
