@@ -1,0 +1,80 @@
+.full-screen-modal {
+  position: fixed;
+  color: $B700;
+  overflow: auto;
+
+  .col-md-5 {
+    max-width: 39.666667%;
+  }
+
+  .modal-dialog {
+    max-width: none !important;
+    margin: 0 !important;
+
+    .modal-content {
+      width: 100% !important;
+      height: 100vh;
+      border-radius: 0 !important;
+      border: 0 !important;
+
+      .modal-header {
+        padding: 13px 40px;
+        .modal-title {
+          @extend .display-small;
+        }
+        .close {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      .modal-body {
+        padding: 30px 0;
+
+        .add-routine-form { 
+          gap: 10px;
+          
+          .switch-label {
+            margin-left: 0;
+            margin-right: 14px;
+          }
+        }
+        .add-routine-content {
+          gap: 24px;
+          .frame-header {
+            margin-bottom: 6px;
+          }
+          .frame-title {
+            @extend .heading;
+            margin-bottom: 4px !important;
+          }
+          .routine-condition {
+            margin-bottom: 10px;
+          }
+        }
+        .alarm-btn-group {
+          border: 1px solid $B300;
+          border-radius: 8px;
+
+          .btn {
+            border-radius: 8px;
+            color: $B300;
+            &:focus {
+              box-shadow: none !important;
+            }
+          }
+          .btn-primary {
+            color: white;
+          }
+        }
+        .auto-generate-btn {
+          @extend .small;
+          color: $B300 !important;
+          background: $B100 !important;
+          border-radius: 4px;
+          padding: 6px 8px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}

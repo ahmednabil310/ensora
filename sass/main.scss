@@ -14,8 +14,9 @@
 /* Components */
 // Modals
 @import "components/modals/setup-wizard-modal";
-@import "components/modals/walkthrought-modal";
+@import "components/modals/presentation-modal";
 @import "components/modals/spotlight_modal";
+@import "components/modals/full-screen-modal";
 // Cards
 @import "components/cards/group-card";
 @import "components/cards/sensor_card";
@@ -25,8 +26,7 @@
 @import "components/cards/gateway-card";
 @import "components/cards/scene-card";
 @import "components/cards/routine-card";
-@import "components/cards/card-tags";
-@import "components/cards/card-titled-tags";
+@import "components/cards/routine-condition";
 // Buttons
 @import "components/buttons/add-device-btn";
 @import "components/buttons/close-btn";
@@ -44,6 +44,9 @@
 @import "components/toast";
 @import "components/hotspot";
 @import "components/loader";
+@import "components/cards/card-tags";
+@import "components/cards/card-titled-tags";
+@import "components/single-select-dropdown";
 
 /* Pages */
 @import "pages/index";

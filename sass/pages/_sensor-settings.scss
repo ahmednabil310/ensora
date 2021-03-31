@@ -24,48 +24,4 @@
   .loader {
     margin-bottom: 10px !important;
   }
-  .search-sensor {
-    color: $B700;
-    .dropdown {
-      button {
-        @extend .input;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 8px 14px;
-
-        &:active {
-          color: $B700;
-          background-color: transparent;
-        }
-      }
-      .dropdown-menu {
-        margin-top: 8px;
-        border: 1px solid $N300;
-        border-radius: 5px;
-
-        input {
-          @extend .input;
-          color: $B700;
-        }
-      }
-    }
-    .form-group {
-      margin: 0;
-      padding: 10px 15px;
-    }
-    .title {
-      @extend .label;
-      padding: 9px 15px;
-      color: $N600;
-      background-color: $N200;
-    }
-    .btn {
-      background-color: transparent;
-      color: $B700;
-    }
-    button, .dropdown-menu {
-      width: 308px;
-    }
-  }
 }

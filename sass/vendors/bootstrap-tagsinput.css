@@ -1,6 +1,6 @@
 .bootstrap-tagsinput {
   margin-top: 0 !important;
-  border: 2px solid #DFE4EB !important;
+  border: 2px solid #DFE4EB ;
   font-size: 14px;
   color: #9DA9B5;
   vertical-align: middle;
@@ -25,6 +25,10 @@
   width: auto;
   max-width: inherit;
   line-height: 1.5;
+  padding-left: 0 !important;
+}
+.bootstrap-tagsinput input:active {
+  border-color: #86b7fe !important;
 }
 .bootstrap-tagsinput.form-control input::-moz-placeholder {
   color: #9DA9B5;
@@ -51,4 +55,5 @@
   justify-content: center;
   align-items: center;
   margin-top: 5px !important;
+  font-weight: 400 !important;
 }

@@ -1,0 +1,78 @@
+.routine-conditions {
+  border: 1px solid $N300;
+  border-radius: 12px;
+  background-color: $N000;
+  margin-bottom: 10px;
+
+  .dynamic-fields {
+    gap: 40px;
+    margin-left: 10px;
+    align-items: center;
+
+    .dynamic-field-btn {
+      @extend .label;
+      border: none !important;
+      padding: 5px 0;
+      color: $B300;
+      background: $B100;
+      border-bottom: 1px solid $B300 !important;
+    }
+    .selected-field {
+      background: transparent;
+    }
+    .option-label {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 22px;
+      color: $N700;
+      margin: 0;
+      padding: 4px 0;
+    }
+  }
+  .or-text {
+    @extend .label;
+    color: $N600;
+    width: 100%;
+    margin: -16px 28px -16px;
+  }
+  .or-btn {
+    color: $B700;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  .routine-condition {
+    padding: 22px;
+    margin-bottom: 0 !important;
+    
+    &:last-child {
+      padding-bottom: 22px;
+    }
+  }
+  .separated-condition {
+    border-top: 1px solid $N300;
+    position: relative;
+
+    .condition-statement {
+      position: absolute;
+      top: -14px;
+      display: flex;
+      justify-content: center;
+      width: calc(100% - 44px);
+
+      .btn {
+        line-height: 22px;
+        border-radius: 100px;
+        font-weight: 400;
+        font-size: 12px;
+        padding: 2px 13px;
+        text-transform: uppercase;
+
+        img {
+          margin-top: -3px;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

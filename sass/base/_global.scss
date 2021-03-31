@@ -19,6 +19,10 @@ select {
   font-weight: 400 !important;
   line-height: 20px !important;
   padding: 8px 14px;
+  
+  &::placeholder {
+    color: $N500 !important;
+  }
 }
 .form-control {
   border: 2px solid $N300 !important;
@@ -35,6 +39,19 @@ select {
     width: 18px;
     border-radius: 2px;
     border: 2px solid $N300;
+  }
+}
+.btn-nostyle {
+  border: none !important;
+  background-color: transparent !important;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 6px;
+  }
+  .icon-mt {
+    position: relative;
+    margin-top: 7px;
   }
 }
 .btn {
@@ -65,6 +82,11 @@ select {
   background-color: $N200;
   color: $N400;
 }
+.btn-light {
+  border: 2px solid $N300;
+  border-radius: 5px;
+  background: white;
+}
 .gear-button {
   padding: 8px !important;
 }
@@ -84,4 +106,20 @@ select {
     top: 5px;
     position: relative;
   }
+}
+
+// Gaps
+.g-10px {
+  gap: 10px;
+}
+.g-8px {
+  gap: 8px;
+}
+
+.align-items-base-line {
+  align-items: baseline;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
