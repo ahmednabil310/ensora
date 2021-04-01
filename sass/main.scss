@@ -1,0 +1,70 @@
+/* Abstract */
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+/* Base */
+@import "base/fonts";
+@import "base/typography";
+@import "base/global";
+
+/* Layout */
+@import "layouts/sidebar";
+@import "layouts/navbar";
+
+/* Components */
+// Headers
+@import "components/settings_header";
+// Modals
+@import "components/modals/modal-default";
+@import "components/modals/setup-wizard-modal";
+@import "components/modals/presentation-modal";
+@import "components/modals/spotlight_modal";
+@import "components/modals/full-screen-modal";
+// Cards
+@import "components/cards/group-card";
+@import "components/cards/sensor_card";
+@import "components/cards/automation-box-card";
+@import "components/cards/device-sensors-card";
+@import "components/cards/equipment_card";
+@import "components/cards/gateway-card";
+@import "components/cards/scene-card";
+@import "components/cards/routine-card";
+@import "components/cards/routine-condition";
+@import "components/cards/graph-box";
+// Buttons
+@import "components/buttons/add-device-btn";
+@import "components/buttons/close-btn";
+@import "components/buttons/dropdown-btn";
+@import "components/buttons/mm-lw-btn";
+@import "components/buttons/grid-compact-swtich";
+@import "components/buttons/btn-large";
+@import "components/buttons/primary_btn";
+@import "components/buttons/secondary-btn";
+@import "components/buttons/btn-text";
+// Others
+@import "components/containers";
+@import "components/form-container";
+@import "components/onboard-container";
+@import "components/registering-loader";
+@import "components/alarm";
+@import "components/routines-filter";
+@import "components/toast";
+@import "components/hotspot";
+@import "components/loader";
+@import "components/cards/card-tags";
+@import "components/cards/card-titled-tags";
+@import "components/single-select-dropdown";
+@import "components/tags-input";
+@import "components/sensor-status";
+@import "components/graph-options-bar";
+
+/* Pages */
+@import "pages/index";
+@import "pages/home";
+@import "pages/alarms";
+@import "pages/devices";
+@import "pages/onboarding";
+@import "pages/settings_page";
+@import "pages/sensor-settings";
+@import "pages/settings";
+@import "pages/choose-plan";

@@ -1,0 +1,80 @@
+.form-container {
+  color: $B700;
+  .form-container__dropdown__button {
+    color: $N500;
+    background-color: rgba(6, 43, 69, 0.85);
+    box-shadow: 0px 3px 10px rgba(55, 61, 71, 0.2);
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 267px;
+    height: 44px;
+    pointer-events: none;
+    @extend .body;
+  }
+  .form-container__content {
+    padding: 100px 121px 0;
+  }
+  .form-container__content__title {
+    @extend .display-medium;
+    margin: 70px 0 36px;
+  }
+  .form-container__content__subtitle {
+    @extend .body;
+    color: $B700;
+    margin-bottom: 36px;
+  }
+  .form-container__content .form-group {
+    margin-bottom: 20px;
+  }
+  .form-container__content .form-check-label {
+    color: $B700;
+  }
+  .form-container__content__forgot-password {
+    color: $B300;
+  }
+
+  .form-container__content__button {
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
+  .form-container__content__register {
+    color: $B700;
+
+    .form-container__content__register__special {
+      color: $B300;
+      text-decoration: none;
+    }
+  }
+
+  /* Form Image */
+  .form-container__image {
+    background-image: linear-gradient(rgba(6, 43, 69, 0), rgb(2, 30, 49)),
+      url('../../../../assets/imgs/Login\ Background.png');
+  }
+  .form-container__Image__titles_container {
+    padding-left: 80px;
+    padding-bottom: 76px;
+    height: 100%;
+  }
+  .form-container__Image__title {
+    color: #fcb040;
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 42px;
+    max-width: 69%;
+    letter-spacing: -1px;
+  }
+  .form-container__Image__subtitle {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 42%;
+    line-height: 22px;
+  }
+  /* Form Image */
+
+  // Reset Password Page Specifics
+  .reset-password-title {
+    margin-bottom: 14px !important;
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../../sass/main.css" />
+  <title id="settings">Settings</title>
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class="col-2 p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="main-page col-12 col-lg-10 col-xl-10">
+      <!-- Navbar -->
+      <nav
+        class="main-navbar navbar navbar-light bg-white p-0 elevated-xs d-flex justify-content-between col-12 col-lg-10 col-xl-10">
+        <!-- left side -->
+        <div class="navbar__left">
+          <button class="humberger">
+            <img src="../../../assets/Burger.svg" alt="burger" />
+          </button>
+          <a href="/" class="navbar-brand">
+            <img class="d-none d-sm-inline-block" src="../../../assets/imgs/logo.png" alt="Ensora" />
+            <img class="d-inline-block d-sm-none " src="../../../assets/imgs/logo-sm.svg" alt="Ensora" />
+          </a>
+        </div>
+        <!-- right side -->
+        <div>
+          <div class="navbar__right d-flex align-items-center">
+            <div class="d-flex justify-content-between navbar__device">
+              <button type="button" class="btn btn-outline-primary add-device-btn">
+                <img src="../../../assets/icon-wireless.svg" alt="wireless" />
+                Add Device
+              </button>
+            </div>
+            <button class="navbar__device">
+              <img src="../../../assets/imgs/Notifications.png" alt="notification" />
+            </button>
+            <img class="user-image" src="../../../assets/imgs/User Button.png" alt="user" />
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- header -->
+        <div class="main-content__header main-content__header--settings justify-content-between">
+          <div class="d-flex align-items-center">
+            <button class="button-nostyle d-flex justify-content-center align-items-center">
+              <img src="../../../assets/icon-button.svg" alt="" />
+            </button>
+            <span class="">Automation Box A</span>
+          </div>
+          <div class="d-flex">
+            <button class="button-nostyle d-flex justify-content-center align-items-center gear-button">
+              <img src="../../../assets/icon-gear-blue.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- header end -->
+        <!-- mid section -->
+        <div class="mid-section">
+          <form class="mid-section__form row">
+            <!-- inputs -->
+            <div class="mid-section__form__inputs col-6 label">
+              <div>
+                <label for="firstName">Name</label>
+                <input type="text" class="form-control border border-2" id="firstName" aria-describedby="firstName" />
+              </div>
+              <div>
+                <label for="device-id">Device ID</label>
+                <input type="text" class="form-control border border-2" id="device-id" aria-describedby="device-id" />
+              </div>
+              <div>
+                <label for="install-date">Install date</label>
+                <input type="text" class="form-control border border-2" id="install-date"
+                  aria-describedby="install-date" />
+              </div>
+            </div>
+            <!-- inputs end -->
+            <div class="col-12">
+              <button class="btn primary-button--settings">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/page-loader.js"></script>
+</body>
+
+</html>
