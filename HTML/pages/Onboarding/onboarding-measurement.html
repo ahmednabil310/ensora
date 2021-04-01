@@ -32,26 +32,44 @@
           <form>
             <div class="form-group">
               <label for="temprature">Temperature</label>
-              <div id="selector w-100">
-                <select class="form-control input-lg" id="inputGroupSelect01">
-                  <option value="" selected>Fahrenheit (°F)</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <i class="fas fa-caret-down"></i>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>Fahrenheit (°F)</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span
+                      class="custom-option selected"
+                      data-value="Fahrenheit (°F)"
+                      >Fahrenheit (°F)</span
+                    >
+                    <span class="custom-option" data-value="2">2</span>
+                    <span class="custom-option" data-value="3">3</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-group">
               <label for="light">Light</label>
-              <div id="selector w-100">
-                <select class="form-control input-lg" id="inputGroupSelect02">
-                  <option value="" selected>Lux</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <i class="fas fa-caret-down"></i>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>Lux</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="Lux"
+                      >Lux</span
+                    >
+                    <span class="custom-option" data-value="2">2</span>
+                    <span class="custom-option" data-value="3">3</span>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -133,5 +151,6 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="../../../js/custom-select.js"></script>
   </body>
 </html>

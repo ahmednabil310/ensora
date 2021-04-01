@@ -29,14 +29,20 @@
         <form>
           <div class="form-group">
             <label for="language">Country</label>
-            <div id="selector w-100">
-              <select class="form-control input-lg" id="inputGroupSelect01">
-                <option value="" selected>United States</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
+            <div class="our-custom-select-wrapper">
+              <div class="our-custom-select">
+                <div class="our-custom-select__trigger">
+                  <span>United States</span>
+                  <div class="arrow">
+                    <img src="../../../assets/arrow.svg" alt="" />
+                  </div>
+                </div>
+                <div class="custom-options">
+                  <span class="custom-option selected" data-value="United States">United States</span>
+                  <span class="custom-option" data-value="2">2</span>
+                  <span class="custom-option" data-value="3">3</span>
+                </div>
+              </div>
             </div>
           </div>
           <div class="form-group">
@@ -45,14 +51,20 @@
           </div>
           <div class="form-group">
             <label for="language">Time Zone</label>
-            <div id="selector w-100">
-              <select class="form-control input-lg" id="inputGroupSelect02">
-                <option value="" selected>Eastern time zone</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
+            <div class="our-custom-select-wrapper">
+              <div class="our-custom-select">
+                <div class="our-custom-select__trigger">
+                  <span>Eastern time zone</span>
+                  <div class="arrow">
+                    <img src="../../../assets/arrow.svg" alt="" />
+                  </div>
+                </div>
+                <div class="custom-options">
+                  <span class="custom-option selected" data-value="Eastern time zone">Eastern time zone</span>
+                  <span class="custom-option" data-value="2">2</span>
+                  <span class="custom-option" data-value="3">3</span>
+                </div>
+              </div>
             </div>
           </div>
         </form>
@@ -95,6 +107,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
+    <script src="../../../js/custom-select.js"></script>
+
 </body>
 
 </html>

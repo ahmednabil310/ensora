@@ -1,16 +1,16 @@
 body {
   box-sizing: border-box;
 }
-.custom-select-wrapper {
+.our-custom-select-wrapper {
   position: relative;
   user-select: none;
 }
-.custom-select {
+.our-custom-select-wrapper__div {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.custom-select__trigger {
+.our-custom-select__trigger {
   position: relative;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@ body {
   border: 1px solid $N300;
   border-radius: 5px;
 }
-.custom-select.open .custom-options {
+.our-custom-select.open .custom-options {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -47,6 +47,7 @@ body {
   position: relative;
   display: block;
   padding: 9px 15px;
+  background-color: white;
   color: $B700;
   cursor: pointer;
   transition: all 0.5s;
@@ -59,7 +60,7 @@ body {
   display: flex;
   padding-right: 12px;
   img {
-    height: 16.2px;
-    width: 12.6px;
+    height: 16px;
+    width: 10px;
   }
 }
