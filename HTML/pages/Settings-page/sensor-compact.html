@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../../sass/main.css" />
+  <title id="settings">Sensor</title>
+
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class=" col-2 p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="col-10 main-page p-0">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
+      <!-- Main Content -->
+      <div class="main-content settings-header">
+        <!-- header -->
+        <div class="d-flex main-content__header justify-content-between settings-title">
+          <div class="d-flex">
+            <a href="#">
+              <img class="back-arrow" src="../../../assets/icon-back-arrow.svg" alt="Back">
+            </a>
+            <!-- Thumbnail -->
+            <div class="header-thumbnail">
+              <div class="device-thumbnail device-thumbnail--settings">
+                <div>
+                  <img src="../../../assets/icon-fans.svg" alt="" />
+                  <div class="add-photo-btn">
+                    <button class="button-nostyle d-flex justify-content-center align-items-center">
+                      <img src="../../../assets/Add photo btn.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Thumbnail -->
+            <div class="d-flex flex-column">
+              <div class="d-flex">
+                <span class="title">
+                  Lettuce
+                  <span class="label">
+                    <img src="../../../assets/icon-label-ok.svg" alt="Ok">
+                  </span>
+                </span>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="card-tags">
+                  <div class="tag dark-tag">
+                    GreenHouse A
+                    <img class="close-icon" src="../../../assets/icon-close.svg" alt="remove">
+                  </div>
+                </div>
+                <div class="add-btn">
+                  <button class="btn">
+                    <img src="../../../assets/icon-add.svg" alt="Add">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn gear-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <img src="../../../assets/icon-gear-blue.svg" alt="Settings">
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg settings-tabs-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Alarms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Sensor Status -->
+        <div class="row p-0 m-0">
+          <!-- <div class="col-12 m-0 p-0"> -->
+          <div class="sensor-status d-flex justify-content-center">
+            <div class="sensor-status-card col-md-3 m-0 p-0 d-flex flex-column">
+              <div class="card-title">
+                <p>Temperature</p>
+              </div>
+              <div class="col-12 p-0 m-0">
+                <!-- End Sensor Values -->
+                <div class="sensor-values d-flex">
+                  <!-- Sensor -->
+                  <div class="sensor d-flex flex-column">
+                    <div class="sensor-current-value">
+                      <span class="sense-icon d-flex align-items-center">
+                        <img src="../../../assets/icon-sensor-temperature.svg" alt="Temprature">
+                        <span>83</span>
+                        <span>°F</span>
+                      </span>
+                    </div>
+                    <div class="sensor-mm-lh d-flex justify-content-center">
+                      <div class="d-flex gap-1">
+                        L
+                        <div class="d-flex value-measurement">
+                          <span>35</span>
+                          <span>°F</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        H
+                        <div class="d-flex value-measurement">
+                          <span>75</span>
+                          <span>°F</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sensor-mm-lh d-flex">
+                      <div class="d-flex gap-1">
+                        Min
+                        <div class="d-flex value-measurement">
+                          <span>35</span>
+                          <span>°F</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        Max
+                        <div class="d-flex value-measurement">
+                          <span>75</span>
+                          <span>°F</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Sensor -->
+                </div>
+                <!-- End Sensor Values -->
+              </div>
+            </div>
+            <div class="sensor-status-card col-md-3 m-0 p-0 d-flex flex-column">
+              <div class="card-title">
+                <p>Humidity</p>
+              </div>
+              <div class="col-12 p-0 m-0">
+                <!-- End Sensor Values -->
+                <div class="sensor-values d-flex">
+                  <!-- Sensor -->
+                  <div class="sensor d-flex flex-column">
+                    <div class="sensor-current-value">
+                      <span class="sense-icon d-flex align-items-center">
+                        <img src="../../../assets/icon-sensor-humidity.svg" alt="Humidity">
+                        <span>65</span>
+                        <span>%</span>
+                      </span>
+                    </div>
+                    <div class="sensor-mm-lh d-flex justify-content-center">
+                      <div class="d-flex gap-1">
+                        L
+                        <div class="d-flex value-measurement">
+                          <span>50</span>
+                          <span>%</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        H
+                        <div class="d-flex value-measurement">
+                          <span>58</span>
+                          <span>%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sensor-mm-lh d-flex">
+                      <div class="d-flex gap-1">
+                        Min
+                        <div class="d-flex value-measurement">
+                          <span>40</span>
+                          <span>%</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        Max
+                        <div class="d-flex value-measurement">
+                          <span>90</span>
+                          <span>%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Sensor -->
+                </div>
+                <!-- End Sensor Values -->
+              </div>
+            </div>
+            <div class="sensor-status-card col-md-3 m-0 p-0 d-flex flex-column">
+              <div class="card-title">
+                <p>Light</p>
+              </div>
+              <div class="col-12 p-0 m-0">
+                <!-- End Sensor Values -->
+                <div class="sensor-values d-flex">
+                  <!-- Sensor -->
+                  <div class="sensor d-flex flex-column">
+                    <div class="sensor-current-value">
+                      <span class="sense-icon d-flex align-items-center">
+                        <img src="../../../assets/icon-sensor-light.svg" alt="Temprature">
+                        <span>1000</span>
+                        <span>Lux</span>
+                      </span>
+                    </div>
+                    <div class="sensor-mm-lh d-flex justify-content-center">
+                      <div class="d-flex gap-1">
+                        L
+                        <div class="d-flex value-measurement">
+                          <span>10,000</span>
+                          <span>Lux</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        H
+                        <div class="d-flex value-measurement">
+                          <span>30,000</span>
+                          <span>Lux</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sensor-mm-lh d-flex">
+                      <div class="d-flex gap-1">
+                        Min
+                        <div class="d-flex value-measurement">
+                          <span>1,500</span>
+                          <span>Lux</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        Max
+                        <div class="d-flex value-measurement">
+                          <span>10,000</span>
+                          <span>Lux</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Sensor -->
+                </div>
+                <!-- End Sensor Values -->
+              </div>
+            </div>
+            <div class="sensor-status-card col-md-3 m-0 p-0 d-flex flex-column">
+              <div class="card-title">
+                <p>CO<sub>2</sub></p>
+              </div>
+              <div class="col-12 p-0 m-0">
+                <!-- End Sensor Values -->
+                <div class="sensor-values d-flex">
+                  <!-- Sensor -->
+                  <div class="sensor d-flex flex-column">
+                    <div class="sensor-current-value">
+                      <span class="sense-icon d-flex align-items-center">
+                        <img src="../../../assets/icon-sensor-co2.svg" alt="Temprature">
+                        <span>5</span>
+                        <span>ppm</span>
+                      </span>
+                    </div>
+                    <div class="sensor-mm-lh d-flex justify-content-center">
+                      <div class="d-flex gap-1">
+                        L
+                        <div class="d-flex value-measurement">
+                          <span>2</span>
+                          <span>ppm</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        H
+                        <div class="d-flex value-measurement">
+                          <span>10</span>
+                          <span>ppm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sensor-mm-lh d-flex">
+                      <div class="d-flex gap-1">
+                        Min
+                        <div class="d-flex value-measurement">
+                          <span>1</span>
+                          <span>ppm</span>
+                        </div>
+                      </div>
+                      <div class="d-flex gap-1">
+                        Max
+                        <div class="d-flex value-measurement">
+                          <span>50</span>
+                          <span>ppm</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Sensor -->
+                </div>
+                <!-- End Sensor Values -->
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- End Sensor Status -->
+        <!-- Graph Options Bar -->
+        <div class="graph-options-bar row p-0 m-0">
+          <div class="col-12 p-0 d-flex justify-content-between align-items-center">
+            <div class="col-md-2 p-0">
+              <div class="timeframe-selector">
+                <select class="custom-select">
+                  <option value="0" selected>Last week</option>
+                  <option value="1">Last 5 min</option>
+                  <option value="2">Last hour</option>
+                  <option value="3">Last 24 hours</option>
+                  <option value="3">Last week</option>
+                  <option value="3">Last month</option>
+                  <option value="3">Select date range</option>
+                </select>
+              </div>
+            </div>
+            <div class="graphs-layout d-flex">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../../../assets/icon-eye.svg" alt="view">
+                  View graphs
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="grid-compact">
+                <div class="btn-group grid-compact-switch" role="group">
+                  <button type="button" class="btn switch-active">
+                    <img src="../../../assets/icon-compact.svg" alt="compact view">
+                  </button>
+                  <button type="button" class="btn">
+                    <img src="../../../assets/icon-grid.svg" alt="grid view">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Graph Options Bar -->
+        <!-- middle section -->
+        <div class="row mid-section align-items-center flex-column text-center p-20-40 m-0">
+          <div class="row graph-box-container d-flex p-0">
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    Temperature&nbsp;
+                    <span>(°F)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <!-- Graphs Here -->
+              </div>
+            </div>
+            <!-- End Graph Box -->
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    Humidity&nbsp;
+                    <span>(%)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <!-- Graphs Here -->
+              </div>
+            </div>
+            <!-- End Graph Box -->
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    Light&nbsp;
+                    <span>(Lux)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <!-- Graphs Here -->
+              </div>
+            </div>
+            <!-- End Graph Box -->
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    CO<sub>2</sub>&nbsp;
+                    <span>(ppm)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <!-- Graphs Here -->
+              </div>
+            </div>
+            <!-- End Graph Box -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="../../../js/page-loader.js"></script>
+</body>
+
+</html>

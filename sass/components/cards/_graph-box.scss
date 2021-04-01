@@ -1,0 +1,86 @@
+.graph-box-container {
+  width: 100%;
+  gap: 20px;
+
+  .col-md-6 {
+    max-width: calc(50% - 10px);
+  }
+  
+  p {
+    margin: 0;
+  }
+  .graph-box {
+    background-color: $N000;
+    border: 1px solid $N300;
+    border-radius: 8px;
+
+    .graph-box-header {
+      padding: 7px 10px 7px 4px;
+      
+      p {
+        @extend .body--bold;
+        color: $B700;
+        display: flex;
+        align-items: center;
+      }
+      .download-btn {
+        padding: 4px;
+        border-width: 1px;
+        width: 28px;
+        height: 28px;
+
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+    .graph-box-content {
+      padding: 11px 35px 4px 13px;
+    }
+  }
+  .change-mode {
+    min-width: 290px;
+    margin-right: 20px;
+  }
+  .group-power-mode {
+    text-align: start;
+    gap: 10px;
+  }
+  .group-override {
+    min-width: 160px;
+  }
+  .group-override p {
+    line-height: 14px;
+    font-size: 11px;
+    font-weight: 400;
+    color: $N600;
+    margin-left: 31px;
+    margin-bottom: 4px;
+  }
+  .group-override div {
+    gap: 5px;
+  }
+  .group-power-mode div span:first-child {
+    font-size: 11px;
+    color: $N600;
+  }
+  .group-power-mode div span:last-child {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .group-power-mode div .active {
+    color: $B200;
+  }
+  .group-override div button {
+    background: $B300;
+    width: 50px;
+    height: 26px;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .group-override div button[disabled]{
+    background: $N200;
+    color: $N400;
+  }
+}

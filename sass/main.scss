@@ -27,11 +27,13 @@
 @import "components/cards/scene-card";
 @import "components/cards/routine-card";
 @import "components/cards/routine-condition";
+@import "components/cards/graph-box";
 // Buttons
 @import "components/buttons/add-device-btn";
 @import "components/buttons/close-btn";
 @import "components/buttons/dropdown-btn";
 @import "components/buttons/mm-lw-btn";
+@import "components/buttons/grid-compact-swtich";
 @import "components/buttons/btn-large";
 @import "components/buttons/primary_btn";
 @import "components/buttons/secondary-btn";
@@ -48,6 +50,8 @@
 @import "components/cards/card-titled-tags";
 @import "components/single-select-dropdown";
 @import "components/tags-input";
+@import "components/sensor-status";
+@import "components/graph-options-bar";
 
 /* Pages */
 @import "pages/index";

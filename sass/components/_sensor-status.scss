@@ -1,0 +1,81 @@
+.sensor-status {
+  width: 100%;
+  min-height: 190px;
+  background-color: $N000;
+  padding: 20px 70px;
+  gap: 20px;
+  color: $B700;
+
+  p {
+    margin: 0;
+  }
+
+  .sensor-status-card {
+    padding: 15px 0 15px 32px !important;
+    gap: 10px;
+    border: 1px solid $N300;
+    border-radius: 8px;
+    min-width: 262px;
+
+    .card-title {
+      margin-bottom: 0;
+      width: 100%;
+      padding: 0;
+      p {
+        @extend .display-small;
+
+      }
+    }
+    .sensor-values {
+      gap: 20px;
+
+      .sensor-current-value {
+        color: $N700;
+        text-align: start;
+
+        .sense-icon { 
+          color: $B700;
+          margin-bottom: 10px;
+          gap: 3px;
+
+          img {
+            width: 40px;
+            height: 40px;
+          }
+          & span:nth-child(2) {
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            line-height: 32px;
+          }
+          & span:nth-child(3) {
+            @extend .heading;
+          }
+        }
+
+        & span:nth-child(2) {
+          @extend .display-small;
+        }
+      }
+      .sensor-mm-lh {
+        gap: 16px;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 16px;
+        color: $N500;
+      }
+      .sensor-mm-lh div span {
+        font-weight: 500;
+        color: $N700;
+      }
+      .value-measurement {
+        gap: 2px;
+        margin-left: 4px;
+  
+        span {
+          color: $B700 !important;
+        }
+    }
+    }
+  }
+}

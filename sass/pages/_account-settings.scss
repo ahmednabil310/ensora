@@ -11,10 +11,22 @@
       align-self: start;
       cursor: pointer;
     }
+    .title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
     .label img {
-      margin-left: 10px;
       width: auto;
       height: auto;
+    }
+    .label span {
+      color: $N600;
+      font-size: 11px;
+      line-height: 14px;
+      padding: 2px 6px;
+      background: $N300;
+      border-radius: 100px;
     }
     .header-thumbnail {
       margin: 0 14px;
