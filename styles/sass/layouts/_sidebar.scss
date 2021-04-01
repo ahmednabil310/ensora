@@ -1,0 +1,47 @@
+.side-bar {
+  background-color: $B800;
+  color: $N600;
+  font-size: 14px;
+  position: fixed;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.side-bar__items {
+  list-style-type: none;
+}
+
+.sid-bar__links,
+.sid-bar__links:hover {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 2px;
+}
+
+.sid-bar__text {
+  padding-left: 18px;
+}
+
+.link_no_decoration,
+.link_no_decoration:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-selected {
+  color: $N200;
+  width: 100%;
+  img {
+    filter: grayscale(100%) brightness(200%);
+  }
+  .page-selected__bar {
+    position: absolute;
+    left: 0px;
+    background-color: $B300;
+    width: 3px;
+    height: 46px;
+  }
+}

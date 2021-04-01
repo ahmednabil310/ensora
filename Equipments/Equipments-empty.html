@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="../styles/sass/main.css" />
+
+    <title id="equipments">Equipments Empty State</title>
+  </head>
+
+  <body>
+    <div class="row h-100 m-0">
+      <!-- side bar -->
+      <div class="col-2 p-0" id="side-bar-container"></div>
+      <!-- main page -->
+      <div class="main-page col-12 col-lg-10 col-xl-10">
+        <!-- navbar -->
+        <div id="nav-bar-container"></div>
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- header -->
+          <div class="d-flex justify-content-between main-content__header">
+            <div class="d-flex">
+              <span class="">Equipments</span>
+            </div>
+          </div>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center"
+          >
+            <div class="col-12">
+              <div class="main-content__empty">
+                <h3 id="title">No equipments found</h3>
+                <p id="body">
+                  Equipment that you assign to your automation box will appear
+                  here. Assign your equipment to an <br />automation box from
+                  the devices page.
+                </p>
+                <div>
+                  <button class="primary-button">View Devices</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/page-loader.js"></script>
+  </body>
+</html>

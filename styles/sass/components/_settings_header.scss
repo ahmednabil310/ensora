@@ -1,0 +1,101 @@
+.settings-header {
+  padding: 0;
+
+  .settings-title {
+    padding: 20px 40px 12px;
+    background: white;
+    
+    .back-arrow {
+      width: auto;
+      height: auto;
+      align-self: start;
+      cursor: pointer;
+    }
+    .title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .label img {
+      width: auto;
+      height: auto;
+    }
+    .label span {
+      color: $N600;
+      font-size: 11px;
+      line-height: 14px;
+      padding: 2px 6px;
+      background: $N300;
+      border-radius: 100px;
+    }
+    .header-thumbnail {
+      margin: 0 14px;
+      button {
+        width: 28px !important;
+      }
+    }
+    .add-btn {
+      margin-left: 5px;
+    }
+    .card-tags {
+      margin-top: 6px;
+
+      .dark-tag {
+        background-color: $N300;
+        color: $B700;
+      }
+    }
+    .close-icon {
+      width: 16px;
+      height: 16px;
+      padding: 2px;
+      margin-top: -3px;
+      cursor: pointer;
+    }
+    .gear-button {
+      background-color: $N300;
+      &::after {
+        content: none !important;
+      }
+    }
+  }
+  .settings-title .title {
+    @extend .display-medium;
+  }
+  .navbar {
+    height: auto;
+  }
+
+  .settings-tabs-nav {
+    height: 38px;
+    padding-top: 12px;
+    background: white;;
+    padding: 0 40px;
+    box-shadow: none;
+    border-bottom: 2px solid #dfe4eb;
+  }
+  .navbar-nav {
+    gap: 11px;
+  }
+  .settings-tabs-nav li a {
+    color: $N600;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 20px !important;
+  }
+  .active {
+    border-bottom: 2px solid $B300;
+    .nav-link {
+      color: $B300 !important;
+    }
+  }
+
+  .setup-wizard-modal {
+    min-height: auto !important;
+    
+    .setup-wizard-modal__form {
+      margin: 0;
+    }
+  }
+}

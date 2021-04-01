@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/sass/main.css" />
+  <title id="settings">Equipment</title>
+
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class=" col-2 p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="main-page col-12 col-lg-10 col-xl-10">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
+      <div class="settings-header">
+        <!-- header -->
+        <div class="d-flex main-content__header justify-content-between settings-title">
+          <div class="d-flex">
+            <a href="#">
+              <img class="back-arrow" src="../assets/icon-back-arrow.svg" alt="Back">
+            </a>
+            <!-- Thumbnail -->
+            <div class="header-thumbnail">
+              <div class="device-thumbnail device-thumbnail--settings">
+                <div>
+                  <img src="../assets/icon-fans.svg" alt="" />
+                  <div class="add-photo-btn">
+                    <button class="button-nostyle d-flex justify-content-center align-items-center">
+                      <img src="../assets/Add photo btn.svg" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Thumbnail -->
+            <div class="d-flex flex-column">
+              <div class="d-flex">
+                <span class="title">
+                  Fans
+                  <span class="label d-inline-flex align-items-center">
+                    <span class="device-subtitle">Automation box A</span>
+                  </span>
+                </span>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="card-tags">
+                  <div class="tag dark-tag">
+                    GreenHouse A
+                    <img class="close-icon" src="../assets/icon-close.svg" alt="remove">
+                  </div>
+                </div>
+                <div class="add-btn">
+                  <button class="btn">
+                    <img src="../assets/icon-add.svg" alt="Add">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Graph Options Bar -->
+        <div class="graph-options-bar pb row p-0 m-0 shadow-sm">
+          <div class="col-12 p-0 d-flex justify-content-between align-items-center">
+            <div class="col-md-2 p-0">
+              <div class="timeframe-selector">
+                <select class="custom-select">
+                  <option value="0" selected>Last week</option>
+                  <option value="1">Last 5 min</option>
+                  <option value="2">Last hour</option>
+                  <option value="3">Last 24 hours</option>
+                  <option value="3">Last week</option>
+                  <option value="3">Last month</option>
+                  <option value="3">Select date range</option>
+                </select>
+              </div>
+            </div>
+            <div class="graphs-layout d-flex">
+              <div class="grid-compact">
+                <div class="btn-group grid-compact-switch" role="group">
+                  <button type="button" class="btn switch-active">
+                    <img src="../assets/icon-compact.svg" alt="compact view">
+                  </button>
+                  <button type="button" class="btn">
+                    <img src="../assets/icon-grid.svg" alt="grid view">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Graph Options Bar -->
+      </div>
+      <!-- Main Content -->
+      <div class="main-content">
+      </div>
+      <!-- middle section -->
+      <div class="row mid-section align-items-center flex-column text-center p-20-40 m-0">
+        <div class="row graph-box-container d-flex p-0">
+          <!-- Graph Box -->
+          <div class="graph-box col-sm-12 col-md-12 p-0">
+            <div class="graph-box-header d-flex justify-content-between align-items-center">
+              <div class="d-flex align-self-start">
+                <img src="../assets/icon-grap.svg" alt="grap">
+                <p>
+                  Temperature&nbsp;
+                  <span>(°F)</span>
+                </p>
+              </div>
+              <div class="d-flex">
+                <div class="change-mode d-flex justify-content-between">
+                  <div class="group-power-mode d-flex">
+                    <div class="d-flex flex-column">
+                      <span>Power</span>
+                      <span>Off</span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span>Mode</span>
+                      <span class="active">Auto</span>
+                    </div>
+                  </div>
+                  <div class="group-override d-flex flex-column">
+                    <p>Override</p>
+                    <div class="d-flex">
+                      <button class="btn btn-primary">On</button>
+                      <button class="btn btn-primary">Off</button>
+                      <button class="btn" disabled>Auto</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-light download-btn">
+                  <img src="../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+            </div>
+            <div class="graph-box-content">
+              <!-- Graphs Here -->
+            </div>
+          </div>
+          <!-- End Graph Box -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="../js/page-loader.js"></script>
+</body>
+
+</html>
