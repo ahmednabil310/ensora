@@ -1,0 +1,65 @@
+body {
+  box-sizing: border-box;
+}
+.custom-select-wrapper {
+  position: relative;
+  user-select: none;
+}
+.custom-select {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.custom-select__trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid $N300;
+  border-radius: 5px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  color: $B700;
+  cursor: pointer;
+}
+.custom-options {
+  position: absolute;
+  display: block;
+  top: 115%;
+  left: 0;
+  right: 0;
+  padding: 5px 0px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+  border: 1px solid $N300;
+  border-radius: 5px;
+}
+.custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.custom-option {
+  @extend .input;
+  position: relative;
+  display: block;
+  padding: 9px 15px;
+  color: $B700;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.custom-option:hover {
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  padding-right: 12px;
+  img {
+    height: 16.2px;
+    width: 12.6px;
+  }
+}
