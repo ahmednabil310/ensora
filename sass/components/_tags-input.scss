@@ -1,5 +1,5 @@
 .tags-input {
-  width: 260px;
+  width: 320px;
   border-radius: 5px;
   border: 1px solid $N300;
   label {
@@ -31,6 +31,24 @@
   input {
     margin-right: 10px;
   }
+  .tags-input__checkboxes__group__label {
+    @extend .label;
+    color: $N600;
+    background-color: $N200;
+  }
+}
+
+.tags-input__checkboxes--scrollable {
+  overflow: hidden;
+
+  .tags-input__checkboxes--scrollable__div {
+    max-height: 210px;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+  }
 }
 
 .tags-input__buttons__button {
@@ -38,4 +56,17 @@
   button {
     color: $B700;
   }
+}
+
+.dropdown-menu {
+  border: 1px solid $N300 !important;
+  border-radius: 5px !important;
+  padding: 5px 0 !important;
+  margin: 0 !important;
+}
+
+.dropdown-item {
+  @extend .input;
+  color: $B700 !important;
+  padding: 9px 15px !important;
 }
