@@ -112,32 +112,35 @@
                   <span>(°F)</span>
                 </p>
               </div>
-              <div class="d-flex">
-                <div class="change-mode d-flex justify-content-between">
-                  <div class="group-power-mode d-flex">
-                    <div class="d-flex flex-column">
-                      <span>Power</span>
-                      <span>Off</span>
+              <div class="d-flex flex-column">
+                <div class="d-flex">
+                  <div class="change-mode d-flex justify-content-between">
+                    <div class="group-power-mode d-flex">
+                      <div class="d-flex flex-column">
+                        <span>Power</span>
+                        <span>Off</span>
+                      </div>
+                      <div class="d-flex flex-column">
+                        <span>Mode</span>
+                        <span class="active">Auto</span>
+                      </div>
                     </div>
-                    <div class="d-flex flex-column">
-                      <span>Mode</span>
-                      <span class="active">Auto</span>
+                    <div class="group-override d-flex flex-column">
+                      <p>Override</p>
+                      <div class="d-flex">
+                        <button class="btn btn-primary">On</button>
+                        <button class="btn btn-primary">Off</button>
+                        <button class="btn" disabled>Auto</button>
+                      </div>
                     </div>
                   </div>
-                  <div class="group-override d-flex flex-column">
-                    <p>Override</p>
-                    <div class="d-flex">
-                      <button class="btn btn-primary">On</button>
-                      <button class="btn btn-primary">Off</button>
-                      <button class="btn" disabled>Auto</button>
-                    </div>
-                  </div>
+                  <button class="btn btn-light download-btn">
+                    <img src="../../../assets/icon-download.svg" alt="Download">
+                  </button>
                 </div>
-                <button class="btn btn-light download-btn">
-                  <img src="../../../assets/icon-download.svg" alt="Download">
-                </button>
               </div>
             </div>
+            <svg id="lettuce-fan-graph"></svg>
             <div class="graph-box-content">
               <!-- Graphs Here -->
             </div>
@@ -157,6 +160,170 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
   <script src="../../../js/page-loader.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <script>
+    const width = document.getElementById("lettuce-fan-graph").parentElement.clientWidth;
+    const colors = {
+      on: "#71C76A",
+      off: "#5B6D83",
+      override: "#EC6060",
+      auto: "#5AAFE8"
+    };
+
+    const textColors = {
+      on: "#71C76A",
+      off: "#687D8F",
+      auto: "#5AAFE8",
+      override: "#EC6060"
+    }
+    var data = [
+      {
+        name: "on/off",
+        values: [
+          {
+            endDate: "2021/7/19 11:02",
+            startDate: "2021/7/12",
+            state: "on"
+          },
+          {
+            endDate: "2021/7/28",
+            startDate: "2021/7/19 11:02",
+            state: "off"
+          },
+          {
+            endDate: "2021/8/3",
+            startDate: "2021/7/28",
+            state: "on"
+          },
+          {
+            endDate: "2021/8/5",
+            startDate: "2021/8/3",
+            state: "off"
+          }
+        ]
+      },
+      {
+        name: "auto/override",
+        values: [
+          {
+            endDate: "2021/7/19",
+            startDate: "2021/7/12",
+            state: "auto"
+          },
+          {
+            endDate: "2021/7/28",
+            startDate: "2021/7/19",
+            state: "override"
+          },
+          {
+            endDate: "2021/8/1",
+            startDate: "2021/7/28",
+            state: "auto"
+          },
+          {
+            endDate: "2021/8/5",
+            startDate: "2021/8/1",
+            state: "override"
+          }
+        ]
+      }
+    ];
+    //name is for y axis
+    //key is for layers (stacks) / value should be in key:value
+    var tseries = [];
+    data.forEach((d) => {
+      const obj = { name: d.name };
+      d.values.forEach((v, i) => {
+        const key = v.state + i;
+        const interval = moment(v.endDate).diff(v.startDate);
+        obj[key] = interval;
+      })
+      tseries.push(obj);
+    });
+
+    function capitalizeFirstLetter(string) {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    const columns = [...Object.keys(tseries[0]).filter((t) => t !== "name"),
+    ...Object.keys(tseries[1]).filter((t) => t !== "name")];
+    console.log(columns);
+
+    var margin = ({ top: 10, right: 10, bottom: 30, left: 54 }),
+      height = Math.max(data.length, 4) * 25 + margin.top + margin.bottom,
+
+      formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en"),
+
+      yAxis = g => g
+        .attr("transform", `translate(${margin.left},0)`)
+        .call(d3.axisLeft(y).tickSizeOuter(0))
+        .call(g => g.selectAll(".domain").remove())
+        .call(g => g.selectAll(".tick text")
+          .attr("dy", "-1.2em")
+          .attr("class", "yaxis-labels")
+          .attr("fill", function (d, i) {
+            return textColors[d.toLowerCase()];
+          }))
+        .call(g => g.selectAll(".tick text")
+          .attr("dy", function (d, i) {
+            if (i === 0)
+              return "-0.7em";
+            if (i === 1)
+              return "-1.7em";
+            if (i === 2)
+              return "-3.2em";
+            return "-4.7em";
+          })),
+
+      xAxis = g => g
+        .attr("transform", `translate(0,${height - margin.bottom})`)
+        .call(d3.axisBottom(x).ticks(width / 200, "s"))
+        .call(g => g.selectAll(".domain").remove()),
+
+      series = d3.stack()
+        .keys(columns)
+        (tseries);
+    console.log(series);
+    console.log(height);
+
+    y = d3.scaleBand()
+      .domain(["On", "Off", "Auto", "Override"])
+      .range([0, height - margin.bottom])
+      .padding(0),
+
+      x = d3.scaleLinear()
+        .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
+        .range([margin.left, width - margin.right]);
+
+    console.log(series);
+
+    const svg = d3.select("#lettuce-fan-graph")
+      .attr("viewBox", [0, -margin.top, width, height]);
+
+    svg.append("g")
+      .selectAll("g")
+      .data(series)
+      .join("g")
+      .attr("fill", d => colors[d.key.split(/\d/)[0]])
+      .selectAll("rect")
+      .data(d => d)
+      .join("rect")
+      .attr("x", d => x(d[0]))
+      .attr("y", (d, i) => (i === 0) ? y("On") : y("Off"))
+      .attr("width", d => { console.log(d[1]); return x(d[1]) - x(d[0]); })
+      .attr("height", y.bandwidth())
+      .append("title")
+      .text(d => `${d.data.name} ${d.key}
+      ${formatValue(d.data[d.key])}`);
+
+    svg.append("g")
+      .call(xAxis);
+
+    svg.append("g")
+      .call(yAxis);
+  </script>
 </body>
 
 </html>

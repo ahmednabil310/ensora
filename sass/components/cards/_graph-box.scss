@@ -5,7 +5,7 @@
   .col-md-6 {
     max-width: calc(50% - 10px);
   }
-  
+
   p {
     margin: 0;
   }
@@ -16,7 +16,7 @@
 
     .graph-box-header {
       padding: 7px 10px 7px 4px;
-      
+
       p {
         @extend .body--bold;
         color: $B700;
@@ -79,8 +79,14 @@
     line-height: 14px;
     font-weight: 500;
   }
-  .group-override div button[disabled]{
+  .group-override div button[disabled] {
     background: $N200;
     color: $N400;
+  }
+  .tick line {
+    visibility: hidden;
+  }
+  .yaxis-labels {
+    font-size: 9px;
   }
 }
