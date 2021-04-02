@@ -140,8 +140,11 @@
                 </div>
               </div>
             </div>
-            <svg id="lettuce-fan-graph"></svg>
             <div class="graph-box-content">
+              <svg id="lettuce-fan-graph"></svg>
+              <div class="tooltip-area">
+                <div class="tooltip-area__text"></div>
+              </div>
               <!-- Graphs Here -->
             </div>
           </div>
@@ -184,23 +187,28 @@
         name: "on/off",
         values: [
           {
-            endDate: "2021/7/19 11:02",
+            endDate: "2021/7/16",
             startDate: "2021/7/12",
-            state: "on"
-          },
-          {
-            endDate: "2021/7/28",
-            startDate: "2021/7/19 11:02",
             state: "off"
           },
           {
-            endDate: "2021/8/3",
+            endDate: "2021/7/28",
+            startDate: "2021/7/16",
+            state: "on"
+          },
+          {
+            endDate: "2021/7/30 12:00",
             startDate: "2021/7/28",
+            state: "off"
+          },
+          {
+            endDate: "2021/8/2",
+            startDate: "2021/7/30 12:00",
             state: "on"
           },
           {
             endDate: "2021/8/5",
-            startDate: "2021/8/3",
+            startDate: "2021/8/2",
             state: "off"
           }
         ]
@@ -209,28 +217,22 @@
         name: "auto/override",
         values: [
           {
-            endDate: "2021/7/19",
+            endDate: "2021/7/21",
             startDate: "2021/7/12",
-            state: "auto"
-          },
-          {
-            endDate: "2021/7/28",
-            startDate: "2021/7/19",
             state: "override"
-          },
-          {
-            endDate: "2021/8/1",
-            startDate: "2021/7/28",
-            state: "auto"
           },
           {
             endDate: "2021/8/5",
-            startDate: "2021/8/1",
-            state: "override"
-          }
+            startDate: "2021/7/21",
+            state: "auto"
+          },
         ]
       }
     ];
+    //assuming both starts and ends at the same date
+    const minDate = moment(data[0].values[0].startDate);
+    const maxDate = moment(data[data.length - 1].values[data[data.length - 1].values.length - 1].endDate);
+
     //name is for y axis
     //key is for layers (stacks) / value should be in key:value
     var tseries = [];
@@ -249,10 +251,9 @@
     }
     const columns = [...Object.keys(tseries[0]).filter((t) => t !== "name"),
     ...Object.keys(tseries[1]).filter((t) => t !== "name")];
-    console.log(columns);
 
     var margin = ({ top: 10, right: 10, bottom: 30, left: 54 }),
-      height = Math.max(data.length, 4) * 25 + margin.top + margin.bottom,
+      height = Math.max(data.length, 4) * 23.5 + margin.top + margin.bottom,
 
       formatValue = x => isNaN(x) ? "N/A" : x.toLocaleString("en"),
 
@@ -269,40 +270,53 @@
         .call(g => g.selectAll(".tick text")
           .attr("dy", function (d, i) {
             if (i === 0)
-              return "-0.7em";
+              return "-0.5em";
             if (i === 1)
-              return "-1.7em";
+              return "-1.8em";
             if (i === 2)
-              return "-3.2em";
-            return "-4.7em";
+              return "-3.5em";
+            return "-5.0em";
           })),
 
       xAxis = g => g
-        .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x).ticks(width / 200, "s"))
+        .attr("transform", `translate(0,${(height - margin.bottom) / 2 - 7})`)
+        .attr("class", "xaxis-labels")
+        .call(
+          d3.axisBottom(timeScale)
+            .ticks(d3.timeDay.filter((d) => d3.timeDay.count(0, d) % 7 === 0))
+            .tickFormat(
+              (d, i) => moment(d).format("MMM D")
+            )
+            .tickSizeOuter(0)
+        )
         .call(g => g.selectAll(".domain").remove()),
 
       series = d3.stack()
         .keys(columns)
+        .value((obj, key) => obj[key] ? obj[key] : 0)
         (tseries);
-    console.log(series);
-    console.log(height);
 
     y = d3.scaleBand()
       .domain(["On", "Off", "Auto", "Override"])
       .range([0, height - margin.bottom])
       .padding(0),
 
+      timeScale = x = d3.scaleTime()
+        .domain([minDate.toDate(), maxDate.toDate()])
+        .range([margin.left, width - margin.right]),
+
       x = d3.scaleLinear()
         .domain([0, d3.max(series, d => d3.max(d, d => d[1]))])
         .range([margin.left, width - margin.right]);
 
-    console.log(series);
 
     const svg = d3.select("#lettuce-fan-graph")
-      .attr("viewBox", [0, -margin.top, width, height]);
+      .attr("viewBox", [0, -margin.top, width, height / 2 + margin.bottom / 2])
+      .style("overflow", "visible");
 
-    svg.append("g")
+
+    const tmp = svg.append("g");
+    const tmp1 = tmp
       .selectAll("g")
       .data(series)
       .join("g")
@@ -312,17 +326,114 @@
       .join("rect")
       .attr("x", d => x(d[0]))
       .attr("y", (d, i) => (i === 0) ? y("On") : y("Off"))
-      .attr("width", d => { console.log(d[1]); return x(d[1]) - x(d[0]); })
-      .attr("height", y.bandwidth())
-      .append("title")
-      .text(d => `${d.data.name} ${d.key}
-      ${formatValue(d.data[d.key])}`);
+      .attr("width", d => x(d[1]) - x(d[0]))
+      .attr("height", function (d, i) {
+        if (i === 0) return y.bandwidth();
+        return 19;
+      });
 
     svg.append("g")
       .call(xAxis);
 
     svg.append("g")
       .call(yAxis);
+
+    var tooltip = d3.select(".tooltip-area")
+      .style('opacity', 0);
+
+    const line = svg.append("g")
+      .append("line")
+      .attr("y1", 0)
+      .attr("y2", y.bandwidth() + 19)
+      .attr("stroke", "#DFE4EB")
+      .style("opacity", 0)
+
+    const mouseover = (event, d) => {
+      if (!isEventInElement(event, tmp.node())) {
+        tooltip.style('opacity', 0);
+        line.style("opacity", 1);
+        return;
+      }
+      tooltip.style("opacity", 1);
+      line.style("opacity", 1);
+    };
+
+    const mouseleave = (event, d) => {
+      tooltip.style('opacity', 0);
+      line.style("opacity", 0);
+    }
+
+    function isEventInElement(event, element) {
+      const rect = element.getBoundingClientRect();
+      const x = event.clientX;
+      if (x < rect.left || x >= rect.right) return false;
+      const y = event.clientY;
+      if (y < rect.top || y >= rect.bottom) return false;
+      return true;
+    }
+
+    const getData = (x) => {
+      hoveredData = []
+      for (let arr of series) {
+        for (let layer of arr) {
+          if (layer[0] !== layer[1] && x >= layer[0] && x <= layer[1])
+            hoveredData.push(arr.key.split(/\d/)[0]);
+        }
+      }
+      return hoveredData;
+    }
+    const mousemove = (event, d) => {
+      if (!isEventInElement(event, tmp.node())) {
+        tooltip.style('opacity', 0);
+        line.style("opacity", 0);
+        return;
+      }
+
+      const text = d3.select('.tooltip-area__text');
+      const coord = d3.pointer(event, tmp.node());
+      const invertedX = x.invert(coord[0]);
+      const hoveredData = getData(invertedX);
+      tooltip.style('opacity', 1);
+      line.style("opacity", 1);
+
+
+      text.node().innerHTML = `
+      ${moment(minDate).add(invertedX).calendar(null, {
+        sameElse: function (now) {
+          if (this.years() === now.years()) {
+            return "ddd, MMMM D hh:mma"
+          }
+          return "llll";
+        }
+      })}<br>
+      Power <span class="power-text__${hoveredData[0]}">${capitalizeFirstLetter(hoveredData[0])}</span><br>
+      Mode <span class="mode-text__${hoveredData[1]}">${capitalizeFirstLetter(hoveredData[1])}</span><br>
+      `;
+
+      const parentTop = d3.select(".graph-box-content").node().getBoundingClientRect().top;
+      tooltip
+        // .style('transform', `translate(${coord[0]}px, -5vh)`)
+        .style('top', tmp.node().getBoundingClientRect().top - parentTop + 60 + 'px')
+        .style('left', `${event.pageX - 290}px`);
+
+      line
+        .attr('x1', coord[0])
+        .attr('x2', coord[0])
+    };
+
+    tooltip
+      .on("mousemove", mousemove)
+      .on("mouseleave", mouseleave)
+      .on("mouseover", mouseover)
+      ;
+
+    tmp1.on("mousemove", mousemove)
+      .on("mouseleave", mouseleave)
+      .on("mouseover", mouseover);
+
+    line.on("mousemove", mousemove)
+      .on("mouseleave", mouseleave)
+      .on("mouseover", mouseover);
   </script>
 </body>
 

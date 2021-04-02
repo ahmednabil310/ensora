@@ -35,7 +35,63 @@
       }
     }
     .graph-box-content {
-      padding: 11px 35px 4px 13px;
+      padding: 11px 16px 4px 1px;
+      .tick line {
+        visibility: hidden;
+      }
+      .yaxis-labels {
+        font-size: 9px;
+        font-weight: 600;
+      }
+      .xaxis-labels {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 18px;
+        color: #687D8F;
+      }
+      .tooltip-area {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 156px;
+        height: 74px;
+        background: rgba(6, 43, 69, 0.9);
+        box-shadow: 0px 3px 10px rgba(55, 61, 71, 0.2);
+        border-radius: 5px;
+        z-index: 100;
+        &__text {
+          text-align: left;
+          z-index: 100;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 18px;
+          color: #9da9b5;
+
+          .power-text {
+            &__on {
+              color: #71c76a;
+            }
+            &__off {
+              color: #687D8F;
+            }
+          }
+          .mode-text {
+            &__override {
+              color: #EC6060
+            }
+
+            &__auto {
+              color: #5AAFE8;
+            }
+          }
+        }
+      }
     }
   }
   .change-mode {
@@ -82,11 +138,5 @@
   .group-override div button[disabled] {
     background: $N200;
     color: $N400;
-  }
-  .tick line {
-    visibility: hidden;
-  }
-  .yaxis-labels {
-    font-size: 9px;
   }
 }
