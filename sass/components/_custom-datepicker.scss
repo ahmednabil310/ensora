@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.date-picker {
+  font-family: "Roboto", sans-serif;
+  color: #546e7a;
+}
+.wrapper {
+  max-width: 18rem;
+  padding: 0 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+}
+
+#ui-datepicker-div {
+  display: none;
+  background-color: #fff;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  margin-top: 9px;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 12px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.ui-datepicker-calendar thead th {
+  text-align: center;
+  @extend .caption;
+  color: $N400;
+  line-height: 2rem;
+  padding: 0;
+}
+.ui-datepicker-calendar tbody td {
+  width: 32px;
+  text-align: center;
+  padding: 0;
+}
+.ui-datepicker-calendar tbody td a {
+  display: block;
+  border-radius: 0.25rem;
+  line-height: 2rem;
+  transition: 0.3s all;
+  @extend .caption;
+  font-weight: 700;
+  color: $B700;
+  text-decoration: none;
+}
+.ui-datepicker-calendar tbody td a:hover {
+  background-color: $B100;
+}
+.ui-datepicker-calendar tbody td a.ui-state-active {
+  background-color: $B200;
+  color: white;
+}
+.ui-datepicker-header a.ui-corner-all {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: 20px;
+  border-radius: 0.25rem;
+  transition: 0.3s all;
+}
+.ui-datepicker-header a.ui-corner-all:hover {
+  background-color: #eceff1;
+}
+.ui-datepicker-header a.ui-datepicker-prev {
+  left: 0;
+  background: url("../../assets/chevron-right.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 50%;
+  transform: rotate(180deg);
+}
+.ui-datepicker-header a.ui-datepicker-next {
+  right: 0;
+  background: url("../../assets/chevron-right.svg");
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 50%;
+}
+.ui-datepicker-header a > span {
+  display: none;
+}
+.ui-datepicker-title {
+  text-align: center;
+  line-height: 2rem;
+  @extend .body;
+  font-weight: 500;
+  color: $B700;
+}
+.ui-datepicker-week-col {
+  color: #78909c;
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.datepicker-container {
+  position: relative;
+}
+
+.ui-datepicker-trigger {
+  @extend .button-nostyle;
+  position: absolute;
+  right: 9px;
+  bottom: 7px;
+}
+
+.ui-datepicker-current,
+.ui-datepicker-close {
+  @extend .button-nostyle;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: $font-stack;
+}
+
+.ui-datepicker-close {
+  color: $B300;
+}
+
+.ui-datepicker-current {
+  color: $N600;
+}
+
+.ui-datepicker-buttonpane {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid $N300;
+  width: 100%;
+}
