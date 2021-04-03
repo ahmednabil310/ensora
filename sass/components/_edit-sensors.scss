@@ -1,0 +1,43 @@
+.es-modal {
+  .modal-dialog {
+    max-width: 840px;
+    .modal-content {
+      .modal-header {
+        padding: 20px 24px;
+      }
+      .es-content-container {
+        margin-top: 19px;
+        .es-content-container__checkbox {
+          display: flex;
+          align-items: center;
+          padding: 9px 15px;
+          .es-content-container__checkbox__input {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+          }
+          .es-content-container__checkbox__label {
+            @extend .input;
+            margin: 0;
+            color: $B700;
+          }
+        }
+
+        .es-content-container__p {
+          margin-top: 19px;
+          margin-bottom: 0;
+          max-width: 242px;
+          color: $N600;
+        }
+      }
+      .modal-body--border-right {
+        border-right: 1px solid $N300;
+      }
+
+      .modal-body--padding-top {
+        padding-top: 30px;
+        padding-left: 40px;
+      }
+    }
+  }
+}
