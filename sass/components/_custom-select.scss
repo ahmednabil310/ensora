@@ -22,7 +22,11 @@ body {
   padding-left: 12px;
   color: $B700;
   cursor: pointer;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  span {
+    @extend .input;
+    color: $B700;
+  }
 }
 .open {
   .our-custom-select__trigger {
@@ -79,4 +83,13 @@ body {
     height: 16px;
     width: 10px;
   }
+}
+
+.custom-option:hover {
+  cursor: pointer;
+  background-color: $B100;
+}
+.custom-option.selected {
+  color: #ffffff;
+  background-color: $B300;
 }

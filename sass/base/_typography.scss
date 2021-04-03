@@ -1,10 +1,5 @@
-$font-stack: 'Inter', sans-serif;
+$font-stack: "Inter", sans-serif;
 
-.body {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-}
 .display-xlarge {
   font-size: 42px;
   font-weight: 700;
@@ -41,7 +36,18 @@ $font-stack: 'Inter', sans-serif;
   line-height: 16px;
   font-weight: 600;
 }
-.label,
+
+.body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+}
 .button-label,
 .body--bold,
 .input--bold {
@@ -62,16 +68,14 @@ $font-stack: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
+.input,
 .body--link,
 .small--regular {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.input {
-  @extend .small--regular;
-  line-height: 20px;
-}
+
 .tag-label {
   font-size: 12px;
   font-weight: 400;

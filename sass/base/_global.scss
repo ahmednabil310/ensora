@@ -1,7 +1,7 @@
 body {
   @extend .body;
   font-family: $font-stack;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 // Override Bootstrap Defaults
@@ -29,7 +29,7 @@ select {
   line-height: 20px !important;
   padding: 8px 14px;
   color: $B700 !important;
-  
+
   &::placeholder {
     color: $N500 !important;
   }
@@ -72,7 +72,7 @@ select {
   background-color: $B300;
 }
 .btn-secondary {
-  background-color: $N300;  
+  background-color: $N300;
   color: $B700;
   border-color: $N300;
 }
@@ -160,7 +160,7 @@ select {
   box-shadow: 0px 1px 1px rgba(6, 43, 69, 0.05) !important;
 }
 .shadow-md {
-  box-shadow: 0px 2px 0px #DFE4EB !important;
+  box-shadow: 0px 2px 0px #dfe4eb !important;
 }
 // Colors
 .text-primary {
