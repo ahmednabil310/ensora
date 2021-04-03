@@ -1,5 +1,6 @@
 .onboardplan-container__price {
   @extend .body;
+  margin: 0 auto;
 
   .plan-cell-container {
     border-bottom: solid 1px $N300;
@@ -9,7 +10,7 @@
       margin-left: 20px;
 
       height: 100%;
-      color: $N500;
+      // color: $B500;
       svg {
         fill: $N500;
       }
@@ -17,6 +18,7 @@
   }
   .onboardplan-card {
     margin-right: 0 !important;
+    padding-top: 20px !important;
   }
   .selected {
     .plan-cell,
@@ -32,9 +34,15 @@
       border-radius: 16px 16px 0px 0px;
       margin-right: 0;
     }
+    .onboardplan-card__title {
+      line-height: 24px !important;
+    }
     .onboardplan-card__title,
     .onboardplan-card__pricing {
       color: $N000;
+    }
+    .onboardplan-card__pricing {
+      line-height: 44px;
     }
   }
 }

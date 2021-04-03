@@ -1,0 +1,27 @@
+.invoice-table {
+  color: $B700;
+
+  & th:first-child{
+    border-radius:5px 0 0 5px;
+  }
+  & th:last-child{
+    border-radius:0 5px 5px 0;
+  }
+  thead {
+    background-color: $N200;
+    color: $N600;
+    border-radius: 5px;
+
+    th {
+      border: none;
+    }
+  }
+  tbody tr:first-of-type {
+    td {
+      border: none !important;
+    }
+  }
+  a {
+    color: $B300;
+  }
+}

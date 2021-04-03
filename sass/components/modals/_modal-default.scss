@@ -1,0 +1,22 @@
+.modal-default {
+  color: $B700;
+  background-color: #062b4587;
+
+  .modal-header {
+    .modal-title {
+      @extend .display-small;
+      text-align: center;
+      width: 100%;
+      margin-right: -48px;
+    }
+    .close {
+      margin-left: 0;
+    }
+  }
+  .modal-body {
+    padding: 40px !important;
+  }
+  .modal-footer {
+    gap: 24px;
+  }
+}

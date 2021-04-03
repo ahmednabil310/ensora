@@ -1,0 +1,34 @@
+.notifications-table {
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: -68px;
+
+  thead th {
+    @extend .heading;
+    color: $N600;
+    border-top: 0;
+    border-bottom: 0;
+  }
+  tbody tr th {
+    padding: 24px 20px !important;
+
+    &:last-of-type {
+      max-width: 460px;
+    }
+  }
+  .title {
+    @extend .heading;
+    text-align: start;
+    color: $B700;
+    margin-bottom: 5px;
+  }
+  .description {
+    @extend .body;
+    text-align: start;
+    color: $N600;
+    max-width: 390px;
+  }
+  .switch {
+    margin-top: 36px !important;
+  }
+}

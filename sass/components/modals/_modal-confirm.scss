@@ -1,0 +1,30 @@
+.modal-confirm {
+  color: $B700;
+
+  .modal-header {
+    padding: 28px 40px 0;
+    border: 0;
+
+    .modal-title {
+      @extend .display-small;
+    }
+    .close {
+      position: absolute;
+      top: 28px;
+      right: 30px;
+      padding: 0;
+    }
+  }
+  .modal-body {
+    @extend .body;
+    padding: 12px 40px 34px;
+  }
+  .modal-dialog {
+    width: 40%;
+    max-width: none !important;
+  }
+  .modal-footer {
+    display: flex;
+    gap: 24px;
+  }
+}

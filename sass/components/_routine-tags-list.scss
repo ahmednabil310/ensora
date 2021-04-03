@@ -1,0 +1,19 @@
+.routine-tags-list {
+  margin-bottom: -30px;
+  
+  .routine-tag {
+    border-bottom: 1px solid $N300;
+    padding: 11px 0 10px 20px;
+    
+    &:last-of-type {
+      border-bottom: 0;
+    }
+    .routine-tag-name {
+      padding: 7px;
+      margin: 0;
+    }
+    .routine-tag-edit {
+      gap: 40px;
+    }
+  }
+}

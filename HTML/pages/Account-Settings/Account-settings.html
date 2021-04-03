@@ -72,44 +72,60 @@
                 </div>
                 <form class="h-100 d-flex form-container">
                   <div class="row w-100">
-                    <div class="col-6 d-flex flex-column">
+                    <div class="col-12 col-md-6 d-flex flex-column">
                       <div class="form-container">
                         <div class="form-group">
-                          <label for="language">Front page</label>
-                          <div id="selector w-100">
-                            <select class="form-control input-lg" id="inputGroupSelect01">
-                              <option value="" selected>Home page</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <i class="fas fa-caret-down"></i>
+                          <div class="our-custom-select-wrapper">
+                            <label>Front page</label>
+                            <div class="our-custom-select">
+                              <div class="our-custom-select__trigger">
+                                <span>Homepage</span>
+                                <div class="arrow">
+                                  <img src="../../../assets/arrow.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="custom-options">
+                                <span class="custom-option selected" data-value="Homepage">Homepage</span>
+                                <span class="custom-options-title">Groups</span>
+                                <span class="custom-option" data-value="1">Greenhouse A</span>
+                                <span class="custom-option" data-value="2">Greenhouse B</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="language">Default groups view</label>
-                          <div id="selector w-100">
-                            <select class="form-control input-lg" id="inputGroupSelect01">
-                              <option value="" selected>Min & max</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <i class="fas fa-caret-down"></i>
+                          <div class="our-custom-select-wrapper">
+                            <label>Default groups view</label>
+                            <div class="our-custom-select">
+                              <div class="our-custom-select__trigger">
+                                <span>Min & max</span>
+                                <div class="arrow">
+                                  <img src="../../../assets/arrow.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="custom-options">
+                                <span class="custom-option selected" data-value="minmax">Min & max</span>
+                                <span class="custom-option" data-value="lowhigh">Lows & highs</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="language">Clear lows & highs</label>
-                          <div id="selector w-100">
-                            <select class="form-control input-lg" id="inputGroupSelect01">
-                              <option value="" selected>
-                                Automatically at midnight
-                              </option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <i class="fas fa-caret-down"></i>
+                          <div class="our-custom-select-wrapper">
+                            <label>Clear lows & highs</label>
+                            <div class="our-custom-select">
+                              <div class="our-custom-select__trigger">
+                                <span>Automatically at midnight</span>
+                                <div class="arrow">
+                                  <img src="../../../assets/arrow.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="custom-options">
+                                <span class="custom-option selected" data-value="auto-mid-night">Automatically at
+                                  midnight</span>
+                                <span class="custom-option" data-value="manually-only">Manually only</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -127,48 +143,59 @@
                 </div>
                 <form class="h-100 d-flex form-container">
                   <div class="row w-100">
-                    <div class="col-6 d-flex flex-column">
+                    <div class="col-12 col-md-6 d-flex flex-column">
                       <div class="form-container">
                         <div class="form-group">
-                          <label for="language">Country</label>
-                          <div id="selector w-100">
-                            <select class="form-control input-lg" id="inputGroupSelect01">
-                              <option value="" selected>United States</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <i class="fas fa-caret-down"></i>
+                          <div class="our-custom-select-wrapper">
+                            <label>Country</label>
+                            <div class="our-custom-select">
+                              <div class="our-custom-select__trigger">
+                                <span>United States</span>
+                                <div class="arrow">
+                                  <img src="../../../assets/arrow.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="custom-options">
+                                <span class="custom-option selected" data-value="auto-mid-night">United States</span>
+                                <span class="custom-option" data-value="canada">Canada</span>
+                                <span class="custom-option" data-value="italy">Italy</span>
+                                <span class="custom-option" data-value="mexico">Mexico</span>
+                                <span class="custom-option" data-value="spain">Spain</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="form-group">
-                          <label for="language">Postal code for your Ensora system</label>
-                          <div id="selector w-100">
-                            <select class="form-control input-lg" id="inputGroupSelect01">
-                              <option value="" selected>33173</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <i class="fas fa-caret-down"></i>
-                          </div>
+                          <label for="postalcode">Postal code for your Ensora system</label>
+                          <input type="number" class="form-control" id="postalcode">
                         </div>
                         <div class="form-group">
-                          <label for="language">Time zone</label>
-                          <div id="selector w-100">
-                            <select class="form-control input-lg" id="inputGroupSelect01">
-                              <option value="" selected>Eastern time zone</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                            </select>
-                            <i class="fas fa-caret-down"></i>
+                          <div class="our-custom-select-wrapper">
+                            <label>Country</label>
+                            <div class="our-custom-select">
+                              <div class="our-custom-select__trigger">
+                                <span>United States</span>
+                                <div class="arrow">
+                                  <img src="../../../assets/arrow.svg" alt="" />
+                                </div>
+                              </div>
+                              <div class="custom-options">
+                                <span class="custom-option" data-value="newfoundland-time-zone">Newfoundland time zone</span>
+                                <span class="custom-option" data-value="eastern-time-zone">Atlantic time zone</span>
+                                <span class="custom-option selected" data-value="eastern-time-zone">Eastern time zone</span>
+                                <span class="custom-option" data-value="centeral-time-zone">Central time zone</span>
+                                <span class="custom-option" data-value="mountain-time-zone">Mountain time zone</span>
+                                <span class="custom-option" data-value="pacific-time-zone">Pacific time zone</span>
+                                <span class="custom-option" data-value="alaska-time-zone">Alaska time zone</span>
+                                <span class="custom-option" data-value="hawaii-time-zone">Hawaii-Aleutian time zone</span>
+                                <span class="custom-option" data-value="mexican-time-zone">Mexican Pacific time zone</span>
+                                <span class="custom-option" data-value="centeral-european-time-zone">Central European time zone</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                        <div>
-                          <p class="form-container">
-                            Do you observe Daylight Savings or Summer Time?
-                          </p>
+                        <div class="form-check">
+                          <label class="radio-label">Do you observe Daylight Savings or Summer Time? </label>
                           <div class="d-flex">
                             <label class="checkbox-container">
                               <input type="checkbox" aria-describedby="checkbox" aria-label="checkbox" />
@@ -216,6 +243,7 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
   <script src="../../../js/page-loader.js"></script>
+  <script src="../../../js/custom-select.js"></script>
 </body>
 
 </html>

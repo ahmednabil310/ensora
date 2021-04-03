@@ -1,0 +1,13 @@
+.notification-settings-box {
+  padding: 20px;
+  border-bottom: 1px solid $N300;
+  
+  &:last-of-type {
+    border: none;
+  }
+
+  .box-title {
+    @extend .heading;
+    color: $B700 !important;
+  }
+}

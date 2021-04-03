@@ -22,6 +22,13 @@ body {
   padding-left: 12px;
   color: $B700;
   cursor: pointer;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.open {
+  .our-custom-select__trigger {
+    border-color: #86b7fe !important;
+    box-shadow: 0 0 0 0.2rem RGB(0 123 255 / 25%) !important;
+  }
 }
 .custom-options {
   position: absolute;
@@ -36,6 +43,7 @@ body {
   z-index: 2;
   border: 1px solid $N300;
   border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(55, 61, 71, 0.2);
 }
 .our-custom-select.open .custom-options {
   opacity: 1;
@@ -52,10 +60,18 @@ body {
   cursor: pointer;
   transition: all 0.5s;
 }
+.custom-options-title {
+  @extend .label;
+  @extend .custom-option;
+  color: $N600 !important;
+  background-color: $N200 !important;
+  font-weight: 600;
+  padding: 9px 15px;
+  cursor: default !important;
+}
 .custom-option:hover {
   cursor: pointer;
 }
-
 .arrow {
   display: flex;
   padding-right: 12px;

@@ -5,13 +5,22 @@ body {
 }
 
 // Override Bootstrap Defaults
-.form-group {
-  margin-bottom: 20px;
+.form-container {
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group:last-of-type {
+    margin-bottom: 0;
+  }
 }
 label {
   @extend .label;
   color: $N600;
   margin-bottom: 2px;
+}
+.radio-label {
+  @extend .label;
+  margin-bottom: 8px;
 }
 input,
 select {
@@ -19,6 +28,7 @@ select {
   font-weight: 400 !important;
   line-height: 20px !important;
   padding: 8px 14px;
+  color: $B700 !important;
   
   &::placeholder {
     color: $N500 !important;
@@ -60,6 +70,11 @@ select {
 }
 .btn-primary {
   background-color: $B300;
+}
+.btn-secondary {
+  background-color: $N300;  
+  color: $B700;
+  border-color: $N300;
 }
 .btn-outline-primary {
   color: $B300;
@@ -110,16 +125,26 @@ select {
 }
 
 // Gaps
-.g-10px {
-  gap: 10px;
-}
 .g-8px {
   gap: 8px;
 }
-
+.g-10px {
+  gap: 10px;
+}
+.g-20px {
+  gap: 20px;
+}
 // Paddings
 .p-20-40 {
   padding: 20px 40px;
+}
+
+// Margins
+.mt-20px {
+  margin-top: 20px;
+}
+.-mt-20px {
+  margin-top: -20px;
 }
 
 .align-items-base-line {
@@ -133,4 +158,16 @@ select {
 // Shadows
 .shadow-sm {
   box-shadow: 0px 1px 1px rgba(6, 43, 69, 0.05) !important;
+}
+.shadow-md {
+  box-shadow: 0px 2px 0px #DFE4EB !important;
+}
+// Colors
+.text-primary {
+  color: $B300 !important;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: $N300;
 }
