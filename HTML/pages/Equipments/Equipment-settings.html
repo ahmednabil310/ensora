@@ -127,7 +127,19 @@
               </div>
             </div>
             <div class="graph-box-content">
-              <!-- Graphs Here -->
+              <div class="graph-box-content" id="lettuce-fan">
+                <svg class="graph">
+                  <g class="rects-group"></g>
+                  <g class="yaxis-group"></g>
+                  <g class="xaxis-group xaxis-labels"></g>
+                  <g class="line-group">
+                    <line></line>
+                  </g>
+                </svg>
+                <div class="tooltip-area">
+                  <div class="tooltip-area__text"></div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- End Graph Box -->
@@ -145,6 +157,11 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
   <script src="../../../js/page-loader.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <script src="../../../js/graphs/Equipments/Equipments-settings-lettuce-fan.js"></script>
 </body>
 
 </html>
