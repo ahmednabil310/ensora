@@ -1,5 +1,5 @@
 .setup-wizard-modal {
-  @import '../../base/reset';
+  @import "../../base/reset";
   max-width: 560px;
   min-height: 547px;
   position: relative;
@@ -189,7 +189,7 @@
         width: 100%;
         padding: 11px 0px 10px 20px;
         color: $N600;
-        
+
         .col-8 {
           max-width: calc(66.666667% - 15px);
         }

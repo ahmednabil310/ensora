@@ -1,0 +1,21 @@
+.confirmation-modal {
+  .confirmation-modal__header {
+    padding: 28px 30px 34px 40px;
+
+    h5 {
+      margin-bottom: 12px;
+    }
+    .close {
+      span {
+        color: $N500;
+        font-weight: 400;
+      }
+    }
+  }
+  .confirmation-modal__footer {
+    border-color: $N300;
+    .btn-text {
+      margin-right: 24px;
+    }
+  }
+}

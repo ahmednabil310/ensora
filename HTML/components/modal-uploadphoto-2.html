@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Setup Wizard</title>
+    <link rel="stylesheet" href="../../sass/main.css" />
+  </head>
+
+  <body>
+    <!-- Box Model -->
+    <div class="uploadmodal d-flex flex-column shadow-sm">
+      <!-- Exit Button -->
+      <div class="ml-auto uploadmodal__close">
+        <button class="btn-close" type="button" aria-label="Close"></button>
+      </div>
+      <!-- End Exit button -->
+      <!-- Modal Content -->
+      <div class="uploadmodal__content">
+        <!-- Model Title -->
+        <div class="uploadmodal-modal__title">
+          <h1
+            class="text-center m-0 d-flex align-items-center justify-content-center display-medium"
+          >
+            Upload photo
+          </h1>
+        </div>
+        <!-- End Modal Title -->
+        <!-- Model Subtitle -->
+        <div class="uploadmodal__subheading">
+          <p
+            class="body m-0 text-center d-flex align-items-center justify-content-center"
+          >
+            Add an image for your device.
+          </p>
+        </div>
+        <!-- End Model Subtitle -->
+        <!-- Modal Form -->
+        <div class="">
+          <form>
+            <div
+              class="uploadmodal__uploadbox text-center d-flex flex-column justify-content-center align-items-center"
+            >
+              <h3 class="uploadmodal__uploadbox__h3 body--bold">
+                Uploading...
+              </h3>
+              <div class="loader">
+                <div class="lds-default">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- End Modal Form -->
+      </div>
+      <!-- End Model Content -->
+    </div>
+    <!-- End Box Model -->
+  </body>
+</html>

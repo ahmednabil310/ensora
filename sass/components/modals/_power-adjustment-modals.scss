@@ -1,0 +1,21 @@
+.power-adjustment-modal {
+  max-width: 580px;
+  .power-adjustment-modal__header {
+    .close {
+      span {
+        color: $N500;
+        font-weight: 400;
+      }
+    }
+  }
+  .slider-container {
+    padding: 36px 40px 40px 40px;
+    #powerLevel {
+      max-width: 84px;
+    }
+    #range {
+      max-width: 384px;
+      margin-left: 12px;
+    }
+  }
+}

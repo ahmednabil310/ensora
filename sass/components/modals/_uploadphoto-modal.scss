@@ -1,0 +1,73 @@
+.uploadmodal {
+  position: relative;
+  max-width: 580px;
+  border-radius: 5px;
+  color: $B700;
+  .uploadmodal__close {
+    padding: 0;
+    position: absolute;
+    top: 28px;
+    right: 30px;
+  }
+  .uploadmodal__content {
+    .uploadmodal__header {
+      padding: 20px 24px;
+    }
+    .uploadmodal-modal__title {
+      margin-top: 42px;
+      h1 {
+        color: $B700;
+      }
+    }
+    .uploadmodal__subheading {
+      margin-top: 12px;
+      margin-bottom: 30px;
+    }
+
+    .uploadmodal__box {
+      margin: 40px;
+      max-width: 480px;
+      background-color: $N100;
+      border: 1px dashed $N300;
+      border-radius: 10px;
+      .uploadmodal__box__photo {
+        padding: 93px 20px;
+        .uploadmodal__box__photo__img {
+          max-width: 440px;
+          max-height: 293px;
+        }
+      }
+      .uploadmodal__box__upload {
+        padding: 65px 124px 48px 125px;
+        .uploadmodal__box__upload__h3 {
+          color: $B700;
+          margin: 0;
+          margin-bottom: 16px;
+        }
+        button {
+          @include button($B300, $N000, 32px, 14px);
+          margin-top: 18px;
+          margin-bottom: 15px;
+        }
+        .uploadmodal__box__upload__p {
+          color: $N500;
+          margin: 0;
+        }
+      }
+    }
+    .modal-footer {
+      justify-content: space-between;
+      padding: 20px 40px;
+      .modal-footer__left {
+        span {
+          margin-left: 8px;
+        }
+      }
+      .modal-footer__right {
+        .btn-text {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+}
