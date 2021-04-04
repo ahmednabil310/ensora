@@ -1,0 +1,30 @@
+.daily-cycle-modal {
+  max-width: 560px;
+  .daily-cycle-modal__header {
+    .close {
+      span {
+        color: $N500;
+        font-weight: 400;
+      }
+    }
+  }
+  .daily-cycle-modal__inputs-container {
+    margin: 36px 40px 40px 40px;
+    max-width: 480px;
+    .daily-cycle-modal__inputs-container__top {
+      margin-bottom: 10px;
+      .input {
+        color: $B700;
+        margin-left: 8px;
+      }
+    }
+    .daily-cycle-modal__inputs-container__bottom {
+      padding: 10px;
+      margin-left: 36px;
+    }
+  }
+
+  .daily-cycle-modal__inputs-container--mb {
+    margin-bottom: 24px;
+  }
+}
