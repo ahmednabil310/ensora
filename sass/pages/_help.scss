@@ -1,0 +1,64 @@
+.help-mid-section {
+  color: $B700;
+  column-gap: 20px;
+  row-gap: 10px;
+  margin-top: 31px;
+  margin-bottom: 2    0px;
+
+  @media only screen and (min-width: 768px) {
+    .col-md-6 {
+      max-width: calc(50% - 10px);
+    }
+  }
+}
+.help-footer {
+  color: $B700;
+  position: relative;
+  margin-top: auto;
+  width: 100%;
+  left: 0;
+  height: 217px;
+  bottom: 0;
+  border-top: 1px solid $N300;
+
+  .footer-section {
+    padding: 35px 75px; 
+    background: $N000;
+
+    &:first-of-type {
+      border-right: 1px solid $N300;
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+      margin-right: 35px;
+    }
+    .section-heading {
+      @extend .heading;
+    }
+    .section-subhead {
+      color: $N600;
+      margin: 14px 0 10px;
+    }
+    .contact-info {
+      font-weight: 600;
+      gap: 6px;
+
+      img {
+        width: 16px;
+        height: 18px;
+        margin-right: 12px;
+      }
+    }
+    .feedback {
+      margin-top: -5px;
+    }
+  }
+}
+.feeback-topic-select {
+  margin-top: -5px;
+}
+.msg-textarea {
+  margin-bottom: -6px;
+}

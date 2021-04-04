@@ -3,6 +3,7 @@
   border: 1px solid $N300;
   border-radius: 8px;
   box-shadow: 0px 1px 1px rgba(6, 43, 69, 0.05);
+  background-color: $N000;
 
   .card-label {
     @extend .subheading;

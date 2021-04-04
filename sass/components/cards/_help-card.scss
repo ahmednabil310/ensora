@@ -1,0 +1,26 @@
+.help-card {
+  padding: 19px 25px;
+
+  .collapsed {
+    .arrow-down-icon {
+      transform: rotate(0);
+    }
+    .help-card-title {
+      color: $N600 !important;
+    }
+  }
+
+  .arrow-down-icon {
+    transform: rotate(90deg);
+    transition: .5s ease;
+  }
+  .help-card-title {
+    font-weight: 600;
+    color: $B300;
+    margin-left: 18px !important;
+  }
+  .help-card-body {
+    color: $B700;
+    margin: 16px 0 6px 25px;
+  }
+}

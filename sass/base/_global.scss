@@ -23,7 +23,8 @@ label {
   margin-bottom: 8px;
 }
 input,
-select {
+select,
+textarea {
   font-size: 14px !important;
   font-weight: 400 !important;
   line-height: 20px !important;
@@ -50,6 +51,9 @@ select {
     border-radius: 2px;
     border: 2px solid $N300;
   }
+}
+textarea {
+  padding: 8px 14px !important;
 }
 .btn-nostyle {
   border: none !important;
@@ -170,4 +174,8 @@ select {
   width: 100%;
   height: 1px;
   background-color: $N300;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

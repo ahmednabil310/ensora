@@ -32,6 +32,7 @@
 @import "components/cards/routine-condition";
 @import "components/cards/graph-box";
 @import "components/cards/rectangle-card";
+@import "components/cards/help-card";
 // Buttons
 @import "components/buttons/add-device-btn";
 @import "components/buttons/close-btn";
@@ -75,3 +76,4 @@
 @import "pages/sensor-settings";
 @import "pages/settings";
 @import "pages/choose-plan";
+@import "pages/help";
