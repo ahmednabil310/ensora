@@ -1,0 +1,26 @@
+.tooltip {
+  opacity: 1 !important;
+  background-color: white;
+  min-width: 400px;
+  margin-left: 10px;
+  margin-top: 80px;
+
+  .arrow {
+    visibility: hidden !important;
+  }
+  .tooltip-inner {
+    color: $B700 !important;
+    background: white !important;
+    padding: 18px 26px 28px;
+    text-align: start
+  }
+  .tooltip-title {
+    @extend .label;
+    display: block;
+    width: 348px;
+  }
+  .tooltip-body {
+    display: block;
+    width: 348px;
+  }
+}

@@ -21,6 +21,7 @@
 @import "components/modals/modal-confirm";
 @import "components/modals/integrate-app-modal";
 @import "components/modals/add-sensor-modal";
+@import "components/modals/scene-modal";
 // Cards
 @import "components/cards/group-card";
 @import "components/cards/sensor_card";
@@ -66,6 +67,7 @@
 @import "components/invoice-table";
 @import "components/custom-datepicker";
 @import "components/edit-sensors";
+@import "components/tooltips";
 
 /* Pages */
 @import "pages/index";

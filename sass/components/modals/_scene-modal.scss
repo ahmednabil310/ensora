@@ -1,0 +1,43 @@
+.scene-modal {
+  .modal-content {
+    height: 760px;
+    overflow: hidden;
+  }
+  .modal-body {
+    overflow-y: scroll;
+    padding-top: 29px !important;
+    padding-right: 38px !important;
+    box-sizing: border-box;
+    width: 103%;
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .equipment-states {
+      margin-top: 6px;
+
+      .equipment-state {
+        padding: 15px 0 !important;
+        border-bottom: 1px solid $N300 !important;
+
+        &:last-of-type {
+          border-bottom: 0 !important;
+        }
+        .form-group {
+          margin: 0;
+        }
+        .state-name {
+          color: $N600;
+        }
+        .state-ap-name {
+          font-size: 11px;
+          line-height: 14px;
+          color: $N500;
+        }
+        .our-custom-select__trigger {
+          min-width: 240px;
+        }  
+      }
+    }
+  }
+}
