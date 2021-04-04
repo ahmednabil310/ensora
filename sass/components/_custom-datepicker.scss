@@ -21,12 +21,12 @@
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
   margin-top: 9px;
   border-radius: 5px;
-  padding: 20px;
-  padding-bottom: 12px;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .ui-datepicker-calendar thead th {
   text-align: center;
@@ -94,6 +94,9 @@ table {
   @extend .body;
   font-weight: 500;
   color: $B700;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .ui-datepicker-week-col {
   color: #78909c;
@@ -135,4 +138,7 @@ table {
   padding-top: 12px;
   border-top: 1px solid $N300;
   width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
 }
