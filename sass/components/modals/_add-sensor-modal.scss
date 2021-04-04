@@ -1,0 +1,54 @@
+.add-sensor-modal {
+  .modal-dialog {
+    max-width: 840px !important;
+  }
+  .modal-content {
+    height: 684px;
+  }
+  .modal-body {
+    padding: 0 !important;
+
+    .modal-column {
+      padding: 30px 40px;
+      &:first-of-type {
+        border-right: 1px solid $N300;
+      }
+      height: 100%;
+      .column-title {
+        font-weight: 600;
+      }
+      .empty-sensors {
+        margin-top: 38px;
+        gap: 12px;
+        p {
+          color: $N600;
+        }
+      }
+      .sensors-list {
+        margin-top: 28px;
+        gap: 12px;
+
+        .custom-control-label {
+          @extend .body;
+          color: $B700;
+        }
+        .custom-control-input::before {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .selected-sensor-list {
+        margin-top: 19px;
+        gap: 10px;
+
+        .selected-sensor {
+          background: $N100;
+          border: 1px solid $N300;
+          border-radius: 5px;
+          padding: 8px 15px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -53,15 +53,19 @@
     gap: 12px;
   }
   .settings-icon {
-    margin-right: 2px;
-    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
   }
   .empty-card-contatiner {
-    padding: 12px;
+    padding: 0 12px 12px !important;
   }
   .empty-card {
     background-color: $N000;
     border-radius: 5px;
+    .empty-msg {
+      padding: 25px 0 16px !important;
+    }
     p {
       @extend .small--regular;
       margin: 0;

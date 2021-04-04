@@ -2,9 +2,6 @@
   @include button($N300, $B700, 12px, 8px);
   border: none;
   @extend .button-label;
-  &:hover {
-    color: white;
-  }
 }
 .secondary-button-icon {
   @extend .secondary-button;
