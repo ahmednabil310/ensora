@@ -376,7 +376,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="temperature-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -395,7 +412,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="humidity-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -414,7 +448,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="light-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -445,10 +496,11 @@
                       <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
                       <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
                     </g>
+                    <rect class="overlay"></rect>
                   </svg>
-                  <!-- <div class="tooltip-area">
+                  <div class="tooltip-area">
                     <div class="tooltip-area__text"></div>
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -472,150 +524,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
     integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
     crossorigin="anonymous"></script>
-  <script>
-    drawCoGraph(d3.select('#co2-graph'));
-    d3.select(window).on('resize.co2-graph', () => drawCoGraph(d3.select('#co2-graph')));
-
-    function drawCoGraph(parent) {
-      const width = parent.node().clientWidth;
-
-      const data = [
-        {
-          "date": "2007-04-01T00:00:00.000Z",
-          "value": 15
-        },
-        {
-          "date": "2007-04-24T00:00:00.000Z",
-          "value": 95.35
-        },
-        {
-          "date": "2007-04-25T00:00:00.000Z",
-          "value": 98.84
-        },
-        {
-          "date": "2007-04-26T00:00:00.000Z",
-          "value": 99.92
-        },
-        {
-          "date": "2007-04-29T00:00:00.000Z",
-          "value": 99.8
-        },
-        {
-          "date": "2007-05-01T00:00:00.000Z",
-          "value": 99.47
-        },
-        {
-          "date": "2007-05-02T00:00:00.000Z",
-          "value": 100.39
-        },
-        {
-          "date": "2007-05-03T00:00:00.000Z",
-          "value": 100.4
-        },
-        {
-          "date": "2007-05-04T00:00:00.000Z",
-          "value": 5
-        },
-        {
-          "date": "2007-05-07T00:00:00.000Z",
-          "value": 20
-        }];
-      const height = 144;
-      const margin = { top: 20, right: 30, bottom: 30, left: 40 };
-
-      const yAxis = g => g
-        .attr("transform", `translate(${margin.left},0)`)
-        .call(d3.axisLeft(y).ticks(5))
-        .call(g => g.select(".domain").remove())
-        .call(g => g.append("line")
-          .attr('y1', margin.top)
-          .attr('y2', height - margin.bottom)
-          .attr('stroke', '#9DA9B5')
-        )
-        .call(g => g.append("line")
-          .attr('y1', margin.top)
-          .attr('y2', height - margin.bottom)
-          .attr('x1', width - margin.left - margin.right)
-          .attr('x2', width - margin.left - margin.right)
-          .attr('stroke', '#9DA9B5')
-        )
-        .call(g => g.append("line")
-          .attr('y1', margin.top)
-          .attr('y2', margin.top)
-          .attr('x2', width - margin.left - margin.right)
-          .attr('stroke', '#9DA9B5')
-        )
-        .call(g => g.selectAll(".tick:not(:first-of-type) line").clone()
-          .attr("x2", width - margin.left - margin.right)
-          .attr("stroke", "#DFE4EB")
-          .attr("stroke-width", "1px")
-          .style("visibility", "visible"))
-        .call(g => g.select(".tick:last-of-type text").clone()
-          .attr("x", 3)
-          .attr("text-anchor", "start")
-          .attr("font-weight", "bold")
-          .text(data.y));
-
-      const xAxis = g => g
-        .attr("transform", `translate(0,${height - margin.bottom})`)
-        .call(d3.axisBottom(x)
-          .ticks(d3.timeDay.filter((d) => d3.timeDay.count(0, d) % 7 === 0))
-          .tickSizeOuter(0)
-          .tickFormat((d, i) => moment(d).format('MMM D')));
-
-      const y = d3.scaleLinear()
-        .domain(d3.extent(data, d => d.value)).nice()
-        .range([height - margin.bottom, margin.top]);
-
-
-      const x = d3.scaleUtc()
-        .domain(d3.extent(data, d => new Date(d.date)))
-        .range([margin.left, width - margin.right]);
-
-      const line = d3.line()
-        .defined(d => !isNaN(d.value))
-        .x(d => x(new Date(d.date)))
-        .y(d => y(d.value));
-
-      const svg = parent.select(".graph")
-        .attr("viewBox", [0, 0, width, height]);
-
-      parent.select(".xaxis-group")
-        .call((g) => g.selectAll("*").remove())
-        .call(xAxis);
-
-      parent.select(".yaxis-group")
-        .call((g) => g.selectAll("*").remove())
-        .call(yAxis);
-
-      parent.select(".graph-group")
-        .datum(data)
-        .attr("fill", "none")
-        .attr("stroke", "#B1DF8D")
-        .attr("stroke-width", 1.5)
-        .attr("stroke-linejoin", "round")
-        .attr("stroke-linecap", "round")
-        .attr("d", line);
-
-      const lineTooltip = svg
-        .select('.line-group > line')
-        .attr('y1', margin.top)
-        .attr('y2', height - margin.bottom)
-        .attr('x1', 50)
-        .attr('x2', 50)
-        .attr('stroke', '#9DA9B5')
-        .style('opacity', 1);
-
-      const graphDot = svg
-        .selectAll('.graph-dot-group > rect')
-        .each(function (d, i) {
-          d3.select(this).call((g) => g.attr('y', margin.top - g.attr("rx"))
-            .attr('x', 50 - g.attr("rx")));
-        })
-        .style('opacity', 1);
-    }
-
-  </script>
+  <script src="../../../js/graphs/utils.js"></script>
+  <script src="../../../js/graphs/Settings-page/sensors-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-co2-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-light-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-humidity-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-temperature-graph.js"></script>
 </body>
 
 </html>

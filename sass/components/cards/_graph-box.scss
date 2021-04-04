@@ -35,7 +35,8 @@
       }
     }
     .graph-box-content {
-      padding: 11px 16px 4px 1px;
+      padding: 0px 0px 4px 1px;
+      position: relative;
       .tick line {
         visibility: hidden;
       }
@@ -49,20 +50,29 @@
         font-weight: normal;
         font-size: 11px;
         line-height: 18px;
-        color: #687D8F;
+        color: #687d8f;
+      }
+      .overlay {
+        fill: none;
+        pointer-events: all;
       }
       .tooltip-area {
         position: absolute;
         display: flex;
+        opacity: 0;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 156px;
-        height: 74px;
+        padding-top: 11px;
+        padding-bottom: 10.2px;
         background: rgba(6, 43, 69, 0.9);
         box-shadow: 0px 3px 10px rgba(55, 61, 71, 0.2);
         border-radius: 5px;
         z-index: 100;
+        .legend-line {
+          margin-right: 9px;
+        }
         &__text {
           text-align: left;
           z-index: 100;
@@ -72,22 +82,27 @@
           font-size: 11px;
           line-height: 18px;
           color: #9da9b5;
+          font-size: 400;
+
+          .tooltip-number {
+            color: #F9FAFC;
+          }
 
           .power-text {
             &__on {
               color: #71c76a;
             }
             &__off {
-              color: #687D8F;
+              color: #687d8f;
             }
           }
           .mode-text {
             &__override {
-              color: #EC6060
+              color: #ec6060;
             }
 
             &__auto {
-              color: #5AAFE8;
+              color: #5aafe8;
             }
           }
         }

@@ -376,7 +376,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="temperature-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -395,7 +412,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="humidity-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -414,7 +448,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="light-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -433,7 +484,24 @@
                 </button>
               </div>
               <div class="graph-box-content">
-                <!-- Graphs Here -->
+                <div class="graph-box-content" id="co2-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- End Graph Box -->
@@ -452,6 +520,16 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
   <script src="../../../js/page-loader.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <script src="../../../js/graphs/utils.js"></script>
+  <script src="../../../js/graphs/Settings-page/sensors-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-co2-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-light-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-humidity-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-temperature-graph.js"></script>
 </body>
 
 </html>
