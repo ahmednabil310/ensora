@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../../sass/main.css" />
+  <title id="home">GreenHouse A</title>
+
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class=" col-2 p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="col-10 main-page p-0">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
+      <!-- Main Content -->
+      <div class="main-content settings-header">
+        <!-- header -->
+        <div class="d-flex main-content__header justify-content-between settings-title">
+          <div class="d-flex">
+            <a href="#">
+              <img class="back-arrow" src="../../../assets/icon-back-arrow.svg" alt="Back">
+            </a>
+            <div class="d-flex flex-column">
+              <div class="d-flex">
+                <span class="title">
+                  Greenhouse A
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <button class="btn edit-sensors-btn gear-button d-flex align-items-center justify-content-center">
+              <img src="../../../assets/icon-edit.svg" alt="Edit Sensors">
+              Edit sensors
+            </button>
+            <button class="btn gear-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="../../../assets/icon-gear-blue.svg" alt="Settings">
+            </button>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg settings-tabs-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Data</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Alarms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Equipment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scenes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Routines</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Graph Options Bar -->
+        <div class="graph-options-bar row p-0 m-0">
+          <div class="col-12 p-0 d-flex justify-content-between align-items-center">
+            <div class="col-md-2 p-0">
+              <div class="timeframe-selector">
+                <select class="custom-select">
+                  <option value="0" selected>Last week</option>
+                  <option value="1">Last 5 min</option>
+                  <option value="2">Last hour</option>
+                  <option value="3">Last 24 hours</option>
+                  <option value="3">Last week</option>
+                  <option value="3">Last month</option>
+                  <option value="3">Select date range</option>
+                </select>
+              </div>
+            </div>
+            <div class="graphs-layout d-flex">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../../../assets/icon-eye.svg" alt="view">
+                  View graphs
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="grid-compact">
+                <div class="btn-group grid-compact-switch" role="group">
+                  <button type="button" class="btn switch-active">
+                    <img src="../../../assets/icon-compact.svg" alt="compact view">
+                  </button>
+                  <button type="button" class="btn">
+                    <img src="../../../assets/icon-grid.svg" alt="grid view">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Graph Options Bar -->
+        <!-- Graph Switches Bar -->
+        <div class="graph-switches-bar d-flex">
+          
+        </div>
+        <!-- End Graph Switches Bar -->
+        <!-- middle section -->
+        <div class="row mid-section align-items-center flex-column text-center p-20-40 m-0">
+          <div class="row graph-box-container d-flex p-0">
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    Temperature&nbsp;
+                    <span>(°F)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <div class="graph-box-content" id="temperature-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Graph Box -->
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    Humidity&nbsp;
+                    <span>(%)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <div class="graph-box-content" id="humidity-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Graph Box -->
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    Light&nbsp;
+                    <span>(Lux)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <div class="graph-box-content" id="light-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Graph Box -->
+            <!-- Graph Box -->
+            <div class="graph-box col-sm-12 col-md-12 p-0">
+              <div class="graph-box-header d-flex justify-content-between align-items-center">
+                <div class="d-flex">
+                  <img src="../../../assets/icon-grap.svg" alt="grap">
+                  <p>
+                    CO<sub>2</sub>&nbsp;
+                    <span>(ppm)</span>
+                  </p>
+                </div>
+                <button class="btn btn-light">
+                  <img src="../../../assets/icon-download.svg" alt="Download">
+                </button>
+              </div>
+              <div class="graph-box-content">
+                <div class="graph-box-content" id="co2-graph">
+                  <svg class="graph">
+                    <g class="xaxis-group xaxis-labels"></g>
+                    <g class="yaxis-group"></g>
+                    <path class="graph-group"></path>
+                    <g class="line-group">
+                      <line></line>
+                    </g>
+                    <g class="graph-dot-group">
+                      <rect width="17" height="17" rx="8.5" fill="#B1DF8D" fill-opacity="0.5" />
+                      <rect x="5.5" y="5.5" width="6" height="6" rx="3" fill="#B1DF8D" stroke="white" />
+                    </g>
+                    <rect class="overlay"></rect>
+                  </svg>
+                  <div class="tooltip-area">
+                    <div class="tooltip-area__text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Graph Box -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="../../../js/page-loader.js"></script>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+  <script src="../../../js/graphs/utils.js"></script>
+  <script src="../../../js/graphs/Settings-page/sensors-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-co2-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-light-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-humidity-graph.js"></script>
+  <script src="../../../js/graphs/Settings-page/Settings-temperature-graph.js"></script>
+</body>
+
+</html>
