@@ -7,8 +7,12 @@
     overflow-y: scroll;
     padding-top: 29px !important;
     padding-right: 38px !important;
-    box-sizing: border-box;
-    width: 103%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .form-group {
       margin-bottom: 24px;
