@@ -1,149 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../sass/main.css" />
 
-  <link rel="stylesheet" href="../../../sass/main.css" />
+    <title id="home">Home Empty Group</title>
+  </head>
 
-  <title id="home">Home Empty Group</title>
-
-</head>
-
-<body>
-  <div class="row h-100 m-0">
-    <!-- side bar -->
-    <div class=" col-2 p-0" id="side-bar-container"></div>
-    <!-- main page -->
-    <div class="col-10 main-page p-0">
-      <!-- navbar -->
-      <div id="nav-bar-container"></div>
-      <!-- Main Content -->
-      <div class="main-content">
-        <!-- header -->
-        <div class="d-flex justify-content-between  main-content__header">
-          <div class="d-flex">
-            <span class="">Home</span>
-          </div>
-          <div class="d-flex">
-
-            <div>
-              <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#new-group">New
-                group</button>
+  <body>
+    <div class="row vh-100 m-0">
+      <!-- side bar -->
+      <div class="p-0" id="side-bar-container"></div>
+      <!-- main page -->
+      <div class="main-page p-0">
+        <!-- navbar -->
+        <div id="nav-bar-container"></div>
+        <!-- Main Content -->
+        <div class="main-content">
+          <!-- header -->
+          <div class="d-flex justify-content-between main-content__header">
+            <div class="d-flex">
+              <span class="">Home</span>
             </div>
-          </div>
-        </div>
-        <!-- middle section -->
-        <div class="row mid-section align-items-center flex-column text-center">
-          <div class="col-12">
-            <!-- Group Card -->
-            <div class="group-card">
-              <!-- Group Card Header -->
-              <div class="group-card-header d-flex justify-content-between">
-                <!-- Group Name -->
-                <div class="d-flex">
-                  <div class="grap-icon">
-                    <img src="../../../assets/icon-grap.svg" alt="Grap">
-                  </div>
-                  <div class="group-name d-flex">
-                    <p>
-                      Greenhouse A
-                    </p>
-                  </div>
-                </div>
-                <!-- End Group Name -->
-                <!-- Settings Icon -->
-                <div class="settings-icon">
-                  <img src="../../../assets/icon-gear.svg" alt="Settings">
-                </div>
-                <!-- End Settings Icon -->
-              </div>
-              <!-- End Group Card Header -->
-              <div class="empty-card-contatiner d-flex flex-column">
-                <div class="empty-card ">
-                  <p class="empty-msg">You have no sensors added yet.</p>
-                  <button class="secondary-button-icon" type="button" data-toggle="modal" data-target="#new-sensor">
-                    <img src="../../../assets/icon-add-sensor.svg">
-                    <span>Add sensors</span>
-                  </button>
-                </div>
+            <div class="d-flex">
+              <div>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-toggle="modal"
+                  data-target="#new-group"
+                >
+                  New group
+                </button>
               </div>
             </div>
-            <!-- End Group Card -->
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Add Group Modal -->
-  <div class="modal fade modal-default" id="new-group" tabindex="-1" aria-labelledby="new-group" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-label">New group</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-            <label for="group-name">Enter a new group name</label>
-            <input type="text" class="form-control" id="group-name" aria-describedby="group-name" value="GreenHouse A">
-          </div>
-        </div>
-        <div class="modal-footer d-flex">
-          <button type="button" class="btn btn-text text-primary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Save</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Add Group Modal -->
-  <!-- Add Sensor Modal -->
-  <div class="modal fade modal-default add-sensor-modal" id="new-sensor" tabindex="-1" aria-labelledby="new-sensor"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal-label">Add sensors in group</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body d-flex">
-          <div class="modal-column col-6">
-            <p class="column-title m-0">Available sensors</p>
-            <div class="empty-sensors d-flex flex-column align-items-center">
-              <p class="m-0">You have no sensors added yet.</p>
-              <button class="btn btn-primary">Add device</button>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center"
+          >
+            <div class="col-12">
+              <!-- Group Card -->
+              <div class="group-card">
+                <!-- Group Card Header -->
+                <div class="group-card-header d-flex justify-content-between">
+                  <!-- Group Name -->
+                  <div class="d-flex">
+                    <div class="grap-icon">
+                      <img src="../../../assets/icon-grap.svg" alt="Grap" />
+                    </div>
+                    <div class="group-name d-flex">
+                      <p>Greenhouse A</p>
+                    </div>
+                  </div>
+                  <!-- End Group Name -->
+                  <!-- Settings Icon -->
+                  <div class="settings-icon">
+                    <img src="../../../assets/icon-gear.svg" alt="Settings" />
+                  </div>
+                  <!-- End Settings Icon -->
+                </div>
+                <!-- End Group Card Header -->
+                <div class="empty-card-contatiner d-flex flex-column">
+                  <div class="empty-card">
+                    <p class="empty-msg">You have no sensors added yet.</p>
+                    <button
+                      class="secondary-button-icon"
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#new-sensor"
+                    >
+                      <img src="../../../assets/icon-add-sensor.svg" />
+                      <span>Add sensors</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- End Group Card -->
             </div>
           </div>
-          <div class="modal-column col-6"></div>
-        </div>
-        <div class="modal-footer d-flex">
-          <button type="button" class="btn btn-text text-primary" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary" disabled>Add sensors</button>
         </div>
       </div>
     </div>
-  </div>
-  <!-- End Add Sensor Modal -->
+    <!-- Add Group Modal -->
+    <div
+      class="modal fade modal-default"
+      id="new-group"
+      tabindex="-1"
+      aria-labelledby="new-group"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-label">New group</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="group-name">Enter a new group name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="group-name"
+                aria-describedby="group-name"
+                value="GreenHouse A"
+              />
+            </div>
+          </div>
+          <div class="modal-footer d-flex">
+            <button
+              type="button"
+              class="btn btn-text text-primary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Add Group Modal -->
+    <!-- Add Sensor Modal -->
+    <div
+      class="modal fade modal-default add-sensor-modal"
+      id="new-sensor"
+      tabindex="-1"
+      aria-labelledby="new-sensor"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-label">Add sensors in group</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body d-flex">
+            <div class="modal-column col-6">
+              <p class="column-title m-0">Available sensors</p>
+              <div class="empty-sensors d-flex flex-column align-items-center">
+                <p class="m-0">You have no sensors added yet.</p>
+                <button class="btn btn-primary">Add device</button>
+              </div>
+            </div>
+            <div class="modal-column col-6"></div>
+          </div>
+          <div class="modal-footer d-flex">
+            <button
+              type="button"
+              class="btn btn-text text-primary"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary" disabled>
+              Add sensors
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Add Sensor Modal -->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-  <script src="../../../js/page-loader.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../js/page-loader.js"></script>
+  </body>
 </html>

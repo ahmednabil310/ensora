@@ -7,11 +7,14 @@
 .main-content {
   padding: 20px 40px 40px 40px;
   .main-content__empty {
+    margin-top: 24px;
     #title {
       @extend .display-small;
+      margin-bottom: 12px;
     }
     #body {
       font-size: 14px;
+      margin-bottom: 12px;
     }
   }
 }
