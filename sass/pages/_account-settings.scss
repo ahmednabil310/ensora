@@ -4,7 +4,7 @@
   .settings-title {
     padding: 20px 40px 12px;
     background: white;
-    
+
     .back-arrow {
       width: auto;
       height: auto;
@@ -75,7 +75,7 @@
     @extend .shadow-md;
     height: 38px;
     padding-top: 12px;
-    background: white;;
+    background: white;
     padding: 0 40px;
   }
   .navbar-nav {
@@ -97,7 +97,7 @@
 
   .setup-wizard-modal {
     min-height: auto !important;
-    
+
     .setup-wizard-modal__form {
       margin: 0;
     }
@@ -106,7 +106,7 @@
 .settings-content {
   padding: 20px 40px;
   text-align: start;
-  color: $B700;;
+  color: $B700;
 
   .settings-card {
     padding: 30px 40px 40px;
@@ -115,10 +115,10 @@
     border-radius: 8px;
     gap: 40px;
 
-  .settings-card-title { 
+    .settings-card-title {
       @extend .shadow-md;
       margin-bottom: 20px;
-      padding-bottom: 28px;
+      padding-bottom: 26px;
       color: $B700;
       position: relative;
 
@@ -150,7 +150,7 @@
 .reports {
   color: $B700;
   padding: 24px 20px;
-  
+
   .report-title {
     @extend .heading;
     margin-bottom: 5px;
@@ -174,7 +174,6 @@
   }
   .rectangle-card {
     height: 222px;
-
   }
   .add-integration-btn {
     margin-top: auto;

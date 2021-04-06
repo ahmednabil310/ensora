@@ -234,10 +234,10 @@
                           </div>
                           <div class="form-group">
                             <div class="our-custom-select-wrapper">
-                              <label>Country</label>
+                              <label>Time zone</label>
                               <div class="our-custom-select">
                                 <div class="our-custom-select__trigger">
-                                  <span>United States</span>
+                                  <span>Eastern time zone</span>
                                   <div class="arrow">
                                     <img
                                       src="../../../assets/arrow.svg"
@@ -261,41 +261,6 @@
                                     data-value="eastern-time-zone"
                                     >Eastern time zone</span
                                   >
-                                  <span
-                                    class="custom-option"
-                                    data-value="centeral-time-zone"
-                                    >Central time zone</span
-                                  >
-                                  <span
-                                    class="custom-option"
-                                    data-value="mountain-time-zone"
-                                    >Mountain time zone</span
-                                  >
-                                  <span
-                                    class="custom-option"
-                                    data-value="pacific-time-zone"
-                                    >Pacific time zone</span
-                                  >
-                                  <span
-                                    class="custom-option"
-                                    data-value="alaska-time-zone"
-                                    >Alaska time zone</span
-                                  >
-                                  <span
-                                    class="custom-option"
-                                    data-value="hawaii-time-zone"
-                                    >Hawaii-Aleutian time zone</span
-                                  >
-                                  <span
-                                    class="custom-option"
-                                    data-value="mexican-time-zone"
-                                    >Mexican Pacific time zone</span
-                                  >
-                                  <span
-                                    class="custom-option"
-                                    data-value="centeral-european-time-zone"
-                                    >Central European time zone</span
-                                  >
                                 </div>
                               </div>
                             </div>
@@ -307,29 +272,30 @@
                             <div class="d-flex">
                               <label class="checkbox-container">
                                 <input
-                                  type="checkbox"
-                                  aria-describedby="checkbox"
-                                  aria-label="checkbox"
+                                  type="radio"
+                                  name="DaylightSaving"
+                                  aria-describedby="yes"
+                                  aria-label="yes"
+                                  id="yes"
                                 />
                                 <span class="checkmark"></span>
                                 <label
                                   class="form-check-label special-lable"
-                                  for="flexRadioDefault1"
+                                  for="yes"
                                 >
                                   Yes
                                 </label>
                               </label>
                               <label class="checkbox-container">
                                 <input
-                                  type="checkbox"
-                                  aria-describedby="checkbox"
-                                  aria-label="checkbox"
+                                  type="radio"
+                                  name="DaylightSaving"
+                                  aria-describedby="no"
+                                  aria-label="no"
+                                  id="no"
                                 />
                                 <span class="checkmark"></span>
-                                <label
-                                  class="form-check-label"
-                                  for="flexRadioDefault1"
-                                >
+                                <label class="form-check-label" for="no">
                                   No
                                 </label>
                               </label>
