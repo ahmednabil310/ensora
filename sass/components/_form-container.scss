@@ -1,5 +1,14 @@
 .form-container {
   color: $B700;
+  // editing bootstraps col classes flex values to pixel perfection
+  .form-container__form {
+    flex: 0 0 40.9%;
+    max-width: 40.9%;
+  }
+  .form-container__image {
+    flex: 0 0 59.1%;
+    max-width: 59.1%;
+  }
   .form-container__dropdown__button {
     color: $N500;
     background-color: rgba(6, 43, 69, 0.85);
@@ -12,7 +21,7 @@
     @extend .body;
   }
   .form-container__content {
-    padding: 100px 121px 0;
+    margin: 100px 121px 0;
   }
   .form-container__content__title {
     @extend .display-medium;
@@ -49,7 +58,9 @@
   /* Form Image */
   .form-container__image {
     background-image: linear-gradient(rgba(6, 43, 69, 0), rgb(2, 30, 49)),
-      url('../../assets/imgs/Login\ Background.png');
+      url("../../assets/imgs/Login\ Background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .form-container__Image__titles_container {
     padding-left: 80px;

@@ -1,106 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onboarding Measurement - Light Spectrum</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../sass/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Onboarding Measurement - Light Spectrum</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="../../../sass/main.css" />
-</head>
+  <body>
+    <div class="container">
+      <!-- Onboarding -->
+      <div class="col-12 d-flex flex-column align-items-center">
+        <div class="onboard-container__onboard">
+          <div
+            class="d-flex align-items-center onboard-container__onboard__image justify-content-center"
+          >
+            <img src="../../../assets/logo.png" alt="Logo" />
+          </div>
+          <h1 class="onboard-container__onboard__title">Preferences</h1>
+          <p class="onboard-container__onboard__subtitle">
+            Select your preferences below.
+          </p>
 
-<body>
-  <div class="container">
-    <!-- Onboarding -->
-    <div class="col-12 d-flex flex-column align-items-center">
-      <div class="onboard-container__onboard">
-        <div class="d-flex align-items-center onboard-container__onboard__image justify-content-center">
-          <img src="../../../assets/logo.png" alt="Logo" />
-        </div>
-        <h1 class="onboard-container__onboard__title">Preferences</h1>
-        <p class="onboard-container__onboard__subtitle">
-          Select your preferences below.
-        </p>
-
-        <form>
-          <div class="form-group">
-            <label for="temprature">Temperature</label>
-            <div id="selector w-100">
-              <select class="form-control input-lg" id="inputGroupSelect01">
-                <option value="" selected>Fahrenheit (°F)</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="light">Light</label>
-            <div id="selector w-100">
-              <select class="form-control input-lg" id="inputGroupSelect02">
-                <option value="" selected>Lux</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="language">Language</label>
-            <div id="selector w-100">
-              <select class="form-control input-lg" id="inputGroupSelect03">
-                <option value="" selected>English</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="date">Date format</label>
-            <div id="selector w-100">
-              <select class="form-control input-lg" id="inputGroupSelect04">
-                <option value="" selected>MM/DD/YYYY</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <i class="fas fa-caret-down"></i>
-            </div>
-          </div>
-          <div>
-            <div class="d-flex">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                <label class="form-check-label" for="flexCheckDefault">
-                  Use a 24-hour clock
-                </label>
+          <form>
+            <form>
+              <div class="form-group">
+                <label for="temprature">Temperature</label>
+                <div class="our-custom-select-wrapper">
+                  <div class="our-custom-select">
+                    <div class="our-custom-select__trigger">
+                      <span>Fahrenheit (°F)</span>
+                      <div class="arrow">
+                        <img src="../../../assets/arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="custom-options">
+                      <span class="custom-option selected" data-value="fahrenheit">Fahrenheit (°F)</span>
+                      <span class="custom-option" data-value="celsius">Celsius (°C)</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </form>
+              <div class="form-group">
+                <label for="light">Light</label>
+                <div class="our-custom-select-wrapper">
+                  <div class="our-custom-select">
+                    <div class="our-custom-select__trigger">
+                      <span>Lux</span>
+                      <div class="arrow">
+                        <img src="../../../assets/arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="custom-options">
+                      <span class="custom-option selected" data-value="lux">Lux</span>
+                      <span class="custom-option" data-value="par">PAR</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="light">Language</label>
+                <div class="our-custom-select-wrapper">
+                  <div class="our-custom-select">
+                    <div class="our-custom-select__trigger">
+                      <span>English</span>
+                      <div class="arrow">
+                        <img src="../../../assets/arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="custom-options">
+                      <span class="custom-option selected" data-value="en"
+                        >English</span
+                      >
+                      <span class="custom-option" data-value="sp">Spanish</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Date format</label>
+                <div class="our-custom-select-wrapper">
+                  <div class="our-custom-select">
+                    <div class="our-custom-select__trigger">
+                      <span>MM/DD/YYYY</span>
+                      <div class="arrow">
+                        <img src="../../../assets/arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="custom-options">
+                      <span class="custom-option selected" data-value="0"
+                        >MM/DD/YYYY</span
+                      >
+                      <span class="custom-option" data-value="1">MM-DD-YYYY</span>
+                      <span class="custom-option" data-value="2">YYYY-MM-DD</span>
+                      <span class="custom-option" data-value="3">DD/MM/YYYY</span>
+                      <span class="custom-option" data-value="4">DD-MM-YYYY</span>
+                      <span class="custom-option" data-value="5"
+                        >Month, D, Yr</span
+                      >
+                      <span class="custom-option" data-value="6">D Month Yr</span>
+                      <span class="custom-option" data-value="7">Yr Month D</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="form-check d-flex align-items-center">
+                  <input
+                    class="form-check-input mt-0"
+                    type="checkbox"
+                    id="24-clock"
+                  />
+                  <label class="form-check-label pl-1" for="24-clock">
+                    Use a 24-hour clock
+                  </label>
+                </div>
+              </div>
+          </form>
 
-        <button type="button" class="btn btn-primary btn-block onboard-container__onboard__button">
-          Continue
-        </button>
-        <button type="button" class="btn-block onboard-container__onboard__back__button">
-          Back
-        </button>
+          <button
+            type="button"
+            class="btn btn-primary btn-block onboard-container__onboard__button"
+          >
+            Continue
+          </button>
+          <button
+            type="button"
+            class="btn-block onboard-container__onboard__back__button"
+          >
+            Back
+          </button>
+        </div>
       </div>
     </div>
-    <!-- End Onboarding -->
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
-</body>
-
+      <!-- End Onboarding -->
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../js/custom-select.js"></script>
+  </body>
 </html>

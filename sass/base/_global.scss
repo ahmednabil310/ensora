@@ -2,6 +2,13 @@ body {
   @extend .body;
   font-family: $font-stack;
   min-height: 100vh;
+  // could be a solution to bigger pages
+  // max-width: 1440px;
+  // margin: auto;
+}
+
+#side-bar-container {
+  flex: 0 0 17.362%;
 }
 
 // Override Bootstrap Defaults
@@ -178,4 +185,9 @@ textarea {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.close {
+  font-weight: 400;
+  font-size: 38px;
 }

@@ -2,7 +2,7 @@
   color: $B700;
   display: block;
   overflow-y: auto;
-  
+
   .modal-content {
     padding: 0 30px 38px 40px;
     max-width: 560px;
@@ -10,8 +10,8 @@
   }
   .close {
     position: absolute;
-    top: 22px;
-    right: 24px;
+    top: 17px;
+    right: 30px;
     padding: 0;
     margin: 0;
   }
@@ -38,7 +38,7 @@
     margin: 52px 0 0px;
     padding: 0px;
     border: none;
-  
+
     button {
       margin: 0 !important;
       border: none !important;
