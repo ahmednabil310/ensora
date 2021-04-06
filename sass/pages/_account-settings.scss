@@ -58,6 +58,11 @@
         content: none !important;
       }
     }
+    .edit-sensors-btn {
+      @extend .gear-button;
+      margin-right: 12px;
+      gap: 8px;
+    }
   }
   .settings-title .title {
     @extend .display-medium;

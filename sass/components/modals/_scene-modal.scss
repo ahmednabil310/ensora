@@ -5,10 +5,13 @@
   }
   .modal-body {
     overflow-y: scroll;
-    padding-top: 29px !important;
-    padding-right: 38px !important;
-    box-sizing: border-box;
-    width: 103%;
+    padding: 29px 38px 0 !important;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     .form-group {
       margin-bottom: 24px;
@@ -37,6 +40,22 @@
         .our-custom-select__trigger {
           min-width: 240px;
         }  
+      }
+    }
+    .hidden-equipment-states {
+      padding: 12px 0;
+
+      .icon-sm {
+        margin-right: 14px;
+      }
+      p {
+        @extend .caption;
+        color: $N600;
+        margin-right: 8px;
+      }
+      a {
+        @extend .caption;
+        color: $B300;
       }
     }
   }
