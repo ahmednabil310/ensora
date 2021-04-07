@@ -12,6 +12,7 @@
   
   .routine-card-content {
     width: 39.5%;
+    // width: 50%;
   }
   .grap-icon {
     margin-right: 5px;
@@ -34,6 +35,8 @@
     color: $B700;
   }
   .card-titled-tags {
+    min-width: 250px;
+
     .tags-title {
       margin-bottom: 4px;
     }

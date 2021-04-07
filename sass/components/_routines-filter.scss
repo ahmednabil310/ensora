@@ -20,13 +20,13 @@
   .filters {
     margin-left: 10px;
     width: 100%;
-    opacity: 0.39;
     .filters-buttons {
       gap: 10px;
-
+      
       button {
         @extend .button-label;
         background: $N300;
+        opacity: 0.39;
 
         img {
           width: 16px;
@@ -45,6 +45,8 @@
     }
   }
   .active {
-    opacity: 1;
+    button {
+      opacity: 1 !important;
+    }
   }
 }
