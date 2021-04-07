@@ -15,7 +15,7 @@
     border-radius: 8px;
 
     .graph-box-header {
-      padding: 7px 10px 7px 4px;
+      padding: 7px 10px 0 4px;
 
       p {
         @extend .body--bold;
@@ -24,6 +24,7 @@
         align-items: center;
       }
       .download-btn {
+        @extend .btn-icon-sm;
         padding: 4px;
         border-width: 1px;
         width: 28px;
@@ -141,8 +142,10 @@
   }
   .group-power-mode div .active {
     color: $B200;
+    border: none !important;
   }
   .group-override div button {
+    @extend .flex-center;
     background: $B300;
     width: 50px;
     height: 26px;
@@ -153,5 +156,13 @@
   .group-override div button[disabled] {
     background: $N200;
     color: $N400;
+  }
+}
+.card-stack-graph {
+  .graph-box-header p {
+    gap: 12px;
+  }
+  .graph-box-content {
+    padding-top: 4px !important;
   }
 }

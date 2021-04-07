@@ -1,5 +1,5 @@
 .graph-options-bar {
-  padding: 0 40px 15px !important;
+  padding: 0 40px 15px;
   background-color: $N000;
 
   .dropdown {
@@ -9,4 +9,8 @@
 .pb {
   padding-top: 15px !important;
   border: 1px solid $N300;
+}
+
+.pt {
+  padding: 14px 40px 15px;
 }

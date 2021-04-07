@@ -1,47 +1,46 @@
 .routine-cards-container {
   padding: 0 12px 12px !important;
-  gap: 8px !important;
+  gap: 8px !important;  
+}
+.routine-card {
+  width: 100%;
+  min-height: 78px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid $N300;
+  position: relative;
   
-  .routine-card {
-    width: 100%;
-    min-height: 78px;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid $N300;
-    position: relative;
-    
-    .routine-card-content {
-      width: 39.5%;
-    }
-    .grap-icon {
-      margin-right: 5px;
-    }
-    form {
-      gap: 40px;
-      margin-right: 220px;
+  .routine-card-content {
+    width: 39.5%;
+  }
+  .grap-icon {
+    margin-right: 5px;
+  }
+  form {
+    gap: 40px;
+    margin-right: 220px;
 
-      .form-group {
-        padding: 0;
-      }
-      & input[type="checkbox"] {
-        width: 18px;
-        height: 18px;
-        margin: 0;
-      }
+    .form-group {
+      padding: 0;
     }
-    .switch-label {
-      @extend .label;
-      color: $B700;
+    & input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin: 0;
     }
-    .card-titled-tags {
-      .tags-title {
-        margin-bottom: 4px;
-      }
+  }
+  .switch-label {
+    @extend .label;
+    color: $B700;
+  }
+  .card-titled-tags {
+    .tags-title {
+      margin-bottom: 4px;
     }
-    .settings-icon {
-      position: absolute;
-      top: 24px;
-      right: 16px;
-    }
+  }
+  .settings-icon {
+    position: absolute;
+    top: 24px;
+    right: 16px;
   }
 }

@@ -115,12 +115,23 @@ textarea {
   border-radius: 5px;
   background: white;
 }
+.btn-icon-sm {
+  @extend .flex-center;
+  width: 28px;
+  height: 28px;
+}
+.btn-height {
+  height: 36px;
+}
 .gear-button {
   padding: 8px !important;
 }
 .icon-sm {
   width: 16px;
   height: 16px;
+}
+.icon-light {
+  opacity: .3;
 }
 .switch-input {
   margin-bottom: 4px !important;
@@ -191,4 +202,15 @@ textarea {
 .close {
   font-weight: 400;
   font-size: 38px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Box shadows
+.elevated-sm {
+  box-shadow: 0px 1px 1px rgba(6, 43, 69, 0.05);
 }

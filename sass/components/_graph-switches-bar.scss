@@ -1,0 +1,14 @@
+.graph-switches-bar {
+  @extend .elevated-sm;
+  background: $N000;
+  padding: 0 40px 11px;
+  border-bottom: 1px solid $N300;
+
+  .switch-label {
+    @extend .body;
+    color: $B700 !important;
+  }
+  input:checked + .slider {
+    background-color: #B1DF8D !important;
+  }
+}

@@ -1,19 +1,23 @@
-.grid-compact {  
+.grid-compact {    
   .btn-group {
     height: 100%;
   }
   .grid-compact-switch {
+    height: 36px;
     border-radius: 5px;
     border: 1px solid $N300;
     
     button {
       width: auto;
+      background-color: $N100;
+      opacity: .5;
     }
   }
   .grid-compact-switch button {
+    @extend .flex-center;
     @extend .button-label;
     color: $N500;
-    padding: 8px 15px;
+    padding: 8px;
   }
   .grid-compact-switch button:hover,
   .grid-compact-switch button:focus {
@@ -22,6 +26,8 @@
   }
   .grid-compact-switch button:active,
   .switch-active {
+    background-color: $N000 !important;
+    opacity: 1 !important;
     outline: 0 !important;
     color: $B700 !important;
     border-right: 1px solid $N300 !important;

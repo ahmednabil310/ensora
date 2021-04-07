@@ -71,7 +71,7 @@ const components = [
   "group-card-sensor",
   "group-card-gateway-empty",
   "group-card-device-sensors-empty",
-  "group-card-sensors-empty-empty",
+  // "group-card-sensors-empty-empty",
   // Buttons
   "mm-lh-switch-btn-group",
 ];
