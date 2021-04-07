@@ -44,6 +44,19 @@ textarea {
     color: $N500 !important;
   }
 }
+input[type="checkbox"] {
+  outline: 2px solid $N300;
+  outline-style: auto;
+}
+// remove outline in firefox only
+@-moz-document url-prefix() {
+  input[type="checkbox"] {
+    outline-style: none;
+  }
+}
+input[type="checkbox"]:checked {
+  outline-style: none;
+}
 .form-control {
   border: 2px solid $N300 !important;
 
