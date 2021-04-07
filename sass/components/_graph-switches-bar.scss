@@ -1,4 +1,6 @@
 .graph-switches-bar {
+  gap: 16px;
+
   @extend .elevated-sm;
   background: $N000;
   padding: 0 40px 11px;
@@ -10,5 +12,17 @@
   }
   input:checked + .slider {
     background-color: #B1DF8D !important;
+  }
+  .blue-switch:checked + .slider {
+    background-color: #89B5F9 !important;
+  }
+  .purple-switch:checked + .slider {
+    background-color: #998DDF !important;
+  }
+  .orange-switch:checked + .slider {
+    background-color: #F5AE43 !important;
+  }
+  .red-switch:checked + .slider {
+    background-color: #EC7281 !important;
   }
 }

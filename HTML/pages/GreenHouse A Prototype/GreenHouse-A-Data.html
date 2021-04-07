@@ -74,21 +74,30 @@
         <div class="graph-options-bar row pt m-0">
           <div class="col-12 p-0 d-flex justify-content-between align-items-center">
             <div class="col-md-2 p-0">
-              <div class="timeframe-selector">
-                <select class="custom-select">
-                  <option value="0" selected>Last week</option>
-                  <option value="1">Last 5 min</option>
-                  <option value="2">Last hour</option>
-                  <option value="3">Last 24 hours</option>
-                  <option value="3">Last week</option>
-                  <option value="3">Last month</option>
-                  <option value="3">Select date range</option>
-                </select>
+              <div class="form-group">
+                <div class="our-custom-select-wrapper">
+                  <div class="our-custom-select">
+                    <div class="our-custom-select__trigger">
+                      <span>Last week</span>
+                      <div class="arrow">
+                        <img src="../../../assets/arrow.svg" alt="" />
+                      </div>
+                    </div>
+                    <div class="custom-options">
+                      <span class="custom-option" data-value="1">Last 5 min</span>
+                      <span class="custom-option" data-value="1">Last hour</span>
+                      <span class="custom-option" data-value="1">Last 24 hours</span>
+                      <span class="custom-option selected" data-value="0">Last week</span>
+                      <span class="custom-option" data-value="1">Last month</span>
+                      <span class="custom-option" data-value="1">Select date range</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="graphs-layout d-flex">
               <div class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+                <button class="btn btn-primary dropdown-toggle btn-height flex-center g-8px" type="button" id="dropdownMenuButton"
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <img src="../../../assets/icon-eye.svg" alt="view" />
                   View graphs
@@ -498,6 +507,7 @@
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
   <script src="../../../js/page-loader.js"></script>
+  <script src="../../../js/custom-select.js"></script>
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
     integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="

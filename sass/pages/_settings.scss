@@ -202,4 +202,8 @@ input:checked + .slider:before {
 }
 .content-title {
   color: $B700 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
