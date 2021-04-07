@@ -2,7 +2,7 @@
   background-color: $B800;
   color: $N600;
   font-size: 14px;
-  // max-width: 250px !important;
+  // min-width: 250px !important;
   height: 100%;
 }
 
@@ -42,4 +42,7 @@
     width: 3px;
     height: 46px;
   }
+}
+#side-bar-container {
+  max-width: none !important;
 }
