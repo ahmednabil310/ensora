@@ -1,108 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../sass/main.css" />
 
-  <link rel="stylesheet" href="../../../sass/main.css" />
+    <title id="settings">Account Settings | Subscription</title>
+  </head>
 
-  <title id="settings">Account Settings | Subscription</title>
-
-</head>
-
-<body>
-  <div class="row h-100 m-0">
-    <!-- side bar -->
-    <div class=" col-2 p-0" id="side-bar-container"></div>
-    <!-- main page -->
-    <div class="col-10 main-page p-0">
-      <!-- navbar -->
-      <div id="nav-bar-container"></div>
-      <!-- Main Content -->
-      <div class="main-content settings-header">
-        <!-- header -->
-        <div class="d-flex main-content__header settings-title">
-          <div class="d-flex">
-            <span class="title">Account Settings</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-expand-lg settings-tabs-nav">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Ensora system</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Preferences</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Notifications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Routine tags</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Billing</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Subscription</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Integrations</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- middle section -->
-        <div class="row mid-section align-items-center flex-column text-center p-0 m-0">
-          <div class="col-12 settings-content">
-            <!-- Settings Card -->
-            <div class="settings-card d-flex flex-column">
-              <!-- Settings Card Content -->
-              <div class="settings-card-content d-flex flex-column ">
-                <div class="col-12 p-0">
-                  <div class="settings-card-title">
-                    <h3>Subscription</h3>
-                  </div>
-                </div>
-                <div class="rectangle-card col-12 col-md-3 d-flex flex-column">
-                  <p class="card-label m-0">Current plan</p>
-                  <div class="current-plan">
-                    <p class="plan-name">Basic</p>
-                    <p class="plan-price m-0 d-flex align-items-center">
-                      <sup>$</sup>
-                      <span class="display-xlarge">X</span>
-                      <sup>.99</sup>
-                      <sub>/mo</sub>
-                    </p>
-                    <button class="btn btn-primary btn-block change-plan-btn">Chnage plan</button>
-                  </div>
-                </div>
-              </div>
-              <!-- End Settings Card Content -->
+  <body>
+    <div class="row h-100 m-0">
+      <!-- side bar -->
+      <div class="p-0" id="side-bar-container"></div>
+      <!-- main page -->
+      <div class="main-page p-0">
+        <!-- navbar -->
+        <div id="nav-bar-container"></div>
+        <!-- Main Content -->
+        <div class="main-content settings-header">
+          <!-- header -->
+          <div class="d-flex main-content__header settings-title">
+            <div class="d-flex">
+              <span class="title">Account Settings</span>
             </div>
-            <!-- End Settings Card -->
+          </div>
+          <nav class="navbar navbar-expand-lg settings-tabs-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ensora system</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Preferences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Notifications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Routine tags</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Billing</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Subscription</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Integrations</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center p-0 m-0"
+          >
+            <div class="col-12 settings-content">
+              <!-- Settings Card -->
+              <div class="settings-card d-flex flex-column">
+                <!-- Settings Card Content -->
+                <div class="settings-card-content d-flex flex-column">
+                  <div class="col-12 p-0">
+                    <div class="settings-card-title">
+                      <h3>Subscription</h3>
+                    </div>
+                  </div>
+                  <div
+                    class="rectangle-card col-12 col-md-3 d-flex flex-column"
+                  >
+                    <p class="card-label m-0">Current plan</p>
+                    <div class="current-plan">
+                      <p class="plan-name">Basic</p>
+                      <p class="plan-price m-0 d-flex align-items-center">
+                        <sup>$</sup>
+                        <span class="display-xlarge">X</span>
+                        <sup>.99</sup>
+                        <sub>/mo</sub>
+                      </p>
+                      <button class="btn btn-primary btn-block change-plan-btn">
+                        Chnage plan
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Settings Card Content -->
+              </div>
+              <!-- End Settings Card -->
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-  <script src="../../../js/page-loader.js"></script>
-  <script src="../../../js/custom-select.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../js/page-loader.js"></script>
+    <script src="../../../js/custom-select.js"></script>
+  </body>
 </html>

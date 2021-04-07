@@ -10,6 +10,7 @@ body {
 
 #side-bar-container {
   flex: 0 0 17.362%;
+  max-width: 17.362%;
 }
 
 // Override Bootstrap Defaults
@@ -131,7 +132,7 @@ textarea {
   height: 16px;
 }
 .icon-light {
-  opacity: .3;
+  opacity: 0.3;
 }
 .switch-input {
   margin-bottom: 4px !important;

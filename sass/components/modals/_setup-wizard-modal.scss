@@ -54,7 +54,7 @@
 
     width: 100%;
     border-top: 1px solid $N300;
-    padding: 24px 40px;
+    padding: 23px 40px;
 
     button {
       @extend .button-label;
@@ -72,6 +72,10 @@
   /* Confirmation */
   .setup-wizard-modal__success_icon {
     margin-top: 118px;
+    img {
+      width: 64px;
+      height: 64px;
+    }
   }
   .setup-wizard-modal__confirmation-title {
     @extend .display-medium;

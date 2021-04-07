@@ -22,7 +22,9 @@
 // Override Bootstrap's Default
 .btn-primary {
   background-color: $B300;
-  &:focus, &:hover {
+  border: none;
+  &:focus,
+  &:hover {
     background-color: $B300;
   }
 }

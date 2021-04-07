@@ -10,6 +10,7 @@
     @extend .display-medium;
     color: $B700;
     margin-right: 10px;
+    margin-bottom: 0;
   }
   img {
     width: 16px;
@@ -53,7 +54,7 @@
   border-collapse: separate;
   border-spacing: 0 5px;
   color: $B700;
-  
+
   th {
     background-color: $N200;
     height: 46px;

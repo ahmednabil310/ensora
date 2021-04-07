@@ -1,158 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../../sass/main.css" />
+    <title id="home">GreenHouse B</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../../../sass/main.css" />
-  <title id="home">GreenHouse B</title>
-</head>
-
-<body>
-  <div class="row vh-100 m-0">
-    <!-- side bar -->
-    <div class="col-2 p-0" id="side-bar-container"></div>
-    <!-- main page -->
-    <div class="col-10 main-page p-0">
-      <!-- navbar -->
-      <div id="nav-bar-container"></div>
-      <!-- Main Content -->
-      <div class="main-content settings-header">
-        <!-- header -->
-        <div class="d-flex main-content__header justify-content-between settings-title">
-          <div class="d-flex">
-            <a href="#">
-              <img class="back-arrow" src="../../../assets/icon-back-arrow.svg" alt="Back" />
-            </a>
-            <div class="d-flex flex-column">
-              <div class="d-flex ml-14">
-                <span class="title">Greenhouse B</span>
+  <body>
+    <div class="row vh-100 m-0">
+      <!-- side bar -->
+      <div class="p-0" id="side-bar-container"></div>
+      <!-- main page -->
+      <div class="main-page p-0">
+        <!-- navbar -->
+        <div id="nav-bar-container"></div>
+        <!-- Main Content -->
+        <div class="main-content settings-header">
+          <!-- header -->
+          <div
+            class="d-flex main-content__header justify-content-between settings-title"
+          >
+            <div class="d-flex">
+              <a href="#">
+                <img
+                  class="back-arrow"
+                  src="../../../assets/icon-back-arrow.svg"
+                  alt="Back"
+                />
+              </a>
+              <div class="d-flex flex-column">
+                <div class="d-flex ml-14">
+                  <span class="title">Greenhouse B</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="d-flex align-items-center">
-            <button class="btn edit-sensors-btn gear-button d-flex align-items-center justify-content-center">
-              <img src="../../../assets/icon-edit.svg" alt="Edit Sensors" />
-              Edit sensors
-            </button>
-            <button class="btn gear-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              <img src="../../../assets/icon-gear-blue.svg" alt="Settings" />
-            </button>
-          </div>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <nav class="navbar navbar-expand-lg settings-tabs-nav">
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Data</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Alarms</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Equipment</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Scenes</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Routines</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <!-- middle section -->
-        <div class="row mid-section align-items-center flex-column text-center g-20px p-20-40 m-0">
-          <div class="col-12 d-flex align-items-center justify-content-between p-0">
-            <p class="content-title display-small m-0">
-              Routines
-              <img src="../../../assets/icon-helpspot.svg" alt="Help">
-            </p>
-            <button class="btn btn-primary btn-height flex-center">
-              New routine
-            </button>
-          </div>
-          <!-- Cards Container -->
-          <div class="cards-container col-12 p-0 d-flex flex-column g-8px">
-            <!-- Routine Card -->
-            <div class="routine-card d-flex align-items-center">
-              <div class="grap-icon">
-                <img src="../../../assets/icon-grap.svg" alt="Grap">
-              </div>
-              <!-- Routine From -->
-              <form class="d-flex align-items-center">
-                <div class="form-group form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                </div>
-                <!-- switch -->
-                <div class="containerr m-0 d-flex justify-content-center align-items-center">
-                  <label class="switch m-0">
-                    <input type="checkbox" id="checkboxR1" checked />
-                    <div class="slider round"></div>
-                  </label>
-                  <label class="switch-label" for="checkboxR1">Routine 1</label>
-                </div>
-              </form>
-              <!-- End Routine From -->
-              <div class="routine-card-content d-flex justify-content-between">
-                <!-- Tags -->
-                <div class="card-titled-tags">
-                  <p class="tags-title">Tags</p>
-                  <div class="tags d-flex">
-                    <span class="tag">Tag name</span>
-                    <span class="tag">Tag name</span>
-                    <span class="tag tags-overflow">+3</span>
-                  </div>
-                </div>
-                <!-- End Tags -->
-                <!-- Groups -->
-                <div class="card-titled-tags">
-                  <p class="tags-title">Groups</p>
-                  <div class="tags d-flex">
-                    <span class="tag">GreenHouse B</span>
-                  </div>
-                </div>
-                <!-- End Groups -->
-              </div>
-              <!-- Settings Icon -->
-              <div class="settings-icon">
-                <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
-                  <img src="../../../assets/icon-gear.svg" alt="Settings">
-                </button>
-                <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
-                  <li><a class="dropdown-item" href="#">One</a></li>
-                  <li><a class="dropdown-item" href="#">Two</a></li>
-                </ul>
-              </div>
-              <!-- End Settings Icon -->
+            <div class="d-flex align-items-center">
+              <button
+                class="btn edit-sensors-btn gear-button d-flex align-items-center justify-content-center"
+              >
+                <img src="../../../assets/icon-edit.svg" alt="Edit Sensors" />
+                Edit sensors
+              </button>
+              <button
+                class="btn gear-button dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="../../../assets/icon-gear-blue.svg" alt="Settings" />
+              </button>
             </div>
-            <!-- End Routine Card -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
           </div>
-          <!-- End Cards Rows -->
+          <nav class="navbar navbar-expand-lg settings-tabs-nav">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Alarms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Equipment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Scenes</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Routines</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- middle section -->
+          <div
+            class="row mid-section align-items-center flex-column text-center g-20px p-20-40 m-0"
+          >
+            <div
+              class="col-12 d-flex align-items-center justify-content-between p-0"
+            >
+              <p class="content-title display-small m-0">
+                Routines
+                <img src="../../../assets/icon-helpspot.svg" alt="Help" />
+              </p>
+              <button class="btn btn-primary btn-height flex-center">
+                New routine
+              </button>
+            </div>
+            <!-- Cards Container -->
+            <div class="cards-container col-12 p-0 d-flex flex-column g-8px">
+              <!-- Routine Card -->
+              <div class="routine-card d-flex align-items-center">
+                <div class="grap-icon">
+                  <img src="../../../assets/icon-grap.svg" alt="Grap" />
+                </div>
+                <!-- Routine From -->
+                <form class="d-flex align-items-center">
+                  <div class="form-group form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="defaultCheck1"
+                    />
+                  </div>
+                  <!-- switch -->
+                  <div
+                    class="containerr m-0 d-flex justify-content-center align-items-center"
+                  >
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR1" checked />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR1"
+                      >Routine 1</label
+                    >
+                  </div>
+                </form>
+                <!-- End Routine From -->
+                <div
+                  class="routine-card-content d-flex justify-content-between"
+                >
+                  <!-- Tags -->
+                  <div class="card-titled-tags">
+                    <p class="tags-title">Tags</p>
+                    <div class="tags d-flex">
+                      <span class="tag">Tag name</span>
+                      <span class="tag">Tag name</span>
+                      <span class="tag tags-overflow">+3</span>
+                    </div>
+                  </div>
+                  <!-- End Tags -->
+                  <!-- Groups -->
+                  <div class="card-titled-tags">
+                    <p class="tags-title">Groups</p>
+                    <div class="tags d-flex">
+                      <span class="tag">GreenHouse B</span>
+                    </div>
+                  </div>
+                  <!-- End Groups -->
+                </div>
+                <!-- Settings Icon -->
+                <div class="settings-icon">
+                  <button
+                    class="dropdown-btn dropdown-toggle dropdown-toggle-split"
+                    type="button"
+                    id="settings-menu"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-offset="-172,0"
+                  >
+                    <img src="../../../assets/icon-gear.svg" alt="Settings" />
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-start"
+                    aria-labelledby="settings-menu"
+                  >
+                    <li><a class="dropdown-item" href="#">One</a></li>
+                    <li><a class="dropdown-item" href="#">Two</a></li>
+                  </ul>
+                </div>
+                <!-- End Settings Icon -->
+              </div>
+              <!-- End Routine Card -->
+            </div>
+            <!-- End Cards Rows -->
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-    crossorigin="anonymous"></script>
-  <script src="../../../js/page-loader.js"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../../js/page-loader.js"></script>
+  </body>
 </html>
