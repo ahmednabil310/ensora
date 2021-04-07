@@ -132,7 +132,6 @@
 
     .setup-wizard-modal__sensor-details {
       div {
-        height: 48px;
         padding: 0;
         margin: 0;
       }
@@ -145,7 +144,12 @@
         }
       }
       .sensing-imgs {
-        align-items: baseline;
+        margin-top: 6px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 12px;
+        }
       }
       .setup-wizard-modal__sensor-details .sensing-imgs svg {
         width: 20px;
