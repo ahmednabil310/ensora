@@ -88,15 +88,38 @@
             >
               <div class="col-md-2 p-0">
                 <div class="timeframe-selector">
-                  <select class="custom-select">
-                    <option value="0" selected>Last week</option>
-                    <option value="1">Last 5 min</option>
-                    <option value="2">Last hour</option>
-                    <option value="3">Last 24 hours</option>
-                    <option value="3">Last week</option>
-                    <option value="3">Last month</option>
-                    <option value="3">Select date range</option>
-                  </select>
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Last week</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly"
+                          >Last week</span
+                        >
+                        <span class="custom-option" data-value="Last 5 min"
+                          >Last 5 min</span
+                        >
+                        <span class="custom-option" data-value="Last hour"
+                          >Last hour</span
+                        >
+                        <span class="custom-option" data-value="Last 24 hours"
+                          >Last 24 hours</span
+                        >
+                        <span class="custom-option" data-value="Last month"
+                          >Last month</span
+                        >
+                        <span
+                          class="custom-option"
+                          data-value="Select date range"
+                          >Select date range</span
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
