@@ -66,7 +66,24 @@
                   <!-- End Group Name -->
                   <!-- Settings Icon -->
                   <div class="settings-icon">
-                    <img src="../../../assets/icon-gear.svg" alt="Settings" />
+                    <button
+                      class="dropdown-btn dropdown-toggle dropdown-toggle-split"
+                      type="button"
+                      id="settings-menu"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      data-offset="-172,0"
+                    >
+                      <img src="../../../assets/icon-gear.svg" alt="Settings" />
+                    </button>
+                    <ul
+                      class="dropdown-menu dropdown-menu-start"
+                      aria-labelledby="settings-menu"
+                    >
+                      <li><a class="dropdown-item" href="#">One</a></li>
+                      <li><a class="dropdown-item" href="#">Two</a></li>
+                    </ul>
                   </div>
                   <!-- End Settings Icon -->
                 </div>

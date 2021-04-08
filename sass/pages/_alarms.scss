@@ -72,6 +72,9 @@
   }
   tr {
     background-color: white;
+    box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05);
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05);
   }
   .tr--error {
     background-color: rgba($color: #ec6060, $alpha: 0.1);

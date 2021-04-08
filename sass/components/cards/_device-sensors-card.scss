@@ -1,10 +1,10 @@
 .device-sensor-cards-container {
   padding: 0 12px 16px;
-  
+
   .col-4 {
     max-width: calc(33.333333% - 8px);
   }
-  
+
   .device-sensor-card {
     @extend .elevated-sm;
     text-align: start;
@@ -14,16 +14,16 @@
     border: 1px solid $N300;
     position: relative;
     padding: 12px;
-  
+
     .device-details {
       margin-left: 15px;
     }
-   .device-name {
-      color: #062B45;
+    .device-name {
+      color: #062b45;
       font-weight: 600;
     }
     .device-subtitle {
-      margin-top: 1px;
+      margin-top: 3px;
       color: $N600;
       font-size: 11px;
       line-height: 16px;

@@ -21,6 +21,11 @@
     margin-right: 18px;
     border: none;
     background: none;
+    .navbar__device__btn {
+      img {
+        margin-right: 8px !important;
+      }
+    }
   }
 
   .user-image {

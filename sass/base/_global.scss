@@ -8,6 +8,16 @@ body {
   // margin: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
 #side-bar-container {
   flex: 0 0 17.362%;
   max-width: 17.362%;

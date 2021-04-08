@@ -38,16 +38,54 @@
             >
               <div class="d-flex col-7 row m-0 p-0">
                 <div class="dropdown-alarms col p-0">
-                  <select name="date" id="date" class="form-select">
-                    <option value="Last Week">Last Week</option>
-                    <option value="Last Week">Last Week</option>
-                  </select>
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Last Week</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span
+                          class="custom-option selected"
+                          data-value="Last Week"
+                          >Last Week</span
+                        >
+                        <span class="custom-option" data-value="Last Month"
+                          >Last Month</span
+                        >
+                        <span class="custom-option" data-value="None"
+                          >None</span
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="dropdown-alarms col p-0">
-                  <select name="alarms" id="alarms" class="form-select">
-                    <option value="all alarms">all alarms</option>
-                    <option value="all alarms">all alarms</option>
-                  </select>
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>All alarms</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span
+                          class="custom-option selected"
+                          data-value="All alarms"
+                          >All alarms</span
+                        >
+                        <span class="custom-option" data-value="Last Month"
+                          >Last Month</span
+                        >
+                        <span class="custom-option" data-value="None"
+                          >None</span
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="d-flex align-items-center">
                   <input type="checkbox" name="activity" id="activity" />
@@ -135,5 +173,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../../../js/page-loader.js"></script>
+    <script src="../../../js/custom-select.js"></script>
   </body>
 </html>

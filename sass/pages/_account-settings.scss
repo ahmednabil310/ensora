@@ -2,7 +2,7 @@
   padding: 0;
 
   .settings-title {
-    padding: 20px 40px 12px;
+    margin: 20px 40px 12px;
     background: white;
 
     .back-arrow {
@@ -112,12 +112,13 @@
   color: $B700;
 
   .settings-card {
-    padding: 30px 40px 40px;
     background: $N000;
     border: 1px solid $N300;
     border-radius: 8px;
     gap: 40px;
-
+    .settings-card-content {
+      padding: 30px 40px 72px;
+    }
     .settings-card-title {
       @extend .shadow-md;
       margin-bottom: 20px;
