@@ -36,14 +36,13 @@
                 <div class="col-md-3 p-0">
                   <div class="form-group">
                     <label for="groups">Groups</label>
-                    <input type="text" class="form-control" id="groups" placeholder="Add to a group"
-                      data-role="tagsinput">
+                    <input type="text" class="form-control" id="groups" placeholder="Add to a group">
                   </div>
                 </div>
                 <div class="col-md-3 p-0">
                   <div class="form-group">
                     <label for="tags">Tags</label>
-                    <input type="text" class="form-control" id="tags" placeholder="Add to a tag" data-role="tagsinput">
+                    <input type="text" class="form-control" id="tags" placeholder="Add to a tag">
                   </div>
                 </div>
                 <div class="col-12 p-0">
@@ -110,7 +109,7 @@
                               <a class="dropdown-item" href="#">CO2 level</a>
                             </div>
                           </div>
-                          <div class="d-flex g-10px">
+                          <div class="d-flex g-10px quantity-options">
                             <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               IS ABOVE
@@ -142,6 +141,9 @@
                       <button class="or-btn btn-nostyle">
                         <img src="../../../assets/icon-add.svg" alt="Add">
                         Or
+                      </button>
+                      <button class="routine-condition-delete-btn btn-nostyle">
+                        <img src="../../../assets/icon-trash.svg" alt="Delete">
                       </button>
                     </div>
                     <p class="or-text">OR</p>
@@ -186,15 +188,11 @@
                           </div>
                         </div>
                       </div>
-                      <button class="or-btn btn-nostyle">
-                        <img src="../../../assets/icon-add.svg" alt="Add">
-                        Or
-                      </button>
                     </div>
                     <div class="routine-condition separated-condition d-flex justify-content-between">
                       <div class="condition-statement">
-                        <button class="btn btn-primary" id="trigger-menu" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-primary" id="trigger-menu" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
                           And when
                           <img src="../../../assets/arrow-down.svg">
                         </button>
@@ -224,6 +222,94 @@
                               </div>
                             </div>
                           </div>
+                        </div>
+                      </div>
+                      <button class="or-btn btn-nostyle">
+                        <img src="../../../assets/icon-add.svg" alt="Add">
+                        Or
+                      </button>
+                      <button class="routine-condition-delete-btn btn-nostyle">
+                        <img src="../../../assets/icon-trash.svg" alt="Delete">
+                      </button>
+                    </div>
+                  </div>
+                  <!-- End Routine Condition Card -->
+                </div>
+                <div class="col-12 p-0 d-flex g-10px">
+                  <button class="add-condition-btn btn-nostyle">
+                    <img src="../../../assets/icon-add.svg" alt="Add">
+                    And when
+                    <button class="add-condition-btn btn-nostyle">
+                      <img src="../../../assets/icon-add.svg" alt="Add">
+                      Excluding when
+                    </button>
+                </div>
+              </div>
+              <!-- End Routine Frame -->
+              <!-- Routine Frame -->
+              <div class="row m-0 p-0">
+                <div class="col-12 p-0">
+                  <p class="frame-title m-0">Ensora will...</p>
+                </div>
+                <div class="col-12 p-0">
+                  <!-- Routine Condition Card -->
+                  <div class="routine-conditions d-flex flex-column">
+                    <div class="routine-condition d-flex justify-content-between">
+                      <div class="d-flex">
+                        <img src="../../../assets/icon-grap.svg" alt="Grap">
+                        <div class="dynamic-fields d-flex">
+                          <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Turn on
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="trigger-menu">
+                            <a class="dropdown-item" href="#">Turn on</a>
+                            <a class="dropdown-item" href="#">Turn off</a>
+                            <a class="dropdown-item" href="#">Start scene</a>
+                            <a class="dropdown-item" href="#">Notify me by</a>
+                          </div>
+                          <div>
+                            <div class="single-select-dropdown">
+                              <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A/C
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search equipment...">
+                                </div>
+                                <p class="title">Fans</p>
+                                <a class="dropdown-item" href="#">Lettuce fan</a>
+                                <a class="dropdown-item" href="#">Herbs fan</a>
+                                <a class="dropdown-item" href="#">Flowers fan</a>
+                                <p class="title">Humidifiers</p>
+                                <a class="dropdown-item" href="#">Humidifier</a>
+                                <a class="dropdown-item" href="#">Humidifier</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex g-10px">
+                            <p class="option-label">After</p>
+                            <div>
+                              <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                0 Min
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Lettuce fan</a>
+                              </div>
+                            </div>
+                            <div>
+                              <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                always
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Always</a>
+                                <a class="dropdown-item" href="#">Only if still active</a>
+                              </div>
+                            </div>
+                          </div>
                           <div>
                             <button class="btn-nostyle">
                               <img class="icon-mt" src="../../../assets/icon-trash.svg" alt="Delete">
@@ -236,95 +322,6 @@
                         Or
                       </button>
                     </div>
-                  </div>
-                  <!-- End Routine Condition Card -->
-                </div>
-                <div class="col-12 p-0 d-flex g-10px">
-                  <button class="or-btn btn-nostyle">
-                    <img src="../../../assets/icon-add.svg" alt="Add">
-                    And when
-                  </button>
-                  <button class="or-btn btn-nostyle">
-                    <img src="../../../assets/icon-add.svg" alt="Add">
-                    Excluding when
-                  </button>
-                </div>
-              </div>
-              <!-- End Routine Frame -->
-              <!-- Routine Frame -->
-              <div class="row m-0 p-0">
-                <div class="col-12 p-0">
-                  <p class="frame-title m-0">Ensora will...</p>
-                </div>
-                <div class="col-12 p-0">
-                  <!-- Routine Condition Card -->
-                  <div class="routine-conditions d-flex justify-content-between">
-                    <div class="d-flex routine-condition">
-                      <img src="../../../assets/icon-grap.svg" alt="Grap">
-                      <div class="dynamic-fields d-flex">
-                        <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          Turn on
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="trigger-menu">
-                          <a class="dropdown-item" href="#">Turn on</a>
-                          <a class="dropdown-item" href="#">Turn off</a>
-                          <a class="dropdown-item" href="#">Start scene</a>
-                          <a class="dropdown-item" href="#">Notify me by</a>
-                        </div>
-                        <div>
-                          <div class="single-select-dropdown">
-                            <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              A/C
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search equipment...">
-                              </div>
-                              <p class="title">Fans</p>
-                              <a class="dropdown-item" href="#">Lettuce fan</a>
-                              <a class="dropdown-item" href="#">Herbs fan</a>
-                              <a class="dropdown-item" href="#">Flowers fan</a>
-                              <p class="title">Humidifiers</p>
-                              <a class="dropdown-item" href="#">Humidifier</a>
-                              <a class="dropdown-item" href="#">Humidifier</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex g-10px">
-                          <p class="option-label">After</p>
-                          <div>
-                            <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              0 Min
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Lettuce fan</a>
-                            </div>
-                          </div>
-                          <div>
-                            <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              always
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Always</a>
-                              <a class="dropdown-item" href="#">Only if still active</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <button class="btn-nostyle">
-                            <img class="icon-mt" src="../../../assets/icon-trash.svg" alt="Delete">
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <button class="or-btn btn-nostyle">
-                      <img src="../../../assets/icon-add.svg" alt="Add">
-                      Or
-                    </button>
                   </div>
                   <!-- End Routine Condition Card -->
                 </div>

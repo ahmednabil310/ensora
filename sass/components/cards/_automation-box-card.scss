@@ -3,6 +3,7 @@
     max-width: calc(33.333333% - 8px);
   }
   .automation-boxes-card {
+    @extend .elevated-sm;
     border-radius: 8px;
     padding-left: 16px !important;
     padding-bottom: 12px;

@@ -10,6 +10,7 @@
     margin: 0;
   }
   .graph-box {
+    @extend .elevated-sm;
     background-color: $N000;
     border: 1px solid $N300;
     border-radius: 8px;

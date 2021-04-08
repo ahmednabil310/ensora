@@ -1,6 +1,6 @@
 .bootstrap-tagsinput {
   margin-top: 0 !important;
-  border: 2px solid #DFE4EB ;
+  border: 2px solid #DFE4EB !important;
   font-size: 14px;
   color: #9DA9B5;
   vertical-align: middle;

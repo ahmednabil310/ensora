@@ -3,6 +3,7 @@
   gap: 8px !important;  
 }
 .routine-card {
+  @extend .elevated-sm;
   width: 100%;
   min-height: 78px;
   background-color: white;

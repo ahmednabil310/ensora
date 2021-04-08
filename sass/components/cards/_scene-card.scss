@@ -6,6 +6,7 @@
   }
   
   .scene-card {
+    @extend .elevated-sm;
     min-height: 98px;
     background-color: white;
     border-radius: 8px;

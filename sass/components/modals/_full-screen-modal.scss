@@ -45,10 +45,11 @@
           }
           .frame-title {
             @extend .heading;
-            margin-bottom: 4px !important;
+            margin-bottom: 8px !important;
           }
           .routine-condition {
             margin-bottom: 10px;
+            align-items: center;
           }
         }
         .alarm-btn-group {
@@ -77,4 +78,7 @@
       }
     }
   }
+}
+.add-condition-btn {
+  padding: 5px 13px;
 }

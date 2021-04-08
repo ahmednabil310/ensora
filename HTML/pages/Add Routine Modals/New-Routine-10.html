@@ -111,7 +111,7 @@
                               <a class="dropdown-item" href="#">CO2 level</a>
                             </div>
                           </div>
-                          <div class="d-flex g-10px">
+                          <div class="d-flex g-10px quantity-options">
                             <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               IS ABOVE
@@ -152,20 +152,16 @@
                           <a class="dropdown-item" href="#">Equipment</a>
                           <a class="dropdown-item" href="#">Day</a>
                         </div>
-                        <button class="btn-nostyle">
-                          <img class="icon-mt" src="../../../assets/icon-trash.svg" alt="Delete">
-                        </button>
                       </div>
                     </div>
                   </div>
                   <!-- End Routine Condition Card -->
                 </div>
                 <div class="col-12 p-0 d-flex g-10px">
-                  <button class="or-btn btn-nostyle">
+                  <button class="add-condition-btn btn-nostyle">
                     <img src="../../../assets/icon-add.svg" alt="Add">
                     And when
-                  </button>
-                  <button class="or-btn btn-nostyle">
+                  <button class="add-condition-btn btn-nostyle">
                     <img src="../../../assets/icon-add.svg" alt="Add">
                     Excluding when
                   </button>
@@ -258,9 +254,9 @@
                         </button>
                       </div>
                       <div class="d-flex align-items-base-line g-10px">
-                        <button class="or-btn btn-nostyle d-flex align-items-base-line" type="button" id="or-menu"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <img class="icon-mt" src="../../../assets/icon-add.svg" alt="Add">
+                        <button class="or-btn btn-nostyle dynamic-field-btn" id="or-menu" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          <img src="../../../assets/icon-add.svg" alt="Add">
                           Or
                         </button>
                         <div class="dropdown-menu" aria-labelledby="or-menu">
