@@ -2,19 +2,35 @@
   margin-bottom: 0;
   text-align: center;
   margin-top: -68px;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: start;
 
   thead th {
     @extend .heading;
     color: $N600;
     border-top: 0;
     border-bottom: 0;
+    padding-left: 13.5px;
+
+    &:nth-child(3) {
+      padding-left: 0;
+    }
+  }
+  tbody tr {
+    border-bottom: 1px solid $N300;
   }
   tbody tr th {
     padding: 24px 20px !important;
 
     &:last-of-type {
-      max-width: 460px;
+      width: 457px;
     }
+  }
+  & td {
+    padding-top: 12px;
+    width: 141px !important;
+    padding-left: 8px;
   }
   .title {
     @extend .heading;
@@ -29,6 +45,6 @@
     max-width: 390px;
   }
   .switch {
-    margin-top: 36px !important;
+    margin-top: 23px !important;
   }
 }

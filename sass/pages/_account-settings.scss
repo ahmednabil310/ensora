@@ -6,7 +6,8 @@
     padding: 12px 40px !important;
   }
   .settings-title {
-    margin: 20px 40px 12px;
+    padding: 20px 40px 12px;
+    // margin: 20px 40px 12px;
     background: white;
 
     .back-arrow {
@@ -120,8 +121,10 @@
     border: 1px solid $N300;
     border-radius: 8px;
     gap: 40px;
+    padding: 30px 40px 40px;
+
     .settings-card-content {
-      padding: 30px 40px 72px;
+      // padding: 30px 40px 72px;
 
       .sensor-modal {
         .setup-wizard-modal__min-max-options:last-of-type {
@@ -132,9 +135,17 @@
         margin-bottom: 10px !important;
       }
     }
+    .payment-settings {
+      .form-group {
+        margin-bottom: 20px !important;
+      }
+      &:first-of-type .form-row:last-of-type {
+        margin-bottom: -20px !important;
+      }
+    }
     .content-save-section {
-      padding: 0 40px 40px !important;
-      margin-top: -73px !important;
+      // padding: 0 40px 40px !important;
+      // margin-top: -73px !important;
       .save-btn {
         width: 148px !important;
       }
@@ -180,7 +191,8 @@
 }
 .reports {
   color: $B700;
-  padding: 24px 20px;
+  padding: 4px 20px 23px;
+  border-bottom: 1px solid $N300;
 
   .report-title {
     @extend .heading;
@@ -190,11 +202,17 @@
     @extend .body;
     color: $N600;
   }
+  .our-custom-select-wrapper {
+    width: 122px !important;
+  }
 }
 .send-notification-switch {
-  label {
+  margin-top: 4px;
+
+  .switch-label {
     @extend .body;
     color: $B700 !important;
+    margin-left: 15px !important;
   }
 }
 .integration-cards-container {
@@ -220,4 +238,13 @@
   height: 36px;
   width: 36px;
   margin-top: 7px;
+}
+.credit-cards {
+  margin-bottom: 17px;
+}
+.subscription-settings {
+  .rectangle-card {
+    margin-top: 20px;
+    min-width: 330px;
+  }
 }

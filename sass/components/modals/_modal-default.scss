@@ -3,6 +3,8 @@
   background-color: #062b4587;
 
   .modal-header {
+    align-items: center;
+    
     .modal-title {
       @extend .display-small;
       text-align: center;
