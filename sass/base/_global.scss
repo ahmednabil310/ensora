@@ -163,6 +163,7 @@ textarea {
 .invalid-feedback {
   display: flex !important;
   align-items: baseline;
+  margin-bottom: -8px !important;
 
   img {
     margin-right: 5px !important;

@@ -173,7 +173,18 @@
   transition: 0.4s;
   width: 17px;
 }
-
+.slider-lg {
+  @extend .slider;
+  width: 49px;
+  height: 28px;
+}
+.slider-lg:before {
+  @extend .slider:before;
+  width: 22px;
+  height: 22px;
+  bottom: 2.7px;
+  left: 7px;
+}
 input:checked + .slider {
   background-color: $B300;
 }

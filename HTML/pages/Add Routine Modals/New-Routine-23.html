@@ -51,16 +51,29 @@
                   <div class="switch-container m-0 d-flex justify-content-start align-items-center">
                     <label class="switch-label" for="checkboxR3">Create alarm</label>
                     <label class="switch m-0">
-                      <input type="checkbox" id="checkboxR3" />
+                      <input type="checkbox" id="checkboxR3" checked/>
                       <div class="slider round"></div>
                     </label>
                   </div>
                 </div>
               </div>
+              <div class="col-12 p-0">
+                <div class="btn-group btn-block alarm-btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn">Create alarm</button>
+                  <button type="button" class="btn btn-primary">Clear alarm</button>
+                </div>
+              </div>
               <!-- Routine Frame -->
               <div class="row m-0 p-0">
-                <div class="col-12 p-0">
+                <div class="col-12 p-0 d-flex justify-content-between">
                   <p class="frame-title m-0">When this happens...</p>
+                  <div class="d-flex g-10px auto-generate">
+                    <img src="../../../assets/icon-helpspot.svg" alt="Help">
+                    <button class="btn-nostyle auto-generate-btn flex-center">
+                      <img src="../../../assets/icon-sniper-primary.svg">
+                      Auto-generate
+                    </button>
+                  </div>
                 </div>
                 <div class="col-12 p-0">
                   <!-- Routine Condition Card -->
@@ -114,11 +127,11 @@
                           <div class="d-flex g-10px quantity-options">
                             <button class="btn btn-light dropdown-toggle uppercase" type="button"
                               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              is above
+                              is below
                             </button>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              70&nbsp;°F
+                              68&nbsp;°F
                             </button>
                             <div class="dropdown-menu" aria-labelledby="trigger-menu">
                               <a class="dropdown-item" href="#">°F</a>
@@ -143,14 +156,14 @@
                       <div class="d-flex">
                         <button class="or-btn btn-nostyle">
                           <img src="../../../assets/icon-add.svg" alt="Add">
-                          Or
+                         And
                         </button>
                         <button class="routine-condition-delete-btn btn-nostyle">
                           <img src="../../../assets/icon-trash.svg" alt="Delete">
                         </button>
                       </div>
                     </div>
-                    <p class="or-text">OR</p>
+                    <p class="or-text">AND</p>
                     <div class="routine-condition d-flex justify-content-between">
                       <div class="d-flex">
                         <img src="../../../assets/icon-grap.svg" alt="Grap">
@@ -200,11 +213,11 @@
                           <div class="d-flex g-10px quantity-options">
                             <button class="btn btn-light dropdown-toggle uppercase" type="button"
                               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              is above max by
+                              is below max by
                             </button>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              5&nbsp;°F
+                              3&nbsp;°F
                             </button>
                             <div class="dropdown-menu" aria-labelledby="trigger-menu">
                               <a class="dropdown-item" href="#">°F</a>
@@ -231,7 +244,7 @@
                       <div class="condition-statement">
                         <button class="btn btn-primary uppercase" id="trigger-menu" data-toggle="dropdown"
                           aria-haspopup="true" aria-expanded="false">
-                          And when
+                          Or when
                           <img src="../../../assets/arrow-down.svg">
                         </button>
                         <div class="dropdown-menu" aria-labelledby="trigger-menu">
@@ -259,7 +272,7 @@
                           <div class="d-flex g-10px quantity-options align-items-base-line">
                             <button class="btn btn-light dropdown-toggle uppercase" type="button"
                               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              is between
+                              is outside
                             </button>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
@@ -284,8 +297,8 @@
                             </div>
                           </div>
                           <div>
-                            <button class="btn-nostyle">
-                              <img class="icon-mt" src="../../../assets/icon-trash.svg" alt="Delete">
+                            <button class="btn-nostyle p-0">
+                              <img class="icon-mt m-0" src="../../../assets/icon-trash.svg" alt="Delete">
                             </button>
                           </div>
                         </div>
@@ -293,7 +306,7 @@
                       <div class="d-flex">
                         <button class="or-btn btn-nostyle">
                           <img src="../../../assets/icon-add.svg" alt="Add">
-                          Or
+                         And
                         </button>
                         <button class="routine-condition-delete-btn btn-nostyle">
                           <img src="../../../assets/icon-trash.svg" alt="Delete">
@@ -304,7 +317,7 @@
                       <div class="condition-statement">
                         <button class="btn btn-primary" id="trigger-menu" data-toggle="dropdown" aria-haspopup="true"
                           aria-expanded="false">
-                          Excluding when
+                          Or when
                           <img src="../../../assets/arrow-down.svg">
                         </button>
                         <div class="dropdown-menu" aria-labelledby="trigger-menu">
@@ -366,15 +379,25 @@
                       <div class="d-flex">
                         <button class="or-btn btn-nostyle">
                           <img src="../../../assets/icon-add.svg" alt="Add">
-                          Or
+                         And
                         </button>
                         <button class="routine-condition-delete-btn btn-nostyle">
                           <img src="../../../assets/icon-trash.svg" alt="Delete">
                         </button>
                       </div>
                     </div>
-                    <p class="or-text">OR</p>
-                    <div class="routine-condition d-flex justify-content-between">
+                    <div class="routine-condition separated-condition d-flex justify-content-between">
+                      <div class="condition-statement">
+                        <button class="btn btn-primary" id="trigger-menu" data-toggle="dropdown" aria-haspopup="true"
+                          aria-expanded="false">
+                          Or when
+                          <img src="../../../assets/arrow-down.svg">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="trigger-menu">
+                          <a class="dropdown-item" href="#">and when</a>
+                          <a class="dropdown-item" href="#">excluding when</a>
+                        </div>
+                      </div>
                       <div class="d-flex">
                         <img src="../../../assets/icon-grap.svg" alt="Grap">
                         <div class="dynamic-fields d-flex">
@@ -399,7 +422,7 @@
                           <div>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              Onions Lights
+                              Lights
                             </button>
                             <div class="dropdown-menu" aria-labelledby="trigger-menu">
                               <a class="dropdown-item" href="#">Sensor</a>
@@ -431,6 +454,15 @@
                           </div>
                         </div>
                       </div>
+                      <div class="d-flex">
+                        <button class="or-btn btn-nostyle">
+                          <img src="../../../assets/icon-add.svg" alt="Add">
+                         And
+                        </button>
+                        <button class="routine-condition-delete-btn btn-nostyle">
+                          <img src="../../../assets/icon-trash.svg" alt="Delete">
+                        </button>
+                      </div>  
                     </div>
                   </div>
                   <!-- End Routine Condition Card -->
@@ -438,18 +470,14 @@
                 <div class="col-12 p-0 d-flex g-10px">
                   <button class="add-condition-btn btn-nostyle">
                     <img src="../../../assets/icon-add.svg" alt="Add">
-                    And when
-                    <button class="add-condition-btn btn-nostyle">
-                      <img src="../../../assets/icon-add.svg" alt="Add">
-                      Excluding when
-                    </button>
+                    Or when
                 </div>
               </div>
               <!-- End Routine Frame -->
               <!-- Routine Frame -->
               <div class="row m-0 p-0">
                 <div class="col-12 p-0">
-                  <p class="frame-title m-0">When this happens...</p>
+                  <p class="frame-title m-0">Ensora Will...</p>
                 </div>
                 <div class="col-12 p-0">
                   <!-- Routine Condition Card -->
@@ -461,7 +489,7 @@
                           <div>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              Turn On
+                              Turn off
                             </button>
                             <div class="dropdown-menu" aria-labelledby="trigger-menu">
                               <a class="dropdown-item" href="#">Sensor</a>
@@ -540,7 +568,7 @@
                             <div class="single-select-dropdown">
                               <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                All lights on
+                                All lights off
                               </button>
                               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="#">One</a>
@@ -587,7 +615,7 @@
                           <div>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              Turn On
+                              Turn off
                             </button>
                             <div class="dropdown-menu" aria-labelledby="trigger-menu">
                               <a class="dropdown-item" href="#">Sensor</a>
@@ -676,7 +704,7 @@
                             </button>
                             <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
                               aria-haspopup="true" aria-expanded="false">
-                              only if still active
+                              if alarm remains cleared
                             </button>
                             <div class="dropdown-menu" aria-labelledby="trigger-menu">
                               <a class="dropdown-item" href="#">°F</a>
