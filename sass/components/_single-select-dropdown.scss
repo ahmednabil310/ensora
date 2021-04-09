@@ -13,15 +13,20 @@
       padding: 8px 14px;
 
       &:active {
-        color: $B700;
-        background-color: transparent;
+        color: $B700 !important;
+        background-color: transparent !important;
       }
     }
+    .dropdown-toggle {
+      color: $B700 !important;
+      background-color: $N000 !important;
+    }
     .dropdown-menu {
-      margin-top: 8px;
       border: 1px solid $N300;
       border-radius: 5px;
-
+      box-shadow: 0px 3px 10px RGB(55 61 71 / 20%);
+      margin-top: 8px !important;
+      
       input {
         @extend .input;
         color: $B700;

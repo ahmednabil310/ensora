@@ -1,6 +1,10 @@
 .settings-header {
   padding: 0;
 
+  .settings-title-position {
+    margin: 0 !important;
+    padding: 12px 40px !important;
+  }
   .settings-title {
     margin: 20px 40px 12px;
     background: white;
@@ -118,6 +122,22 @@
     gap: 40px;
     .settings-card-content {
       padding: 30px 40px 72px;
+
+      .sensor-modal {
+        .setup-wizard-modal__min-max-options:last-of-type {
+          margin-bottom: 0 !important;
+        }
+      }
+      .single-select-dropdown {
+        margin-bottom: 10px !important;
+      }
+    }
+    .content-save-section {
+      padding: 0 40px 40px !important;
+      margin-top: -73px !important;
+      .save-btn {
+        width: 148px !important;
+      }
     }
     .settings-card-title {
       @extend .shadow-md;
@@ -135,6 +155,13 @@
         position: absolute;
         right: 0;
         top: 0;
+      }
+    }
+    .setup-wizard-modal__sensor-details {
+      .sensing-imgs {
+        img {
+          margin: 0;
+        }
       }
     }
   }

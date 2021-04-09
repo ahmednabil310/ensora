@@ -9,7 +9,7 @@
     
     button {
       width: auto;
-      background-color: $N100;
+      background-color: $N200;
       opacity: .5;
     }
   }
@@ -26,10 +26,12 @@
   }
   .grid-compact-switch button:active,
   .switch-active {
+    @extend .shadow-sm;
     background-color: $N000 !important;
     opacity: 1 !important;
     outline: 0 !important;
     color: $B700 !important;
+    border: 0;
     border-right: 1px solid $N300 !important;
     border-left: 1px solid $N300 !important;
     border-radius: 5px !important;

@@ -67,13 +67,22 @@
             color: white;
           }
         }
-        .auto-generate-btn {
-          @extend .small;
-          color: $B300 !important;
-          background: $B100 !important;
-          border-radius: 4px;
-          padding: 6px 8px;
-          margin-bottom: 6px;
+        .auto-generate {
+          .auto-generate-btn {
+            @extend .small;
+            color: $B300 !important;
+            background: $B100 !important;
+            border-radius: 4px;
+            padding: 6px 8px;
+            margin-bottom: 6px;
+
+            img {
+              margin-top: 0;
+            }
+          }
+          img {
+            margin-top: -6px;
+          }
         }
       }
     }

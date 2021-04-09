@@ -1,4 +1,6 @@
 .graph-options-bar {
+  @extend .shadow-sm;
+  border-bottom: 1px solid $N300;
   padding: 0 40px 15px;
   background-color: $N000;
 
