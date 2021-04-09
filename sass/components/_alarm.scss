@@ -1,15 +1,21 @@
 .alarm {
   margin-top: 15px;
+  height: 58px;
   padding: 15px;
+
   .alarm-content {
     img {
       margin-right: 15px;
     }
     p {
+      color: $N800;
       margin: 4px 0 0;
+      font-weight: 600;
     }
   }
   .view-alarms-btn {
+    @extend .flex-center;
+    height: 36px;
     border: 2px solid $N300 !important;
     border-radius: 5px;
   }
