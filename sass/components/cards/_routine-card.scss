@@ -1,6 +1,6 @@
 .routine-cards-container {
   // padding: 0 12px 12px !important;
-  gap: 8px !important;  
+  gap: 8px !important;
 }
 .routine-card {
   @extend .elevated-sm;
@@ -10,7 +10,12 @@
   border-radius: 5px;
   border: 1px solid $N300;
   position: relative;
-  
+  .routine-card-form-check {
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+  }
+
   .routine-card-content {
     width: 39.5%;
     // width: 50%;
@@ -35,9 +40,49 @@
     @extend .label;
     color: $B700;
   }
-  .card-titled-tags {
-    min-width: 317px;
 
+  .routine-card-tags {
+    flex: 0 0 20.9%;
+    max-width: 20.9%;
+    margin-left: 220px;
+  }
+
+  .routine-card-groups {
+    margin-left: 128px;
+    flex: 0 0 21%;
+    max-width: 21%;
+  }
+
+  .routine-card-tags__title {
+    margin-bottom: 4px;
+  }
+
+  .routine-card-tags__container {
+    gap: 8px;
+  }
+
+  .routine-card-tags__maintag {
+    color: $B300;
+    background-color: $B100;
+    border-radius: 3px;
+    padding: 2px 6px;
+  }
+  .routine-card-tags__plustag {
+    border: 1px solid $B100;
+    border-radius: 3px;
+    padding: 1px 5px;
+  }
+
+  .routine-settings-icon {
+    margin-right: 10px;
+    margin-left: auto;
+    button {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .card-titled-tags {
     .tags-title {
       margin-bottom: 4px;
     }

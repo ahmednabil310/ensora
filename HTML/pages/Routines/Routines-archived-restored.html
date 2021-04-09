@@ -61,57 +61,71 @@
               <!-- Routine Card -->
               <div class="routine-card d-flex align-items-center">
                 <div class="grap-icon">
-                  <img src="../../../assets/icon-grap.svg" alt="Grap">
+                  <img src="../../../assets/icon-grap.svg" alt="" />
                 </div>
-                <!-- Routine From -->
-                <form class="d-flex align-items-center">
-                  <div class="form-group form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  </div>
-                  <!-- switch -->
-                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
-                    <label class="switch m-0">
-                      <input type="checkbox" id="checkboxR1" checked />
-                      <div class="slider round"></div>
-                    </label>
-                    <label class="switch-label" for="checkboxR1">Routine 7</label>
-                  </div>
-                </form>
-                <!-- End Routine From -->
-                <div class="routine-card-content d-flex justify-content-between">
-                  <!-- Tags -->
-                  <div class="card-titled-tags">
-                    <p class="tags-title">Tags</p>
-                    <div class="tags d-flex">
-                      <span class="tag">Tag Name</span>
-                      <span class="tag">Tag Name</span>
-                      <span class="tag tags-overflow">+3</span>
+                <input
+                  class="form-check routine-card-form-check"
+                  type="checkbox"
+                  name="activRoutine"
+                  id="activRoutine1"
+                />
+                <div
+                  class="containerr m-0 d-flex justify-content-center align-items-center"
+                >
+                  <label class="switch-label" for="routine1">Routine 7</label>
+                </div>
+                <div
+                  class="routine-card-tags d-flex flex-column align-items-baseline"
+                >
+                  <p class="small routine-card-tags__title">Tags</p>
+                  <div class="d-flex routine-card-tags__container">
+                    <div class="routine-card-tags__maintag body">
+                      <p>Tag Name B</p>
+                    </div>
+                    <div class="routine-card-tags__maintag body">
+                      <p>Tag Name C</p>
+                    </div>
+                    <div class="routine-card-tags__plustag body">
+                      <p>+3</p>
                     </div>
                   </div>
-                  <!-- End Tags -->
-                  <!-- Groups -->
-                  <div class="card-titled-tags">
-                    <p class="tags-title">Groups</p>
-                    <div class="tags d-flex">
-                      <span class="tag">Group Name</span>
-                      <span class="tag">Group Name</span>
-                      <span class="tag">+2</span>
+                </div>
+                <div
+                  class="routine-card-groups d-flex flex-column align-items-baseline"
+                >
+                  <p class="small routine-card-tags__title">Groups</p>
+                  <div class="d-flex routine-card-tags__container">
+                    <div class="routine-card-tags__maintag body">
+                      <p>Group name</p>
+                    </div>
+                    <div class="routine-card-tags__maintag body">
+                      <p>Group name</p>
+                    </div>
+                    <div class="routine-card-tags__plustag body">
+                      <p>+2</p>
                     </div>
                   </div>
-                  <!-- End Groups -->
                 </div>
-                <!-- Settings Icon -->
-                <div class="settings-icon">
-                  <button class="dropdown-btn dropdown-toggle dropdown-toggle-split" type="button" id="settings-menu"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-172,0">
-                    <img src="../../../assets/icon-gear.svg" alt="Settings">
+                <div class="routine-settings-icon">
+                  <button
+                    class="dropdown-btn dropdown-toggle dropdown-toggle-split"
+                    type="button"
+                    id="settings-menu"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    data-offset="-172,0"
+                  >
+                    <img src="../../../assets/icon-gear.svg" alt="Settings" />
                   </button>
-                  <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="settings-menu">
+                  <ul
+                    class="dropdown-menu dropdown-menu-start"
+                    aria-labelledby="settings-menu"
+                  >
                     <li><a class="dropdown-item" href="#">One</a></li>
                     <li><a class="dropdown-item" href="#">Two</a></li>
                   </ul>
                 </div>
-                <!-- End Settings Icon -->
               </div>
               <!-- End Routine Card -->
             </div>

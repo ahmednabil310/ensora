@@ -44,11 +44,13 @@
 .switches-container {
   display: flex;
   align-items: center;
-  height: 100px;
   border-bottom: solid 1px $N300;
 }
 
 .switch__left {
+  padding: 39px 0;
+  flex: 0 0 14%;
+  max-width: 14%;
   p {
     @extend .body--bold;
     color: $B700;
@@ -63,18 +65,14 @@
   }
 }
 
-.form-select {
-  background-image: url(../assets/arrow.svg) !important;
-  background-repeat: no-repeat;
-  background-position: right 0.5rem center;
-  padding-left: 40px;
-  width: 190px;
-  height: 36px;
-  -moz-appearance: none; /* Firefox */
-  -webkit-appearance: none; /* Safari and Chrome */
-  appearance: none;
-  border: solid 2px $N300;
-  border-radius: 5px;
+.settings-custom-select {
+  flex: 0 0 18.4%;
+  max-width: 18.4%;
+}
+.settings-name-text-input {
+  flex: 0 0 29.1%;
+  max-width: 29.1%;
+  margin-right: 20px;
 }
 
 .device-thumbnail--settings .add-photo-btn {
@@ -118,10 +116,7 @@
 .form__switch__text {
   margin-right: 20px;
   input {
-    width: 300px;
     height: 36px;
-    border: solid 2px $N300;
-    border-radius: 5px;
   }
 }
 
@@ -129,10 +124,9 @@
   @extend .form__switch__text;
   margin-right: 10px;
   align-self: flex-start;
-  margin-top: -4px;
-  input {
-    width: 101px;
-  }
+  flex: 0 0 9.8%;
+  max-width: 9.8%;
+  margin-top: 9px;
 }
 
 .primary-button--settings {
