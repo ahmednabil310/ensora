@@ -28,6 +28,14 @@
       margin: 0;
       padding: 4px 0;
     }
+    .btn-nostyle {
+      padding: 0;
+      margin: 0;
+
+      img {
+        margin: 0;
+      }
+    }
   }
   .or-text {
     @extend .label;
@@ -58,7 +66,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 13px 15px;    
+        padding: 13px 15px;        
+      }
+      .option-label {
+        font-size: 15px !important;
       }
       button:last-of-type {
         margin-top: -2px;
