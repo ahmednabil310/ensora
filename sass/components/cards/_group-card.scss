@@ -109,3 +109,14 @@
     }
   }
 }
+
+.settings-icon--new {
+  button {
+    width: 32px;
+    height: 32px;
+  }
+  i {
+    color: $N500;
+    font-size: 16px;
+  }
+}

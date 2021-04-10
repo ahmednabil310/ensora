@@ -40,7 +40,8 @@
     margin-top: 20px;
   }
 
-  #device-id, #install-date {
+  #device-id,
+  #install-date {
     background-color: $N100;
   }
 }
@@ -183,7 +184,7 @@
   height: 28px;
 }
 .slider-lg:before {
-  @extend .slider:before;
+  @extend .slider;
   width: 22px;
   height: 22px;
   bottom: 2.7px;
@@ -343,7 +344,7 @@ input:checked + .slider:before {
     padding: 30px 40px 40px;
 
     .settings-card-content {
-      .setup-wizard-modal  {
+      .setup-wizard-modal {
         border: 0;
       }
       .sensor-modal {
@@ -363,7 +364,6 @@ input:checked + .slider:before {
             }
           }
         }
-
       }
       .single-select-dropdown {
         margin-bottom: 10px !important;

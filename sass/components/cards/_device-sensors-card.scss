@@ -13,7 +13,7 @@
     border-radius: 8px;
     border: 1px solid $N300;
     position: relative;
-    padding: 12px;
+    padding: 6px 8px 12px 12px;
 
     .device-details {
       margin-left: 15px;
@@ -44,4 +44,8 @@
       }
     }
   }
+}
+
+.device-sensor-card__left {
+  padding-top: 6px;
 }

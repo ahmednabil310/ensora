@@ -9,14 +9,14 @@
   border-radius: 8px;
   border: 1px solid $N300;
   position: relative;
-  padding: 14px 18px 16px;
+  padding: 8px 8px 16px 18px;
   text-align: start;
 
   .device-details {
     margin-left: 15px;
   }
   .device-name {
-    color: #062B45;
+    color: #062b45;
     font-weight: 600;
     margin-top: 11px;
   }
@@ -68,13 +68,13 @@
     line-height: 14px;
     font-weight: 500;
   }
-  .group-override div button[disabled]{
+  .group-override div button[disabled] {
     background: $N200;
     color: $N400;
   }
   .card-titled-tags {
     margin-top: 8px;
-    
+
     .tags-title {
       margin-bottom: 2px;
     }
@@ -95,4 +95,3 @@
     right: 16px;
   }
 }
-
