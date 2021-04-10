@@ -786,6 +786,10 @@ textarea {
 .sensor-min-max-setup-wizard-modal .setup-wizard-modal__form-scrollable {
   height: 489px;
   overflow: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .sensor-modal .setup-wizard-modal__form-scrollable::-webkit-scrollbar,
