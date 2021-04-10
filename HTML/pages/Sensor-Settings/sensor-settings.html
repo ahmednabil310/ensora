@@ -100,7 +100,7 @@
             <div class="settings-card d-flex flex-column">
               <!-- Settings Card Content -->
               <div class="settings-card-content d-flex flex-column">
-                <div class="col-12 col-xl-5 p-0 m-0">
+                <div class="col-12 p-0 m-0">
                   <div class="sensor-modal setup-wizard-modal m-0">
                     <form class="setup-wizard-modal__form">
                       <div>
@@ -129,81 +129,55 @@
                         </div>
                         <!-- End Signal Strength -->
                       </div>
-                      <!-- Sensor calibration -->
                       <div class="setup-wizard-modal__show-min-max d-flex justify-content-between">
                         <div class="m-0">
                           <span class="show-min-max-btn min-max-btn-active">Set min and max values</span>
                           <img class="icon-sm" src="../../../assets/icon-helpspot.svg" alt="Help" />
                         </div>
                       </div>
-                      <!-- End Show Min&Max -->
                       <!-- Min&Max Options -->
                       <div class="setup-wizard-modal__min-max-options">
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">Temperature</p>
-                          <div class="col-7">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Min" class="form-control" />
-                                </div>
-                              </div>
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Max" class="form-control" />
-                                </div>
-                              </div>
+                          <p>Temperature</p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Min" class="form-control" />
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">Humidity</p>
-                          <div class="col-7">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Min" class="form-control" />
-                                </div>
-                              </div>
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Max" class="form-control" />
-                                </div>
-                              </div>
+                          <p>Humidity</p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Min" class="form-control" />
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">Light</p>
-                          <div class="col-7">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Min" class="form-control" />
-                                </div>
-                              </div>
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Max" class="form-control" />
-                                </div>
-                              </div>
+                          <p>Light</p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Min" class="form-control" />
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">CO2</p>
-                          <div class="col-7">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Min" class="form-control" />
-                                </div>
-                              </div>
-                              <div class="col-6">
-                                <div>
-                                  <input type="text" placeholder="Max" class="form-control" />
-                                </div>
-                              </div>
+                          <p>CO<sub>2</sub></p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Min" class="form-control" />
+                            </div>
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
@@ -216,52 +190,36 @@
                           <img class="icon-sm" src="../../../assets/icon-helpspot.svg" alt="Help" />
                         </div>
                       </div>
-                      <div class="setup-wizard-modal__min-max-options mb-0">
+                      <div class="setup-wizard-modal__min-max-options calibration-options">
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">Temperature</p>
-                          <div class="col-8">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-12">
-                                <div>
-                                  <input type="text" value="0 °F" class="form-control" />
-                                </div>
-                              </div>
+                          <p>Temperature</p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">Humidity</p>
-                          <div class="col-8">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-12">
-                                <div>
-                                  <input type="text" value="0 %" class="form-control" />
-                                </div>
-                              </div>
+                          <p>Humidity</p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">Light</p>
-                          <div class="col-8">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-12">
-                                <div>
-                                  <input type="text" value="0 Lux" class="form-control" />
-                                </div>
-                              </div>
+                          <p>Light</p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>
                         <div class="min-max-option d-flex align-items-center justify-content-between">
-                          <p class="col-4">CO2</p>
-                          <div class="col-8">
-                            <div class="min-max-form d-flex justify-content-end">
-                              <div class="col-12">
-                                <div>
-                                  <input type="text" value="0 ppm" class="form-control" />
-                                </div>
-                              </div>
+                          <p>CO<sub>2</sub></p>
+                          <div class="min-max-form d-flex justify-content-end">
+                            <div>
+                              <input type="text" placeholder="Max" class="form-control" />
                             </div>
                           </div>
                         </div>

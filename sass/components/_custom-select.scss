@@ -28,6 +28,9 @@ body {
     @extend .input;
     color: $B700;
   }
+  .placeholder {
+    color: $N500 !important;
+  }
 }
 .open {
   .our-custom-select__trigger {
@@ -90,9 +93,10 @@ body {
 
 .custom-option:hover {
   cursor: pointer;
-  background-color: $B100;
+  background-color: $N200;
 }
 .custom-option.selected {
   color: #ffffff;
-  background-color: $B300;
+  background-color: $N300;
+  color: $N800;
 }

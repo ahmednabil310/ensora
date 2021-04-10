@@ -124,12 +124,25 @@
     padding: 30px 40px 40px;
 
     .settings-card-content {
-      // padding: 30px 40px 72px;
 
       .sensor-modal {
+        width: 480px;
+
         .setup-wizard-modal__min-max-options:last-of-type {
           margin-bottom: 0 !important;
         }
+
+        .calibration-options {
+          .min-max-option {
+            .min-max-form {
+              width: 67% !important;
+              div {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+
       }
       .single-select-dropdown {
         margin-bottom: 10px !important;
@@ -144,8 +157,6 @@
       }
     }
     .content-save-section {
-      // padding: 0 40px 40px !important;
-      // margin-top: -73px !important;
       .save-btn {
         width: 148px !important;
       }

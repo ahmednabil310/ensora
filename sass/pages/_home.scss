@@ -38,6 +38,15 @@
       height: 16px;
       width: 16px;
     }
+    .back-button {
+      margin-right: 13px;
+      
+      img {
+        margin-left: 0;
+        width: 36px;
+        height: 36px;
+      }
+    }
   }
   button {
     width: auto !important;

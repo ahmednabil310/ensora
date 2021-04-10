@@ -65,6 +65,7 @@
   }
 
   .plan-cell {
+    color: $N500;
     width: 168px;
     display: flex;
     justify-content: center;
@@ -73,6 +74,7 @@
 }
 .details-column {
   width: 373px;
+  color: $B700;
 
   .details-header-cell {
     padding-top: 33px;

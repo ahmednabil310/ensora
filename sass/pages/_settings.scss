@@ -29,7 +29,7 @@
   background-color: white;
   border: solid 1px $N300;
   border-radius: 8px;
-  padding: 40px;
+  padding: 30px 40px 40px;
   margin: 0;
 }
 
@@ -38,6 +38,10 @@
   margin-bottom: 20px;
   div:not(:first-child) {
     margin-top: 20px;
+  }
+
+  #device-id, #install-date {
+    background-color: $N100;
   }
 }
 
@@ -96,7 +100,7 @@
 }
 
 .switch-image {
-  margin-left: 44px;
+  margin-left: 41px;
 }
 
 .device-thumbnail--settings {

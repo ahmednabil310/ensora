@@ -48,10 +48,10 @@
     margin-bottom: 2px;
   }
   .setup-wizard-modal__footer {
+    height: 82px;
     position: absolute;
     bottom: 0;
     right: 0;
-
     width: 100%;
     border-top: 1px solid $N300;
     padding: 23px 40px;
@@ -99,7 +99,7 @@
     margin-bottom: 7px;
   }
   .setup-wizard-modal__options {
-    margin-top: 86px;
+    margin-top: 83px;
     padding: 0 42px;
     gap: 25px;
 
@@ -131,6 +131,8 @@
     }
 
     .setup-wizard-modal__sensor-details {
+      margin-bottom: 14px;
+
       div {
         padding: 0;
         margin: 0;
@@ -148,7 +150,7 @@
         img {
           width: 20px;
           height: 20px;
-          margin-right: 12px;
+          margin-right: 9px;
         }
       }
       .setup-wizard-modal__sensor-details .sensing-imgs svg {
@@ -166,6 +168,10 @@
     }
     .setup-wizard-modal__show-min-max {
       margin-bottom: 0;
+      
+      div {
+        @extend .flex-center;
+      }
     }
     .setup-wizard-modal__show-min-max span {
       margin-right: 8px;
@@ -194,6 +200,7 @@
         padding: 0;
       }
       .min-max-option {
+        height: 57px;
         width: 100%;
         padding: 11px 0px 10px 20px;
         color: $N600;
@@ -204,6 +211,10 @@
 
         .min-max-form {
           gap: 20px;
+
+          div {
+            width: 144px !important;
+          }
         }
       }
       .min-max-option:nth-child(n + 2) {

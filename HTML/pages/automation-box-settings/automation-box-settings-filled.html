@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../../sass/main.css" />
+  <title id="settings">Settings</title>
+</head>
+
+<body>
+  <div class="row h-100 m-0">
+    <!-- side bar -->
+    <div class="p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="main-page p-0">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- header -->
+        <div class="main-content__header main-content__header--settings justify-content-between">
+          <div class="d-flex align-items-center">
+            <button class="button-nostyle d-flex justify-content-center align-items-center">
+              <img src="../../../assets/icon-button.svg" alt="" />
+            </button>
+            <span class="">Automation Box A</span>
+          </div>
+          <div class="d-flex">
+            <button class="button-nostyle d-flex justify-content-center align-items-center gear-button">
+              <img src="../../../assets/icon-gear-blue.svg" alt="" />
+            </button>
+          </div>
+        </div>
+        <!-- header end -->
+        <!-- mid section -->
+        <div class="mid-section">
+          <form class="mid-section__form row">
+            <!-- inputs -->
+            <div class="mid-section__form__inputs col-5 label">
+              <div>
+                <label for="firstName">Name</label>
+                <input type="text" class="form-control border border-2" id="firstName" aria-describedby="firstName"
+                  value="Automation Box A" />
+              </div>
+              <div>
+                <label for="device-id">Device ID</label>
+                <input type="text" class="form-control border border-2" id="device-id" aria-describedby="device-id"
+                  value="00235GH5678KL0" />
+              </div>
+              <div>
+                <label for="install-date">Install date</label>
+                <input type="text" class="form-control border border-2" id="install-date" aria-describedby="install-date"
+                  value="01/01/2020" />
+              </div>
+            </div>
+            <!-- inputs end -->
+            <!-- switches -->
+            <div class="col-12 p-0">
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R1</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR1" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR1">Enabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img class="icon-light" src="../../../assets/icon-fans.svg" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span class="d-flex g-8px">
+                          <img src="../../../assets/icon-fans.svg">
+                          Fans
+                        </span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-fans.svg">
+                          Fans
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-lights-dark.svg">
+                          Lights
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-cooling-dark.svg">
+                          Cooling
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-heating.svg">
+                          Heating
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-humidifier-dark.svg">
+                          Humidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-dehumidifiers-dark.svg">
+                          Dehumidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-shade-dark.svg">
+                          Shade
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-vents-dark.svg">
+                          Vents
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-pumb-dark.svg">
+                          Pump
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-irrigation-dark.svg">
+                          Irrigation
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-co2-generator-dark.svg">
+                          CO2 Generator
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-auxiliary-dark.svg">
+                          Auxiliary
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" value="Lettuce Fan" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R2</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR2" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR2">Enabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img class="icon-light" src="../../../assets/icon-humidifier.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span class="d-flex g-8px">
+                          <img src="../../../assets/icon-humidifier-dark.svg">
+                          Humidifiers
+                        </span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-fans.svg">
+                          Fans
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-lights-dark.svg">
+                          Lights
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-cooling-dark.svg">
+                          Cooling
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-heating.svg">
+                          Heating
+                        </span>
+                        <span class="custom-option selected d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-humidifier-dark.svg">
+                          Humidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-dehumidifiers-dark.svg">
+                          Dehumidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-shade-dark.svg">
+                          Shade
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-vents-dark.svg">
+                          Vents
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-pumb-dark.svg">
+                          Pump
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-irrigation-dark.svg">
+                          Irrigation
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-co2-generator-dark.svg">
+                          CO2 Generator
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-auxiliary-dark.svg">
+                          Auxiliary
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" value="Humidifier" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R3</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR3" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR3">Enabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img class="icon-light" src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span class="d-flex g-8px">
+                          <img src="../../../assets/icon-cooling-dark.svg">
+                          Cooling
+                        </span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-fans.svg">
+                          Fans
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-lights-dark.svg">
+                          Lights
+                        </span>
+                        <span class="custom-option selected d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-cooling-dark.svg">
+                          Cooling
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-heating.svg">
+                          Heating
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-humidifier-dark.svg">
+                          Humidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-dehumidifiers-dark.svg">
+                          Dehumidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-shade-dark.svg">
+                          Shade
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-vents-dark.svg">
+                          Vents
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-pumb-dark.svg">
+                          Pump
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-irrigation-dark.svg">
+                          Irrigation
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-co2-generator-dark.svg">
+                          CO2 Generator
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-auxiliary-dark.svg">
+                          Auxiliary
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" value="A/C" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R4</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR4" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR4">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R5</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR5" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR5">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R6</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR6" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR6">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R7</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR7" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR7">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R8</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR8" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR8">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R9</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR9" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR9">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R10</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR10" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR10">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R11</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR11" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR11">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>R12</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxR12" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxR12">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-cooling.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <!-- end last input -->
+              </div>
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>V1</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxV1" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxV1">Enabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-lighting.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span class="d-flex g-8px">
+                          <img src="../../../assets/icon-lights-dark.svg">
+                          Lights
+                        </span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-fans.svg">
+                          Fans
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-lights-dark.svg">
+                          Lights
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-cooling-dark.svg">
+                          Cooling
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-heating.svg">
+                          Heating
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-humidifier-dark.svg">
+                          Humidifiers
+                        </span>
+                        <span class="custom-option d-flex g-8px" data-value="Weekly">
+                          <img src="../../../assets/icon-dehumidifiers-dark.svg">
+                          Dehumidifiers
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" value="Onion lights" />
+                </div>
+                <div class="min-voltage invisible">
+                  <p class="label m-0">Min Voltage</p>
+                  <input type="text" class="form-control" value="3 V" />
+                </div>
+                <div class="min-voltage mx-0 invisible">
+                  <p class="label m-0">Max Voltage</p>
+                  <input type="text" class="form-control" value="10 V" />
+                </div>
+              </div>
+              <!-- end last input -->
+              <!-- End Switch -->
+              <!-- Switch Start  -->
+              <div class="d-flex align-items-center switches-container">
+                <!-- left side -->
+                <div class="d-flex switch__left">
+                  <p>V2</p>
+                  <!-- switch -->
+                  <div class="containerr m-0 d-flex justify-content-center align-items-center">
+                    <label class="switch m-0">
+                      <input type="checkbox" id="checkboxV2" />
+                      <div class="slider round"></div>
+                    </label>
+                    <label class="switch-label" for="checkboxV2">Disabled</label>
+                  </div>
+                </div>
+                <!-- left side ended -->
+                <!-- image -->
+                <div class="switch-image invisible">
+                  <div class="device-thumbnail device-thumbnail--settings">
+                    <div>
+                      <img src="../../../assets/icon-lighting.svg" alt="" />
+                      <div class="add-photo-btn">
+                        <button class="button-nostyle d-flex justify-content-center align-items-center">
+                          <img src="../../../assets/Add photo btn.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- image end -->
+                <!-- dropdown select -->
+                <div class="dropdown settings-custom-select invisible">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Weekly</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Weekly">Weekly</span>
+                        <span class="custom-option" data-value="Monthly">Monthly</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- dropdown select end -->
+                <!-- last input -->
+                <div class="settings-name-text-input invisible">
+                  <input class="form-control" type="text" />
+                </div>
+                <div class="min-voltage invisible">
+                  <p class="label m-0">Min Voltage</p>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="min-voltage mx-0 invisible">
+                  <p class="label m-0">Max Voltage</p>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <!-- End Switch -->
+            </div>
+            <button class="btn primary-button--settings">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../../js/page-loader.js"></script>
+  <script src="../../../js/custom-select.js"></script>
+</body>
+
+</html>

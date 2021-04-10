@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="help">Help</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -11,8 +12,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../../../sass/main.css" />
-
-    <title id="equipments">Equipment Empty State</title>
   </head>
 
   <body>
@@ -20,7 +19,7 @@
       <!-- side bar -->
       <div class="p-0" id="side-bar-container"></div>
       <!-- main page -->
-      <div class="main-page p-0">
+      <div class="main-page p-0 d-flex flex-column">
         <!-- navbar -->
         <div id="nav-bar-container"></div>
         <!-- Main Content -->
@@ -28,30 +27,35 @@
           <!-- header -->
           <div class="d-flex justify-content-between main-content__header">
             <div class="d-flex">
-              <span class="">Equipment</span>
+              <span>Help topics</span>
             </div>
           </div>
           <!-- middle section -->
           <div
-            class="row mid-section align-items-center flex-column text-center"
+            class="row mid-section help-mid-section d-flex align-items-start"
           >
-            <div class="col-12">
-              <div class="main-content__empty">
-                <h3 id="title">No equipments found</h3>
-                <p id="body">
-                  Equipment that you assign to your automation box will appear
-                  here. Assign your equipment to an <br />automation box from
-                  the devices page.
-                </p>
-                <div>
-                  <button class="btn btn-primary">View Devices</button>
-                </div>
-              </div>
-            </div>
-          </div>
+
+        </div>
         </div>
       </div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
     <script src="../../../js/page-loader.js"></script>
+    <script src="../../../js/custom-select.js"></script>
   </body>
 </html>

@@ -1,14 +1,20 @@
 .spotlight-modal {
+  margin-top: 8px;
   font-size: 14px !important;
   font-weight: 400 !important;
   position: absolute !important;
   width: 252px !important ;
   top: 0px !important;
   right: 300px !important;
-  color: #062b45 !important;
+  color: $B700 !important;
+
+  .modal-content {
+    border: 0;
+  }
 }
 .spotlight-button {
   text-align: right;
+  font-weight: 600;
 }
 .spotlight-add {
   z-index: 10000;

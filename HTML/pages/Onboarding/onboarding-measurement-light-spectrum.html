@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Onboarding Measurement - Light Spectrum</title>
+    <title>Onboarding Measurement</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -28,103 +28,140 @@
           <p class="onboard-container__onboard__subtitle">
             Select your preferences below.
           </p>
-
           <form>
-            <form>
-              <div class="form-group">
-                <label for="temprature">Temperature</label>
-                <div class="our-custom-select-wrapper">
-                  <div class="our-custom-select">
-                    <div class="our-custom-select__trigger">
-                      <span>Fahrenheit (°F)</span>
-                      <div class="arrow">
-                        <img src="../../../assets/arrow.svg" alt="" />
-                      </div>
+            <div class="form-group">
+              <label for="temprature">Temperature</label>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>Fahrenheit (°F)</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
                     </div>
-                    <div class="custom-options">
-                      <span class="custom-option selected" data-value="fahrenheit">Fahrenheit (°F)</span>
-                      <span class="custom-option" data-value="celsius">Celsius (°C)</span>
-                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="fahrenheit"
+                      >Fahrenheit (°F)</span
+                    >
+                    <span class="custom-option" data-value="celsius"
+                      >Celsius (°C)</span
+                    >
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="light">Light</label>
-                <div class="our-custom-select-wrapper">
-                  <div class="our-custom-select">
-                    <div class="our-custom-select__trigger">
-                      <span>Lux</span>
-                      <div class="arrow">
-                        <img src="../../../assets/arrow.svg" alt="" />
-                      </div>
+            </div>
+            <div class="form-group">
+              <label for="light">Light</label>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>PAR</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
                     </div>
-                    <div class="custom-options">
-                      <span class="custom-option selected" data-value="lux">Lux</span>
-                      <span class="custom-option" data-value="par">PAR</span>
-                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option" data-value="lux">Lux</span>
+                    <span class="custom-option selected" data-value="par"
+                      >PAR</span
+                    >
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label for="light">Language</label>
-                <div class="our-custom-select-wrapper">
-                  <div class="our-custom-select">
-                    <div class="our-custom-select__trigger">
-                      <span>English</span>
-                      <div class="arrow">
-                        <img src="../../../assets/arrow.svg" alt="" />
-                      </div>
+            </div>
+            <div class="form-group">
+              <label for="light">Light Source</label>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>LED 5000K</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
                     </div>
-                    <div class="custom-options">
-                      <span class="custom-option selected" data-value="en"
-                        >English</span
-                      >
-                      <span class="custom-option" data-value="sp">Spanish</span>
-                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="0"
+                      >LED 5000K</span
+                    >
+                    <span class="custom-option" data-value="1">LED 4000K</span>
+                    <span class="custom-option" data-value="2">LED 3000K</span>
+                    <span class="custom-option" data-value="3"
+                      >High-intensity discharge, sodium</span
+                    >
+                    <span class="custom-option" data-value="4"
+                      >High-intensity discharge, metal halide</span
+                    >
+                    <span class="custom-option" data-value="5"
+                      >Incandescent</span
+                    >
+                    <span class="custom-option" data-value="6">Florescent</span>
+                    <span class="custom-option" data-value="7">Sunlight</span>
+                    <span class="custom-option" data-value="8"
+                      >Grow lights</span
+                    >
                   </div>
                 </div>
               </div>
-              <div class="form-group">
-                <label>Date format</label>
-                <div class="our-custom-select-wrapper">
-                  <div class="our-custom-select">
-                    <div class="our-custom-select__trigger">
-                      <span>MM/DD/YYYY</span>
-                      <div class="arrow">
-                        <img src="../../../assets/arrow.svg" alt="" />
-                      </div>
+            </div>
+            <div class="form-group">
+              <label for="light">Language</label>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>English</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
                     </div>
-                    <div class="custom-options">
-                      <span class="custom-option selected" data-value="0"
-                        >MM/DD/YYYY</span
-                      >
-                      <span class="custom-option" data-value="1">MM-DD-YYYY</span>
-                      <span class="custom-option" data-value="2">YYYY-MM-DD</span>
-                      <span class="custom-option" data-value="3">DD/MM/YYYY</span>
-                      <span class="custom-option" data-value="4">DD-MM-YYYY</span>
-                      <span class="custom-option" data-value="5"
-                        >Month, D, Yr</span
-                      >
-                      <span class="custom-option" data-value="6">D Month Yr</span>
-                      <span class="custom-option" data-value="7">Yr Month D</span>
-                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="en"
+                      >English</span
+                    >
+                    <span class="custom-option" data-value="sp">Spanish</span>
                   </div>
                 </div>
               </div>
-              <div class="d-flex">
-                <div class="form-check d-flex align-items-center">
-                  <input
-                    class="form-check-input mt-0"
-                    type="checkbox"
-                    id="24-clock"
-                  />
-                  <label class="form-check-label pl-1" for="24-clock">
-                    Use a 24-hour clock
-                  </label>
+            </div>
+            <div class="form-group">
+              <label>Date format</label>
+              <div class="our-custom-select-wrapper">
+                <div class="our-custom-select">
+                  <div class="our-custom-select__trigger">
+                    <span>MM/DD/YYYY</span>
+                    <div class="arrow">
+                      <img src="../../../assets/arrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="custom-options">
+                    <span class="custom-option selected" data-value="0"
+                      >MM/DD/YYYY</span
+                    >
+                    <span class="custom-option" data-value="1">MM-DD-YYYY</span>
+                    <span class="custom-option" data-value="2">YYYY-MM-DD</span>
+                    <span class="custom-option" data-value="3">DD/MM/YYYY</span>
+                    <span class="custom-option" data-value="4">DD-MM-YYYY</span>
+                    <span class="custom-option" data-value="5"
+                      >Month, D, Yr</span
+                    >
+                    <span class="custom-option" data-value="6">D Month Yr</span>
+                    <span class="custom-option" data-value="7">Yr Month D</span>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div class="d-flex">
+              <div class="form-check d-flex align-items-center">
+                <input
+                  class="form-check-input mt-0"
+                  type="checkbox"
+                  id="24-clock"
+                />
+                <label class="form-check-label pl-1" for="24-clock">
+                  Use a 24-hour clock
+                </label>
+              </div>
+            </div>
           </form>
-
           <button
             type="button"
             class="btn btn-primary btn-block onboard-container__onboard__button"
@@ -139,7 +176,6 @@
           </button>
         </div>
       </div>
-    </div>
       <!-- End Onboarding -->
     </div>
     <script

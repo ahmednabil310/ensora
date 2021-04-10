@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   min-height: 36px;
+  
   h2 {
     @extend .display-medium;
     color: $B700;
@@ -76,6 +77,7 @@
     -webkit-box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05);
     -moz-box-shadow: 0px 1px 1px 0px rgba(6, 43, 69, 0.05);
   }
+
   .tr--error {
     background-color: rgba($color: #ec6060, $alpha: 0.1);
     .tr--error__td {
@@ -90,12 +92,19 @@
     color: $B300;
   }
 
-  // border and radius styles
-
   td,
   th {
     border: solid 1px $N300;
     border-style: solid none;
+  }
+  thead {
+    th {
+      border: none !important;
+      box-shadow: none !important;
+      border: none !important;
+      color: $N600;
+  
+    }
   }
   td:first-child,
   th:first-child {

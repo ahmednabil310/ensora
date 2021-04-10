@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="home">Hompage Min & Max</title>
+    <title id="home">Hompage Low & High</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -33,10 +33,10 @@
             <div class="d-flex">
               <div class="mm-lh">
                 <div class="btn-group mm-lh-switch" role="group">
-                  <button type="button" class="btn switch-active">
+                  <button type="button" class="btn">
                     Min & max
                   </button>
-                  <button type="button" class="btn">Low & Max</button>
+                  <button type="button" class="btn switch-active">Low & high</button>
                 </div>
                 <img src="../../../assets/icon-helpspot.svg" alt="Help" />
               </div>
@@ -50,7 +50,7 @@
           <div class="row">
             <div class="col-12">
               <div
-                class="alarm alarm-active d-flex justify-content-between align-items-center"
+                class="alarm alarm-all-good d-flex justify-content-between align-items-center"
               >
                 <div class="alarm-content d-flex">
                   <img
@@ -63,9 +63,11 @@
                     src="../../../assets/icon-alarm-all-good.svg"
                     alt="Alarm"
                   />
-                  <p>You have 3 active alarms!</p>
+                  <p>All sensors are good</p>
                 </div>
-                <button class="btn btn-light view-alarms-btn">View alarms</button>
+                <button class="btn btn-light view-alarms-btn">
+                  View alarms
+                </button>
               </div>
             </div>
           </div>
@@ -163,14 +165,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -193,14 +195,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -223,14 +225,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -253,14 +255,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>2</span>
                             <span>ppm</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>10</span>
                             <span>ppm</span>
@@ -370,7 +372,7 @@
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -388,14 +390,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -418,14 +420,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -448,14 +450,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -504,13 +506,13 @@
                         <span class="sensor-name">Flowers</span>
                         <span class="sensor-alarm-label">
                           <img
-                            src="../../../assets/icon-label-temp-hight.svg"
+                            src="../../../assets/icon-label-ok.svg"
                             alt="Grap"
                           />
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -528,14 +530,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -558,14 +560,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -588,14 +590,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -650,7 +652,7 @@
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -668,14 +670,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -698,14 +700,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -728,14 +730,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -758,14 +760,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>2</span>
                             <span>ppm</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>10</span>
                             <span>ppm</span>
@@ -820,7 +822,7 @@
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -838,14 +840,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -868,14 +870,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -898,14 +900,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -960,7 +962,7 @@
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -978,14 +980,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -1008,14 +1010,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -1038,14 +1040,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -1155,7 +1157,7 @@
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -1173,14 +1175,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -1203,14 +1205,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -1233,14 +1235,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -1295,7 +1297,7 @@
                         </span>
                       </div>
                       <div class="sensor-status-text">
-                        <span>Updated 24 minutes ago</span>
+                        <span>Updated 24 Lowutes ago</span>
                       </div>
                     </div>
                     <!-- Sensor Values -->
@@ -1313,14 +1315,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>68</span>
                             <span>°F</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>75</span>
                             <span>°F</span>
@@ -1343,14 +1345,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>50</span>
                             <span>%</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>58</span>
                             <span>%</span>
@@ -1373,14 +1375,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>10,000</span>
                             <span>Lux</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>30,000</span>
                             <span>Lux</span>
@@ -1403,14 +1405,14 @@
                       </div>
                       <span class="sensor-mm-lh d-flex">
                         <div class="d-flex gap-1">
-                          Min
+                          Low
                           <div class="d-flex value-measurement">
                             <span>2</span>
                             <span>ppm</span>
                           </div>
                         </div>
                         <div class="d-flex gap-1">
-                          Max
+                          High
                           <div class="d-flex value-measurement">
                             <span>10</span>
                             <span>ppm</span>
