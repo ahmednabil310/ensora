@@ -3,6 +3,10 @@
   max-width: 580px;
   border-radius: 5px;
   color: $B700;
+  box-shadow: 0px 24px 38px rgba(55, 61, 71, 0.14),
+    0px 11px 15px rgba(55, 61, 71, 0.2);
+  border-radius: 5px;
+  border: 1px solid #dfe4eb;
   .uploadmodal__close {
     padding: 0;
     position: absolute;
@@ -43,7 +47,7 @@
         }
       }
       .uploadmodal__box__upload {
-        padding: 65px 124px 48px 125px;
+        padding: 65px 0px 48px 0px;
         .uploadmodal__box__upload__h3 {
           color: $B700;
           margin: 0;

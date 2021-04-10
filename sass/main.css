@@ -293,6 +293,12 @@ textarea {
   padding: 8px !important;
 }
 
+.form-control:disabled {
+  background: #f9fafc;
+  color: #9da9b5 !important;
+  border: 2px solid #dfe4eb;
+}
+
 .icon-sm {
   width: 16px;
   height: 16px;
@@ -1439,6 +1445,10 @@ textarea {
   max-width: 580px;
   border-radius: 5px;
   color: #062b45;
+  -webkit-box-shadow: 0px 24px 38px rgba(55, 61, 71, 0.14), 0px 11px 15px rgba(55, 61, 71, 0.2);
+          box-shadow: 0px 24px 38px rgba(55, 61, 71, 0.14), 0px 11px 15px rgba(55, 61, 71, 0.2);
+  border-radius: 5px;
+  border: 1px solid #dfe4eb;
 }
 
 .uploadmodal .uploadmodal__close {
@@ -1488,7 +1498,7 @@ textarea {
 }
 
 .uploadmodal .uploadmodal__content .uploadmodal__box .uploadmodal__box__upload {
-  padding: 65px 124px 48px 125px;
+  padding: 65px 0px 48px 0px;
 }
 
 .uploadmodal .uploadmodal__content .uploadmodal__box .uploadmodal__box__upload .uploadmodal__box__upload__h3 {
