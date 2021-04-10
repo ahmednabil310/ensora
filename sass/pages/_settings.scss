@@ -343,7 +343,9 @@ input:checked + .slider:before {
     padding: 30px 40px 40px;
 
     .settings-card-content {
-
+      .setup-wizard-modal  {
+        border: 0;
+      }
       .sensor-modal {
         width: 480px;
 

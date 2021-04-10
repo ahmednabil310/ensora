@@ -10,55 +10,70 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <title>Add Device - Confirmation Automation Box</title>
-    <link rel="stylesheet" href="../../sass/main.css" />
+    <title>Add Device - Automation Box</title>
+    <link rel="stylesheet" href="../../../../sass/main.css" />
   </head>
 
   <body>
     <!-- Box Model -->
-    <div class="setup-wizard-modal d-flex flex-column shadow-sm">
+    <div
+      class="automation-box-modal setup-wizard-modal d-flex flex-column shadow-sm"
+    >
       <!-- Exit Button -->
       <div class="setup-wizard-modal__close-button">
         <button class="btn-close" type="button" aria-label="Close"></button>
       </div>
       <!-- End Exit button -->
       <!-- Modal Content -->
-      <div
-        class="setup-wizard-modal__content d-flex flex-column align-items-center justify-content-center"
-      >
-        <!-- Model Success Icon -->
-        <div class="text-center">
-          <div class="setup-wizard-modal__success_icon">
-            <img src="../../assets/icon-success.svg" alt="" />
-          </div>
-        </div>
-        <!-- End Model Success Icon -->
+      <div class="setup-wizard-modal__content">
         <!-- Model Title -->
-        <div>
+        <div class="setup-wizard-modal__title">
           <h1
-            class="setup-wizard-modal__confirmation-title text-center d-flex align-items-center justify-content-center"
+            class="text-center d-flex align-items-center justify-content-center"
           >
-            Automation box installed!
+            Automation box
           </h1>
         </div>
         <!-- End Modal Title -->
         <!-- Model Subtitle -->
-        <div>
+        <div class="setup-wizard-modal__subtitle">
           <p
-            class="setup-wizard-modal__confirmation-subtitle text-center d-flex align-items-center justify-content-center"
+            class="text-center d-flex align-items-center justify-content-center"
           >
-            Have a qualified electrician install your equipment to the
-            automation box, and then assign your equipment to relays.
+            Please enter a custom name to identify your new device.
           </p>
         </div>
         <!-- End Model Subtitle -->
+        <!-- Modal Form -->
+        <div class="setup-wizard-modal__form">
+          <form>
+            <div>
+              <label for="automation-box-name" class="form-label">Name</label>
+              <input
+                type="text"
+                placeholder="Enter automation box name"
+                class="form-control"
+                id="automation-box-name"
+              />
+            </div>
+            <div>
+              <label for="device-id" class="form-label">Device ID</label>
+              <input type="text" class="form-control" id="device-id" />
+            </div>
+            <div>
+              <label for="install-data" class="form-label">Install date</label>
+              <input type="text" class="form-control" id="install-data" />
+            </div>
+          </form>
+        </div>
+        <!-- End Modal Form -->
       </div>
       <!-- End Model Content -->
       <!-- Modal Footer -->
       <div class="setup-wizard-modal__footer">
         <div class="d-flex justify-content-end">
-          <button class="btn btn-link">Assign relays</button>
-          <button class="btn">Finished</button>
+          <button class="btn btn-link">Back</button>
+          <button class="btn">Continue</button>
         </div>
       </div>
       <!-- End Modal Footer -->
