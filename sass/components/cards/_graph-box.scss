@@ -17,7 +17,12 @@
 
     .graph-box-header {
       padding: 7px 10px 0 4px;
-
+      .group-override p {
+        @extend .small--regular;
+        color: $N600 !important;
+        margin-left: 31px;
+        margin-bottom: 4px;
+      }
       p {
         @extend .body--bold;
         color: $B700;
@@ -87,7 +92,7 @@
           font-size: 400;
 
           .tooltip-number {
-            color: #F9FAFC;
+            color: #f9fafc;
           }
 
           .power-text {
@@ -122,24 +127,16 @@
   .group-override {
     min-width: 160px;
   }
-  .group-override p {
-    line-height: 14px;
-    font-size: 11px;
-    font-weight: 400;
-    color: $N600;
-    margin-left: 31px;
-    margin-bottom: 4px;
-  }
+
   .group-override div {
     gap: 5px;
   }
   .group-power-mode div span:first-child {
-    font-size: 11px;
+    @extend .small--regular;
     color: $N600;
   }
   .group-power-mode div span:last-child {
-    font-size: 14px;
-    font-weight: 600;
+    @extend .body--bold;
   }
   .group-power-mode div .active {
     color: $B200;

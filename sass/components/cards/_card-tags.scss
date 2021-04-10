@@ -4,7 +4,7 @@
   color: $B300;
 
   .tag {
-    @extend .small--regular;
+    @extend .body;
     background-color: $B100;
     padding: 2px 6px;
     border-radius: 3px;

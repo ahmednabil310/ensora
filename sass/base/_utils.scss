@@ -12,7 +12,7 @@
   display: flex !important;
   align-items: baseline;
   margin-bottom: -8px !important;
-
+  @extend .caption;
   img {
     margin-right: 5px !important;
     top: 5px;

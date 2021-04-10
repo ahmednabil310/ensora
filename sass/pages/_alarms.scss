@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   min-height: 36px;
-  
+
   h2 {
     @extend .display-medium;
     color: $B700;
@@ -40,6 +40,7 @@
 .activity-checkbox {
   margin-left: 6px;
   margin-bottom: 0;
+  color: $B700;
 }
 
 .dropdown-alarms {
@@ -103,7 +104,6 @@
       box-shadow: none !important;
       border: none !important;
       color: $N600;
-  
     }
   }
   td:first-child,

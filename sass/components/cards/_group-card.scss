@@ -12,7 +12,7 @@
   }
   .group-name {
     height: 32px;
-    margin-left: 6px;
+    margin-left: 2px;
     padding: 4px 0;
 
     p {
@@ -67,7 +67,7 @@
       padding: 25px 0 16px !important;
     }
     p {
-      @extend .small--regular;
+      @extend .body;
       margin: 0;
       padding: 26px 0;
     }

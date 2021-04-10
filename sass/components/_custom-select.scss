@@ -93,10 +93,9 @@ body {
 
 .custom-option:hover {
   cursor: pointer;
-  background-color: $N200;
+  background-color: $B100;
 }
 .custom-option.selected {
   color: #ffffff;
-  background-color: $N300;
-  color: $N800;
+  background-color: $B300;
 }

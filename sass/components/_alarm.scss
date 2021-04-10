@@ -10,7 +10,7 @@
     p {
       color: $N800;
       margin: 4px 0 0;
-      font-weight: 600;
+      @extend .body--bold;
     }
   }
   .view-alarms-btn {
@@ -21,15 +21,15 @@
   }
 }
 .alarm-active {
-  background-color: #FDEFEF;
+  background-color: #fdefef;
   border-top: 3px solid $R300;
-  
+
   .alarm-all-good-icon {
     display: none;
   }
 }
 .alarm-all-good {
-  background-color: #F1F9F0;
+  background-color: #f1f9f0;
   border-top: 3px solid $G300;
   .alarm-active-icon {
     display: none;

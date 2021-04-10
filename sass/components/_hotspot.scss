@@ -5,8 +5,7 @@
     width: 75px;
     height: 62px;
     border-radius: 8px;
-    font-size: 11px;
-    line-height: 14px;
+    @extend .small--regular;
     background-color: $N500;
     color: $N000;
   }

@@ -18,6 +18,8 @@
     width: 267px;
     height: 44px;
     pointer-events: none;
+    position: absolute;
+    left: 28%;
     @extend .body;
   }
   .form-container__content {
@@ -58,7 +60,7 @@
   /* Form Image */
   .form-container__image {
     background-image: linear-gradient(rgba(6, 43, 69, 0), rgb(2, 30, 49)),
-      url("../../assets/imgs/Login\ Background.png");
+      url('../../assets/imgs/Login\ Background.png');
     background-repeat: no-repeat;
     background-size: cover;
   }

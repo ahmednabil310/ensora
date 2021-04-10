@@ -47,9 +47,7 @@
     .sensor-status-text {
       color: $N600;
       margin-top: 2px;
-      font-size: 11px;
-      line-height: 16px;
-      font-weight: 500;
+      @extend .small;
       text-align: start;
     }
     .sensor-values {

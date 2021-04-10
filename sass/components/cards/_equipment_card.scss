@@ -16,14 +16,13 @@
     margin-left: 15px;
   }
   .device-name {
-    color: #062b45;
-    font-weight: 600;
+    color: black;
+    @extend .label;
     margin-top: 11px;
   }
   .device-subtitle {
     color: $N600;
-    font-size: 11px;
-    line-height: 14px;
+    @extend .small--regular;
     margin-top: 6px;
     padding: 2px 6px;
     background: $N300;
@@ -37,9 +36,7 @@
     gap: 10px;
   }
   .group-override p {
-    line-height: 14px;
-    font-size: 11px;
-    font-weight: 400;
+    @extend .small--regular;
     color: $N600;
     margin-left: 31px;
     margin-bottom: 4px;
@@ -48,16 +45,16 @@
     gap: 5px;
   }
   .group-power-mode div span:first-child {
-    font-size: 11px;
+    @extend .small--regular;
     color: $N600;
   }
   .group-power-mode div span:last-child {
-    font-size: 14px;
-    font-weight: 600;
+    @extend .body--bold;
   }
   .group-power-mode div .active {
     color: $B200;
     border: none;
+    @extend .body--bold;
   }
   .group-override div button {
     @extend .flex-center;

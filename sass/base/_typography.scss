@@ -1,4 +1,4 @@
-$font-stack: "Inter", sans-serif;
+$font-stack: 'Inter', sans-serif;
 
 .display-xlarge {
   font-size: 42px;
@@ -53,11 +53,11 @@ $font-stack: "Inter", sans-serif;
 .input--bold {
   font-size: 14px;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 22px;
 }
 .small {
   font-size: 11px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 16px;
 }
 .caption {
@@ -69,13 +69,16 @@ $font-stack: "Inter", sans-serif;
   font-weight: 400;
 }
 .input,
-.body--link,
-.small--regular {
+.body--link {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-
+.small--regular {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+}
 .tag-label {
   font-size: 12px;
   font-weight: 400;

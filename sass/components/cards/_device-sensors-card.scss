@@ -25,9 +25,7 @@
     .device-subtitle {
       margin-top: 3px;
       color: $N600;
-      font-size: 11px;
-      line-height: 16px;
-      font-weight: 500;
+      @extend .small;
     }
     .device-senses-icons {
       margin-top: 5px;

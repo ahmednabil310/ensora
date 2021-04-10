@@ -1,5 +1,5 @@
 .setup-wizard-modal {
-  @import "../../base/reset";
+  @import '../../base/reset';
   max-width: 560px;
   min-height: 547px;
   position: relative;
@@ -25,7 +25,6 @@
 
     h1 {
       @extend .display-medium;
-      line-height: 36px;
     }
   }
   .setup-wizard-modal__subtitle {
@@ -37,8 +36,6 @@
       @extend .input;
       height: 36px;
       padding: 8px 14px;
-      line-height: 20px;
-      color: $B700;
     }
   }
   .sensor-modal form input ::placeholder {
@@ -83,7 +80,7 @@
   .setup-wizard-modal__confirmation-title {
     @extend .display-medium;
     margin-top: 32px;
-    line-height: 36px;
+
     margin-bottom: 12px;
   }
 
@@ -110,12 +107,11 @@
       width: 75px;
       height: 62px;
       border-radius: 8px;
-      font-weight: 400;
-      font-size: 11px;
-      line-height: 14px;
+
       text-align: center;
       background-color: $N500;
       color: $N000;
+      @extend .small--regular;
     }
   }
 }
@@ -128,14 +124,14 @@
   .setup-wizard-modal__form-scrollable {
     height: 489px;
     overflow: auto;
-    
+
     // Hide scrollbar
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */  
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     &::-webkit-scrollbar {
       display: none;
     }
-    
+
     form {
       margin-bottom: 20px;
     }
@@ -186,7 +182,7 @@
     }
     .setup-wizard-modal__show-min-max {
       margin-bottom: 0;
-      
+
       div {
         @extend .flex-center;
       }
