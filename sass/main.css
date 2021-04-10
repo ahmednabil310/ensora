@@ -179,18 +179,18 @@ textarea::placeholder {
   color: #9da9b5 !important;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   outline: 2px solid #dfe4eb;
   outline-style: auto;
 }
 
 @-moz-document url-prefix() {
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     outline-style: none;
   }
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   outline-style: none;
 }
 
@@ -227,7 +227,7 @@ textarea {
 }
 
 .btn-nostyle img {
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 .btn-nostyle .icon-mt {
