@@ -2374,7 +2374,13 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 13px 15px;
+  padding: 4px 8px 4px 13px;
+}
+
+.routine-conditions .routine-condition .quantity-options .btn:first-of-type::after {
+  margin-left: 5px;
+  content: url("../../../assets/icon-arrow-down.svg") !important;
+  border: none !important;
 }
 
 .routine-conditions .routine-condition .quantity-options .option-label {

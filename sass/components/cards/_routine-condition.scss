@@ -66,7 +66,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 13px 15px;        
+        padding: 4px 8px 4px 13px;
+      }
+      .btn:first-of-type::after {
+        margin-left: 5px;
+        content: url('../../../assets/icon-arrow-down.svg') !important;
+        border: none !important;
       }
       .option-label {
         font-size: 15px !important;
