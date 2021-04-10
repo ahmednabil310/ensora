@@ -1365,6 +1365,10 @@ textarea {
   font-weight: 600;
 }
 
+.add-sensor-modal .modal-body .modal-column .selected-sensor-list .selected-sensor button {
+  font-size: 16px;
+}
+
 .scene-modal .modal-content {
   height: 760px;
   overflow: hidden;
