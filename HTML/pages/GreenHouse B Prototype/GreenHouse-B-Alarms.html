@@ -1,203 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../../../sass/main.css" />
-    <title id="home">GreenHouse B</title>
-  </head>
 
-  <body>
-    <div class="row vh-100 m-0">
-      <!-- side bar -->
-      <div class="p-0" id="side-bar-container"></div>
-      <!-- main page -->
-      <div class="main-page p-0">
-        <!-- navbar -->
-        <div id="nav-bar-container"></div>
-        <!-- Main Content -->
-        <div class="main-content settings-header">
-          <!-- header -->
-          <div
-            class="d-flex main-content__header justify-content-between settings-title"
-          >
-            <div class="d-flex">
-              <a href="#">
-                <img
-                  class="back-arrow"
-                  src="../../../assets/icon-back-arrow.svg"
-                  alt="Back"
-                />
-              </a>
-              <div class="d-flex flex-column">
-                <div class="d-flex ml-14">
-                  <span class="title">Greenhouse B</span>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../../../sass/main.css" />
+  <title id="home">GreenHouse B</title>
+</head>
+
+<body>
+  <div class="row vh-100 m-0">
+    <!-- side bar -->
+    <div class="p-0" id="side-bar-container"></div>
+    <!-- main page -->
+    <div class="main-page p-0">
+      <!-- navbar -->
+      <div id="nav-bar-container"></div>
+      <!-- Main Content -->
+      <div class="main-content settings-header">
+        <!-- header -->
+        <div class="d-flex main-content__header justify-content-between settings-title">
+          <div class="d-flex">
+            <a href="#">
+              <img class="back-arrow" src="../../../assets/icon-back-arrow.svg" alt="Back" />
+            </a>
+            <div class="d-flex flex-column">
+              <div class="d-flex ml-14">
+                <span class="title">Greenhouse B</span>
               </div>
             </div>
-            <div class="d-flex align-items-center">
-              <button
-                class="btn edit-sensors-btn gear-button d-flex align-items-center justify-content-center"
-              >
-                <img src="../../../assets/icon-edit.svg" alt="Edit Sensors" />
-                Edit sensors
-              </button>
-              <button
-                class="btn gear-button dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <img src="../../../assets/icon-gear-blue.svg" alt="Settings" />
-              </button>
-            </div>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
           </div>
-          <nav class="navbar navbar-expand-lg settings-tabs-nav">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Data</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Alarms</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Equipment</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Scenes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Routines</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <!-- middle section -->
-          <div
-            class="row mid-section align-items-center flex-column text-center p-20-40 m-0"
-          >
-            <div
-              class="col-12 d-flex align-items-center justify-content-between p-0"
-            >
-              <p class="content-title display-small m-0">Alarm log</p>
-            </div>
-            <!-- inputs and selects -->
-            <div
-              class="main-content__header__inputs d-flex align-items-center w-100 mt-20px"
-            >
-              <div class="d-flex col-7 row m-0 p-0">
-                <div class="dropdown-alarms col p-0">
-                  <select name="date" id="date" class="form-select">
-                    <option value="Last Week">Last Week</option>
-                    <option value="Last Week">Last Week</option>
-                  </select>
+          <div class="d-flex align-items-center">
+            <button class="btn edit-sensors-btn gear-button d-flex align-items-center justify-content-center">
+              <img src="../../../assets/icon-edit.svg" alt="Edit Sensors" />
+              Edit sensors
+            </button>
+            <button class="btn gear-button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <img src="../../../assets/icon-gear-blue.svg" alt="Settings" />
+            </button>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg settings-tabs-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Data</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Alarms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Equipment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Scenes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Routines</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- middle section -->
+        <div class="row mid-section align-items-center flex-column text-center p-20-40 m-0">
+          <div class="col-12 d-flex align-items-center justify-content-between p-0">
+            <p class="content-title display-small">Alarm log</p>
+          </div>
+          <!-- inputs and selects -->
+          <div class="main-content__header__inputs d-flex align-items-center w-100">
+            <div class="d-flex col-12 row m-0 p-0 justify-content-between">
+              <div class="d-flex">
+                <div class="dropdown-alarms col-6 p-0">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>Last Week</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="Last Week">Last Week</span>
+                        <span class="custom-option" data-value="Last Month">Last Month</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="dropdown-alarms col p-0">
-                  <select name="alarms" id="alarms" class="form-select">
-                    <option value="all alarms">all alarms</option>
-                    <option value="all alarms">all alarms</option>
-                  </select>
+                <div class="dropdown-alarms col-6 p-0">
+                  <div class="our-custom-select-wrapper">
+                    <div class="our-custom-select">
+                      <div class="our-custom-select__trigger">
+                        <span>All alarms</span>
+                        <div class="arrow">
+                          <img src="../../../assets/arrow.svg" alt="" />
+                        </div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="All alarms">All alarms</span>
+                        <span class="custom-option" data-value="Last Month">Last Month</span>
+                        <span class="custom-option" data-value="None">None</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center col-6 p-0">
                   <input type="checkbox" name="activity" id="activity" />
-                  <label for="activity" class="input activity-checkbox"
-                    >Show activity alarm only</label
-                  >
+                  <label for="activity" class="input activity-checkbox">Show activity alarm only</label>
                 </div>
               </div>
+              <button class="btn btn-secondary download-btn">
+                <img src="../../../assets/icon-download.svg" alt="Download">
+              </button>
             </div>
-            <!-- table -->
-            <table class="col-12 p-0 alarms-table">
-              <thead>
-                <tr class="table-headers">
-                  <th>Description</th>
-                  <th>Sensor / Routine</th>
-                  <th>Start time</th>
-                  <th>Clear time</th>
-                </tr>
-              </thead>
-              <tbody class="body">
-                <tr class="tr--error">
-                  <td class="tr--error__td">
-                    <i class="fas fa-bell py-0"></i>
-                    Temperature is high
-                  </td>
-                  <td>Flowers</td>
-                  <td>02/02/2020 04:43 PM</td>
-                  <td></td>
-                </tr>
-                <tr class="tr--error">
-                  <td class="tr--error__td">
-                    <i class="fas fa-bell py-0"></i>
-                    Herbs humidity is above 50%
-                  </td>
-                  <td>Routine name</td>
-                  <td>02/02/2020 04:43 PM</td>
-                  <td></td>
-                </tr>
-                <tr class="tr--error">
-                  <td class="tr--error__td">
-                    <i class="fas fa-bell py-0"></i>
-                    Herbs temperature is above 70 °F
-                  </td>
-                  <td>Routine name</td>
-                  <td>02/02/2020 04:43 PM</td>
-                  <td></td>
-                </tr>
-                <tr class="">
-                  <td class="">Onions humidity is above 50%</td>
-                  <td>Routine name</td>
-                  <td>02/02/2020 04:43 PM</td>
-                  <td>02/02/2020 04:43 PM</td>
-                </tr>
-                <tr class="">
-                  <td class="">Humidity is low</td>
-                  <td>Herbs</td>
-                  <td>02/02/2020 04:43 PM</td>
-                  <td>02/02/2020 04:43 PM</td>
-                </tr>
-                <tr class="">
-                  <td class="">Humidity is low</td>
-                  <td>Herbs</td>
-                  <td>02/02/2020 04:43 PM</td>
-                  <td>02/02/2020 04:43 PM</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
+          <!-- table -->
+          <table class="col-12 p-0 alarms-table">
+            <thead>
+              <tr class="table-headers">
+                <th>Description</th>
+                <th>Sensor / Routine</th>
+                <th>Start time</th>
+                <th>Clear time</th>
+              </tr>
+            </thead>
+            <tbody class="body">
+              <tr class="tr--error">
+                <td class="tr--error__td">
+                  <i class="fas fa-bell py-0"></i>
+                  Temperature is high
+                </td>
+                <td>Flowers</td>
+                <td>02/02/2020 04:43 PM</td>
+                <td></td>
+              </tr>
+              <tr class="tr--error">
+                <td class="tr--error__td">
+                  <i class="fas fa-bell py-0"></i>
+                  Herbs humidity is above 50%
+                </td>
+                <td>Routine name</td>
+                <td>02/02/2020 04:43 PM</td>
+                <td></td>
+              </tr>
+              <tr class="tr--error">
+                <td class="tr--error__td">
+                  <i class="fas fa-bell py-0"></i>
+                  Herbs temperature is above 70 °F
+                </td>
+                <td>Routine name</td>
+                <td>02/02/2020 04:43 PM</td>
+                <td></td>
+              </tr>
+              <tr class="">
+                <td class="">Onions humidity is above 50%</td>
+                <td>Routine name</td>
+                <td>02/02/2020 04:43 PM</td>
+                <td>02/02/2020 04:43 PM</td>
+              </tr>
+              <tr class="">
+                <td class="">Humidity is low</td>
+                <td>Herbs</td>
+                <td>02/02/2020 04:43 PM</td>
+                <td>02/02/2020 04:43 PM</td>
+              </tr>
+              <tr class="">
+                <td class="">Humidity is low</td>
+                <td>Herbs</td>
+                <td>02/02/2020 04:43 PM</td>
+                <td>02/02/2020 04:43 PM</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../../../js/page-loader.js"></script>
-  </body>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <script src="../../../js/page-loader.js"></script>
+</body>
+
 </html>

@@ -18,6 +18,10 @@
   }
   .modal-body {
     padding: 36px 40px !important;
+
+    .form-group {
+      margin-bottom: 0;
+    }
   }
   .modal-content {
     min-width: 560px;
