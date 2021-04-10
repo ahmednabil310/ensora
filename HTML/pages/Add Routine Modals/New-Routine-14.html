@@ -64,7 +64,7 @@
                 </div>
                 <div class="col-12 p-0">
                   <!-- Routine Condition Card -->
-                  <div class="routine-conditions d-flex flex-column justify-content-between">
+                  <div class="routine-conditions d-flex flex-column">
                     <div class="routine-condition d-flex justify-content-between">
                       <div class="d-flex">
                         <img src="../../../assets/icon-grap.svg" alt="Grap">
@@ -140,17 +140,53 @@
                           </div>
                         </div>
                       </div>
-                      <div class="d-flex align-items-base-line g-10px">
-                        <button class="or-btn btn-nostyle dynamic-field-btn" id="or-menu" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
+                      <div class="d-flex">
+                        <button class="or-btn btn-nostyle">
                           <img src="../../../assets/icon-add.svg" alt="Add">
                           Or
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="or-menu">
-                          <a class="dropdown-item" href="#">Sensor</a>
-                          <a class="dropdown-item" href="#">Time</a>
-                          <a class="dropdown-item" href="#">Equipment</a>
-                          <a class="dropdown-item" href="#">Day</a>
+                      </div>
+                    </div>
+                    <p class="or-text">OR</p>
+                    <div class="routine-condition d-flex justify-content-between">
+                      <div class="d-flex">
+                        <img src="../../../assets/icon-grap.svg" alt="Grap">
+                        <div class="dynamic-fields d-flex">
+                          <div>
+                            <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              Sensor
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="trigger-menu">
+                              <a class="dropdown-item" href="#">Sensor</a>
+                              <a class="dropdown-item" href="#">Time</a>
+                              <a class="dropdown-item" href="#">Equipment</a>
+                              <a class="dropdown-item" href="#">Day</a>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="single-select-dropdown">
+                              <button class="dynamic-field-btn" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select Sensor
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="form-group">
+                                  <input class="search-input form-control" type="text" class="form-control" placeholder="Search Sensor">
+                                </div>
+                                <p class="title">GreenHouse A</p>
+                                <a class="dropdown-item" href="#">Onions</a>
+                                <p class="title">GreenHouse B</p>
+                                <a class="dropdown-item" href="#">Herbs</a>
+                                <a class="dropdown-item" href="#">Flowers</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <button class="btn-nostyle">
+                              <img class="icon-mt" src="../../../assets/icon-trash.svg" alt="Delete">
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -161,52 +197,88 @@
                   <button class="add-condition-btn btn-nostyle">
                     <img src="../../../assets/icon-add.svg" alt="Add">
                     And when
-                  <button class="add-condition-btn btn-nostyle">
-                    <img src="../../../assets/icon-add.svg" alt="Add">
-                    Excluding when
-                  </button>
+                    <button class="add-condition-btn btn-nostyle">
+                      <img src="../../../assets/icon-add.svg" alt="Add">
+                      Excluding when
+                    </button>
                 </div>
               </div>
               <!-- End Routine Frame -->
               <!-- Routine Frame -->
               <div class="row m-0 p-0">
                 <div class="col-12 p-0">
-                  <p class="frame-title m-0">When this happens...</p>
+                  <p class="frame-title m-0">Ensora will...</p>
                 </div>
                 <div class="col-12 p-0">
                   <!-- Routine Condition Card -->
-                  <div class="routine-conditions d-flex flex-column justify-content-between">
+                  <div class="routine-conditions d-flex flex-column">
                     <div class="routine-condition d-flex justify-content-between">
                       <div class="d-flex">
                         <img src="../../../assets/icon-grap.svg" alt="Grap">
                         <div class="dynamic-fields d-flex">
+                          <button class="dynamic-field-btn selected-field" id="trigger-menu" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Turn on
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="trigger-menu">
+                            <a class="dropdown-item" href="#">Turn on</a>
+                            <a class="dropdown-item" href="#">Turn off</a>
+                            <a class="dropdown-item" href="#">Start scene</a>
+                            <a class="dropdown-item" href="#">Notify me by</a>
+                          </div>
                           <div>
-                            <button class="dynamic-field-btn" id="trigger-menu" data-toggle="dropdown"
-                              aria-haspopup="true" aria-expanded="false">
-                              Select action
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="trigger-menu">
-                              <a class="dropdown-item" href="#">Turn on</a>
-                              <a class="dropdown-item" href="#">Turn off</a>
-                              <a class="dropdown-item" href="#">Start scene</a>
-                              <a class="dropdown-item" href="#">Notify me by</a>
+                            <div class="single-select-dropdown">
+                              <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                A/C
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Search equipment...">
+                                </div>
+                                <p class="title">Fans</p>
+                                <a class="dropdown-item" href="#">Lettuce fan</a>
+                                <a class="dropdown-item" href="#">Herbs fan</a>
+                                <a class="dropdown-item" href="#">Flowers fan</a>
+                                <p class="title">Humidifiers</p>
+                                <a class="dropdown-item" href="#">Humidifier</a>
+                                <a class="dropdown-item" href="#">Humidifier</a>
+                              </div>
                             </div>
+                          </div>
+                          <div class="d-flex g-10px">
+                            <p class="option-label">AFTER</p>
+                            <div>
+                              <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                0 Min
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Lettuce fan</a>
+                              </div>
+                            </div>
+                            <div>
+                              <button class="dynamic-field-btn selected-field" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                always
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Always</a>
+                                <a class="dropdown-item" href="#">Only if still active</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <button class="btn-nostyle">
+                              <img class="icon-mt" src="../../../assets/icon-trash.svg" alt="Delete">
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <div class="d-flex align-items-base-line g-10px">
-                        <button class="or-btn btn-nostyle dynamic-field-btn" id="or-menu" data-toggle="dropdown"
-                          aria-haspopup="true" aria-expanded="false">
-                          <img src="../../../assets/icon-add.svg" alt="Add">
-                          Or
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="or-menu">
-                          <a class="dropdown-item" href="#">Turn on</a>
-                          <a class="dropdown-item" href="#">Turn off</a>
-                          <a class="dropdown-item" href="#">Start scene</a>
-                          <a class="dropdown-item" href="#">Notify me by</a>
-                        </div>
-                      </div>
+                      <button class="or-btn btn-nostyle">
+                        <img src="../../../assets/icon-add.svg" alt="Add">
+                        Or
+                      </button>
                     </div>
                   </div>
                   <!-- End Routine Condition Card -->
