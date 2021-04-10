@@ -1525,6 +1525,20 @@ textarea {
   margin: 0;
 }
 
+.uploadmodal .uploadmodal__content .uploadmodal__box .uploadmodal__box__upload .loader {
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+.uploadmodal .uploadmodal__content .uploadmodal__box .uploadmodal__box__upload .loader .lds-default {
+  width: 38px;
+  height: 38px;
+}
+
+.uploadmodal .uploadmodal__content .uploadmodal__box .uploadmodal__box__upload__loading {
+  padding: 75px 0 97px;
+}
+
 .uploadmodal .uploadmodal__content .modal-footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
