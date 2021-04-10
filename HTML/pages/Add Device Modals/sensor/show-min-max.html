@@ -37,7 +37,7 @@
       </div>
       <!-- End Model Subtitle -->
       <!-- Modal Form -->
-      <div class="setup-wizard-modal__form">
+      <div class="setup-wizard-modal__form setup-wizard-modal__form-scrollable">
         <form>
           <div>
             <label for="sensor-name" class="form-label">Name</label>
@@ -127,6 +127,14 @@
             <input type="text" placeholder="Choose or create group" class="form-control" id="assign-group"
               data-role="tagsinput" />
           </div>
+          <div>
+            <label for="device-id" class="form-label">Device ID</label>
+            <input type="text" class="form-control" id="device-id" />
+          </div>
+          <div>
+            <label for="install-data" class="form-label">Install date</label>
+            <input type="text" class="form-control" id="install-data" />
+          </div>
         </form>
       </div>
       <!-- End Modal Form -->
@@ -148,7 +156,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../../js/vendor/bootstrap-tagsinput.js"></script>
+  <script type="text/javascript" src="../../../../js/vendor/bootstrap-tagsinput.js"></script>
 </body>
 
 </html>

@@ -715,6 +715,7 @@ textarea {
   width: 100%;
   border-top: 1px solid #dfe4eb;
   padding: 23px 40px;
+  background-color: #ffffff;
 }
 
 .setup-wizard-modal .setup-wizard-modal__footer button {
@@ -779,6 +780,22 @@ textarea {
 .sensor-modal,
 .sensor-min-max-setup-wizard-modal {
   min-height: 744px;
+}
+
+.sensor-modal .setup-wizard-modal__form-scrollable,
+.sensor-min-max-setup-wizard-modal .setup-wizard-modal__form-scrollable {
+  height: 489px;
+  overflow: auto;
+}
+
+.sensor-modal .setup-wizard-modal__form-scrollable::-webkit-scrollbar,
+.sensor-min-max-setup-wizard-modal .setup-wizard-modal__form-scrollable::-webkit-scrollbar {
+  display: none;
+}
+
+.sensor-modal .setup-wizard-modal__form-scrollable form,
+.sensor-min-max-setup-wizard-modal .setup-wizard-modal__form-scrollable form {
+  margin-bottom: 20px;
 }
 
 .sensor-modal .setup-wizard-modal__form,
