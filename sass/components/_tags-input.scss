@@ -7,11 +7,17 @@
     margin-bottom: 0;
     color: $B700;
   }
+
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .tags-input__search {
   padding: 10px 15px;
   border-bottom: 1px solid $N300;
+  
   input {
     appearance: none;
     -moz-appearance: none;
@@ -69,4 +75,12 @@
   @extend .input;
   color: $B700 !important;
   padding: 9px 15px !important;
+}
+.apply-btn {
+  background: $B300;
+
+  button {
+    color: $N000;
+    font-weight: 600;
+  }
 }

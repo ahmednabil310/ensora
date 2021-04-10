@@ -217,3 +217,264 @@ input:checked + .slider:before {
   gap: 10px;
   margin-bottom: 25px;
 }
+.settings-header {
+  padding: 0;
+
+  .settings-title-position {
+    margin: 0 !important;
+    padding: 12px 40px !important;
+  }
+  .settings-title {
+    padding: 20px 40px 12px;
+    // margin: 20px 40px 12px;
+    background: white;
+
+    .back-arrow {
+      width: auto;
+      height: auto;
+      align-self: start;
+      cursor: pointer;
+    }
+    .title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .ml-14 {
+      margin-left: 14px;
+    }
+    .label img {
+      width: auto;
+      height: auto;
+    }
+    .label span {
+      color: $N600;
+      font-size: 11px;
+      line-height: 14px;
+      padding: 2px 6px;
+      background: $N300;
+      border-radius: 100px;
+    }
+    .header-thumbnail {
+      margin: 0 14px;
+      button {
+        width: 28px !important;
+      }
+    }
+    .add-btn {
+      margin-left: 5px;
+    }
+    .card-tags {
+      margin-top: 6px;
+
+      .dark-tag {
+        background-color: $N300;
+        color: $B700;
+      }
+    }
+    .close-icon {
+      width: 16px;
+      height: 16px;
+      padding: 2px;
+      margin-top: -3px;
+      cursor: pointer;
+    }
+    .gear-button {
+      background-color: $N300;
+      &::after {
+        content: none !important;
+      }
+    }
+    .edit-sensors-btn {
+      @extend .gear-button;
+      margin-right: 12px;
+      gap: 8px;
+    }
+  }
+  .settings-title .title {
+    @extend .display-medium;
+  }
+  .navbar {
+    height: auto;
+  }
+
+  .settings-tabs-nav {
+    @extend .shadow-md;
+    height: 38px;
+    padding-top: 12px;
+    background: white;
+    padding: 0 40px;
+  }
+  .navbar-nav {
+    gap: 11px;
+  }
+  .settings-tabs-nav li a {
+    color: $N600;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 20px !important;
+  }
+  .active {
+    border-bottom: 2px solid $B300;
+    .nav-link {
+      color: $B300 !important;
+    }
+  }
+
+  .setup-wizard-modal {
+    min-height: auto !important;
+
+    .setup-wizard-modal__form {
+      margin: 0;
+    }
+  }
+}
+.settings-content {
+  padding: 20px 40px;
+  text-align: start;
+  color: $B700;
+
+  .settings-card {
+    background: $N000;
+    border: 1px solid $N300;
+    border-radius: 8px;
+    gap: 40px;
+    padding: 30px 40px 40px;
+
+    .settings-card-content {
+
+      .sensor-modal {
+        width: 480px;
+
+        .setup-wizard-modal__min-max-options:last-of-type {
+          margin-bottom: 0 !important;
+        }
+
+        .calibration-options {
+          .min-max-option {
+            .min-max-form {
+              width: 67% !important;
+              div {
+                width: 100% !important;
+              }
+            }
+          }
+        }
+
+      }
+      .single-select-dropdown {
+        margin-bottom: 10px !important;
+      }
+    }
+    .payment-settings {
+      .form-group {
+        margin-bottom: 20px !important;
+      }
+      &:first-of-type .form-row:last-of-type {
+        margin-bottom: -20px !important;
+      }
+    }
+    .content-save-section {
+      .save-btn {
+        width: 148px !important;
+      }
+    }
+    .settings-card-title {
+      @extend .shadow-md;
+      margin-bottom: 20px;
+      padding-bottom: 26px;
+      color: $B700;
+      position: relative;
+
+      h3 {
+        @extend .display-small;
+        margin-bottom: 0;
+      }
+      .create-group-btn {
+        padding: 8px 47.5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    .setup-wizard-modal__sensor-details {
+      .sensing-imgs {
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .setup-wizard-modal__min-max-options div {
+    margin: 0 !important;
+  }
+  .setup-wizard-modal__show-min-max img {
+    margin-bottom: -4px;
+  }
+  .save-btn {
+    width: 110px;
+  }
+}
+.sensing-imgs {
+  gap: 12px;
+}
+.reports {
+  color: $B700;
+  padding: 4px 20px 23px;
+  border-bottom: 1px solid $N300;
+
+  .report-title {
+    @extend .heading;
+    margin-bottom: 5px;
+  }
+  .report-description {
+    @extend .body;
+    color: $N600;
+  }
+  .our-custom-select-wrapper {
+    width: 122px !important;
+  }
+}
+.send-notification-switch {
+  margin-top: 4px;
+
+  .switch-label {
+    @extend .body;
+    color: $B700 !important;
+    margin-left: 15px !important;
+  }
+}
+.integration-cards-container {
+  margin-top: 40px;
+
+  .col-md-4 {
+    max-width: calc(33.333333% - 14px) !important;
+  }
+  .rectangle-card {
+    height: 222px;
+  }
+  .add-integration-btn {
+    margin-top: auto;
+  }
+}
+.ensora-pin {
+  font-weight: 700 !important;
+}
+.copy-btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 36px;
+  width: 36px;
+  margin-top: 7px;
+}
+.credit-cards {
+  margin-bottom: 17px;
+}
+.subscription-settings {
+  .rectangle-card {
+    margin-top: 20px;
+    min-width: 330px;
+  }
+}

@@ -1,0 +1,44 @@
+.adjust-min-max-modal {
+  .modal-content {
+    min-height: 545px;
+  }
+  .set-min-max-title {
+    justify-content: space-evenly;
+    color: $N600;
+    font-weight: 600;
+    margin-top: 22px;
+  }
+  .group-name {
+    font-weight: 600;
+  }
+  .setup-wizard-modal__min-max-options {
+    margin-top: 0;
+    & div {
+      margin-top: 0;
+    }
+    .col-4 {
+      padding: 0;
+    }
+    .min-max-option {
+      height: 57px;
+      width: 100%;
+      padding: 11px 0px 10px 20px;
+      color: $N600;
+
+      .col-8 {
+        max-width: calc(66.666667% - 15px);
+      }
+
+      .min-max-form {
+        gap: 20px;
+
+        div {
+          width: 144px !important;
+        }
+      }
+    }
+    .min-max-option:nth-child(n + 2) {
+      border-top: 1.5px solid $N300;
+    }
+  }
+}

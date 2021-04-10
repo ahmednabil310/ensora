@@ -1,8 +1,12 @@
 .daily-cycle-modal {
   max-width: 560px;
   .daily-cycle-modal__header {
+    @extend .flex-center;
+    height: 65px;
+
     .close {
       span {
+        padding-top: 10px;
         color: $N500;
         font-weight: 400;
       }
@@ -26,5 +30,15 @@
 
   .daily-cycle-modal__inputs-container--mb {
     margin-bottom: 24px;
+  }
+
+  .modal-footer {
+    gap: 22px;
+    height: 82px;
+    padding: 22px 40px;
+
+    button {
+      margin: 0;
+    }
   }
 }

@@ -12,6 +12,11 @@
   .uploadmodal__content {
     .uploadmodal__header {
       padding: 20px 24px;
+      height: 65px;
+
+      .close {
+        padding-top: 10px;
+      }
     }
     .uploadmodal-modal__title {
       margin-top: 42px;

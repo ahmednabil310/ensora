@@ -13,13 +13,14 @@
       margin-right: -48px;
     }
     .close {
+      padding-top: 10px;
       margin-left: 0;
     }
   }
   .modal-body {
     padding: 36px 40px !important;
 
-    .form-group {
+    .form-group:last-of-type {
       margin-bottom: 0;
     }
   }

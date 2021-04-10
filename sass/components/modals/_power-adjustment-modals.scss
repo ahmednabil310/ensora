@@ -3,6 +3,7 @@
   .power-adjustment-modal__header {
     .close {
       span {
+        padding-top: 10px;
         color: $N500;
         font-weight: 400;
       }
@@ -16,6 +17,13 @@
     #range {
       max-width: 384px;
       margin-left: 12px;
+    }
+  }
+  .modal-footer {
+    padding: 20px 40px;
+    
+    * {
+      margin: 0;
     }
   }
 }
