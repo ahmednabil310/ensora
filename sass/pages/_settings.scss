@@ -102,6 +102,11 @@
 
 .switch-image {
   margin-left: 41px;
+  .switch-image__uploaded-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
 }
 
 .device-thumbnail--settings {

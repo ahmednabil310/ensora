@@ -1,7 +1,7 @@
 for (const dropdown of document.querySelectorAll(
   ".our-custom-select-wrapper"
 )) {
-  dropdown.addEventListener("click", function () {      
+  dropdown.addEventListener("click", function () {
     this.querySelector(".our-custom-select").classList.toggle("open");
   });
 }
@@ -15,7 +15,7 @@ for (const option of document.querySelectorAll(".custom-option")) {
       this.classList.add("selected");
       this.closest(".our-custom-select").querySelector(
         ".our-custom-select__trigger span"
-      ).textContent = this.textContent;
+      ).innerHTML = this.innerHTML;
     }
   });
 }
